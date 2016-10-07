@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets a custom menu dialog to use when displaying multiple choice menus.
@@ -17,11 +17,13 @@ namespace Fungus.Commands
         [Tooltip("The Menu Dialog to use for displaying menu buttons")]
         [SerializeField] protected MenuDialog menuDialog;
 
+        #region Public members
+
         public override void OnEnter()
         {
             if (menuDialog != null)
             {
-                MenuDialog.activeMenuDialog = menuDialog;
+                MenuDialog.ActiveMenuDialog = menuDialog;
             }
 
             Continue();
@@ -41,5 +43,7 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
     }
 }

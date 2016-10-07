@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using System.Collections.Generic;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets all collider (2d or 3d) components on the target objects to be active / inactive.
@@ -24,6 +23,26 @@ namespace Fungus.Commands
 
         [Tooltip("Set to true to enable the collider components")]
         [SerializeField] protected BooleanData activeState;
+
+        protected virtual void SetColliderActive(GameObject go)
+        {
+            if (go != null)     
+            {
+                // 3D objects
+                foreach (Collider c in go.GetComponentsInChildren<Collider>())
+                {
+                    c.enabled = activeState.Value;
+                }
+
+                // 2D objects
+                foreach (Collider2D c in go.GetComponentsInChildren<Collider2D>())
+                {
+                    c.enabled = activeState.Value;
+                }
+            }
+        }
+
+        #region Public members
 
         public override void OnEnter()  
         {
@@ -53,24 +72,6 @@ namespace Fungus.Commands
             Continue();
         }
 
-        protected virtual void SetColliderActive(GameObject go)
-        {
-            if (go != null)     
-            {
-                // 3D objects
-                foreach (Collider c in go.GetComponentsInChildren<Collider>())
-                {
-                    c.enabled = activeState.Value;
-                }
-                
-                // 2D objects
-                foreach (Collider2D c in go.GetComponentsInChildren<Collider2D>())
-                {
-                    c.enabled = activeState.Value;
-                }
-            }
-        }
-        
         public override string GetSummary()
         {
             int count = targetObjects.Count;
@@ -89,6 +90,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255); 
         }
+
+        #endregion
     }
         
 }

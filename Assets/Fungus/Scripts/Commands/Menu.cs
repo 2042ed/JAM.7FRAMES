@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Displays a button in a multiple choice menu.
@@ -36,19 +35,21 @@ namespace Fungus.Commands
         [Tooltip("A custom Menu Dialog to use to display this menu. All subsequent Menu commands will use this dialog.")]
         [SerializeField] protected MenuDialog setMenuDialog;
 
+        #region Public member
+
         public override void OnEnter()
         {
             if (setMenuDialog != null)
             {
                 // Override the active menu dialog
-                MenuDialog.activeMenuDialog = setMenuDialog;
+                MenuDialog.ActiveMenuDialog = setMenuDialog;
             }
 
             bool hideOption = (hideIfVisited && targetBlock != null && targetBlock.GetExecutionCount() > 0);
 
             if (!hideOption)
             {
-                IMenuDialog menuDialog = MenuDialog.GetMenuDialog();
+                var menuDialog = MenuDialog.GetMenuDialog();
                 if (menuDialog != null)
                 {
                     menuDialog.SetActive(true);
@@ -90,6 +91,8 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
 
         #region ILocalizable implementation
 

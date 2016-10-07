@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Plays looping game music. If any game music is already playing, it is stopped. Game music will continue playing across scene loads.
@@ -26,14 +26,14 @@ namespace Fungus.Commands
         [Tooltip("Length of time to fade out previous playing music.")]
         [SerializeField] protected float fadeDuration = 1f;
 
+        #region Public members
+
         public override void OnEnter()
         {
-            IMusicController musicController = MusicController.GetInstance();
-            if (musicController != null)
-            {
-                float startTime = Mathf.Max(0, atTime);
-                musicController.PlayMusic(musicClip, loop, fadeDuration, startTime);
-            }
+            var musicManager = FungusManager.Instance.MusicManager;
+
+            float startTime = Mathf.Max(0, atTime);
+            musicManager.PlayMusic(musicClip, loop, fadeDuration, startTime);
                 
             Continue();
         }
@@ -52,5 +52,7 @@ namespace Fungus.Commands
         {
             return new Color32(242, 209, 176, 255);
         }
+
+        #endregion
     }
 }

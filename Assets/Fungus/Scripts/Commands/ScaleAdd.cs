@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Changes a game object's scale by a specified offset over time.
@@ -21,6 +20,8 @@ namespace Fungus.Commands
         [Tooltip("A scale offset in space the GameObject will animate to")]
         [SerializeField] protected Vector3Data _offset;
 
+        #region Public members
+
         public override void DoTween()
         {
             Hashtable tweenParams = new Hashtable();
@@ -34,6 +35,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.ScaleAdd(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Activates swipe panning mode where the player can pan the camera within the area between viewA & viewB.
@@ -28,7 +28,9 @@ namespace Fungus.Commands
 
         [Tooltip("Camera to use for the pan. Will use main camera if set to none.")]
         [SerializeField] protected Camera targetCamera;
-        
+
+        #region Public members
+
         public virtual void Start()
         {
             if (targetCamera == null)
@@ -51,9 +53,9 @@ namespace Fungus.Commands
                 return;
             }
 
-            ICameraController cameraController = CameraController.GetInstance();
+            var cameraManager = FungusManager.Instance.CameraManager;
 
-            cameraController.StartSwipePan(targetCamera, viewA, viewB, duration, speedMultiplier, () => Continue() );
+            cameraManager.StartSwipePan(targetCamera, viewA, viewB, duration, speedMultiplier, () => Continue() );
         }
 
         public override string GetSummary()
@@ -75,5 +77,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }
 }

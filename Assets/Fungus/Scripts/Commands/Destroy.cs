@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Destroys a specified game object in the scene.
@@ -19,6 +18,8 @@ namespace Fungus.Commands
     {   
         [Tooltip("Reference to game object to destroy")]
         [SerializeField] protected GameObjectData _targetGameObject;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -44,6 +45,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

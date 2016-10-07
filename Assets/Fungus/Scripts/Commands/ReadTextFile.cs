@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using Fungus;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Reads in a text file and stores the contents in a string variable.
@@ -21,6 +20,8 @@ namespace Fungus.Commands
         [Tooltip("String variable to store the tex file contents in")]
         [VariableProperty(typeof(StringVariable))]
         [SerializeField] protected StringVariable stringVariable;
+
+        #region Public members
 
         public override void OnEnter() 
         {
@@ -60,5 +61,7 @@ namespace Fungus.Commands
         {
             return new Color32(253, 253, 150, 255);
         }
+
+        #endregion
     }
 }

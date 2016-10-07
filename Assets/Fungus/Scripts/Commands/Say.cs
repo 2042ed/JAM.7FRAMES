@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Writes text in a dialog box.
@@ -23,11 +23,9 @@ namespace Fungus.Commands
 
         [Tooltip("Character that is speaking")]
         [SerializeField] protected Character character;
-        public virtual Character _Character { get { return character; } }
 
         [Tooltip("Portrait that represents speaking character")]
         [SerializeField] protected Sprite portrait;
-        public virtual Sprite Portrait { get { return portrait; } set { portrait = value; } }
 
         [Tooltip("Voiceover audio to play when writing the text")]
         [SerializeField] protected AudioClip voiceOverClip;
@@ -40,7 +38,6 @@ namespace Fungus.Commands
 
         [Tooltip("Type this text in the previous dialog box.")]
         [SerializeField] protected bool extendPrevious = false;
-        public virtual bool ExtendPrevious { get { return extendPrevious; } }
 
         [Tooltip("Fade out the dialog box when writing has finished and not waiting for input.")]
         [SerializeField] protected bool fadeWhenDone = true;
@@ -56,6 +53,23 @@ namespace Fungus.Commands
 
         protected int executionCount;
 
+        #region Public members
+
+        /// <summary>
+        /// Character that is speaking.
+        /// </summary>
+        public virtual Character _Character { get { return character; } }
+
+        /// <summary>
+        /// Portrait that represents speaking character.
+        /// </summary>
+        public virtual Sprite Portrait { get { return portrait; } set { portrait = value; } }
+
+        /// <summary>
+        /// Type this text in the previous dialog box.
+        /// </summary>
+        public virtual bool ExtendPrevious { get { return extendPrevious; } }
+
         public override void OnEnter()
         {
             if (!showAlways && executionCount >= showCount)
@@ -69,16 +83,15 @@ namespace Fungus.Commands
             // Override the active say dialog if needed
             if (character != null && character.SetSayDialog != null)
             {
-                SayDialog.activeSayDialog = character.SetSayDialog;
+                SayDialog.ActiveSayDialog = character.SetSayDialog;
             }
 
             if (setSayDialog != null)
             {
-                SayDialog.activeSayDialog = setSayDialog;
+                SayDialog.ActiveSayDialog = setSayDialog;
             }
 
-            ISayDialog sayDialog = SayDialog.GetSayDialog();
-
+            var sayDialog = SayDialog.GetSayDialog();
             if (sayDialog == null)
             {
                 Continue();
@@ -136,7 +149,7 @@ namespace Fungus.Commands
 
         public override void OnStopExecuting()
         {
-            ISayDialog sayDialog = SayDialog.GetSayDialog();
+            var sayDialog = SayDialog.GetSayDialog();
             if (sayDialog == null)
             {
                 return;
@@ -144,6 +157,8 @@ namespace Fungus.Commands
 
             sayDialog.Stop();
         }
+
+        #endregion
 
         #region ILocalizable implementation
 

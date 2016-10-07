@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Plays a once-off sound effect. Multiple sound effects can be played at the same time.
@@ -24,6 +24,13 @@ namespace Fungus.Commands
         [Tooltip("Wait until the sound has finished playing before continuing execution.")]
         [SerializeField] protected bool waitUntilFinished;
 
+        protected virtual void DoWait()
+        {
+            Continue();
+        }
+
+        #region Public members
+
         public override void OnEnter()
         {
             if (soundClip == null)
@@ -32,11 +39,9 @@ namespace Fungus.Commands
                 return;
             }
 
-            IMusicController musicController = MusicController.GetInstance();
-            if (musicController != null)
-            {
-                musicController.PlaySound(soundClip, volume);
-            }
+            var musicManager = FungusManager.Instance.MusicManager;
+
+            musicManager.PlaySound(soundClip, volume);
 
             if (waitUntilFinished)
             {
@@ -46,11 +51,6 @@ namespace Fungus.Commands
             {
                 Continue();
             }
-        }
-
-        protected virtual void DoWait()
-        {
-            Continue();
         }
 
         public override string GetSummary()
@@ -67,5 +67,7 @@ namespace Fungus.Commands
         {
             return new Color32(242, 209, 176, 255);
         }
+
+        #endregion
     }
 }

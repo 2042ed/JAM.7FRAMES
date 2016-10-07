@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Fades the camera out and in again at a position specified by a View object.
@@ -22,7 +22,6 @@ namespace Fungus.Commands
 
         [Tooltip("View to transition to when Fade is complete")]
         [SerializeField] protected View targetView;
-        public virtual View TargetView { get { return targetView; } }
 
         [Tooltip("Wait until the fade has finished before executing next command")]
         [SerializeField] protected bool waitUntilFinished = true;
@@ -35,6 +34,11 @@ namespace Fungus.Commands
 
         [Tooltip("Camera to use for the fade. Will use main camera if set to none.")]
         [SerializeField] protected Camera targetCamera;
+
+        protected virtual void Start()
+        {
+            AcquireCamera();
+        }
 
         protected virtual void AcquireCamera()
         {
@@ -50,10 +54,12 @@ namespace Fungus.Commands
             }
         }
 
-        public virtual void Start()
-        {
-            AcquireCamera();
-        }
+        #region Public members
+
+        /// <summary>
+        /// View to transition to when Fade is complete
+        /// </summary>
+        public virtual View TargetView { get { return targetView; } }
 
         public override void OnEnter()
         {
@@ -65,18 +71,18 @@ namespace Fungus.Commands
                 return;
             }
 
-            ICameraController cameraController = CameraController.GetInstance();
+            var cameraManager = FungusManager.Instance.CameraManager;
 
             if (fadeTexture)
             {
-                cameraController.ScreenFadeTexture = fadeTexture;
+                cameraManager.ScreenFadeTexture = fadeTexture;
             }
             else
             {
-                cameraController.ScreenFadeTexture = CameraController.CreateColorTexture(fadeColor, 32, 32);
+                cameraManager.ScreenFadeTexture = CameraManager.CreateColorTexture(fadeColor, 32, 32);
             }
 
-            cameraController.FadeToView(targetCamera, targetView, duration, fadeOut, delegate { 
+            cameraManager.FadeToView(targetCamera, targetView, duration, fadeOut, delegate { 
                 if (waitUntilFinished)
                 {
                     Continue();
@@ -91,7 +97,9 @@ namespace Fungus.Commands
 
         public override void OnStopExecuting()
         {
-            CameraController.GetInstance().Stop();
+            var cameraManager = FungusManager.Instance.CameraManager;
+
+            cameraManager.Stop();
         }
 
         public override string GetSummary()
@@ -110,5 +118,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }
 }

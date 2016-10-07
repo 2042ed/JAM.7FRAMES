@@ -4,7 +4,6 @@
 using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
-using Fungus.Commands;
 
 namespace Fungus.EditorUtils
 {
@@ -13,7 +12,7 @@ namespace Fungus.EditorUtils
     {
         protected SerializedProperty keyProp;
         
-        static public void LabelField(SerializedProperty property, 
+        public static void LabelField(SerializedProperty property, 
                                       GUIContent labelText, 
                                       Block block)
         {

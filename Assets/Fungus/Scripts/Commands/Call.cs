@@ -6,7 +6,7 @@ using UnityEngine.Serialization;
 using System.Collections.Generic;
 using System;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Supported modes for calling a block.
@@ -43,6 +43,8 @@ namespace Fungus.Commands
     
         [Tooltip("Select if the calling block should stop or continue executing commands, or wait until the called block finishes.")]
         [SerializeField] protected CallMode callMode;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -138,5 +140,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

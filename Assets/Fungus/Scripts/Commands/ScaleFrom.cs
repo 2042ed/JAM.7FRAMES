@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Changes a game object's scale to the specified value and back to its original scale over time.
@@ -23,6 +22,8 @@ namespace Fungus.Commands
 
         [Tooltip("Target scale that the GameObject will scale from, if no From Transform is set")]
         [SerializeField] protected Vector3Data _fromScale;
+
+        #region Public members
 
         public override void DoTween()
         {
@@ -44,6 +45,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.ScaleFrom(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

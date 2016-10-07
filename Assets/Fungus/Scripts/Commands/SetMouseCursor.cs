@@ -3,7 +3,7 @@
 
 ﻿using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets the mouse cursor sprite.
@@ -23,6 +23,8 @@ namespace Fungus.Commands
         // Cached static cursor settings
         protected static Texture2D activeCursorTexture;
         protected static Vector2 activeHotspot;
+
+        #region Public members
 
         public static void ResetMouseCursor()
         {
@@ -54,5 +56,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Set the active language for the scene. A Localization object with a localization file must be present in the scene.
@@ -19,6 +18,8 @@ namespace Fungus.Commands
     {
         [Tooltip("Code of the language to set. e.g. ES, DE, JA")]
         [SerializeField] protected StringData _languageCode = new StringData(); 
+
+        #region Public members
 
         public static string mostRecentLanguage = "";
 
@@ -46,6 +47,8 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

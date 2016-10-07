@@ -3,8 +3,6 @@
 
 using UnityEditor;
 using UnityEngine;
-using Fungus.Commands;
-using Fungus.Utils;
 
 namespace Fungus.EditorUtils
 {
@@ -57,12 +55,12 @@ namespace Fungus.EditorUtils
             
             Portrait t = target as Portrait;
 
-            if (Stage.activeStages.Count > 1)
+            if (Stage.ActiveStages.Count > 1)
             {
                 CommandEditor.ObjectField<Stage>(stageProp, 
                                                          new GUIContent("Portrait Stage", "Stage to display the character portraits on"), 
                                                          new GUIContent("<Default>"),
-                                                         Stage.activeStages);
+                                                         Stage.ActiveStages);
             }
             else
             {
@@ -78,14 +76,14 @@ namespace Fungus.EditorUtils
                 CommandEditor.ObjectField<Character>(replacedCharacterProp, 
                                                      new GUIContent("Replace", "Character to replace"), 
                                                      new GUIContent("<None>"),
-                                                     Character.activeCharacters);
+                                                     Character.ActiveCharacters);
                 characterLabel = "With";
             }
             
             CommandEditor.ObjectField<Character>(characterProp, 
                                                  new GUIContent(characterLabel, "Character to display"), 
                                                  new GUIContent("<None>"),
-                                                 Character.activeCharacters);
+                                                 Character.ActiveCharacters);
 
             bool showOptionalFields = true;
             Stage s = t._Stage;

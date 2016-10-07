@@ -3,7 +3,7 @@
 
 ﻿using UnityEngine;
 
-namespace Fungus.EventHandlers
+namespace Fungus
 {
     /// <summary>
     /// The block will execute when the specified message is received from a Send Message command.
@@ -17,6 +17,12 @@ namespace Fungus.EventHandlers
         [Tooltip("Fungus message to listen for")]
         [SerializeField] protected string message = "";
 
+        #region Public members
+
+        /// <summary>
+        /// Called from Flowchart when a message is sent.
+        /// </summary>
+        /// <param name="message">Message.</param>
         public void OnSendFungusMessage(string message)
         {
             if (this.message == message)
@@ -29,5 +35,7 @@ namespace Fungus.EventHandlers
         {
             return message;
         }
+
+        #endregion
     }
 }

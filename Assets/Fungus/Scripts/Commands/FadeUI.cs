@@ -3,10 +3,8 @@
 
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Fungus;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Select which type of fade will be applied.
@@ -37,7 +35,7 @@ namespace Fungus.Commands
         {
             foreach (Image image in go.GetComponentsInChildren<Image>())
             {
-                if (duration == 0f)
+                if (Mathf.Approximately(duration, 0f))
                 {
                     switch (fadeMode)
                     {
@@ -67,7 +65,7 @@ namespace Fungus.Commands
 
             foreach (Text text in go.GetComponentsInChildren<Text>())
             {
-                if (duration == 0f)
+                if (Mathf.Approximately(duration, 0f))
                 {
                     switch (fadeMode)
                     {
@@ -97,7 +95,7 @@ namespace Fungus.Commands
 
             foreach (TextMesh textMesh in go.GetComponentsInChildren<TextMesh>())
             {
-                if (duration == 0f)
+                if (Mathf.Approximately(duration, 0f))
                 {
                     switch (fadeMode)
                     {
@@ -140,6 +138,8 @@ namespace Fungus.Commands
             return "";
         }
 
+        #region Public members
+
         public override bool IsPropertyVisible(string propertyName)
         {
             if (fadeMode == FadeMode.Alpha &&
@@ -156,5 +156,7 @@ namespace Fungus.Commands
 
             return true;
         }
+
+        #endregion
     }
 }

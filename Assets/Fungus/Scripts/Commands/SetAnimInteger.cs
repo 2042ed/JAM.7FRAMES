@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets an integer parameter on an Animator component to control a Unity animation.
@@ -25,6 +24,8 @@ namespace Fungus.Commands
 
         [Tooltip("The integer value to set the parameter to")]
         [SerializeField] protected IntegerData value;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -50,6 +51,8 @@ namespace Fungus.Commands
         {
             return new Color32(170, 204, 169, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

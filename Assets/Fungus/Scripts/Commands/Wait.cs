@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Waits for period of time before executing the next command in the block.
@@ -20,14 +19,16 @@ namespace Fungus.Commands
         [Tooltip("Duration to wait for")]
         [SerializeField] protected FloatData _duration = new FloatData(1);
 
+        protected virtual void OnWaitComplete()
+        {
+            Continue();
+        }
+
+        #region Public members
+
         public override void OnEnter()
         {
             Invoke ("OnWaitComplete", _duration.Value);
-        }
-
-        void OnWaitComplete()
-        {
-            Continue();
         }
 
         public override string GetSummary()
@@ -39,6 +40,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

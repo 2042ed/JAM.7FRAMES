@@ -4,13 +4,15 @@
 using System.Text;
 using System;
 
-namespace Fungus.Utils
+namespace Fungus
 {
     /// <summary>
     /// Misc string formatting functions.
     /// </summary>
     public static class StringFormatter
     {
+        #region Public members
+
         public static string[] FormatEnumNames(Enum e, string firstLabel)
         {
             string[] enumLabels = Enum.GetNames(e.GetType());
@@ -56,5 +58,7 @@ namespace Fungus.Utils
             }
             return true;
         }
+
+        #endregion
     }    
 }

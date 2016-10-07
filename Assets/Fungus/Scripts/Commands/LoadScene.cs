@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Loads a new Unity scene and displays an optional loading image. This is useful
@@ -29,6 +28,8 @@ namespace Fungus.Commands
         [Tooltip("Image to display while loading the scene")]
         [SerializeField] protected Texture2D loadingImage;
 
+        #region Public members
+
         public override void OnEnter()
         {
             SceneLoader.LoadScene(_sceneName.Value, loadingImage);
@@ -48,6 +49,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

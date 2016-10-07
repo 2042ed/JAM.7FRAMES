@@ -3,7 +3,7 @@
 
 ﻿using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Draws a fullscreen texture over the scene to give a fade effect. Setting Target Alpha to 1 will obscure the screen, alpha 0 will reveal the screen.
@@ -30,21 +30,23 @@ namespace Fungus.Commands
 
         [Tooltip("Optional texture to use when rendering the fullscreen fade effect.")]
         [SerializeField] protected Texture2D fadeTexture;
-        
+
+        #region Public members
+
         public override void OnEnter()
         {
-            ICameraController cameraController = CameraController.GetInstance();
+            var cameraManager = FungusManager.Instance.CameraManager;
             
             if (fadeTexture)
             {
-                cameraController.ScreenFadeTexture = fadeTexture;
+                cameraManager.ScreenFadeTexture = fadeTexture;
             }
             else
             {
-                cameraController.ScreenFadeTexture = CameraController.CreateColorTexture(fadeColor, 32, 32);
+                cameraManager.ScreenFadeTexture = CameraManager.CreateColorTexture(fadeColor, 32, 32);
             }
             
-            cameraController.Fade(targetAlpha, duration, delegate { 
+            cameraManager.Fade(targetAlpha, duration, delegate { 
                 if (waitUntilFinished)
                 {
                     Continue();
@@ -66,5 +68,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }    
 }

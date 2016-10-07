@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets a game object in the scene to be active / inactive.
@@ -23,6 +22,8 @@ namespace Fungus.Commands
         [Tooltip("Set to true to enable the game object")]
         [SerializeField] protected BooleanData activeState;
     
+        #region Public members
+
         public override void OnEnter()
         {
             if (_targetGameObject.Value != null)
@@ -47,6 +48,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

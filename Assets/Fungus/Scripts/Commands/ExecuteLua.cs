@@ -3,10 +3,8 @@
 
 ﻿using UnityEngine;
 using MoonSharp.Interpreter;
-using Fungus;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Executes a Lua code chunk using a Lua Environment.
@@ -18,7 +16,6 @@ namespace Fungus.Commands
     {
         [Tooltip("Lua Environment to use to execute this Lua script")]
         [SerializeField] protected LuaEnvironment luaEnvironment;
-        public ILuaEnvironment LuaEnv { set; get; }
 
         [Tooltip("A text file containing Lua script to execute.")]
         [SerializeField] protected TextAsset luaFile;
@@ -65,24 +62,24 @@ namespace Fungus.Commands
             var flowchart = GetFlowchart();
 
             // See if a Lua Environment has been assigned to this Flowchart
-            if (luaEnvironment == null)        
+            if (luaEnvironment == null)
             {
-                LuaEnv = flowchart.LuaEnv;
+                luaEnvironment = flowchart.LuaEnv;
             }
 
-            // No Lua Environment specified so just use any available or create one.
-            if (LuaEnv == null)        
+            if (luaEnvironment == null)
             {
-                LuaEnv = LuaEnvironment.GetLua();
+                // No Lua Environment specified so just use any available or create one.
+                luaEnvironment = LuaEnvironment.GetLua();
             }
 
             string s = GetLuaString();
-            luaFunction = LuaEnv.LoadLuaFunction(s, friendlyName);
+            luaFunction = luaEnvironment.LoadLuaFunction(s, friendlyName);
 
             // Add a binding to the parent flowchart
             if (flowchart.LuaBindingName != "")
             {
-                Table globals = LuaEnv.Interpreter.Globals;
+                Table globals = luaEnvironment.Interpreter.Globals;
                 if (globals != null)
                 {
                     globals[flowchart.LuaBindingName] = flowchart;
@@ -106,29 +103,6 @@ namespace Fungus.Commands
             }
 
             return luaFile.text + "\n" + luaScript;
-        }
-
-        public override void OnEnter()
-        {
-            InitExecuteLua();
-
-            if (luaFunction == null)
-            {
-                Continue();
-            }
-
-            LuaEnv.RunLuaFunction(luaFunction, runAsCoroutine, (returnValue) => {
-                StoreReturnVariable(returnValue);
-                if (waitUntilFinished)
-                {
-                    Continue();
-                }
-            });
-
-            if (!waitUntilFinished)
-            {
-                Continue();
-            }
         }
 
         protected virtual void StoreReturnVariable(DynValue returnValue)
@@ -194,6 +168,31 @@ namespace Fungus.Commands
             }
         }
 
+        #region Public members
+
+        public override void OnEnter()
+        {
+            InitExecuteLua();
+
+            if (luaFunction == null)
+            {
+                Continue();
+            }
+
+            luaEnvironment.RunLuaFunction(luaFunction, runAsCoroutine, (returnValue) => {
+                StoreReturnVariable(returnValue);
+                if (waitUntilFinished)
+                {
+                    Continue();
+                }
+            });
+
+            if (!waitUntilFinished)
+            {
+                Continue();
+            }
+        }
+
         public override string GetSummary()
         {
             return luaScript;
@@ -203,5 +202,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

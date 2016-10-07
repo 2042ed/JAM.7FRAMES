@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Moves the camera to a location specified by a View object.
@@ -46,6 +46,8 @@ namespace Fungus.Commands
             AcquireCamera();
         }
 
+        #region Public members
+
         public override void OnEnter()
         {
             AcquireCamera();
@@ -56,13 +58,13 @@ namespace Fungus.Commands
                 return;
             }
 
-            ICameraController cameraController = CameraController.GetInstance();
+            var cameraManager = FungusManager.Instance.CameraManager;
 
             Vector3 targetPosition = targetView.transform.position;
             Quaternion targetRotation = targetView.transform.rotation;
             float targetSize = targetView.ViewSize;
 
-            cameraController.PanToPosition(targetCamera, targetPosition, targetRotation, targetSize, duration, delegate {
+            cameraManager.PanToPosition(targetCamera, targetPosition, targetRotation, targetSize, duration, delegate {
                 if (waitUntilFinished)
                 {
                     Continue();
@@ -77,7 +79,9 @@ namespace Fungus.Commands
 
         public override void OnStopExecuting()
         {
-            CameraController.GetInstance().Stop();
+            var cameraManager = FungusManager.Instance.CameraManager;
+
+            cameraManager.Stop();
         }
 
         public override string GetSummary()
@@ -96,5 +100,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }
 }

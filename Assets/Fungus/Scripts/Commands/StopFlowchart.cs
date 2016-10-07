@@ -4,7 +4,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Stops execution of all Blocks in a Flowchart.
@@ -21,16 +21,18 @@ namespace Fungus.Commands
         [Tooltip("Stop all executing Blocks in a list of target Flowcharts")]
         [SerializeField] protected List<Flowchart> targetFlowcharts = new List<Flowchart>();
 
+        #region Public members
+
         public override void OnEnter()
         {
-            IFlowchart flowchart = GetFlowchart();
+            var flowchart = GetFlowchart();
 
             if (stopParentFlowchart)
             {
                 flowchart.StopAllBlocks();
             }
 
-            foreach (IFlowchart f in targetFlowcharts)
+            foreach (var f in targetFlowcharts)
             {
                 if (f == flowchart)
                 {
@@ -56,5 +58,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

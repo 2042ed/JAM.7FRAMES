@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Calls a named method on a GameObject using the GameObject.SendMessage() system.
@@ -25,6 +25,13 @@ namespace Fungus.Commands
         [Tooltip("Delay (in seconds) before the method will be called")]
         [SerializeField] protected float delay;
 
+        protected virtual void CallTheMethod()
+        {
+            targetObject.SendMessage(methodName, SendMessageOptions.DontRequireReceiver);
+        }
+
+        #region Public members
+
         public override void OnEnter()
         {
             if (targetObject == null ||
@@ -34,7 +41,7 @@ namespace Fungus.Commands
                 return;
             }
 
-            if (delay == 0f)
+            if (Mathf.Approximately(delay, 0f))
             {
                 CallTheMethod();
             }
@@ -44,11 +51,6 @@ namespace Fungus.Commands
             }
 
             Continue();
-        }
-
-        protected virtual void CallTheMethod()
-        {
-            targetObject.SendMessage(methodName, SendMessageOptions.DontRequireReceiver);
         }
 
         public override string GetSummary()
@@ -70,5 +72,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

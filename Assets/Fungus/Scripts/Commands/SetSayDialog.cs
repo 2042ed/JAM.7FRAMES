@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets a custom say dialog to use when displaying story text.
@@ -17,11 +17,13 @@ namespace Fungus.Commands
         [Tooltip("The Say Dialog to use for displaying Say story text")]
         [SerializeField] protected SayDialog sayDialog;
 
+        #region Public members
+
         public override void OnEnter()
         {
             if (sayDialog != null)
             {
-                SayDialog.activeSayDialog = sayDialog;
+                SayDialog.ActiveSayDialog = sayDialog;
             }
 
             Continue();
@@ -41,5 +43,7 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
     }
 }

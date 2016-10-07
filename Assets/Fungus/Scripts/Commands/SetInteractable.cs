@@ -4,9 +4,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Set the interactable state of selectable objects.
@@ -21,6 +20,8 @@ namespace Fungus.Commands
 
         [Tooltip("Controls if the selectable UI object be interactable or not")]
         [SerializeField] protected BooleanData interactableState = new BooleanData(true);
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -96,5 +97,7 @@ namespace Fungus.Commands
 
             return false;
         }
+
+        #endregion
     }
 }

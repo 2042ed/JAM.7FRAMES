@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Moves a game object to a specified position over time. The position can be defined by a transform in another object (using To Transform) or by setting an absolute position (using To Position, if To Transform is set to None).
@@ -26,6 +25,8 @@ namespace Fungus.Commands
 
         [Tooltip("Whether to animate in world space or relative to the parent. False by default.")]
         [SerializeField] protected bool isLocal;
+
+        #region Public members
 
         public override void DoTween()
         {
@@ -48,6 +49,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.MoveTo(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

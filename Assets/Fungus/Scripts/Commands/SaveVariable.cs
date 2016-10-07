@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Save an Boolean, Integer, Float or String variable to persistent storage using a string key.
@@ -27,7 +26,9 @@ namespace Fungus.Commands
                           typeof(IntegerVariable), 
                           typeof(FloatVariable), 
                           typeof(StringVariable))]
-        public Variable variable;
+        [SerializeField] protected Variable variable;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -101,5 +102,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }    
 }

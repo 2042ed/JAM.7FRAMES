@@ -4,19 +4,23 @@
 using System;
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     public class ControlWithDisplay<TDisplayEnum> : Command
     {
         [Tooltip("Display type")]
         [SerializeField] protected TDisplayEnum display;
 
-        public virtual TDisplayEnum Display { get { return display; } }
-
-        protected bool IsDisplayNone<TEnum>(TEnum enumValue)
+        protected virtual bool IsDisplayNone<TEnum>(TEnum enumValue)
         {
             string displayTypeStr = Enum.GetName(typeof (TEnum), enumValue);
             return displayTypeStr == "None";
         }
+
+        #region Public members
+
+        public virtual TDisplayEnum Display { get { return display; } }
+
+        #endregion
     }
 }

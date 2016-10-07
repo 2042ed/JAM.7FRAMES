@@ -7,7 +7,6 @@ using UnityEditorInternal;
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using Fungus.Utils;
 
 namespace Fungus.EditorUtils
 {
@@ -84,7 +83,7 @@ namespace Fungus.EditorUtils
             Repaint();
         }
 
-        static public Flowchart GetFlowchart()
+        public static Flowchart GetFlowchart()
         {
             // Using a temp hidden object to track the active Flowchart across 
             // serialization / deserialization when playing the game in the editor.
@@ -551,7 +550,7 @@ namespace Fungus.EditorUtils
             return newBlock;
         }
 
-        protected virtual void DeleteBlock(Flowchart flowchart, IBlock block)
+        protected virtual void DeleteBlock(Flowchart flowchart, Block block)
         {
             foreach (var command in block.CommandList)
             {

@@ -4,9 +4,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-﻿namespace Fungus.Commands 
+﻿namespace Fungus 
 {
     /// <summary>
     /// Plays a usfxr synth sound. Use the usfxr editor [Tools > Fungus > Utilities > Generate usfxr Sound Effects] to create the SettingsString. Set a ParentTransform if using positional sound. See https://github.com/zeh/usfxr for more information about usfxr.
@@ -30,7 +29,7 @@ using Fungus.Variables;
         protected SfxrSynth _synth = new SfxrSynth();
 
         //Call this if the settings have changed
-        protected void UpdateCache() 
+        protected virtual void UpdateCache() 
         {
             if (_SettingsString.Value != null) 
             {
@@ -39,17 +38,24 @@ using Fungus.Variables;
             }
         }
 
-        public void Awake() 
+        protected virtual void Awake() 
         {
             //Always build the cache on awake
             UpdateCache();
         }
 
+        protected void DoWait()
+        {
+            Continue();
+        }
+
+        #region Public members
+
         public override void OnEnter() 
         {
             _synth.SetParentTransform(ParentTransform);
             _synth.Play();
-            if (waitDuration == 0f)
+            if (Mathf.Approximately(waitDuration, 0f))
             {
                 Continue();
             }
@@ -57,11 +63,6 @@ using Fungus.Variables;
             {
                 Invoke ("DoWait", waitDuration);
             }
-        }
-
-        protected void DoWait()
-        {
-            Continue();
         }
 
         public override string GetSummary() 
@@ -81,6 +82,8 @@ using Fungus.Variables;
         {
             return new Color32(128, 200, 200, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

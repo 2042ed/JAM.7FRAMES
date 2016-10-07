@@ -3,7 +3,7 @@
 
 ﻿using UnityEngine;
 
-namespace Fungus.EventHandlers
+namespace Fungus
 {
     /// <summary>
     /// Key press modes supported by Key Pressed event handler.
@@ -58,9 +58,13 @@ namespace Fungus.EventHandlers
             }
         }
 
+        #region Public members
+
         public override string GetSummary()
         {
             return keyCode.ToString();
         }
+
+        #endregion
     }
 }

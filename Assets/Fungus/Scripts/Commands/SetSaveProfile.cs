@@ -5,7 +5,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets the active profile that the Save Variable and Load Variable commands will use. This is useful to crete multiple player save games. Once set, the profile applies across all Flowcharts and will also persist across scene loads.
@@ -16,13 +16,15 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class SetSaveProfile : Command
     {
+        [Tooltip("Name of save profile to make active.")]
+        [SerializeField] protected string saveProfileName = "";
+
+        #region Public members
+
         /// <summary>
         /// Shared save profile name used by SaveVariable and LoadVariable.
         /// </summary>
         public static string saveProfile = "";
-
-        [Tooltip("Name of save profile to make active.")]
-        [SerializeField] protected string saveProfileName = "";
 
         public override void OnEnter()
         {
@@ -40,5 +42,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }    
 }

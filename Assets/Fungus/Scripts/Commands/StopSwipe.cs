@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Deactivates swipe panning mode.
@@ -14,11 +14,13 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class StopSwipe : Command 
     {
+        #region Public members
+
         public override void OnEnter()
         {
-            ICameraController cameraController = CameraController.GetInstance();
+            var cameraManager = FungusManager.Instance.CameraManager;
 
-            cameraController.StopSwipePan();
+            cameraManager.StopSwipePan();
 
             Continue();
         }
@@ -27,5 +29,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }
 }

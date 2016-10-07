@@ -3,7 +3,7 @@
 
 ﻿using UnityEngine;
 
-namespace Fungus.EventHandlers
+namespace Fungus
 {
     /// <summary>
     /// The block will execute when the player starts dragging an object.
@@ -16,6 +16,11 @@ namespace Fungus.EventHandlers
     {   
         [SerializeField] protected Draggable2D draggableObject;
 
+        #region Public members
+
+        /// <summary>
+        /// Called by the Draggable2D object when the drag starts.
+        /// </summary>
         public virtual void OnDragStarted(Draggable2D draggableObject)
         {
             if (draggableObject == this.draggableObject)
@@ -33,5 +38,7 @@ namespace Fungus.EventHandlers
             
             return "None";
         }
+
+        #endregion
     }
 }

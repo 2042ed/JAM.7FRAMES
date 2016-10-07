@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Resets a trigger parameter on an Animator component.
@@ -22,6 +21,8 @@ namespace Fungus.Commands
 
         [Tooltip("Name of the trigger Animator parameter that will be reset")]
         [SerializeField] protected StringData _parameterName;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -47,6 +48,8 @@ namespace Fungus.Commands
         {
             return new Color32(170, 204, 169, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

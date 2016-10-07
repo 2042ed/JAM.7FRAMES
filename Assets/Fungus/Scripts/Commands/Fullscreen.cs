@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Fullscreen mode options.
@@ -28,6 +28,8 @@ namespace Fungus.Commands
     public class Fullscreen : Command 
     {
         [SerializeField] protected FullscreenMode fullscreenMode;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -56,5 +58,7 @@ namespace Fungus.Commands
         {
             return new Color32(216, 228, 170, 255);
         }
+
+        #endregion
     }
 }

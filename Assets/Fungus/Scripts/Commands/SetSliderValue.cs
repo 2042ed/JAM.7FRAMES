@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets the value property of a slider object.
@@ -20,6 +19,8 @@ namespace Fungus.Commands
 
         [Tooltip("Float value to set the slider value to.")]
         [SerializeField] protected FloatData value;
+
+        #region Public members
 
         public override void OnEnter() 
         {
@@ -42,5 +43,7 @@ namespace Fungus.Commands
 
             return slider.name + " = " + value.GetDescription();
         }
+
+        #endregion
     }
 }

@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Rotates a GameObject to look at a supplied Transform or Vector3 over time.
@@ -26,6 +25,8 @@ namespace Fungus.Commands
 
         [Tooltip("Restricts rotation to the supplied axis only")]
         [SerializeField] protected iTweenAxis axis;
+
+        #region Public members
 
         public override void DoTween()
         {
@@ -59,6 +60,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.LookTo(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

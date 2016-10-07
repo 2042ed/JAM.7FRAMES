@@ -3,10 +3,8 @@
 
 ﻿using UnityEngine;
 using System.Collections;
-using Fungus.Variables;
-using Fungus.Utils;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Do multiple say and portrait commands in a single block of text. Format is: [character] [portrait] [stage position] [: Story text].
@@ -27,11 +25,6 @@ namespace Fungus.Commands
             conversationManager.PopulateCharacterCache();
         }
 
-        public override void OnEnter()
-        {
-            StartCoroutine(DoConversation());
-        }
-
         protected virtual IEnumerator DoConversation()
         {
             var flowchart = GetFlowchart();
@@ -40,6 +33,13 @@ namespace Fungus.Commands
             yield return StartCoroutine(conversationManager.DoConversation(subbedText));
 
             Continue();
+        }
+
+        #region Public members
+
+        public override void OnEnter()
+        {
+            StartCoroutine(DoConversation());
         }
 
         public override string GetSummary()
@@ -51,5 +51,7 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
     }
 }

@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Type of log message. Maps directly to Unity's log types.
@@ -33,6 +32,8 @@ namespace Fungus.Commands
 
         [Tooltip("Text to write to the debug log. Supports variable substitution, e.g. {$Myvar}")]
         [SerializeField] protected StringDataMulti logMessage;
+
+        #region Public members
 
         public override void OnEnter ()
         {
@@ -64,5 +65,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

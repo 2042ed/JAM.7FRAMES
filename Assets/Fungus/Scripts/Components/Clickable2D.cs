@@ -3,8 +3,6 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Fungus.EventHandlers;
-using Fungus.Commands;
 
 namespace Fungus
 {
@@ -13,7 +11,7 @@ namespace Fungus
     /// The Game Object must have a Collider or Collider2D component attached.
     /// Use in conjunction with the ObjectClicked Flowchart event handler.
     /// </summary>
-    public class Clickable2D : MonoBehaviour, IClickable2D, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
+    public class Clickable2D : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
         [Tooltip("Is object clicking enabled")]
         [SerializeField] protected bool clickEnabled = true;
@@ -88,8 +86,11 @@ namespace Fungus
 
         #endregion
 
-        #region IClickable2D implementation
+        #region Public members
 
+        /// <summary>
+        /// Is object clicking enabled.
+        /// </summary>
         public bool ClickEnabled { set { clickEnabled = value; } }
 
         #endregion

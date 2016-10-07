@@ -3,10 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
-using Fungus.EventHandlers;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Supported target types for messages.
@@ -38,6 +36,8 @@ namespace Fungus.Commands
 
         [Tooltip("Name of the message to send")]
         [SerializeField] protected StringData _message = new StringData("");
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -82,6 +82,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

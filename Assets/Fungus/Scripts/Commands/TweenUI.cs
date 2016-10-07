@@ -4,9 +4,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using Fungus;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Abstract base class for TweenUI commands.
@@ -24,7 +23,39 @@ namespace Fungus.Commands
         
         [Tooltip("Time for the tween to complete")]
         [SerializeField] protected FloatData duration = new FloatData(1f);
-        
+
+        protected virtual void ApplyTween()
+        {
+            foreach (GameObject targetObject in targetObjects)
+            {
+                if (targetObject == null)
+                {
+                    continue;
+                }
+
+                ApplyTween(targetObject);
+            }
+
+            if (waitUntilFinished)
+            {
+                LeanTween.value(gameObject, 0f, 1f, duration).setOnComplete(OnComplete);
+            }
+        }
+
+        protected abstract void ApplyTween(GameObject go);
+
+        protected virtual void OnComplete()
+        {
+            Continue();
+        }
+
+        protected virtual string GetSummaryValue()
+        {
+            return "";
+        }
+
+        #region Public members
+
         public override void OnEnter()
         {
             if (targetObjects.Count == 0)
@@ -40,31 +71,6 @@ namespace Fungus.Commands
                 Continue();
             }
         }
-        
-        protected virtual void ApplyTween()
-        {
-            foreach (GameObject targetObject in targetObjects)
-            {
-                if (targetObject == null)
-                {
-                    continue;
-                }
-                
-                ApplyTween(targetObject);
-            }
-            
-            if (waitUntilFinished)
-            {
-                LeanTween.value(gameObject, 0f, 1f, duration).setOnComplete(OnComplete);
-            }
-        }
-        
-        protected abstract void ApplyTween(GameObject go);
-
-        protected virtual void OnComplete()
-        {
-            Continue();
-        }
 
         public override void OnCommandAdded(Block parentBlock)
         {
@@ -75,11 +81,6 @@ namespace Fungus.Commands
             }
         }
 
-        protected virtual string GetSummaryValue()
-        {
-            return "";
-        }
-        
         public override string GetSummary()
         {
             if (targetObjects.Count == 0)
@@ -130,5 +131,7 @@ namespace Fungus.Commands
 
             return false;
         }
+
+        #endregion
     }
 }

@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections.Generic;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Displays a timer bar and executes a target block if the player fails to select a menu option in time.
@@ -25,9 +24,11 @@ namespace Fungus.Commands
         [Tooltip("Block to execute when the timer expires")]
         [SerializeField] protected Block targetBlock;
 
+        #region Public members
+
         public override void OnEnter()
         {
-            IMenuDialog menuDialog = MenuDialog.GetMenuDialog();
+            var menuDialog = MenuDialog.GetMenuDialog();
 
             if (menuDialog != null &&
                 targetBlock != null)
@@ -60,6 +61,8 @@ namespace Fungus.Commands
         {
             return new Color32(184, 210, 235, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

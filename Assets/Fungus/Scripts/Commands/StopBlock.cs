@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 ﻿using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Stops executing the named Block.
@@ -20,6 +19,8 @@ namespace Fungus.Commands
         [Tooltip("Name of the Block to stop")]
         [SerializeField] protected StringData blockName = new StringData("");
 
+        #region Public members
+
         public override void OnEnter()
         {
             if (blockName.Value == "")
@@ -32,7 +33,7 @@ namespace Fungus.Commands
                 flowchart = (Flowchart)GetFlowchart();
             }
 
-            IBlock block = flowchart.FindBlock(blockName.Value);
+            var block = flowchart.FindBlock(blockName.Value);
             if (block == null ||
                 !block.IsExecuting())
             {
@@ -52,6 +53,8 @@ namespace Fungus.Commands
         public override Color GetButtonColor()
         {
             return new Color32(253, 253, 150, 255);
-        }       
+        }
+
+        #endregion
     }
 }

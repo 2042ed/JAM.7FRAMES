@@ -4,7 +4,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Fungus.EventHandlers 
+namespace Fungus 
 {
     /// <summary>
     /// The block will execute when the user finishes editing the text in the input field.
@@ -18,7 +18,7 @@ namespace Fungus.EventHandlers
         [Tooltip("The UI Input Field that the user can enter text into")]
         [SerializeField] protected InputField targetInputField;
         
-        public virtual void Start()
+        protected virtual void Start()
         {
             targetInputField.onEndEdit.AddListener(OnEndEdit);
         }
@@ -27,6 +27,8 @@ namespace Fungus.EventHandlers
         {
             ExecuteBlock();
         }
+
+        #region Public members
 
         public override string GetSummary()
         {
@@ -37,5 +39,7 @@ namespace Fungus.EventHandlers
 
             return "None";
         }
+
+        #endregion
     }
 }

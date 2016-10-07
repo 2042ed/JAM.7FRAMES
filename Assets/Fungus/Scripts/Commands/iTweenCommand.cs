@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Axis to apply the tween on.
@@ -49,6 +48,20 @@ namespace Fungus.Commands
         [Tooltip("Wait until the tween has finished before executing the next command")]
         [SerializeField] protected bool waitUntilFinished = true;
 
+        protected virtual void OniTweenComplete(object param)
+        {
+            Command command = param as Command;
+            if (command != null && command.Equals(this))
+            {
+                if (waitUntilFinished)
+                {
+                    Continue();
+                }
+            }
+        }
+
+        #region Public members
+
         public override void OnEnter()
         {
             if (_targetObject.Value == null)
@@ -78,18 +91,6 @@ namespace Fungus.Commands
         public virtual void DoTween()
         {}
 
-        protected virtual void OniTweenComplete(object param)
-        {
-            Command command = param as Command;
-            if (command != null && command.Equals(this))
-            {
-                if (waitUntilFinished)
-                {
-                    Continue();
-                }
-            }
-        }
-
         public override string GetSummary()
         {
             if (_targetObject.Value == null)
@@ -104,6 +105,8 @@ namespace Fungus.Commands
         {
             return new Color32(233, 163, 180, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

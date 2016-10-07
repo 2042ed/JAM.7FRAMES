@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Makes a sprite visible / invisible by setting the color alpha.
@@ -25,6 +24,15 @@ namespace Fungus.Commands
 
         [Tooltip("Affect the visibility of child sprites")]
         [SerializeField] protected bool affectChildren = true;
+
+        protected virtual void SetSpriteAlpha(SpriteRenderer renderer, bool visible)
+        {
+            Color spriteColor = renderer.color;
+            spriteColor.a = visible ? 1f : 0f;
+            renderer.color = spriteColor;
+        }
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -47,13 +55,6 @@ namespace Fungus.Commands
             Continue();
         }
 
-        protected virtual void SetSpriteAlpha(SpriteRenderer renderer, bool visible)
-        {
-            Color spriteColor = renderer.color;
-            spriteColor.a = visible ? 1f : 0f;
-            renderer.color = spriteColor;
-        }
-
         public override string GetSummary()
         {
             if (spriteRenderer == null)
@@ -68,6 +69,8 @@ namespace Fungus.Commands
         {
             return new Color32(221, 184, 169, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

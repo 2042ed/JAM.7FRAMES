@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Continuously loop through a block of commands while the condition is true. Use the Break command to force the loop to terminate immediately.
@@ -14,6 +14,8 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class While : If
     {
+        #region Public members
+
         public override void OnEnter()
         {
             bool execute = true;
@@ -57,6 +59,8 @@ namespace Fungus.Commands
         public override Color GetButtonColor()
         {
             return new Color32(253, 253, 150, 255);
-        }       
+        }
+
+        #endregion
     }    
 }

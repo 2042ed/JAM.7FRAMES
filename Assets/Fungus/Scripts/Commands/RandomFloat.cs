@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets an float variable to a random value in the defined range.
@@ -24,6 +23,8 @@ namespace Fungus.Commands
 
         [Tooltip("Maximum value for random range")]
         [SerializeField] protected FloatData maxValue;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -54,5 +55,7 @@ namespace Fungus.Commands
         {
             return new Color32(253, 253, 150, 255);
         }
+
+        #endregion
     }
 }

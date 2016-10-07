@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 ﻿using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Plays a state of an animator according to the state name.
@@ -26,6 +25,8 @@ namespace Fungus.Commands
 
         [Tooltip("Start time of animation")]
         [SerializeField] protected FloatData time = new FloatData(0f);
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -51,6 +52,8 @@ namespace Fungus.Commands
         {
             return new Color32(170, 204, 169, 255);
         }
+
+        #endregion
     }    
 }
 

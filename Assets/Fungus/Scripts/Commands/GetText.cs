@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Gets the text property from a UI Text object and stores it in a string variable.
@@ -23,7 +22,9 @@ namespace Fungus.Commands
         [Tooltip("String variable to store the text value in")]
         [VariableProperty(typeof(StringVariable))]
         [SerializeField] protected StringVariable stringVariable;
-        
+
+        #region Public members
+
         public override void OnEnter()
         {
             if (stringVariable == null)
@@ -81,6 +82,10 @@ namespace Fungus.Commands
             return new Color32(235, 191, 217, 255);
         }
 
+        #endregion
+
+        #region Backwards compatibility
+
         // Backwards compatibility with Fungus v2.1.2
         [HideInInspector]
         [FormerlySerializedAs("textObject")]
@@ -92,5 +97,7 @@ namespace Fungus.Commands
                 targetTextObject = _textObjectObsolete.gameObject;
             }
         }
+
+        #endregion
     }
 }

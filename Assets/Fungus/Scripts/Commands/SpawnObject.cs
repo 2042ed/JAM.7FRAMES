@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Spawns a new object based on a reference to a scene or prefab game object.
@@ -28,6 +27,8 @@ namespace Fungus.Commands
 
         [Tooltip("Local rotation of newly spawned object.")]
         [SerializeField] protected Vector3Data _spawnRotation;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -63,6 +64,8 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

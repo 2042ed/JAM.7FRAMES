@@ -16,7 +16,6 @@
 		"Fungus.LuaUtils",
 		"Fungus.GameObjectVariable",
 		"Fungus.IntegerVariable",
-		"Fungus.Label",
 		"Fungus.MaterialVariable",
 		"Fungus.MenuDialog",
 		"Fungus.ObjectVariable",
@@ -30,9 +29,9 @@
 		"Fungus.TransformVariable",
 		"Fungus.Variable",
 		"Fungus.Vector2Variable",
-		"Fungus.Vector3Variable"
+		"Fungus.Vector3Variable",
+        "Fungus.Label"
 	],
 	"extensionTypes" : [
-		"Fungus.LuaExtensions"
 	]
 }

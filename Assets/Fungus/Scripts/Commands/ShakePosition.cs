@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Randomly shakes a GameObject's position by a diminishing amount over time.
@@ -26,7 +25,9 @@ namespace Fungus.Commands
 
         [Tooltip("Restricts rotation to the supplied axis only")]
         [SerializeField] protected iTweenAxis axis;
-        
+
+        #region Public members
+
         public override void DoTween()
         {
             Hashtable tweenParams = new Hashtable();
@@ -53,6 +54,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.ShakePosition(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

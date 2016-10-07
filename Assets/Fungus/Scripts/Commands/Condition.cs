@@ -3,13 +3,15 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     [AddComponentMenu("")]
     public abstract class Condition : Command
     {
         [Tooltip("The type of comparison to be performed")]
         [SerializeField] protected CompareOperator compareOperator;
+
+        #region Public members
 
         public static string GetOperatorDescription(CompareOperator compareOperator)
         {
@@ -38,5 +40,7 @@ namespace Fungus.Commands
 
             return summary;
         }
+
+        #endregion
     }
 }

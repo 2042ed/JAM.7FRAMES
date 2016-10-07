@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets the global volume level for audio played with Play Music and Play Sound commands.
@@ -25,18 +25,18 @@ namespace Fungus.Commands
         [Tooltip("Wait until the volume fade has completed before continuing.")]
         [SerializeField] protected bool waitUntilFinished = true;
 
+        #region Public members
+
         public override void OnEnter()
         {
-            IMusicController musicController = MusicController.GetInstance();
-            if (musicController != null)
-            {
-                musicController.SetAudioVolume(volume, fadeDuration, () => {
-                    if (waitUntilFinished)
-                    {
-                        Continue();
-                    }
-                });
-            }
+            var musicManager = FungusManager.Instance.MusicManager;
+
+            musicManager.SetAudioVolume(volume, fadeDuration, () => {
+                if (waitUntilFinished)
+                {
+                    Continue();
+                }
+            });
 
             if (!waitUntilFinished)
             {
@@ -53,5 +53,7 @@ namespace Fungus.Commands
         {
             return new Color32(242, 209, 176, 255);
         }
+
+        #endregion
     }
 }

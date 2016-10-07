@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Use comments to record design notes and reminders about your game.
@@ -20,6 +20,8 @@ namespace Fungus.Commands
         [Tooltip("Text to display for this comment")]
         [TextArea(2,4)]
         [SerializeField] protected string commentText = "";
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -39,5 +41,7 @@ namespace Fungus.Commands
         {
             return new Color32(220, 220, 220, 255);
         }
+
+        #endregion
     }
 }

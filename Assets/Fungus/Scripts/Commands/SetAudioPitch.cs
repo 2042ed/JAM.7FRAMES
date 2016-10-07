@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets the global pitch level for audio played with Play Music and Play Sound commands.
@@ -25,6 +25,8 @@ namespace Fungus.Commands
         [Tooltip("Wait until the pitch change has finished before executing next command")]
         [SerializeField] protected bool waitUntilFinished = true;
 
+        #region Public members
+
         public override void OnEnter()
         {
             System.Action onComplete = () => {
@@ -34,11 +36,9 @@ namespace Fungus.Commands
                 }
             };
 
-            IMusicController musicController = MusicController.GetInstance();
-            if (musicController != null)
-            {
-                musicController.SetAudioPitch(pitch, fadeDuration, onComplete);
-            }
+            var musicManager = FungusManager.Instance.MusicManager;
+
+            musicManager.SetAudioPitch(pitch, fadeDuration, onComplete);
 
             if (!waitUntilFinished)
             {
@@ -55,5 +55,7 @@ namespace Fungus.Commands
         {
             return new Color32(242, 209, 176, 255);
         }
+
+        #endregion
     }
 }

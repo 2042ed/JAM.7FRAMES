@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Force a loop to terminate immediately.
@@ -14,6 +14,8 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class Break : Command
     {
+        #region Public members
+
         public override void OnEnter()
         {
             // Find index of previous while command
@@ -66,6 +68,8 @@ namespace Fungus.Commands
         public override Color GetButtonColor()
         {
             return new Color32(253, 253, 150, 255);
-        }       
+        }
+
+        #endregion
     }    
 }

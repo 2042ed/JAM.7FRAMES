@@ -3,9 +3,8 @@
 
 using UnityEngine;
 using UnityEngine.Serialization;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Move execution to a specific Label command in the same block.
@@ -19,6 +18,8 @@ namespace Fungus.Commands
     {
         [Tooltip("Name of a label in this block to jump to")]
         [SerializeField] protected StringData _targetLabel = new StringData("");
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -58,6 +59,8 @@ namespace Fungus.Commands
         {
             return new Color32(253, 253, 150, 255);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

@@ -6,7 +6,6 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Fungus.Variables;
 
 namespace Fungus.EditorUtils
 {
@@ -34,7 +33,7 @@ namespace Fungus.EditorUtils
             return null;
         }
 
-        static public void VariableField(SerializedProperty property, 
+        public static void VariableField(SerializedProperty property, 
                                          GUIContent label, 
                                          Flowchart flowchart,
                                          string defaultText,

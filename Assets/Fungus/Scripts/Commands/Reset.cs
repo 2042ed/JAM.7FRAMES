@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Resets the state of all commands and variables in the Flowchart.
@@ -20,6 +20,8 @@ namespace Fungus.Commands
         [Tooltip("Reset variables back to their default values")]
         [SerializeField] protected bool resetVariables = true;
 
+        #region Public members
+
         public override void OnEnter()
         {
             GetFlowchart().Reset(resetCommands, resetVariables);
@@ -30,5 +32,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

@@ -7,9 +7,12 @@ using System.Text.RegularExpressions;
 using UnityEngine;
 using System.Text;
 
-namespace Fungus.Utils
+namespace Fungus
 {
-    public class ConversationManager : IConversationManager
+    /// <summary>
+    /// Helper class to manage parsing and executing the conversation format.
+    /// </summary>
+    public class ConversationManager
     {
         protected struct ConversationItem
         {
@@ -73,9 +76,9 @@ namespace Fungus.Utils
             return results.ToArray();
         }
 
-        protected ISayDialog GetSayDialog(Character character)
+        protected virtual SayDialog GetSayDialog(Character character)
         {
-            ISayDialog sayDialog = null;
+            SayDialog sayDialog = null;
             if (character != null)
             {
                 if (character.SetSayDialog != null)
@@ -261,15 +264,21 @@ namespace Fungus.Utils
             return item;
         }
 
-        #region IConversationManager
+        #region Public members
 
-        public void PopulateCharacterCache()
+        /// <summary>
+        /// Caches the character objects in the scene for fast lookup during conversations.
+        /// </summary>
+        public virtual void PopulateCharacterCache()
         {
             // cache characters for faster lookup
             characters = UnityEngine.Object.FindObjectsOfType<Character>();
         }
 
-        public IEnumerator DoConversation(string conv)
+        /// <summary>
+        /// Parse and execute a conversation string.
+        /// </summary>
+        public virtual IEnumerator DoConversation(string conv)
         {
             if (string.IsNullOrEmpty(conv))
             {
@@ -302,7 +311,7 @@ namespace Fungus.Utils
                 currentPortrait = item.Portrait;
                 currentPosition = item.Position;
 
-                ISayDialog sayDialog = GetSayDialog(currentCharacter);
+                var sayDialog = GetSayDialog(currentCharacter);
 
                 if (sayDialog == null)
                 {

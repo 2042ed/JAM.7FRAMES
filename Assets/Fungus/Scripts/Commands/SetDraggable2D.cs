@@ -2,9 +2,8 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 ﻿using UnityEngine;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Sets a Draggable2D component to be draggable / non-draggable.
@@ -20,6 +19,8 @@ namespace Fungus.Commands
 
         [Tooltip("Set to true to enable the component")]
         [SerializeField] protected BooleanData activeState;
+
+        #region Public members
 
         public override void OnEnter() 
         {
@@ -45,5 +46,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Marks the start of a command block to be executed when the preceding If statement is False and the test expression is true.
@@ -14,6 +14,8 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class ElseIf : If
     {
+        #region Public members
+
         public override void OnEnter()
         {
             System.Type previousCommandType = ParentBlock.GetPreviousActiveCommandType();
@@ -40,7 +42,7 @@ namespace Fungus.Commands
                 int indent = indentLevel;
                 for (int i = CommandIndex + 1; i < ParentBlock.CommandList.Count; ++i)
                 {
-                    ICommand command = ParentBlock.CommandList[i];
+                    var command = ParentBlock.CommandList[i];
 
                     if (command.IndentLevel == indent)
                     {
@@ -73,5 +75,7 @@ namespace Fungus.Commands
         {
             return new Color32(253, 253, 150, 255);
         }
+
+        #endregion
     }
 }

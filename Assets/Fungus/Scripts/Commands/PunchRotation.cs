@@ -4,9 +4,8 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 using System.Collections;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Applies a jolt of force to a GameObject's rotation and wobbles it back to its initial rotation.
@@ -24,6 +23,8 @@ namespace Fungus.Commands
         [Tooltip("Apply the transformation in either the world coordinate or local cordinate system")]
         [SerializeField] protected Space space = Space.Self;
 
+        #region Public members
+
         public override void DoTween()
         {
             Hashtable tweenParams = new Hashtable();
@@ -38,6 +39,8 @@ namespace Fungus.Commands
             tweenParams.Add("oncompleteparams", this);
             iTween.PunchRotation(_targetObject.Value, tweenParams);
         }
+
+        #endregion
 
         #region Backwards compatibility
 

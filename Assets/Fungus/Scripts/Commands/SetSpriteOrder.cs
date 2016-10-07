@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Controls the render order of sprites by setting the Order In Layer property of a list of sprites.
@@ -21,6 +20,8 @@ namespace Fungus.Commands
 
         [Tooltip("The order in layer value to set on the target sprites")]
         [SerializeField] protected IntegerData orderInLayer;
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -78,5 +79,7 @@ namespace Fungus.Commands
             // Add a default empty entry
             targetSprites.Add(null);
         }
+
+        #endregion
     }
 }

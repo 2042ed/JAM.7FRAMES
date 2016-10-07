@@ -3,9 +3,8 @@
 
 ﻿using UnityEngine;
 using Fungus;
-using Fungus.Variables;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Opens the specified URL in the browser.
@@ -17,6 +16,8 @@ namespace Fungus.Commands
     {
         [Tooltip("URL to open in the browser")]
         [SerializeField] protected StringData url = new StringData();
+
+        #region Public members
 
         public override void OnEnter()
         {
@@ -34,5 +35,7 @@ namespace Fungus.Commands
         {
             return new Color32(235, 191, 217, 255);
         }
+
+        #endregion
     }
 }

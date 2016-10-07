@@ -3,7 +3,7 @@
 
 using UnityEngine;
 
-namespace Fungus.Commands
+namespace Fungus
 {
     /// <summary>
     /// Stops the currently playing game music.
@@ -14,13 +14,13 @@ namespace Fungus.Commands
     [AddComponentMenu("")]
     public class StopMusic : Command
     {
+        #region Public members
+
         public override void OnEnter()
         {
-            IMusicController musicController = MusicController.GetInstance();
-            if (musicController != null)
-            {
-                musicController.StopMusic();
-            }
+            var musicManager = FungusManager.Instance.MusicManager;
+
+            musicManager.StopMusic();
 
             Continue();
         }
@@ -29,5 +29,7 @@ namespace Fungus.Commands
         {
             return new Color32(242, 209, 176, 255);
         }
+
+        #endregion
     }
 }
