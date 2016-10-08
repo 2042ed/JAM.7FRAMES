@@ -510,6 +510,7 @@ GameObject:
   - 114: {fileID: 143895665}
   - 114: {fileID: 143895668}
   - 114: {fileID: 143895667}
+  - 114: {fileID: 143895669}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -581,9 +582,9 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlock: {fileID: 143895577}
+  selectedBlock: {fileID: 143895610}
   selectedCommands:
-  - {fileID: 143895667}
+  - {fileID: 143895669}
   variables:
   - {fileID: 143895641}
   - {fileID: 143895640}
@@ -1203,6 +1204,7 @@ MonoBehaviour:
   eventHandler: {fileID: 143895608}
   commandList:
   - {fileID: 143895609}
+  - {fileID: 143895669}
 --- !u!114 &143895611
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2342,6 +2344,23 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 1
+--- !u!114 &143895669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c952ea1ad444e479b570fa242679c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 66
+  indentLevel: 0
+  duration: 1
+  targetView: {fileID: 1768223114}
+  waitUntilFinished: 1
+  targetCamera: {fileID: 0}
 --- !u!1 &146507762 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000013569520288, guid: 2801d11c106f14ab7bc55cd5005ff545,
@@ -2715,7 +2734,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 11c1465344d894bf0b62fe226620a7ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 801cd3f6c7e8b6143922155f645204f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4786,7 +4805,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768223112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -4804,7 +4823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95c387d3e32404bcc91c60318d766bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewSize: 6
+  viewSize: 2.9140596
   primaryAspectRatio: {x: 4, y: 3}
   secondaryAspectRatio: {x: 2, y: 1}
 --- !u!1 &1875696632
