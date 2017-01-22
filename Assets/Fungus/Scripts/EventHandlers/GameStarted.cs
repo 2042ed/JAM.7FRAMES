@@ -2,6 +2,7 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace Fungus
 {
@@ -13,9 +14,25 @@ namespace Fungus
                       "The block will execute when the game starts playing.")]
     [AddComponentMenu("")]
     public class GameStarted : EventHandler
-    {   
-        protected virtual void Start()
+    {
+        [Tooltip("Wait for a number of frames after startup before executing the Block. Can help fix startup order issues.")]
+        [SerializeField] protected int waitForFrames = 1;
+
+        protected override void UnityStart()
         {
+            base.UnityStart();
+            StartCoroutine(GameStartCoroutine());
+        }
+
+        protected virtual IEnumerator GameStartCoroutine()
+        {
+            int frameCount = waitForFrames;
+            while (frameCount > 0)
+            {
+                yield return new WaitForEndOfFrame();
+                frameCount--;
+            }
+
             ExecuteBlock();
         }
     }

@@ -2,6 +2,7 @@
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
 ﻿using UnityEngine;
+using System.Collections;
 
 namespace Fungus 
 {
@@ -14,8 +15,61 @@ namespace Fungus
     [AddComponentMenu("")]
     public class ObjectClicked : EventHandler
     {   
+        public class ObjectClickedEvent
+        {
+            public Clickable2D ClickableObject;
+            public ObjectClickedEvent(Clickable2D clickableObject)
+            {
+                ClickableObject = clickableObject;
+            }
+        }
+
         [Tooltip("Object that the user can click or tap on")]
         [SerializeField] protected Clickable2D clickableObject;
+
+        [Tooltip("Wait for a number of frames before executing the block.")]
+        [SerializeField] protected int waitFrames = 1;
+
+
+        protected override void UnityOnEnable()
+        {
+            base.UnityOnEnable();
+            EventDispatcher.AddListener<ObjectClickedEvent>(OnObjectClickedEvent);
+        }
+
+        protected override void UnityOnDisable()
+        {
+            base.UnityOnDisable();
+            EventDispatcher.RemoveListener<ObjectClickedEvent>(OnObjectClickedEvent);
+        }
+
+        void OnObjectClickedEvent(ObjectClickedEvent evt)
+        {
+            OnObjectClicked(evt.ClickableObject);
+        }
+
+        /// <summary>
+        /// Executing a block on the same frame that the object is clicked can cause
+        /// input problems (e.g. auto completing Say Dialog text). A single frame delay 
+        /// fixes the problem.
+        /// </summary>
+        protected virtual IEnumerator DoExecuteBlock(int numFrames)
+        {
+            if (numFrames == 0)
+            {
+                ExecuteBlock();
+                yield break;
+            }
+
+            int count = Mathf.Max(waitFrames, 1);
+            while (count > 0)
+            {
+                count--;
+                yield return new WaitForEndOfFrame();
+            }
+
+            ExecuteBlock();
+        }
 
         #region Public members
 
@@ -26,7 +80,7 @@ namespace Fungus
         {
             if (clickableObject == this.clickableObject)
             {
-                ExecuteBlock();
+                StartCoroutine(DoExecuteBlock(waitFrames));
             }
         }
 

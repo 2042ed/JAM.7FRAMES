@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Fungus
 {
@@ -36,6 +37,9 @@ namespace Fungus
         [Tooltip("Adjust width of story text when Character Image is displayed (to avoid overlapping)")]
         [SerializeField] protected bool fitTextWithImage = true;
 
+        [Tooltip("Close any other open Say Dialogs when this one is active")]
+        [SerializeField] protected bool closeOtherDialogs;
+
         protected float startStoryTextWidth; 
         protected float startStoryTextInset;
 
@@ -52,7 +56,25 @@ namespace Fungus
         // Most recent speaking character
         protected static Character speakingCharacter;
 
-        protected Writer GetWriter()
+        protected StringSubstituter stringSubstituter = new StringSubstituter();
+
+		// Cache active Say Dialogs to avoid expensive scene search
+		protected static List<SayDialog> activeSayDialogs = new List<SayDialog>();
+
+		protected void Awake()
+		{
+			if (!activeSayDialogs.Contains(this))
+			{
+				activeSayDialogs.Add(this);
+			}
+		}
+
+		protected void OnDestroy()
+		{
+			activeSayDialogs.Remove(this);
+		}
+			
+		protected Writer GetWriter()
         {
             if (writer != null)
             {
@@ -125,6 +147,8 @@ namespace Fungus
                 // Character image is hidden by default.
                 SetCharacterImage(null);
             }
+
+            stringSubstituter.CacheSubstitutionHandlers();
         }
 
         protected virtual void LateUpdate()
@@ -196,8 +220,14 @@ namespace Fungus
         {
             if (ActiveSayDialog == null)
             {
-                // Use first Say Dialog found in the scene (if any)
-                SayDialog sd = GameObject.FindObjectOfType<SayDialog>();
+				SayDialog sd = null;
+
+				// Use first active Say Dialog in the scene (if any)
+				if (activeSayDialogs.Count > 0)
+				{
+					sd = activeSayDialogs[0];
+				}
+
                 if (sd != null)
                 {
                     ActiveSayDialog = sd;
@@ -226,14 +256,15 @@ namespace Fungus
         public static void StopPortraitTweens()
         {
             // Stop all tweening portraits
-            foreach( Character c in Character.ActiveCharacters )
+            var activeCharacters = Character.ActiveCharacters;
+            for (int i = 0; i < activeCharacters.Count; i++)
             {
+                var c = activeCharacters[i];
                 if (c.State.portraitImage != null)
                 {
                     if (LeanTween.isTweening(c.State.portraitImage.gameObject))
                     {
                         LeanTween.cancel(c.State.portraitImage.gameObject, true);
-
                         PortraitController.SetRectTransform(c.State.portraitImage.rectTransform, c.State.position);
                         if (c.State.dimmed == true)
                         {
@@ -260,8 +291,7 @@ namespace Fungus
         /// Sets the active speaking character.
         /// </summary>
         /// <param name="character">The active speaking character.</param>
-        /// <param name="flowchart">An optional Flowchart to use for variable substitution in the character name string.</param>
-        public virtual void SetCharacter(Character character, Flowchart flowchart = null)
+        public virtual void SetCharacter(Character character)
         {
             if (character == null)
             {
@@ -281,13 +311,16 @@ namespace Fungus
                 speakingCharacter = character;
 
                 // Dim portraits of non-speaking characters
-                foreach (Stage stage in Stage.ActiveStages)
+                var activeStages = Stage.ActiveStages;
+                for (int i = 0; i < activeStages.Count; i++)
                 {
-
+                    var stage = activeStages[i];
                     if (stage.DimPortraits)
                     {
-                        foreach (var c in stage.CharactersOnStage)
+                        var charactersOnStage = stage.CharactersOnStage;
+                        for (int j = 0; j < charactersOnStage.Count; j++)
                         {
+                            var c = charactersOnStage[j];
                             if (prevSpeakingCharacter != speakingCharacter)
                             {
                                 if (c != null && !c.Equals(speakingCharacter))
@@ -310,12 +343,7 @@ namespace Fungus
                     // Use game object name as default
                     characterName = character.GetObjectName();
                 }
-
-                if (flowchart != null)
-                {
-                    characterName = flowchart.SubstituteVariables(characterName);
-                }
-
+                    
                 SetCharacterName(characterName, character.NameColor);
             }
         }
@@ -353,7 +381,7 @@ namespace Fungus
                 storyText != null &&
                 characterImage.gameObject.activeSelf)
             {
-                if (startStoryTextWidth == 0)
+                if (Mathf.Approximately(startStoryTextWidth, 0f))
                 {
                     startStoryTextWidth = storyText.rectTransform.rect.width;
                     startStoryTextInset = storyText.rectTransform.offsetMin.x; 
@@ -377,12 +405,14 @@ namespace Fungus
 
         /// <summary>
         /// Sets the character name to display on the Say Dialog.
+        /// Supports variable substitution e.g. John {$surname}
         /// </summary>
         public virtual void SetCharacterName(string name, Color color)
         {
             if (nameText != null)
             {
-                nameText.text = name;
+                var subbedName = stringSubstituter.SubstituteStrings(name);
+                nameText.text = subbedName;
                 nameText.color = color;
             }
         }
@@ -425,6 +455,17 @@ namespace Fungus
                 }
             }
 
+            if (closeOtherDialogs)
+            {
+                for (int i = 0; i < activeSayDialogs.Count; i++)
+                {
+                    var sd = activeSayDialogs[i];
+                    if (sd.gameObject != gameObject)
+                    {
+                        sd.SetActive(false);
+                    }
+                }
+            }
             gameObject.SetActive(true);
 
             this.fadeWhenDone = fadeWhenDone;

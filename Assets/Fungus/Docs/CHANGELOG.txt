@@ -1,16 +1,108 @@
-Fungus 3.2.0
-============
+Changelog {#changelog}
+=========
+[TOC]
 
-# Known Issues
+v3.4.0 {#v3_4_0}
+======
+
+## Known Issues
+- FungusLua generates runtime errors running Lua when using .NET scripting backend. The IL2CPP backend works fine.
+
+## Added
+- Added accessors for GameObject and Transform variables in Flowchart.cs
+- Added Flowchart.HasVariable() and GetVariableNames() - thanks murnyipl!
+- Added WaitForFrames property to GameStarted event handler. Default is wait for 1 frame (should reduce startup order issues).
+
+## Changed
+- Upgraded to Moonsharp 2.0. Moonsharp source code is now included in Fungus/Thirdparty/MoonSharp
+- Removed MoonSharp assembly from link.xml
+- Converted MoonSharp line endings to OSX for consistency with rest of project.
+- Updated documentation for Lua debugger (using VS Code)
+- Removed LuaEnvironment Remote Debugger option. A VS Code debug server always starts when running in the editor.
+- SayDialog now supports full variable substitution when setting character names.
+
+## Fixed
+
+- Fixed Command properties not copied when copying commands #546
+- Fixed PODTypeFactory and FungusPrefs classes are not registered #549
+- Fixed for compile errors on .NET Core scripting backend
+- Fixed LuaBindings registered types in example scenes
+- Fixed MoonSharp warning when not building for an AOT platform
+- Fixed minor issues in some example scenes (e.g. missing sprite refs)
+
+v3.3.0 {#v3_3_0}
+======
+
+## Known Issues
+- FungusLua does not work in WebGL builds due to issues in MoonSharp 1.8.0.0
+- Forum thread: http://fungusgames.com/forum/#!/general:fungus-lua-and-web-gl-uni
+- FungusLua does not compile for Windows Store platform using .net scripting backend. Use the IL2CPP backend instead.
+
+## Added
+- Added test for StopTweens does not stop a Tween with loop enabled #529
+- Added signals (pub-sub system) for Writer and Block events #539
+- All interfaces now have their own source files.
+- Added monodevelop project for editing docs files.
+- Added Flip option (<<< and >>>) to conversation system #527
+- Added WaitFrames command to wait for a number of frames
+- Added GetToggleState, SetToggleState commands and ToggleChanged event handler
+- Added Writer.Paused property to pause a writer from code.
+
+## Changed
+
+- Tidied up Fungus folder structure to organize scripts more logically
+- Migrated documentation to use Doxygen for help and API docs
+- Lots of misc improvements to documentation
+- Updated to MoonSharp 1.8.0.0
+- Documented using string facing parameter in stage.show() Lua function.
+- Documented <<< and >>> tags for conversation system.
+- Documented all public members for API docs.
+- All serialized fields are now protected, exposed via public properties as needed.
+- Moved all enums to namespace scope.
+- Moved global constants to FungusConstants static class.
+- Moved editor resources to the main resources folder
+- Fungus editor code moved to Fungus.EditorUtils namespace
+- Convert singletons to use a single FungusManager singleton #540
+- Renamed CameraController to CameraManager and MusicController to MusicManager
+- Changed float constant comparisons to use Mathf.Approximately
+- Added #region Public members to all non-editor classes
+- StringFormatter, TextTagParser and FungusPrefs classes are now static
+- Merged MenuDialog extension methods (used for Lua) with main MenuDialog class.
+- Change all public methods to use virtual
+- Removed all unnecessary using statements.
+- All class and member comments use standard c# xml comment style
+- Replaced foreach loops with for loops (avoids allocation for iterator)
+- Added changelog to Doxygen documentation
+
+## Fixed
+
+- Fixed Setting facing in lua only works if portraits are set to “FRONT” #528
+- Fixed Say command completes instantly after menu choice #533
+- Fixed broken mouse pointer in WebGL build of Drag and Drop
+- Fixed ObjectField nulls reference if object is disabled #536
+- Updated Unity Test Tools to v1.5.9
+- Fixed missing Process class error in Unity5.5b3
+- Fixed Spine.Unity namespace problem in integration scripts
+- Fix Regex for character names with "." & "'" #531 (thanks to Sercan Altun)
+    Old Regex expression did not capture Character names with "." and "'". As a result characters with names like "Mr. Jones" or "Ab'ar" were not registering correctly.
+- Fixed Lua setlanguage() function
+- Fixed namespace issue in Spine integration.
+- Fixes all integration tests to pass when run on Windows Standalone.
+- Fixed Block inspector displayed for inactive flowchart #544
+
+v3.2.0 {#v3_2_0}
+======
+
+## Known Issues
 - FungusLua does not work in WebGL builds due to issues in MoonSharp 1.6.0.0
    Forum thread: http://fungusgames.com/forum/#!/general:fungus-lua-and-web-gl-uni
 
-# Added
+## Added
 - Added choose() and choosetimer() Lua functions for displaying list of menu options.
 - Added Conversation command and Lua function to perform long dialogue exchanges in a single command.
 - Added new Conversation examples
 
-# Changed
+## Changed
 - Clickable2D and Dragable2D components can now use legacy input or EventSystem events / raycasts. 
 - Added DragAndDrop(EventSystem) example scene to show how to use the EventSystem option.
 - Made it easier to resize the default SayDialog
@@ -20,7 +112,7 @@ Fungus 3.2.0
 - Ensure the character cache is populated before accessing it
 - Added Serializable attribute to all variable classes.
 
-# Fixed
+## Fixed
 - Added link.xml file to fix FungusLua not running on iOS builds
 - Portrait hide bug in Conversation Function #526
 - Unresponsive SayDialog after ClearMenu or *.StopAllBlocks(); #518
@@ -32,21 +124,21 @@ Fungus 3.2.0
 - Fixed missing component warnings
 - Updated MoonSharp to v1.6.0.0 (this time without changing the meta files).
 
-Fungus 3.1.0
-============
+v3.1.0 {#v3_1_0}
+======
 
-# Added
+## Added
 
 - Flowchart automatically registers with LuaEnvironment for ExecuteLua commands #485
 - Clickable2D and Draggable2D can now use EventSystem events to block clicks on UI elements. Added new drag and drop demo scene to illustrate.
 
-# Changed
+## Changed
 
 - Default dialog image is now sliced, so can be resized to any width / height required.
 - Upgraded MoonSharp to v1.6.0.0
 - Added [System.Serializable] attribute to all Variable classes.
 
-# Fixed
+## Fixed
 
 - Default dialog box now fits in a 5:4 ratio display #515
 - Dialog input causing an exception if no Event System is present in scene.
@@ -54,8 +146,8 @@ Fungus 3.1.0
 - Menu() Lua function only works once #511
 - Compile error for folks upgrading using the Fungus 3 unitypackage
 
-Fungus 3.0.0
-============
+v3.0.0 {#v3_0_0}
+======
 
 Major release with powerful new Lua scripting support and many small improvements and fixes.
 This release should be backwards compatible with projects created using Fungus 2. If you have any upgrading issues let us know on the forum.
@@ -69,7 +161,7 @@ Awesome github contributors:
 - Kal O' Brien: https://github.com/kalenobrien15
 - Hawmalt: https://github.com/hawmalt
 
-# Added
+## Added
 - FungusLua: Lua scripting support for Fungus via wrapper components for using MoonSharp in Unity. #281, #317, #334, #237, #235, #232, #224
 	- LuaEnvironment component: Execution environment for running Lua scripts.
 	- LuaUtils component: Extends LuaEnvironment with lots of useful features.
@@ -103,7 +195,7 @@ Awesome github contributors:
 - Menu options can now be picked with keyboard only
 - Fast forward using Shift in Say Dialogs is now done using the Cancel input (Escape key by default).
 
-# Changed
+## Changed
 - Draggable sprite anchors at exact point user clicked.
 - Replaced string with StringData, int with IntegerData, etc. in many command properties. Use variables or constants.
 - Block.Execute renamed to Block.StartExecute, can now specify a command index to start at.
@@ -117,7 +209,7 @@ Awesome github contributors:
 - String substitution uses StringBuilder to avoid string allocations (reduce garbage collection) #490
 - Embed string substitution keys in substitution text (recursive substitution up to 5 levels) #488
 
-# Fixed
+## Fixed
 - SetDraggable2D filename now matches class name.
 - Unity 5.4 beta errors & warnings
 - CsvParser.cs and InvokeMethod lineendings should be consistent with rest of project.
@@ -142,16 +234,15 @@ Awesome github contributors:
 - Can't select ExecuteBlock from Unity Event #496
 - Fixed aliased commandIndex property in Call command.
 
-
-# Other closed issues
+## Other closed issues
 - GameObjects get duplicated when flowchart is on a different scene #373
 - TextMesh Pro integration #214
 - Clickable3D component #195
 
-Fungus 2.4.0
-============
+v2.4.0 {#v2_4_0}
+======
 
-# Added
+## Added
 - FungusLua: Lua scripting support for Fungus via wrapper components for using MoonSharp in Unity. #281, #317, #334, #237, #235, #232, #224
 	- LuaEnvironment component: Execution environment for running Lua scripts.
 	- LuaUtils component: Extends LuaEnvironment with lots of useful features.
@@ -177,7 +268,7 @@ Fungus 2.4.0
 - InfoText.cs component for displaying help information in the top-left of screen
 - "Play from Selected" and "Stop All and Play" context menu options in Block command list
 
-# Changed
+## Changed
 - Draggable sprite anchors at exact point user clicked.
 - Replaced string with StringData, int with IntegerData, etc. in many command properties.
 - Bock.Execute renamed to Block.StartExecute, can now specify a command index to start at.
@@ -187,7 +278,7 @@ Fungus 2.4.0
 - Use DialogAudio volume property for starting volume on voiceover audio
 - WriterAudio now respects the volume property in all cases
 
-# Fixed
+## Fixed
 - SetDraggable2D filename now matches class name.
 - Unity 5.4 beta errors & warnings
 - CsvParser.cs and InvokeMethod lineendings should be consistent with rest of project.
@@ -204,23 +295,23 @@ Fungus 2.4.0
 - Unity Test Tools compile errors in Unity 5.0
 - Edge of inspector window clipped incorreclty in Unity 5.4 beta #425
 
-# Other closed issues
+## Other closed issues
 - GameObjects get duplicated when flowchart is on a different scene #373
 - TextMesh Pro integration #214
 - Clickable3D component #195
 
-Fungus v2.3.1
-=============
+v2.3.1 {#v2_3_1}
+======
 
-# Fixed
+## Fixed
 - Can't click on Say Dialog when a Menu Dialog is active #374
 - Set Audio Pitch: OnComplete not called when duration = 0 #369
 - Fade To View can sometimes not work in Unity 5.3 #370
 
-Fungus v2.3.0
-=============
+v2.3.0 {#v2_3_0}
+======
 
-# Added
+## Added
 - SetDraggable2D command #191
 - WaitInput command #276
 - Fade UI command to fade UI objects #349
@@ -232,7 +323,7 @@ Fungus v2.3.0
 - Stop Flowchart command #289
 - Integration with Esoteric Spine animation system (available in Fungus/Integrations/Spine folder)
 
-# Changed
+## Changed
 - Added null checks in Flowchart variable accessors
 - Set Say Dialog property for characters
 - Can now specify the gameobject to shake for punch tag in Writer component
@@ -248,7 +339,7 @@ Fungus v2.3.0
 - Writer.InstantComplete property controls click-to-complete writing.
 - Shake tag shakes camera instead of Writer game object.
 
-# Fixed
+## Fixed
 - Ensure parentBlock is set when block executes #320
 - While loop with following If doesn't loop correctly #354
 - Auto cross fade music in Play Music command #199
@@ -268,19 +359,19 @@ Fungus v2.3.0
 - Fixed Writer beep timing issues in WebGL #295
 - Removed say command from Flowchart prefab
 
-Fungus v2.2.2
-=============
+v2.2.2 {#v2_2_2}
+======
 
-# Added
+## Added
 
 - Stop Flowchart command and Flowchart.StopAllBlocks() method #288
 
-# Changed
+## Changed
 
 - Only the first Flowchart added to a scene will have a default GameStarted event handler.
 - Null items in variable list are cleaned up on enable.
 
-# Fixed
+## Fixed
 
 - Flowchart objects break when made into a prefab #275
 - Localization language does not persist between scenes #271
@@ -291,24 +382,24 @@ Fungus v2.2.2
 - Removed empty gameobject in sherlock demo
 - Removed unused GameStarted component from built-in Flowchart prefab
 
-Fungus v2.2.1
-=============
+v2.2.1 {#v2_2_1}
+======
 
-# Added
+## Added
 
 - Set Interactable command to control UI button, input field, etc. interactivity #178
 - Button Clicked event handler to execute a block when a UI button is clicked
 - End Edit event handler to execute a block when user presses enter in an input field
 - Hide specific commands & categories in the Add Command menu by setting the Hide Commands property on Flowchart
 
-# Changed
+## Changed
 
 - Improved Enter Name example to demonstrate the new Write, Get Text, Set Text, Set Interactable, etc. commands.
 - Removed punctuation pause for last character in a sentence #168
 - Removed unsupported 'shiver' item from tag help description in Say and Write commands
 - Moved LICENSE and README inside the Fungus folder #185
 
-# Fixed
+## Fixed
             
 - Concurrent Say calls cause Say Dialog to freeze up #156
 - Null reference error after editing Flowchart code #181
@@ -318,11 +409,10 @@ Fungus v2.2.1
 - Undo for delete command doesn't work #161
 - Flowchart in The Hunter example has Hide Components set to false #150
 
+v2.2.0 {#v2_2_0}
+======
 
-Fungus v2.2.0
-=============
-
-# Added
+## Added
 
 - Write command for writing text to any text object
 - Writer, Writer Audio components for writing text to any text object with lots of new configuration options.
@@ -349,7 +439,7 @@ Fungus v2.2.0
 - Added ComboBox to Thirdparty folder
 - Added Tools > Fungus > Create > Fungus Logo menu option
 
-# Changed
+## Changed
 
 - Simplifed Say Dialog hierarchy structure to be easier to customise
 - Say Dialog continue image is now a UI button
@@ -373,7 +463,7 @@ Fungus v2.2.0
 - Say Command fade in / out replaced with automatic fading and Fade When Done property
 - Get Text and Set Text command now work on any text object (UI text, UI input fields & 3D text mesh)
 
-# Fixed
+## Fixed
 
 - Shake Camera command timing issue #137
 - CSV parser doesn't handle Windows-style line endings #131
@@ -393,25 +483,26 @@ Fungus v2.2.0
 - Block inspector window resizes when using cut, copy, paste shortcuts #145
 - Objects spawned from Tools > Fungus > Create menu center correctly in Unity 5.1.3f
 
-# Process Changes
+## Process Changes
 
 We are now using the Unity Test Tools framework for unit and integration testing.
 All new features and bug fixes now have automated tests where possible.
 
-# Upgrade Notes
+## Upgrade Notes
 
 We made a LOT of improvements to the Say Dialogs in this release. Unfortunately these changes are likely to break existing customised Say Dialogs. If you upgrade an existing Fungus project and find the Say Dialog are no longer working you will need to delete your Say Dialogs and create new ones.
 
+v2.1.0 {#v2_1_0}
+======
 
-Fungus v2.1.0
-=============
+First release on Unity Asset Store!
 
-# Added
+## Added
 
 - Added Flowchart.FindBlock so you can check if a Block is executing before you try to execute it.
 - Cleanup any unreferenced components in Flowchart when scene loads
 
-# Changed
+## Changed
 
 - Call Method can now execute after a delay
 https://trello.com/c/a333r2QA
@@ -422,11 +513,11 @@ https://trello.com/c/TmG9SiIa
 - Improved layout of Flowchart name and description
 https://trello.com/c/vwnzaOh2
 
-# Removed
+## Removed
 
 - Removed obsolete commands and other dead code
 
-# Fixed
+## Fixed
 - Fixed using iTween and Portrait commands in same Flowchart causes null exception #116
 - Fixed whitespace and newlines not being trimmed after {wc} & {c} tags in story text #115
 - Fixed Standard Text import strips out newline characters #114

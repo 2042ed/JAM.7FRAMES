@@ -102,13 +102,15 @@ namespace Fungus
 
             sayDialog.SetActive(true);
 
-            sayDialog.SetCharacter(character, flowchart);
+            sayDialog.SetCharacter(character);
             sayDialog.SetCharacterImage(portrait);
 
             string displayText = storyText;
 
-            foreach (CustomTag ct in CustomTag.activeCustomTags)
+            var activeCustomTags = CustomTag.activeCustomTags;
+            for (int i = 0; i < activeCustomTags.Count; i++)
             {
+                var ct = activeCustomTags[i];
                 displayText = displayText.Replace(ct.TagStartSymbol, ct.ReplaceTagStartWith);
                 if (ct.TagEndSymbol != "" && ct.ReplaceTagEndWith != "")
                 {

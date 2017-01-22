@@ -41,11 +41,11 @@ namespace Fungus.EditorUtils
 
         protected virtual void OnEnable()
         {
-            upIcon = Resources.Load("Icons/up") as Texture2D;
-            downIcon = Resources.Load("Icons/down") as Texture2D;
-            addIcon = Resources.Load("Icons/add") as Texture2D;
-            duplicateIcon = Resources.Load("Icons/duplicate") as Texture2D;
-            deleteIcon = Resources.Load("Icons/delete") as Texture2D;
+            upIcon = FungusEditorResources.Up;
+            downIcon = FungusEditorResources.Down;
+            addIcon = FungusEditorResources.Add;
+            duplicateIcon = FungusEditorResources.Duplicate;
+            deleteIcon = FungusEditorResources.Delete;
         }
 
         public virtual void DrawBlockName(Flowchart flowchart)
@@ -95,6 +95,20 @@ namespace Fungus.EditorUtils
             
             if (block == flowchart.SelectedBlock)
             {
+                // Custom tinting
+                SerializedProperty useCustomTintProp = serializedObject.FindProperty("useCustomTint");
+                SerializedProperty tintProp = serializedObject.FindProperty("tint");
+
+                EditorGUILayout.BeginHorizontal();
+
+                useCustomTintProp.boolValue = GUILayout.Toggle(useCustomTintProp.boolValue, " Custom Tint");
+                if (useCustomTintProp.boolValue)
+                {
+                    EditorGUILayout.PropertyField(tintProp, GUIContent.none);
+                }
+
+                EditorGUILayout.EndHorizontal();
+
                 SerializedProperty descriptionProp = serializedObject.FindProperty("description");
                 EditorGUILayout.PropertyField(descriptionProp);
 
@@ -906,12 +920,25 @@ namespace Fungus.EditorUtils
             {
                 if (flowchart.SelectedCommands.Contains(command))
                 {
-                    System.Type type = command.GetType();
+                    var type = command.GetType();
                     Command newCommand = Undo.AddComponent(commandCopyBuffer.gameObject, type) as Command;
-                    System.Reflection.FieldInfo[] fields = type.GetFields();
-                    foreach (System.Reflection.FieldInfo field in fields)
+                    var fields = type.GetFields(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.FlattenHierarchy);
+                    foreach (var field in fields)
                     {
-                        field.SetValue(newCommand, field.GetValue(command));
+                        // Copy all public fields
+                        bool copy = field.IsPublic;
+
+                        // Copy non-public fields that have the SerializeField attribute
+                        var attributes = field.GetCustomAttributes(typeof(SerializeField), true);
+                        if (attributes.Length > 0)
+                        {
+                            copy = true;
+                        }
+
+                        if (copy)
+                        {
+                            field.SetValue(newCommand, field.GetValue(command));
+                        }
                     }
                 }
             }

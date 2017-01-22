@@ -3,7 +3,6 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Serialization;
 using System;
 using System.Text;
 using System.Linq;
@@ -41,8 +40,7 @@ namespace Fungus
         [SerializeField] protected Rect scrollViewRect;
 
         [HideInInspector]
-        [FormerlySerializedAs("selectedSequence")]
-        [SerializeField] protected Block selectedBlock;
+        [SerializeField] protected List<Block> selectedBlocks = new List<Block>();
 
         [HideInInspector]
         [SerializeField] protected List<Command> selectedCommands = new List<Command>();
@@ -158,8 +156,10 @@ namespace Fungus
             }
 
             // Tell all components that implement IUpdateable to update to the new version
-            foreach (Component component in GetComponents<Component>())
+            var components = GetComponents<Component>();
+            for (int i = 0; i < components.Length; i++)
             {
+                var component = components[i];
                 IUpdateable u = component as IUpdateable;
                 if (u != null)
                 {
@@ -181,10 +181,10 @@ namespace Fungus
             // This should always be the case, but some legacy Flowcharts may have issues.
             List<int> usedIds = new List<int>();
             var blocks = GetComponents<Block>();
-            foreach (var block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
-                if (block.ItemId == -1 ||
-                    usedIds.Contains(block.ItemId))
+                var block = blocks[i];
+                if (block.ItemId == -1 || usedIds.Contains(block.ItemId))
                 {
                     block.ItemId = NextItemId();
                 }
@@ -192,10 +192,10 @@ namespace Fungus
             }
             
             var commands = GetComponents<Command>();
-            foreach (var command in commands)
+            for (int i = 0; i < commands.Length; i++)
             {
-                if (command.ItemId == -1 ||
-                    usedIds.Contains(command.ItemId))
+                var command = commands[i];
+                if (command.ItemId == -1 || usedIds.Contains(command.ItemId))
                 {
                     command.ItemId = NextItemId();
                 }
@@ -213,8 +213,10 @@ namespace Fungus
             // It shouldn't happen but it seemed to occur for a user on the forum 
             variables.RemoveAll(item => item == null);
 
-            foreach (Variable variable in GetComponents<Variable>())
+            var allVariables = GetComponents<Variable>();
+            for (int i = 0; i < allVariables.Length; i++)
             {
+                var variable = allVariables[i];
                 if (!variables.Contains(variable))
                 {
                     DestroyImmediate(variable);
@@ -222,37 +224,40 @@ namespace Fungus
             }
             
             var blocks = GetComponents<Block>();
-
-            foreach (var command in GetComponents<Command>())
+            var commands = GetComponents<Command>();
+            for (int i = 0; i < commands.Length; i++)
             {
+                var command = commands[i];
                 bool found = false;
-                foreach (var block in blocks)
+                for (int j = 0; j < blocks.Length; j++)
                 {
+                    var block = blocks[j];
                     if (block.CommandList.Contains(command))
                     {
                         found = true;
                         break;
                     }
                 }
-                
                 if (!found)
                 {
                     DestroyImmediate(command);
                 }
             }
             
-            foreach (EventHandler eventHandler in GetComponents<EventHandler>())
+            var eventHandlers = GetComponents<EventHandler>();
+            for (int i = 0; i < eventHandlers.Length; i++)
             {
+                var eventHandler = eventHandlers[i];
                 bool found = false;
-                foreach (var block in blocks)
+                for (int j = 0; j < blocks.Length; j++)
                 {
+                    var block = blocks[j];
                     if (block._EventHandler == eventHandler)
                     {
                         found = true;
                         break;
                     }
                 }
-                
                 if (!found)
                 {
                     DestroyImmediate(eventHandler);
@@ -279,9 +284,10 @@ namespace Fungus
         /// </summary>
         public static void BroadcastFungusMessage(string messageName)
         {
-            MessageReceived[] eventHandlers = UnityEngine.Object.FindObjectsOfType<MessageReceived>();
-            foreach (MessageReceived eventHandler in eventHandlers)
+            var eventHandlers = UnityEngine.Object.FindObjectsOfType<MessageReceived>();
+            for (int i = 0; i < eventHandlers.Length; i++)
             {
+                var eventHandler = eventHandlers[i];
                 eventHandler.OnSendFungusMessage(messageName);
             }
         }
@@ -317,9 +323,22 @@ namespace Fungus
         public virtual Rect ScrollViewRect { get { return scrollViewRect; } set { scrollViewRect = value; } }
 
         /// <summary>
-        /// Currently selected block in the Flowchart editor.
+        /// Current actively selected block in the Flowchart editor.
         /// </summary>
-        public virtual Block SelectedBlock { get { return selectedBlock; } set { selectedBlock = value; } }
+        public virtual Block SelectedBlock
+        { 
+            get
+            {
+                return selectedBlocks.FirstOrDefault();
+            } 
+            set
+            {
+                selectedBlocks.Clear();
+                selectedBlocks.Add(value);
+            } 
+        }
+
+        public virtual List<Block> SelectedBlocks { get { return selectedBlocks; } set { selectedBlocks = value; } }
 
         /// <summary>
         /// Currently selected command in the Flowchart editor.
@@ -406,14 +425,16 @@ namespace Fungus
         {
             int maxId = -1;
             var blocks = GetComponents<Block>();
-            foreach (var block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
+                var block = blocks[i];
                 maxId = Math.Max(maxId, block.ItemId);
             }
 
             var commands = GetComponents<Command>();
-            foreach (var command in commands)
+            for (int i = 0; i < commands.Length; i++)
             {
+                var command = commands[i];
                 maxId = Math.Max(maxId, command.ItemId);
             }
             return maxId + 1;
@@ -438,8 +459,9 @@ namespace Fungus
         public virtual Block FindBlock(string blockName)
         {
             var blocks = GetComponents<Block>();
-            foreach (var block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
+                var block = blocks[i];
                 if (block.BlockName == blockName)
                 {
                     return block;
@@ -506,8 +528,9 @@ namespace Fungus
         public virtual void StopAllBlocks()
         {
             var blocks = GetComponents<Block>();
-            foreach (Block block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
+                var block = blocks[i];
                 if (block.IsExecuting())
                 {
                     block.Stop();
@@ -521,9 +544,10 @@ namespace Fungus
         /// </summary>
         public virtual void SendFungusMessage(string messageName)
         {
-            MessageReceived[] eventHandlers = GetComponents<MessageReceived>();
-            foreach (MessageReceived eventHandler in eventHandlers)
+            var eventHandlers = GetComponents<MessageReceived>();
+            for (int i = 0; i < eventHandlers.Length; i++)
             {
+                var eventHandler = eventHandlers[i];
                 eventHandler.OnSendFungusMessage(messageName);
             }
         }
@@ -553,15 +577,13 @@ namespace Fungus
             while (true)
             {
                 bool collision = false;
-                foreach(Variable variable in variables)
+                for (int i = 0; i < variables.Count; i++)
                 {
-                    if (variable == null ||
-                        variable == ignoreVariable ||
-                        variable.Key == null)
+                    var variable = variables[i];
+                    if (variable == null || variable == ignoreVariable || variable.Key == null)
                     {
                         continue;
                     }
-
                     if (variable.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase))
                     {
                         collision = true;
@@ -597,14 +619,13 @@ namespace Fungus
             while (true)
             {
                 bool collision = false;
-                foreach (var block in blocks)
+                for (int i = 0; i < blocks.Length; i++)
                 {
-                    if (block == ignoreBlock ||
-                        block.BlockName == null)
+                    var block = blocks[i];
+                    if (block == ignoreBlock || block.BlockName == null)
                     {
                         continue;
                     }
-
                     if (block.BlockName.Equals(key, StringComparison.CurrentCultureIgnoreCase))
                     {
                         collision = true;
@@ -640,15 +661,15 @@ namespace Fungus
             while (true)
             {
                 bool collision = false;
-                foreach (var command in block.CommandList)
+                var commandList = block.CommandList;
+                for (int i = 0; i < commandList.Count; i++)
                 {
+                    var command = commandList[i];
                     Label label = command as Label;
-                    if (label == null ||
-                        label == ignoreLabel)
+                    if (label == null || label == ignoreLabel)
                     {
                         continue;
                     }
-
                     if (label.Key.Equals(key, StringComparison.CurrentCultureIgnoreCase))
                     {
                         collision = true;
@@ -673,8 +694,9 @@ namespace Fungus
         /// </summary>
         public Variable GetVariable(string key)
         {
-            foreach (Variable variable in variables)
+            for (int i = 0; i < variables.Count; i++)
             {
+                var variable = variables[i];
                 if (variable != null && variable.Key == key)
                 {
                     return variable;
@@ -692,8 +714,9 @@ namespace Fungus
         /// </summary>
         public T GetVariable<T>(string key) where T : Variable
         {
-            foreach (Variable variable in variables)
+            for (int i = 0; i < variables.Count; i++)
             {
+                var variable = variables[i];
                 if (variable != null && variable.Key == key)
                 {
                     return variable as T;
@@ -710,8 +733,9 @@ namespace Fungus
         /// </summary>
         public void SetVariable<T>(string key, T newvariable) where T : Variable
         {
-            foreach (Variable v in variables)
+            for (int i = 0; i < variables.Count; i++)
             {
+                var v = variables[i];
                 if (v != null && v.Key == key)
                 {
                     T variable = v as T;
@@ -727,13 +751,48 @@ namespace Fungus
         }
 
         /// <summary>
+        /// Checks if a given variable exists in the flowchart.
+        /// </summary>
+        public virtual bool HasVariable(string key)
+        {
+            for (int i = 0; i < variables.Count; i++)
+            {
+                var v = variables[i];
+                if (v != null && v.Key == key)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Returns the list of variable names in the Flowchart.
+        /// </summary>
+        public virtual string[] GetVariableNames()
+        {
+            var vList = new string[variables.Count];
+
+            for (int i = 0; i < variables.Count; i++)
+            {
+                var v = variables[i];
+                if (v != null)
+                {
+                    vList[i] = v.Key;
+                }
+            }
+            return vList;
+        }
+
+        /// <summary>
         /// Gets a list of all variables with public scope in this Flowchart.
         /// </summary>
         public virtual List<Variable> GetPublicVariables()
         {
-            List<Variable> publicVariables = new List<Variable>();
-            foreach (Variable v in variables)
+            var publicVariables = new List<Variable>();
+            for (int i = 0; i < variables.Count; i++)
             {
+                var v = variables[i];
                 if (v != null && v.Scope == VariableScope.Public)
                 {
                     publicVariables.Add(v);
@@ -749,8 +808,7 @@ namespace Fungus
         /// </summary>
         public virtual bool GetBooleanVariable(string key)
         {
-            BooleanVariable variable = GetVariable<BooleanVariable>(key);
-
+            var variable = GetVariable<BooleanVariable>(key);
             if(variable != null)
             {
                 return GetVariable<BooleanVariable>(key).Value;
@@ -767,7 +825,7 @@ namespace Fungus
         /// </summary>
         public virtual void SetBooleanVariable(string key, bool value)
         {
-            BooleanVariable variable = GetVariable<BooleanVariable>(key);
+            var variable = GetVariable<BooleanVariable>(key);
             if(variable != null)
             {
                 variable.Value = value;
@@ -780,8 +838,7 @@ namespace Fungus
         /// </summary>
         public virtual int GetIntegerVariable(string key)
         {
-            IntegerVariable variable = GetVariable<IntegerVariable>(key);
-
+            var variable = GetVariable<IntegerVariable>(key);
             if (variable != null)
             {
                 return GetVariable<IntegerVariable>(key).Value;
@@ -798,7 +855,7 @@ namespace Fungus
         /// </summary>
         public virtual void SetIntegerVariable(string key, int value)
         {
-            IntegerVariable variable = GetVariable<IntegerVariable>(key);
+            var variable = GetVariable<IntegerVariable>(key);
             if (variable != null)
             {
                 variable.Value = value;
@@ -811,8 +868,7 @@ namespace Fungus
         /// </summary>
         public virtual float GetFloatVariable(string key)
         {
-            FloatVariable variable = GetVariable<FloatVariable>(key);
-
+            var variable = GetVariable<FloatVariable>(key);
             if (variable != null)
             {
                 return GetVariable<FloatVariable>(key).Value;
@@ -829,7 +885,7 @@ namespace Fungus
         /// </summary>
         public virtual void SetFloatVariable(string key, float value)
         {
-            FloatVariable variable = GetVariable<FloatVariable>(key);
+            var variable = GetVariable<FloatVariable>(key);
             if (variable != null)
             {
                 variable.Value = value;
@@ -842,8 +898,7 @@ namespace Fungus
         /// </summary>
         public virtual string GetStringVariable(string key)
         {
-            StringVariable variable = GetVariable<StringVariable>(key);
-
+            var variable = GetVariable<StringVariable>(key);
             if (variable != null)
             {
                 return GetVariable<StringVariable>(key).Value;
@@ -860,7 +915,69 @@ namespace Fungus
         /// </summary>
         public virtual void SetStringVariable(string key, string value)
         {
-            StringVariable variable = GetVariable<StringVariable>(key);
+            var variable = GetVariable<StringVariable>(key);
+            if (variable != null)
+            {
+                variable.Value = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets the value of a GameObject variable.
+        /// Returns null if the variable key does not exist.
+        /// </summary>
+        public virtual GameObject GetGameObjectVariable(string key)
+        {
+            var variable = GetVariable<GameObjectVariable>(key);
+
+            if (variable != null)
+            {
+                return GetVariable<GameObjectVariable>(key).Value;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Sets the value of a GameObject variable.
+        /// The variable must already be added to the list of variables for this Flowchart.
+        /// </summary>
+        public virtual void SetGameObjectVariable(string key, GameObject value)
+        {
+            var variable = GetVariable<GameObjectVariable>(key);
+            if (variable != null)
+            {
+                variable.Value = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets the value of a Transform variable.
+        /// Returns null if the variable key does not exist.
+        /// </summary>
+        public virtual Transform GetTransformVariable(string key)
+        {
+            var variable = GetVariable<TransformVariable>(key);
+
+            if (variable != null)
+            {
+                return GetVariable<TransformVariable>(key).Value;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Sets the value of a Transform variable.
+        /// The variable must already be added to the list of variables for this Flowchart.
+        /// </summary>
+        public virtual void SetTransformVariable(string key, Transform value)
+        {
+            var variable = GetVariable<TransformVariable>(key);
             if (variable != null)
             {
                 variable.Value = value;
@@ -874,9 +991,10 @@ namespace Fungus
         {
             if (hideComponents)
             {
-                Block[] blocks = GetComponents<Block>();
-                foreach (Block block in blocks)
+                var blocks = GetComponents<Block>();
+                for (int i = 0; i < blocks.Length; i++)
                 {
+                    var block = blocks[i];
                     block.hideFlags = HideFlags.HideInInspector;
                     if (block.gameObject != gameObject)
                     {
@@ -884,28 +1002,30 @@ namespace Fungus
                     }
                 }
 
-                Command[] commands = GetComponents<Command>();
-                foreach (var command in commands)
+                var commands = GetComponents<Command>();
+                for (int i = 0; i < commands.Length; i++)
                 {
+                    var command = commands[i];
                     command.hideFlags = HideFlags.HideInInspector;
                 }
 
-                EventHandler[] eventHandlers = GetComponents<EventHandler>();
-                foreach (var eventHandler in eventHandlers)
+                var eventHandlers = GetComponents<EventHandler>();
+                for (int i = 0; i < eventHandlers.Length; i++)
                 {
+                    var eventHandler = eventHandlers[i];
                     eventHandler.hideFlags = HideFlags.HideInInspector;
                 }
             }
             else
             {
-                MonoBehaviour[] monoBehaviours = GetComponents<MonoBehaviour>();
-                foreach (MonoBehaviour monoBehaviour in monoBehaviours)
+                var monoBehaviours = GetComponents<MonoBehaviour>();
+                for (int i = 0; i < monoBehaviours.Length; i++)
                 {
+                    var monoBehaviour = monoBehaviours[i];
                     if (monoBehaviour == null)
                     {
                         continue;
                     }
-
                     monoBehaviour.hideFlags = HideFlags.None;
                     monoBehaviour.gameObject.hideFlags = HideFlags.None;
                 }
@@ -932,6 +1052,25 @@ namespace Fungus
         }
 
         /// <summary>
+        /// Clears the list of selected blocks.
+        /// </summary>
+        public virtual void ClearSelectedBlocks()
+        {
+            selectedBlocks.Clear();
+        }
+
+        /// <summary>
+        /// Adds a block to the list of selected blocks.
+        /// </summary>
+        public virtual void AddSelectedBlock(Block block)
+        {
+            if (!selectedBlocks.Contains(block))
+            {
+                selectedBlocks.Add(block);
+            }
+        }
+
+        /// <summary>
         /// Reset the commands and variables in the Flowchart.
         /// </summary>
         public virtual void Reset(bool resetCommands, bool resetVariables)
@@ -939,16 +1078,18 @@ namespace Fungus
             if (resetCommands)
             {
                 var commands = GetComponents<Command>();
-                foreach (var command in commands)
+                for (int i = 0; i < commands.Length; i++)
                 {
+                    var command = commands[i];
                     command.OnReset();
                 }
             }
 
             if (resetVariables)
             {
-                foreach (Variable variable in variables)
+                for (int i = 0; i < variables.Count; i++)
                 {
+                    var variable = variables[i];
                     variable.OnReset();
                 }
             }
@@ -959,11 +1100,11 @@ namespace Fungus
         /// </summary>
         public virtual bool IsCommandSupported(CommandInfoAttribute commandInfo)
         {
-            foreach (string key in hideCommands)
+            for (int i = 0; i < hideCommands.Count; i++)
             {
                 // Match on category or command name (case insensitive)
-                if (String.Compare(commandInfo.Category, key, StringComparison.OrdinalIgnoreCase) == 0 ||
-                    String.Compare(commandInfo.CommandName, key, StringComparison.OrdinalIgnoreCase) == 0)
+                var key = hideCommands[i];
+                if (String.Compare(commandInfo.Category, key, StringComparison.OrdinalIgnoreCase) == 0 || String.Compare(commandInfo.CommandName, key, StringComparison.OrdinalIgnoreCase) == 0)
                 {
                     return false;
                 }
@@ -978,8 +1119,9 @@ namespace Fungus
         public virtual bool HasExecutingBlocks()
         {
             var blocks = GetComponents<Block>();
-            foreach (var block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
+                var block = blocks[i];
                 if (block.IsExecuting())
                 {
                     return true;
@@ -995,8 +1137,9 @@ namespace Fungus
         {
             var executingBlocks = new List<Block>();
             var blocks = GetComponents<Block>();
-            foreach (var block in blocks)
+            for (int i = 0; i < blocks.Length; i++)
             {
+                var block = blocks[i];
                 if (block.IsExecuting())
                 {
                     executingBlocks.Add(block);
@@ -1032,19 +1175,18 @@ namespace Fungus
 
             // Match the regular expression pattern against a text string.
             var results = r.Matches(input);
-            foreach (Match match in results)
+            for (int i = 0; i < results.Count; i++)
             {
+                Match match = results[i];
                 string key = match.Value.Substring(2, match.Value.Length - 3);
-
                 // Look for any matching private variables in this Flowchart first
-                foreach (Variable variable in variables)
+                for (int j = 0; j < variables.Count; j++)
                 {
+                    var variable = variables[j];
                     if (variable == null)
                         continue;
-
-                    if (variable.Scope == VariableScope.Private &&
-                        variable.Key == key)
-                    {   
+                    if (variable.Scope == VariableScope.Private && variable.Key == key)
+                    {
                         string value = variable.ToString();
                         sb.Replace(match.Value, value);
                         changed = true;
@@ -1084,22 +1226,22 @@ namespace Fungus
 
             // Match the regular expression pattern against a text string.
             var results = r.Matches(input.ToString());
-            foreach (Match match in results)
+            for (int i = 0; i < results.Count; i++)
             {
+                Match match = results[i];
                 string key = match.Value.Substring(2, match.Value.Length - 3);
-
                 // Look for any matching public variables in this Flowchart
-                foreach (Variable variable in variables)
+                for (int j = 0; j < variables.Count; j++)
                 {
+                    var variable = variables[j];
                     if (variable == null)
+                    {
                         continue;
-
-                    if (variable.Scope == VariableScope.Public &&
-                        variable.Key == key)
-                    {   
+                    }
+                    if (variable.Scope == VariableScope.Public && variable.Key == key)
+                    {
                         string value = variable.ToString();
                         input.Replace(match.Value, value);
-
                         modified = true;
                     }
                 }

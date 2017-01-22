@@ -4,6 +4,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using System.Collections.Generic;
 
 namespace Fungus
 {
@@ -40,6 +41,23 @@ namespace Fungus
         protected Vector3 newPosition;
         protected Vector3 delta = Vector3.zero;
 
+        #region DragCompleted handlers
+        protected List<DragCompleted> dragCompletedHandlers = new List<DragCompleted>();
+
+        public void RegisterHandler(DragCompleted handler)
+        {
+            dragCompletedHandlers.Add(handler);
+        }
+
+        public void UnregisterHandler(DragCompleted handler)
+        {
+            if(dragCompletedHandlers.Contains(handler))
+            {
+                dragCompletedHandlers.Remove(handler);
+            }
+        }
+        #endregion
+
         protected virtual void LateUpdate()
         {
             // iTween will sometimes override the object position even if it should only be affecting the scale, rotation, etc.
@@ -57,16 +75,7 @@ namespace Fungus
             {
                 return;
             }
-
-            foreach (DragEntered handler in GetHandlers<DragEntered>())
-            {
-                handler.OnDragEntered(this, other);
-            }
-
-            foreach (DragCompleted handler in GetHandlers<DragCompleted>())
-            {
-                handler.OnDragEntered(this, other);
-            }
+            EventDispatcher.Raise(new DragEntered.DragEnteredEvent(this, other));
         }
 
         protected virtual void OnTriggerExit2D(Collider2D other) 
@@ -75,22 +84,7 @@ namespace Fungus
             {
                 return;
             }
-
-            foreach (DragExited handler in GetHandlers<DragExited>())
-            {
-                handler.OnDragExited(this, other);
-            }
-
-            foreach (DragCompleted handler in GetHandlers<DragCompleted>())
-            {
-                handler.OnDragExited(this, other);
-            }
-        }
-
-        protected virtual T[] GetHandlers<T>() where T : EventHandler
-        {
-            // TODO: Cache these object for faster lookup
-            return GameObject.FindObjectsOfType<T>();
+            EventDispatcher.Raise(new DragExited.DragExitedEvent(this, other));
         }
 
         protected virtual void DoBeginDrag()
@@ -103,10 +97,7 @@ namespace Fungus
 
             startingPosition = transform.position;
 
-            foreach (DragStarted handler in GetHandlers<DragStarted>())
-            {
-                handler.OnDragStarted(this);
-            }
+            EventDispatcher.Raise(new DragStarted.DragStartedEvent(this));
         }
 
         protected virtual void DoDrag()
@@ -134,35 +125,31 @@ namespace Fungus
 
             bool dragCompleted = false;
 
-            DragCompleted[] handlers = GetHandlers<DragCompleted>();
-            foreach (DragCompleted handler in handlers)
+            for (int i = 0; i < dragCompletedHandlers.Count; i++)
             {
-                if (handler.DraggableObject == this)
+                var handler = dragCompletedHandlers[i];
+                if (handler != null && handler.DraggableObject == this)
                 {
                     if (handler.IsOverTarget())
                     {
-                        handler.OnDragCompleted(this);
                         dragCompleted = true;
-
-                        if (returnOnCompleted)
-                        {
-                            LeanTween.move(gameObject, startingPosition, returnDuration).setEase(LeanTweenType.easeOutExpo);
-                        }
+                        EventDispatcher.Raise(new DragCompleted.DragCompletedEvent(this));
                     }
                 }
             }
 
             if (!dragCompleted)
             {
-                foreach (DragCancelled handler in GetHandlers<DragCancelled>())
-                {
-                    handler.OnDragCancelled(this);
-                }
+                EventDispatcher.Raise(new DragCancelled.DragCancelledEvent(this));
 
                 if (returnOnCancelled)
                 {
                     LeanTween.move(gameObject, startingPosition, returnDuration).setEase(LeanTweenType.easeOutExpo);
                 }
+            }
+            else if(returnOnCompleted)
+            {
+                LeanTween.move(gameObject, startingPosition, returnDuration).setEase(LeanTweenType.easeOutExpo);
             }
         }
 

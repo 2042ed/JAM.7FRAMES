@@ -8,14 +8,15 @@ namespace Fungus
     /// <summary>
     /// The block will execute when the Flowchart game object is enabled.
     /// </summary>
-    [EventHandlerInfo("",
+    [EventHandlerInfo("Scene",
                       "Flowchart Enabled",
                       "The block will execute when the Flowchart game object is enabled.")]
     [AddComponentMenu("")]
     public class FlowchartEnabled : EventHandler
     {   
-        protected virtual void OnEnable()
+        protected override void UnityOnEnable()
         {
+            base.UnityOnEnable();
             // Blocks use coroutines to schedule command execution, but Unity's coroutines are
             // sometimes unreliable when enabling / disabling objects.
             // To workaround this we execute the block on the next frame.

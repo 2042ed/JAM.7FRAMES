@@ -75,6 +75,10 @@ namespace Fungus
         {
             bool isFungusInstalled = (Type.GetType("Fungus.Flowchart") != null);
 
+            // Always register these FungusLua utilities
+            LuaEnvironment.RegisterType("Fungus.PODTypeFactory");
+            LuaEnvironment.RegisterType("Fungus.FungusPrefs");
+
             foreach (TextAsset textFile in registerTypes)
             {
                 if (textFile == null)
@@ -455,6 +459,14 @@ namespace Fungus
         public void SetSayDialog(SayDialog sayDialog)
         {
             SayDialog.ActiveSayDialog = sayDialog;
+        }
+
+        /// <summary>
+        /// Sync the active menu dialog with what Lua thinks the MenuDialog should be
+        /// </summary>
+        public void SetMenuDialog(MenuDialog menuDialog)
+        {
+            MenuDialog.ActiveMenuDialog = menuDialog;
         }
 
         #endregion
