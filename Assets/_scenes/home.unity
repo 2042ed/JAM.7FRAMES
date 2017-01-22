@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
-SceneSettings:
+OcclusionCullingSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
-  m_PVSObjectsArray: []
-  m_PVSPortalsArray: []
+  serializedVersion: 2
   m_OcclusionBakeSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 7
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -79,28 +79,29 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
+    agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
-    accuratePlacement: 0
     minRegionArea: 2
-    cellSize: 0.16666667
     manualCellSize: 0
+    cellSize: 0.16666667
+    accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1548482
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 0e6bcf37a2876432fa58eff8888bf177, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1548483}
-  - 212: {fileID: 1548486}
-  - 61: {fileID: 1548485}
-  - 114: {fileID: 1548484}
+  - component: {fileID: 1548483}
+  - component: {fileID: 1548486}
+  - component: {fileID: 1548485}
+  - component: {fileID: 1548484}
   m_Layer: 0
   m_Name: Click Killer
   m_TagString: Untagged
@@ -117,10 +118,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1548484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +167,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -174,7 +177,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -264,10 +267,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 123128210}
-  - 212: {fileID: 123128211}
+  - component: {fileID: 123128210}
+  - component: {fileID: 123128211}
   m_Layer: 0
   m_Name: Foresta
   m_TagString: Untagged
@@ -284,12 +287,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 40.6, y: 6.6, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1114947122}
   - {fileID: 52905637}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &123128211
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -304,7 +307,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -312,7 +317,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -328,12 +333,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 126710598}
-  - 222: {fileID: 126710601}
-  - 114: {fileID: 126710600}
-  - 114: {fileID: 126710599}
+  - component: {fileID: 126710598}
+  - component: {fileID: 126710601}
+  - component: {fileID: 126710600}
+  - component: {fileID: 126710599}
   m_Layer: 5
   m_Name: Oil 2
   m_TagString: Untagged
@@ -350,10 +355,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -415,102 +420,102 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 142980, guid: 5e7fbc8d4eb714b279eeeef2262c1e1a, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 143895579}
-  - 114: {fileID: 143895578}
-  - 114: {fileID: 143895577}
-  - 114: {fileID: 143895576}
-  - 114: {fileID: 143895584}
-  - 114: {fileID: 143895583}
-  - 114: {fileID: 143895582}
-  - 114: {fileID: 143895580}
-  - 114: {fileID: 143895586}
-  - 114: {fileID: 143895585}
-  - 114: {fileID: 143895581}
-  - 114: {fileID: 143895610}
-  - 114: {fileID: 143895609}
-  - 114: {fileID: 143895608}
-  - 114: {fileID: 143895607}
-  - 114: {fileID: 143895606}
-  - 114: {fileID: 143895605}
-  - 114: {fileID: 143895604}
-  - 114: {fileID: 143895603}
-  - 114: {fileID: 143895602}
-  - 114: {fileID: 143895601}
-  - 114: {fileID: 143895600}
-  - 114: {fileID: 143895599}
-  - 114: {fileID: 143895598}
-  - 114: {fileID: 143895597}
-  - 114: {fileID: 143895596}
-  - 114: {fileID: 143895595}
-  - 114: {fileID: 143895594}
-  - 114: {fileID: 143895593}
-  - 114: {fileID: 143895592}
-  - 114: {fileID: 143895591}
-  - 114: {fileID: 143895590}
-  - 114: {fileID: 143895589}
-  - 114: {fileID: 143895588}
-  - 114: {fileID: 143895587}
-  - 114: {fileID: 143895625}
-  - 114: {fileID: 143895624}
-  - 114: {fileID: 143895623}
-  - 114: {fileID: 143895622}
-  - 114: {fileID: 143895621}
-  - 114: {fileID: 143895620}
-  - 114: {fileID: 143895619}
-  - 114: {fileID: 143895618}
-  - 114: {fileID: 143895617}
-  - 114: {fileID: 143895616}
-  - 114: {fileID: 143895615}
-  - 114: {fileID: 143895614}
-  - 114: {fileID: 143895613}
-  - 114: {fileID: 143895612}
-  - 114: {fileID: 143895611}
-  - 114: {fileID: 143895634}
-  - 114: {fileID: 143895633}
-  - 114: {fileID: 143895632}
-  - 114: {fileID: 143895631}
-  - 114: {fileID: 143895630}
-  - 114: {fileID: 143895629}
-  - 114: {fileID: 143895627}
-  - 114: {fileID: 143895626}
-  - 114: {fileID: 143895628}
-  - 114: {fileID: 143895646}
-  - 114: {fileID: 143895645}
-  - 114: {fileID: 143895641}
-  - 114: {fileID: 143895640}
-  - 114: {fileID: 143895639}
-  - 114: {fileID: 143895638}
-  - 114: {fileID: 143895637}
-  - 114: {fileID: 143895636}
-  - 114: {fileID: 143895635}
-  - 114: {fileID: 143895644}
-  - 114: {fileID: 143895643}
-  - 114: {fileID: 143895642}
-  - 114: {fileID: 143895650}
-  - 114: {fileID: 143895648}
-  - 114: {fileID: 143895649}
-  - 114: {fileID: 143895647}
-  - 114: {fileID: 143895656}
-  - 114: {fileID: 143895657}
-  - 114: {fileID: 143895655}
-  - 114: {fileID: 143895654}
-  - 114: {fileID: 143895653}
-  - 114: {fileID: 143895652}
-  - 114: {fileID: 143895651}
-  - 114: {fileID: 143895662}
-  - 114: {fileID: 143895664}
-  - 114: {fileID: 143895658}
-  - 114: {fileID: 143895660}
-  - 114: {fileID: 143895663}
-  - 114: {fileID: 143895661}
-  - 114: {fileID: 143895659}
-  - 114: {fileID: 143895666}
-  - 114: {fileID: 143895665}
-  - 114: {fileID: 143895668}
-  - 114: {fileID: 143895667}
-  - 114: {fileID: 143895669}
+  - component: {fileID: 143895579}
+  - component: {fileID: 143895578}
+  - component: {fileID: 143895577}
+  - component: {fileID: 143895576}
+  - component: {fileID: 143895584}
+  - component: {fileID: 143895583}
+  - component: {fileID: 143895582}
+  - component: {fileID: 143895580}
+  - component: {fileID: 143895586}
+  - component: {fileID: 143895585}
+  - component: {fileID: 143895581}
+  - component: {fileID: 143895610}
+  - component: {fileID: 143895609}
+  - component: {fileID: 143895608}
+  - component: {fileID: 143895607}
+  - component: {fileID: 143895606}
+  - component: {fileID: 143895605}
+  - component: {fileID: 143895604}
+  - component: {fileID: 143895603}
+  - component: {fileID: 143895602}
+  - component: {fileID: 143895601}
+  - component: {fileID: 143895600}
+  - component: {fileID: 143895599}
+  - component: {fileID: 143895598}
+  - component: {fileID: 143895597}
+  - component: {fileID: 143895596}
+  - component: {fileID: 143895595}
+  - component: {fileID: 143895594}
+  - component: {fileID: 143895593}
+  - component: {fileID: 143895592}
+  - component: {fileID: 143895591}
+  - component: {fileID: 143895590}
+  - component: {fileID: 143895589}
+  - component: {fileID: 143895588}
+  - component: {fileID: 143895587}
+  - component: {fileID: 143895625}
+  - component: {fileID: 143895624}
+  - component: {fileID: 143895623}
+  - component: {fileID: 143895622}
+  - component: {fileID: 143895621}
+  - component: {fileID: 143895620}
+  - component: {fileID: 143895619}
+  - component: {fileID: 143895618}
+  - component: {fileID: 143895617}
+  - component: {fileID: 143895616}
+  - component: {fileID: 143895615}
+  - component: {fileID: 143895614}
+  - component: {fileID: 143895613}
+  - component: {fileID: 143895612}
+  - component: {fileID: 143895611}
+  - component: {fileID: 143895634}
+  - component: {fileID: 143895633}
+  - component: {fileID: 143895632}
+  - component: {fileID: 143895631}
+  - component: {fileID: 143895630}
+  - component: {fileID: 143895629}
+  - component: {fileID: 143895627}
+  - component: {fileID: 143895626}
+  - component: {fileID: 143895628}
+  - component: {fileID: 143895646}
+  - component: {fileID: 143895645}
+  - component: {fileID: 143895641}
+  - component: {fileID: 143895640}
+  - component: {fileID: 143895639}
+  - component: {fileID: 143895638}
+  - component: {fileID: 143895637}
+  - component: {fileID: 143895636}
+  - component: {fileID: 143895635}
+  - component: {fileID: 143895644}
+  - component: {fileID: 143895643}
+  - component: {fileID: 143895642}
+  - component: {fileID: 143895650}
+  - component: {fileID: 143895648}
+  - component: {fileID: 143895649}
+  - component: {fileID: 143895647}
+  - component: {fileID: 143895656}
+  - component: {fileID: 143895657}
+  - component: {fileID: 143895655}
+  - component: {fileID: 143895654}
+  - component: {fileID: 143895653}
+  - component: {fileID: 143895652}
+  - component: {fileID: 143895651}
+  - component: {fileID: 143895662}
+  - component: {fileID: 143895664}
+  - component: {fileID: 143895658}
+  - component: {fileID: 143895660}
+  - component: {fileID: 143895663}
+  - component: {fileID: 143895661}
+  - component: {fileID: 143895659}
+  - component: {fileID: 143895666}
+  - component: {fileID: 143895665}
+  - component: {fileID: 143895668}
+  - component: {fileID: 143895667}
+  - component: {fileID: 143895669}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -531,6 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895577}
+  waitForFrames: 1
 --- !u!114 &143895577
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -549,6 +555,8 @@ MonoBehaviour:
     y: 81
     width: 120
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 0
   blockName: New Block
   description: 
@@ -582,7 +590,7 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlock: {fileID: 143895610}
+  selectedBlocks: []
   selectedCommands:
   - {fileID: 143895669}
   variables:
@@ -613,10 +621,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &143895580
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -650,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895586}
   clickableObject: {fileID: 1746875974}
+  waitFrames: 1
 --- !u!114 &143895582
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -683,6 +692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895584}
   clickableObject: {fileID: 1582231139}
+  waitFrames: 1
 --- !u!114 &143895584
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -700,6 +710,8 @@ MonoBehaviour:
     y: 41.68445
     width: 154
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 1
   blockName: Spiaggia to Grotta
   description: 
@@ -750,6 +762,8 @@ MonoBehaviour:
     y: 39.562508
     width: 154
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 5
   blockName: Grotta to Spiaggia
   description: 
@@ -769,6 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895589}
   clickableObject: {fileID: 1351068127}
+  waitFrames: 1
 --- !u!114 &143895588
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -806,6 +821,8 @@ MonoBehaviour:
     y: 168.72522
     width: 152
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 21
   blockName: Tundra to Pianura
   description: 
@@ -825,6 +842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895592}
   clickableObject: {fileID: 476565589}
+  waitFrames: 1
 --- !u!114 &143895591
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -862,6 +880,8 @@ MonoBehaviour:
     y: 168.72522
     width: 155
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 19
   blockName: Pianura to Tundra
   description: 
@@ -881,6 +901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895595}
   clickableObject: {fileID: 73419232}
+  waitFrames: 1
 --- !u!114 &143895594
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -918,6 +939,8 @@ MonoBehaviour:
     y: 168.72522
     width: 164
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 17
   blockName: Pianura to Spiaggia
   description: 
@@ -937,6 +960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895598}
   clickableObject: {fileID: 32073254}
+  waitFrames: 1
 --- !u!114 &143895597
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -974,6 +998,8 @@ MonoBehaviour:
     y: 363.72568
     width: 166
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 15
   blockName: Spiaggia to Villaggio
   description: 
@@ -993,6 +1019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895601}
   clickableObject: {fileID: 1436463226}
+  waitFrames: 1
 --- !u!114 &143895600
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1030,6 +1057,8 @@ MonoBehaviour:
     y: 300.46045
     width: 160
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 13
   blockName: Spiaggia to Foresta
   description: 
@@ -1049,6 +1078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895604}
   clickableObject: {fileID: 1409489867}
+  waitFrames: 1
 --- !u!114 &143895603
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1086,6 +1116,8 @@ MonoBehaviour:
     y: 234.91318
     width: 186
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 11
   blockName: Spiaggia to Sotterraneo
   description: 
@@ -1105,6 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895607}
   clickableObject: {fileID: 512857890}
+  waitFrames: 1
 --- !u!114 &143895606
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1142,6 +1175,8 @@ MonoBehaviour:
     y: 168.72522
     width: 161
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 9
   blockName: Spiaggia to Pianura
   description: 
@@ -1161,6 +1196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895610}
   clickableObject: {fileID: 683457137}
+  waitFrames: 1
 --- !u!114 &143895609
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1198,6 +1234,8 @@ MonoBehaviour:
     y: 107.49997
     width: 156
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 7
   blockName: Spiaggia to Palude
   description: 
@@ -1218,6 +1256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895613}
   clickableObject: {fileID: 1876163798}
+  waitFrames: 1
 --- !u!114 &143895612
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1255,6 +1294,8 @@ MonoBehaviour:
     y: 362.29712
     width: 141
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 31
   blockName: Portale to Ponte
   description: 
@@ -1274,6 +1315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895616}
   clickableObject: {fileID: 604876787}
+  waitFrames: 1
 --- !u!114 &143895615
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1311,6 +1353,8 @@ MonoBehaviour:
     y: 362.29712
     width: 141
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 29
   blockName: Ponte to Portale
   description: 
@@ -1337,6 +1381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895619}
   clickableObject: {fileID: 781893985}
+  waitFrames: 1
 --- !u!114 &143895618
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1374,6 +1419,8 @@ MonoBehaviour:
     y: 360.86853
     width: 149
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 27
   blockName: Ponte to Villaggio
   description: 
@@ -1393,6 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895622}
   clickableObject: {fileID: 1607953586}
+  waitFrames: 1
 --- !u!114 &143895621
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1430,6 +1478,8 @@ MonoBehaviour:
     y: 360.86856
     width: 149
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 25
   blockName: Villaggio to Ponte
   description: 
@@ -1449,6 +1499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895625}
   clickableObject: {fileID: 798101708}
+  waitFrames: 1
 --- !u!114 &143895624
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1486,6 +1537,8 @@ MonoBehaviour:
     y: 362.29712
     width: 166
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 23
   blockName: Villaggio to Spiaggia
   description: 
@@ -1529,6 +1582,8 @@ MonoBehaviour:
     y: 300.46045
     width: 160
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 37
   blockName: Foresta to Spiaggia
   description: 
@@ -1548,6 +1603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895627}
   clickableObject: {fileID: 52905638}
+  waitFrames: 1
 --- !u!114 &143895629
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1561,6 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895631}
   clickableObject: {fileID: 1074068479}
+  waitFrames: 1
 --- !u!114 &143895630
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1598,6 +1655,8 @@ MonoBehaviour:
     y: 234.91318
     width: 186
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 35
   blockName: Sotterraneo to Spiaggia
   description: 
@@ -1617,6 +1676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 143895634}
   clickableObject: {fileID: 1676887807}
+  waitFrames: 1
 --- !u!114 &143895633
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1654,6 +1714,8 @@ MonoBehaviour:
     y: 106.49997
     width: 156
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 33
   blockName: Palude to Spiaggia
   description: 
@@ -1865,6 +1927,8 @@ MonoBehaviour:
     y: 55.927254
     width: 147
     height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
   itemId: 39
   blockName: New Block1
   description: 
@@ -2377,10 +2441,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 153411812}
-  - 212: {fileID: 153411813}
+  - component: {fileID: 153411812}
+  - component: {fileID: 153411813}
   m_Layer: 0
   m_Name: Portale
   m_TagString: Untagged
@@ -2397,12 +2461,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 75.1, y: -27.3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1875696633}
   - {fileID: 1876163797}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &153411813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2417,7 +2481,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -2425,7 +2491,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2441,12 +2507,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 216334082}
-  - 222: {fileID: 216334085}
-  - 114: {fileID: 216334084}
-  - 114: {fileID: 216334083}
+  - component: {fileID: 216334082}
+  - component: {fileID: 216334085}
+  - component: {fileID: 216334084}
+  - component: {fileID: 216334083}
   m_Layer: 5
   m_Name: Oil 1
   m_TagString: Untagged
@@ -2463,10 +2529,10 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2528,12 +2594,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 240166476}
-  - 222: {fileID: 240166479}
-  - 114: {fileID: 240166478}
-  - 114: {fileID: 240166477}
+  - component: {fileID: 240166476}
+  - component: {fileID: 240166479}
+  - component: {fileID: 240166478}
+  - component: {fileID: 240166477}
   m_Layer: 5
   m_Name: Fur
   m_TagString: Untagged
@@ -2550,10 +2616,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2615,10 +2681,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 298259641}
-  - 212: {fileID: 298259642}
+  - component: {fileID: 298259641}
+  - component: {fileID: 298259642}
   m_Layer: 0
   m_Name: Grotta
   m_TagString: Untagged
@@ -2635,12 +2701,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -27.4, y: 39.6, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 552360822}
   - {fileID: 1746875977}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &298259642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2655,7 +2721,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -2663,7 +2731,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2679,10 +2747,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 303467877}
-  - 212: {fileID: 303467878}
+  - component: {fileID: 303467877}
+  - component: {fileID: 303467878}
   m_Layer: 0
   m_Name: Palude
   m_TagString: Untagged
@@ -2699,12 +2767,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -34.9, y: -16.3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1768223113}
   - {fileID: 1676887806}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &303467878
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2719,7 +2787,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -2727,7 +2797,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2794,10 +2864,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 464820059}
-  - 114: {fileID: 464820060}
+  - component: {fileID: 464820059}
+  - component: {fileID: 464820060}
   m_Layer: 0
   m_Name: View Sotterraneo
   m_TagString: Untagged
@@ -2814,10 +2884,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1192161428}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &464820060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2855,10 +2925,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 516733113}
-  - 212: {fileID: 516733114}
+  - component: {fileID: 516733113}
+  - component: {fileID: 516733114}
   m_Layer: 0
   m_Name: Pianura
   m_TagString: Untagged
@@ -2875,13 +2945,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.4, y: 21.4, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 787894174}
   - {fileID: 476565588}
   - {fileID: 73419231}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &516733114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2896,7 +2966,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -2904,7 +2976,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -2920,10 +2992,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 548420161}
-  - 114: {fileID: 548420162}
+  - component: {fileID: 548420161}
+  - component: {fileID: 548420162}
   m_Layer: 0
   m_Name: View Ponte
   m_TagString: Untagged
@@ -2940,10 +3012,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1151351015}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &548420162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,10 +3036,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 552360822}
-  - 114: {fileID: 552360823}
+  - component: {fileID: 552360822}
+  - component: {fileID: 552360823}
   m_Layer: 0
   m_Name: View Grotta
   m_TagString: Untagged
@@ -2984,10 +3056,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 298259641}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &552360823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,12 +3188,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 645178929}
-  - 222: {fileID: 645178932}
-  - 114: {fileID: 645178931}
-  - 114: {fileID: 645178930}
+  - component: {fileID: 645178929}
+  - component: {fileID: 645178932}
+  - component: {fileID: 645178931}
+  - component: {fileID: 645178930}
   m_Layer: 5
   m_Name: Diary
   m_TagString: Untagged
@@ -3138,10 +3210,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3226,10 +3298,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 787894174}
-  - 114: {fileID: 787894175}
+  - component: {fileID: 787894174}
+  - component: {fileID: 787894175}
   m_Layer: 0
   m_Name: View Pianura
   m_TagString: Untagged
@@ -3246,10 +3318,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 516733113}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &787894175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,12 +3399,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 922467110}
-  - 222: {fileID: 922467113}
-  - 114: {fileID: 922467112}
-  - 114: {fileID: 922467111}
+  - component: {fileID: 922467110}
+  - component: {fileID: 922467113}
+  - component: {fileID: 922467112}
+  - component: {fileID: 922467111}
   m_Layer: 5
   m_Name: Oil 3
   m_TagString: Untagged
@@ -3349,10 +3421,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3727,13 +3799,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1108158978}
-  - 20: {fileID: 1108158977}
-  - 92: {fileID: 1108158976}
-  - 124: {fileID: 1108158975}
-  - 81: {fileID: 1108158974}
+  - component: {fileID: 1108158978}
+  - component: {fileID: 1108158977}
+  - component: {fileID: 1108158976}
+  - component: {fileID: 1108158975}
+  - component: {fileID: 1108158974}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3805,19 +3877,19 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.61, y: 16.23, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114947121
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1114947122}
-  - 114: {fileID: 1114947123}
+  - component: {fileID: 1114947122}
+  - component: {fileID: 1114947123}
   m_Layer: 0
   m_Name: View Foresta
   m_TagString: Untagged
@@ -3834,10 +3906,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 123128210}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1114947123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3858,10 +3930,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1151351015}
-  - 212: {fileID: 1151351016}
+  - component: {fileID: 1151351015}
+  - component: {fileID: 1151351016}
   m_Layer: 0
   m_Name: Ponte
   m_TagString: Untagged
@@ -3878,13 +3950,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 35.1, y: -28.8, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 548420161}
   - {fileID: 604876786}
   - {fileID: 781893984}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1151351016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3899,7 +3971,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -3907,7 +3981,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -3923,10 +3997,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1192161428}
-  - 212: {fileID: 1192161429}
+  - component: {fileID: 1192161428}
+  - component: {fileID: 1192161429}
   m_Layer: 0
   m_Name: Sotterraneo
   m_TagString: Untagged
@@ -3943,12 +4017,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 30.7, y: 24.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 464820059}
   - {fileID: 1074068478}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1192161429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3963,7 +4037,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -3971,7 +4047,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4130,10 +4206,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1295661202}
-  - 114: {fileID: 1295661203}
+  - component: {fileID: 1295661202}
+  - component: {fileID: 1295661203}
   m_Layer: 0
   m_Name: View Villaggio
   m_TagString: Untagged
@@ -4150,10 +4226,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1664612910}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1295661203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4197,9 +4273,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1466331731}
+  - component: {fileID: 1466331731}
   m_Layer: 0
   m_Name: Rooms
   m_TagString: Untagged
@@ -4216,7 +4292,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2121626157}
   - {fileID: 303467877}
@@ -4230,6 +4305,7 @@ Transform:
   - {fileID: 153411812}
   m_Father: {fileID: 0}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1476689346
 Prefab:
   m_ObjectHideFlags: 0
@@ -4353,7 +4429,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011048541066, guid: f2b2dfa2d11564ba3bc9b3908d7a3c4c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f2b2dfa2d11564ba3bc9b3908d7a3c4c, type: 2}
@@ -4363,10 +4439,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1547272168}
-  - 114: {fileID: 1547272169}
+  - component: {fileID: 1547272168}
+  - component: {fileID: 1547272169}
   m_Layer: 0
   m_Name: View Tundra
   m_TagString: Untagged
@@ -4383,10 +4459,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1978847757}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1547272169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4521,10 +4597,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1664612910}
-  - 212: {fileID: 1664612911}
+  - component: {fileID: 1664612910}
+  - component: {fileID: 1664612911}
   m_Layer: 0
   m_Name: Villaggio
   m_TagString: Untagged
@@ -4541,13 +4617,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.4, y: -28.8, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1295661202}
   - {fileID: 1607953585}
   - {fileID: 798101707}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1664612911
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4562,7 +4638,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -4570,7 +4648,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -4689,12 +4767,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 224: {fileID: 1678424503}
-  - 222: {fileID: 1678424506}
-  - 114: {fileID: 1678424505}
-  - 114: {fileID: 1678424504}
+  - component: {fileID: 1678424503}
+  - component: {fileID: 1678424506}
+  - component: {fileID: 1678424505}
+  - component: {fileID: 1678424504}
   m_Layer: 5
   m_Name: Tool
   m_TagString: Untagged
@@ -4711,10 +4789,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1891732818}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4787,10 +4865,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1768223113}
-  - 114: {fileID: 1768223114}
+  - component: {fileID: 1768223113}
+  - component: {fileID: 1768223114}
   m_Layer: 0
   m_Name: View Palude
   m_TagString: Untagged
@@ -4807,10 +4885,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 303467877}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1768223114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4831,10 +4909,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1875696633}
-  - 114: {fileID: 1875696634}
+  - component: {fileID: 1875696633}
+  - component: {fileID: 1875696634}
   m_Layer: 0
   m_Name: View Portale
   m_TagString: Untagged
@@ -4851,10 +4929,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 153411812}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1875696634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4962,16 +5040,18 @@ MonoBehaviour:
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
 --- !u!1 &1937913288
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1937913291}
-  - 114: {fileID: 1937913290}
-  - 114: {fileID: 1937913289}
+  - component: {fileID: 1937913291}
+  - component: {fileID: 1937913290}
+  - component: {fileID: 1937913289}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5020,19 +5100,19 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1978847756
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1978847757}
-  - 212: {fileID: 1978847758}
+  - component: {fileID: 1978847757}
+  - component: {fileID: 1978847758}
   m_Layer: 0
   m_Name: Tundra
   m_TagString: Untagged
@@ -5049,12 +5129,12 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.6, y: 2.8, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1547272168}
   - {fileID: 1351068126}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1978847758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5069,7 +5149,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -5077,7 +5159,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -5151,10 +5233,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e0d427add844a4d9faf970a3afa07583, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2006295057}
-  - 114: {fileID: 2006295056}
+  - component: {fileID: 2006295057}
+  - component: {fileID: 2006295056}
   m_Layer: 0
   m_Name: View Spiaggia
   m_TagString: Untagged
@@ -5186,19 +5268,19 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 2121626157}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121626155
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2121626157}
-  - 212: {fileID: 2121626156}
+  - component: {fileID: 2121626157}
+  - component: {fileID: 2121626156}
   m_Layer: 0
   m_Name: Spiaggia
   m_TagString: Untagged
@@ -5220,7 +5302,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -5228,7 +5312,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 1
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
@@ -5248,7 +5332,6 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2006295057}
   - {fileID: 1582231138}
@@ -5259,15 +5342,16 @@ Transform:
   - {fileID: 928797470}
   m_Father: {fileID: 1466331731}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133867705
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2133867707}
-  - 114: {fileID: 2133867706}
+  - component: {fileID: 2133867707}
+  - component: {fileID: 2133867706}
   m_Layer: 0
   m_Name: _FungusState
   m_TagString: Untagged
@@ -5296,7 +5380,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
