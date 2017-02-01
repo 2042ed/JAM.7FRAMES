@@ -1,72 +1,21 @@
-﻿using System.Collections.Generic;
+﻿// This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
+// It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
+
+using UnityEngine;
+using System.Collections.Generic;
 using System;
 
 namespace Fungus
 {
-    public class EventDispatcher 
+    /// <summary>
+    /// A simple efficient event dispatcher with logging support.
+    /// </summary>
+    public class EventDispatcher : MonoBehaviour
     {
-        public delegate void TypedDelegate<T>(T e) where T : class;
+        protected readonly Dictionary<Type, List<Delegate>> delegates = new Dictionary<Type, List<Delegate>>();
 
-        #region Statics
-        static EventDispatcher _instance;
-        public static EventDispatcher Instance
-        {
-            get
-            {
-                if(_instance == null)
-                {
-                    _instance = new EventDispatcher();
-                }
-                return _instance;
-            }
-        }
+        protected virtual event Action<string> onLog;
 
-        public static void AddLog(Action<string> log)
-        {
-            Instance.addLog(log);
-        }
-
-        public static void RemoveLog(Action<string> log)
-        {
-            Instance.removeLog(log);
-        }
-
-        public static void AddListener<T>(TypedDelegate<T> listener) where T : class
-        {
-            Instance.addListener(listener);
-        }
-
-        public static void RemoveListener<T>(TypedDelegate<T> listener) where T : class
-        {
-            Instance.removeListener(listener);
-        }
-
-        public static void Raise<T>(T evt) where T : class
-        {
-            Instance.raise(evt);
-        }
-
-        public static void Raise<T>() where T : class, new()
-        {
-            Instance.raise<T>(new T());
-        }
-
-        public static void UnregisterAll()
-        {
-            Instance.unregisterAll();
-        }
-        #endregion
-
-        #region Private Members
-        readonly Dictionary<Type, List<Delegate>> _delegates;
-        event Action<string> _onLog;
-        #endregion
-
-        #region Private Functions
-        private EventDispatcher()
-        {
-            _delegates = new Dictionary<Type, List<Delegate>>();
-        }
         /// <summary>
         /// Gets the delegate list copy.
         /// </summary>
@@ -76,69 +25,89 @@ namespace Fungus
         /// <returns>A copy of the delegates list if found. Null if the dictionary does not contain a delegate list for this event.</returns>
         /// <param name="evt">Event instance.</param>
         /// <typeparam name="T">Type of the received event.</typeparam>
-        List<Delegate> getDelegateListCopy<T>(T evt)
+        protected virtual List<Delegate> GetDelegateListCopy<T>(T evt)
         {
             var type = typeof(T);
-            return _delegates.ContainsKey(type) ? new List<Delegate>(_delegates[type]) : null;
+            return delegates.ContainsKey(type) ? new List<Delegate>(delegates[type]) : null;
         }
 
-        void log(string message)
+        protected virtual void Log(string message)
         {
-            if(_onLog != null)
+            if(onLog != null)
             {
-                _onLog(message);
+                onLog(message);
             }
         }
-        #endregion
 
-        #region Public Functions
-        public void addLog(Action<string> log)
+        #region Public members
+
+        /// <summary>
+        /// A typed delegate which contains information about the event.
+        /// </summary>
+        public delegate void TypedDelegate<T>(T e) where T : class;
+
+        /// <summary>
+        /// Adds a log callback action.
+        /// </summary>
+        public virtual void AddLog(Action<string> log)
         {
-            _onLog += log;
+            onLog += log;
         }
 
-        public void removeLog(Action<string> log)
+        /// <summary>
+        /// Removes a log callback action.
+        /// </summary>
+        public virtual void RemoveLog(Action<string> log)
         {
-            _onLog -= log;
+            onLog -= log;
         }
 
-        public void addListener<T>(TypedDelegate<T> listener) where T : class
+        /// <summary>
+        /// Adds a listener for a specified event type.
+        /// </summary>
+        public virtual void AddListener<T>(TypedDelegate<T> listener) where T : class
         {
             var type = typeof(T);
-            if(!_delegates.ContainsKey(type))
+            if(!delegates.ContainsKey(type))
             {
-                _delegates.Add(type, new List<Delegate>());
+                delegates.Add(type, new List<Delegate>());
             }
 
-            var list = _delegates[type];
+            var list = delegates[type];
             if(!list.Contains(listener))
             {
                 list.Add(listener);
             }
         }
 
-        public void removeListener<T>(TypedDelegate<T> listener) where T : class
+        /// <summary>
+        /// Removes a listener for a specified event type.
+        /// </summary>
+        public virtual void RemoveListener<T>(TypedDelegate<T> listener) where T : class
         {
             var type = typeof(T);
-            if(_delegates.ContainsKey(type))
+            if(delegates.ContainsKey(type))
             {
-                _delegates[type].Remove(listener);
+                delegates[type].Remove(listener);
                 return;
             }
         }
 
-        public void raise<T>(T evt) where T : class
+        /// <summary>
+        /// Raise an event of a specified type.
+        /// </summary>
+        public virtual void Raise<T>(T evt) where T : class
         {
             if(evt == null)
             {
-                log("Raised a null event");
+                Log("Raised a null event");
                 return;
             }
 
-            var list = getDelegateListCopy(evt);
+            var list = GetDelegateListCopy(evt);
             if(list == null || list.Count < 1)
             {
-                log("Raised an event with no listeners");
+                Log("Raised an event with no listeners");
                 return;
             }
 
@@ -154,21 +123,28 @@ namespace Fungus
                     }
                     catch(Exception gotcha)
                     {
-                        log(gotcha.Message);
+                        Log(gotcha.Message);
                     }
                 }
             }
         }
 
-        public void raise<T>() where T : class, new()
+        /// <summary>
+        /// Raise an event of a specified type, creates an instance of the type automatically.
+        /// </summary>
+        public virtual void Raise<T>() where T : class, new()
         {
-            raise<T>(new T());
+            Raise<T>(new T());
         }
 
-        public void unregisterAll()
+        /// <summary>
+        /// Unregisters all event listeners.
+        /// </summary>
+        public virtual void UnregisterAll()
         {
-            _delegates.Clear();
+            delegates.Clear();
         }
+
         #endregion
     }
 }

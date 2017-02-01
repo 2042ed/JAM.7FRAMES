@@ -87,9 +87,12 @@ namespace Fungus
         protected StringBuilder leftString = new StringBuilder(1024);
         protected StringBuilder rightString = new StringBuilder(1024);
         protected StringBuilder outputString = new StringBuilder(1024);
+        protected StringBuilder readAheadString = new StringBuilder(1024);
 
         protected string hiddenColorOpen = "";
         protected string hiddenColorClose = "";
+
+        protected int visibleCharacterCount = 0;
 
         protected virtual void Awake()
         {
@@ -130,15 +133,20 @@ namespace Fungus
                     writerListeners.Add(writerListener);
                 }
             }
+
+            CacheHiddenColorStrings();
         }
 
-        protected virtual void Start()
+        protected virtual void CacheHiddenColorStrings()
         {
             // Cache the hidden color string
             Color32 c = hiddenTextColor;
             hiddenColorOpen = String.Format("<color=#{0:X2}{1:X2}{2:X2}{3:X2}>", c.r, c.g, c.b, c.a);
             hiddenColorClose = "</color>";
+        }
 
+        protected virtual void Start()
+        {
             if (forceRichText)
             {
                 if (textUI != null)
@@ -252,6 +260,8 @@ namespace Fungus
 
             TokenType previousTokenType = TokenType.Invalid;
 
+            visibleCharacterCount = 0;
+
             for (int i = 0; i < tokens.Count; ++i)
             {
                 // Pause between tokens if Paused is set
@@ -264,6 +274,24 @@ namespace Fungus
 
                 // Notify listeners about new token
                 WriterSignals.DoTextTagToken(this, token, i, tokens.Count);
+               
+                // Update the read ahead string buffer. This contains the text for any 
+                // Word tags which are further ahead in the list. 
+                readAheadString.Length = 0;
+                for (int j = i + 1; j < tokens.Count; ++j)
+                {
+                    var readAheadToken = tokens[j];
+
+                    if (readAheadToken.type == TokenType.Words &&
+                        readAheadToken.paramList.Count == 1)
+                    {
+                        readAheadString.Append(readAheadToken.paramList[0]);
+                    }
+                    else if (readAheadToken.type == TokenType.WaitForInputAndClear)
+                    {
+                        break;
+                    }
+                }
 
                 switch (token.type)
                 {
@@ -483,8 +511,15 @@ namespace Fungus
             {
                 param = param.TrimStart(' ', '\t', '\r', '\n');
             }
-            
-            string startText = Text;
+
+            // Start with the visible portion of any existing displayed text.
+            string startText = "";
+            if (visibleCharacterCount > 0 &&
+                visibleCharacterCount <= Text.Length)
+            {
+                startText = Text.Substring(0, visibleCharacterCount);
+            }
+                
             UpdateOpenMarkup();
             UpdateCloseMarkup();
 
@@ -583,12 +618,23 @@ namespace Fungus
             outputString.Append(leftString);
             outputString.Append(closeString);
 
+            // Track how many visible characters are currently displayed so
+            // we can easily extract the visible portion again later.
+            visibleCharacterCount = outputString.Length;
+
             // Make right hand side text hidden
             if (SupportsRichText() &&
-                rightString.Length > 0)
+                rightString.Length + readAheadString.Length > 0)
             {
+                // Ensure the hidden color strings are populated
+                if (hiddenColorOpen.Length == 0)
+                {
+                    CacheHiddenColorStrings();
+                }
+
                 outputString.Append(hiddenColorOpen);
                 outputString.Append(rightString);
+                outputString.Append(readAheadString);
                 outputString.Append(hiddenColorClose);
             }
         }
