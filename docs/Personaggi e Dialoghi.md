@@ -3,57 +3,74 @@
 # Personaggi
 
 ## Barni (scienziato) [by Fabio]
-scienziato rimasto bloccato in una grotta di ghiaccio perche la macchina del tempo che aveva costruito si e rotta.  insieme a lui ci sono delle palle di pelo viola che saltano e fanno versi. puo combinare piu oggetti per crearne di nuovi perhce e un inventore. forse ha costruito lui il portale. cosa vuole- tornare a casa
+scienziato rimasto bloccato in una grotta di ghiaccio perché la macchina del tempo che aveva costruito si era rotta. Insieme a lui ci sono delle palle di pelo viola che saltano e fanno versi (Fluffi).
+
+VIRTU': può combinare più oggetti per crearne di nuovi perché è un inventore.
+VUOLE: tornare a casa
+Aneddoto: forse ha costruito lui il portale.
+
 ## Trevor (mago) [by Maia]
-mago in trance dentro ad una palude. si risveglia appena il personaggio arriva nella palude. ha perduto la memoria; vuole ritorvare un diario dove ha scritto la sua storia. cosa vuole-DIARIO
+mago in trance dentro ad una palude. si risveglia appena il personaggio arriva nella palude. ha perduto la memoria; vuole ritrovare un diario dove ha scritto la sua storia.
+VUOLE: DIARIO
+
 ## Quby (robot) [by Elia]
-robot che crea tutto tranne olio e armi. attterrato dal suo pianeta con un atterrraggio brusco quindi lolio e andato disperso quindi chiede olio- cosa vuole- TRE CARICHI DOLIO per aggiustare lastronave.
+robot che crea tutto tranne olio e armi. arrivato dal suo pianeta con un atterraggio brusco quindi l'olio é andato disperso quindi chiede olio.
+VUOLE: TRE CARICHI DOLIO per aggiustare l'astronave.
+
 ## Linzi (elfo) [by Enea]
-elfo con i capelli lunghi gialli capuccio verde stava in una casa di paglia distrutta da un vulcano.  aveva anche cose di pietra. gli serve lacqua di un fiume . e agile e un druido cosa vuole- ACQUa
+elfo con i capelli lunghi gialli, cappuccio verde stava in una casa di paglia distrutta da un vulcano. aveva anche cose di pietra. gli serve l’acqua di un fiume . e agile e un druido cosa
+VUOLE: Acqua
+
 ## Zot (androide) [by Angelo]
-androide molto forte e coraggioso mette a disposizione la sua vita puo essere un PET piccoolo e utile cosa vuole- AMICIZIA
+androide molto forte e coraggioso mette a disposizione la sua vita può essere un PET piccolo e utile cosa
+VUOLE: AMICIZIA
+
 ## Malik (indigeno) [by Elio]
-molto abbronzato, cacciatore, ha l'arco ed e ferito. ti regala una pelliccia. vuole- PIANTA MEDICINALE.
+molto abbronzato, cacciatore, ha l'arco ed e ferito. ti regala una pelliccia.
+VUOLE: PIANTA MEDICINALE.
+
 ## Morte [by Marco]
-vuole tornare negli inferi. raccoglie le anime morte. vuole- VENIRE CON TE
+vuole tornare negli inferi. raccoglie le anime morte.
+VUOLE: VENIRE CON TE
 
 
 # Dialoghi
 
 ## Barni (scienziato)
 - [scienziato] chi sei? che bello vedere una persona dopo tanto tempo. finalmente qualcuno a cui raccontare la mia storia.
-- [giocatore] sono disposto ad ascoltarti
-/non mi interessa
-answer 2: invece mi ascolterai altrimenti non ti faccio uscire.
-answer1: bene! io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione ad un altra. però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con i 5 miei amici Fluffi. aspetta un attimo...puoi trovare la mia paletta? è in questa stanza
+OPZ [giocatore] sono disposto ad ascoltarti
+    - [scienziato] bene! io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione ad un altra. però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con i 5 miei amici Fluffi. aspetta un attimo...puoi trovare la mia paletta? è in questa stanza
+OPZ [giocatore] non mi interessa
+    - [scienziato] invece mi ascolterai altrimenti non ti faccio uscire.
+
 ...trovata la paletta dietro una torcia...
+
 - [scienziato] grazie! ti devo chiedere un altro favore, posso venire con te? ti prego! ti aiuterò.
 - [giocatore] si, certamente.
 
 ## Zot (androide)
-androide: bzz...ciao! sono Zot l'androide e mi sento molto solo. posso diventare tuo amico?
-tu: si
-/no
-answer2:androide:bzz...ti prego!
-tu:ok
-answer1:androide: bzz...grazie! in cambio posso essere a disposizione per missioni pericolose.
+- [androide] bzz...ciao! sono Zot l'androide e mi sento molto solo. posso diventare tuo amico?
+- [giocatore] si
+    - [androide] bzz...grazie! in cambio posso essere a disposizione per missioni pericolose.
+- [giocatore] no
+    - [androide] bzz...ti prego!
+- [giocatore] ok
 
 ## Linzi (elfo)
-dialogo con elfo:
-(sigh..sigh..)registrazione
-tu: cosa è successo qua? perchè è tutto pieno di lava?
-elfo: sigh.. sigh.. sono l'elfo Linzi. il vulcano è esploso e la mia casa ha preso fuoco! l'unica cosa che può spengere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela...sigh..sigh..
-tu: ti posso aiutare io!
+(sigh..sigh..) registrazione
+- [giocatore] cosa è successo qua? perché è tutto pieno di lava?
+- [elfo] sigh.. sigh.. sono l'elfo Linzi. il vulcano è esploso e la mia casa ha preso fuoco! l'unica cosa che può spengere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela...sigh..sigh..
+- [giocatore] ti posso aiutare io!
 /problemi tuoi
 answer1:elfo:grazie! tpoi ti ricompenserò.
 answer2:elfo:che tu possa bruciare all'inferno! ti conviene aiutarmi o ti ucciderò.
-tu: mi conviene aiutarti.
+- [giocatore] mi conviene aiutarti.
 ...(deviato il fiume l'elfo dice)...
-elfo: ho cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. prendila.
-tu: grazie.
+- [elfo] ho cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. prendila.
+- [giocatore] grazie.
 
 ## Trevor (mago)
-- [mago] dove sono? chi sono? perche sono appena uscito da un lago? un attimo...io, sono Gregor! poi...forse...sì! sono un mago!
+- [mago] dove sono? chi sono? perché sono appena uscito da un lago? un attimo...io, sono Gregor! poi...forse...sì! sono un mago!
 - [giocatore] ehm...
 - [mago] e tu, chi sei? cosa ci fai qui? ho bisogno del tuo aiuto, vieni qua da me.
 (ti avvicini al mago)
@@ -65,13 +82,13 @@ tu: grazie.
 - [mago] Ah! ora ricordo! grazie, adesso ti posso aiutare: chiedimi una cosa e te la darò.
 - [giocatore] dammi il codice del portale
 /dammi un cetriolo
-answer1: mago:eccolo qua
-answer2:mago: ehm, li ho finiti! chiedimi un'altra cosa, grazie.
+answer1: mago: eccolo qua
+answer2: mago: ehm, li ho finiti! chiedimi un'altra cosa, grazie.
 - [giocatore] peccato, allora dammi il codice del portale!
 - [mago] eccolo qua
 
 ## Quby (robot)
-- [quby] ciao! sono quby, un robot simpatico!
+- [quby] ciao! sono Quby, un robot simpatico!
 - [giocatore] ciao! cosa sono questi resti?
 - [quby] sono i resti della mia astronave che è precipitata in questo punto. purtroppo l'olio energetico è andato disperso quindi io non mi posso muovere. per sbloccarmi, mi servirebbero 3 fiaschettine d'olio.
 - [giocatore] sono disposto ad aiutarti!
@@ -93,14 +110,14 @@ data la medicina...
 - [giocatore] ah...grazie.
 
 ## Morte
-tu: aaaah! un mostro!
-morte: tranquillo, sono la morte, non voglio ucciderti. ho bisogno del tuo aiuto. il re demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
+- [giocatore] aaaah! un mostro!
+- [morte] tranquillo, sono la morte, non voglio ucciderti. ho bisogno del tuo aiuto. il re demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
 (trovi una boccia d'olio)
-tu: ma se ti porto fuori di qui ucciderai tutti!
-morte: no, io non uccido. raccolgo le anime di chi è già morto.
-tu: ti porterò fuori da qui.
-tu: ti porterò fuori da qui in cambio di una ricompensa
-answer2:morte: ti ricompenserò in futuro
+- [giocatore] ma se ti porto fuori di qui ucciderai tutti!
+- [morte] no, io non uccido. raccolgo le anime di chi è già morto.
+- [giocatore] ti porterò fuori da qui.
+- [giocatore] ti porterò fuori da qui in cambio di una ricompensa
+answer2: morte: ti ricompenserò in futuro
 ...dopo essere usciti...
-morte: posso venire con te al portale?
-tu:si
+- [morte] posso venire con te al portale?
+- [giocatore] si
