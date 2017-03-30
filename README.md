@@ -1,6 +1,7 @@
-# Kids Game Jams - IF Pisa - 8 October 2016
+# 7 Frames
+# a game by Kids Game Jam
+Internet Festival Pisa - 8 October 2016
 
-
-## technology
+## Technology
 - Fungus framework ( https://github.com/FungusGames/Fungus/ )
-- Unity 3D (v 5.4)
+- Unity 3D
