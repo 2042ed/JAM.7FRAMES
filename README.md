@@ -1,7 +1,5 @@
 # 7 Frames
-# a game by Kids Game Jam
-Internet Festival Pisa - 8 October 2016
+a game made by 7 kids in a Kids Game Jam
+at Internet Festival Pisa - 8 October 2016
 
-## Technology
-- Fungus framework ( https://github.com/FungusGames/Fungus/ )
-- Unity 3D
+all docs at https://jamurr.github.io/JAM.7Frames/
