@@ -2,13 +2,13 @@
 Kids Game Jam - Internet Festival Pisa - 8 October 2016
 
 ## Characters
-- [Androide Zot](Androide_Zot.md) [by Angelo]
-- [Elfo Linzi](Elfo_Linzi.md) [by Enea]
-- [Indigeno Malik](Indigeno_Malik.md) [by Elio]
-- [Mago Trevor](Mago_Trevor.md) [by Maia]
-- [La_Morte](La_Morte.md) [by Marco]
-- [Robot_Quby](Robot_Quby.md) [by Elia]
-- [Scienziato Barni](Scienziato_Barni.md) [by Fabio]
+- [Androide Zot](Characters/Androide_Zot.md) [by Angelo]
+- [Elfo Linzi](Characters/Elfo_Linzi.md) [by Enea]
+- [Indigeno Malik](Characters/Indigeno_Malik.md) [by Elio]
+- [Mago Trevor](Characters/Mago_Trevor.md) [by Maia]
+- [La_Morte](Characters/La_Morte.md) [by Marco]
+- [Robot_Quby](Characters/Robot_Quby.md) [by Elia]
+- [Scienziato Barni](Characters/Scienziato_Barni.md) [by Fabio]
 
 # Objects
 - [x] bottiglia olio (x3)
