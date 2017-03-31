@@ -36,10 +36,10 @@ this project requires Unity 5.5.2f1
 
 ## Special thanks and support
 
--   Internet Festival Pisa - www.internetfestival.it
--   Mixart - www.mix-art.org
--   Santeria Milano - www.santeriamilano.it
--   Fungus Games - www.fungusgames.com
+-   Internet Festival Pisa - [www.internetfestival.it](http://www.internetfestival.it)
+-   Mixart - [www.mix-art.org](www.mix-art.org)
+-   Santeria Milano -[ www.santeriamilano.it](www.santeriamilano.it)
+-   Fungus Games - [www.fungusgames.com](www.fungusgames.com)
 
 ## Licensing
 
