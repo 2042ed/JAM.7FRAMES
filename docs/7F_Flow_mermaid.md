@@ -22,29 +22,32 @@ SPIAGGIA --> |vai| TUNDRA
 SPIAGGIA --> |vai| FORESTA
 SPIAGGIA --> |vai| VILLAGGIO
 
-TUNDRA --> |vai| PIANURA
-TUNDRA --> |vai| PALUDE
 TUNDRA -.-> |parla| ANDROIDE
-ANDROIDE -.-> |forza| MEDICINA
+ANDROIDE -.-> |forza spegne vulcano| MEDICINA
 TUNDRA  -.-> |olio| CHIAVE_ITALIANA
 
+TUNDRA --> |vai| PIANURA
+TUNDRA --> |vai| PALUDE
+
+subgraph villaggio
 VILLAGGIO --> |parla| INDIGENO
-VILLAGGIO --> |vai| PONTE_ROTTO
-PELLICCIA -.-> |pelliccia| GROTTA
 INDIGENO --> |da| PELLICCIA
+end
+
+VILLAGGIO --> |vai| PONTE_ROTTO
+PELLICCIA -.-> |permette ingresso| GROTTA
 
 PIANURA  -.-> |parla| ELFO
-PIANURA  -.-> |parla| ROBOT_QUBY
-ELFO  -.-> |da forza| MEDICINA
-MEDICINA -.-> PELLICCIA
+ELFO  -.-> |da se spento vulcano| MEDICINA
+MEDICINA -.-> |cura indigeno| PELLICCIA
 FORESTA  --> |vai| DUNGEON
-ROBOT_QUBY --> |da| CHIAVE_ITALIANA
+FORESTA  -.-> |parla| ROBOT_QUBY
+ROBOT_QUBY --> |da con 3 olio| CHIAVE_ITALIANA
 
 GROTTA -.-> SCIENZIATO
 GROTTA --> FLUFFI
 FLUFFI  -.-> |olio| CHIAVE_ITALIANA
 SCIENZIATO -.-> |invenzione| PONTE_AGGIUSTATO
-
 
 DUNGEON  -.-> |parla| MORTE
 MORTE  -.-> |diario| CODICE
