@@ -1,6 +1,7 @@
 ## Mago Gregor [by Maia]
 
 mago in trance dentro ad una palude. si risveglia appena il personaggio arriva nella palude. ha perduto la memoria; vuole ritrovare un diario dove ha scritto la sua storia.
+LOCATION: Palude
 VUOLE: DIARIO
 
 ### dialoghi

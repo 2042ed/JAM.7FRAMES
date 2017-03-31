@@ -1,69 +1,63 @@
 # 7 FRAMES - Flow
 
 ```mermaid
-sequenceDiagram
-    participant SPIAGGIA
-    participant DUNGEON
-    participant FORESTA
-    participant GROTTA
-    participant PALUDE
-    participant TUNDRA
-    participant VILLAGGIO
-    participant VULCANO
-    participant PONTE
-    participant PORTALE
-
-    SPIAGGIA->>DUNGEON:  
-    Note right of DUNGEON: prendo OLIO, prendo DIARIO
-    DUNGEON->>SPIAGGIA:  
-
-    SPIAGGIA->>TUNDRA:  
-    Note right of TUNDRA: prendo OLIO + Androide ZOT viene con noi
-    TUNDRA->>SPIAGGIA:  
-
-    SPIAGGIA->>VULCANO:  
-    Note right of VULCANO: ZOT spegne fuoco, riceviamo MEDICINA
-    VULCANO->>SPIAGGIA:  
-
-    SPIAGGIA->>VILLAGGIO:  
-    Note right of VILLAGGIO: diamo MEDICINA, prendo INVENZIONE
-    VILLAGGIO->>SPIAGGIA:  
-
-    SPIAGGIA->>GROTTA:  
-    Note right of GROTTA: usiamo PELLICCIA, prendo INVENZIONE
-    GROTTA->>SPIAGGIA:  
-
-    SPIAGGIA->>PONTE: il ponte è rotto
-    Note right of PONTE: usiamo INVENZIONE per aggiustare ponte
-    PONTE->>SPIAGGIA:  f
-```
-
-```mermaid
 graph TD
 
-INTRO
+HOME
 SPIAGGIA{SPIAGGIA}
-GROTTA["GROTTA DI GHIACCIO<br>5 fluffi"]
-VILLAGGIO
-DUNGEON
-FORESTA
-PALUDE
-VULCANO
-TUNDRA
+GROTTA["GROTTA DI GHIACCIO<br>Scienziato<br>5 fluffi"]
+VILLAGGIO["VILLAGGIO<br>Indigeno"]
+DUNGEON["DUNGEON<br>Morte"]
+FORESTA["FORESTA<br>Robot Quby"]
+PALUDE["PALUDE<br>Mago Trevor"]
+PIANURA["PIANURA VULCANICA<br>Elfo Linzi"]
+PONTE_ROTTO
+PONTE_AGGIUSTATO
+TUNDRA["TUNDRA<br>Androide Zot"]
+END["THE END"]
 
-INTRO -->|Play| SPIAGGIA
+HOME -->|Play| SPIAGGIA
 
-SPIAGGIA --> TUNDRA
-SPIAGGIA --> VILLAGGIO
-SPIAGGIA --> VULCANO
-SPIAGGIA --> GROTTA
+SPIAGGIA --> |vai| TUNDRA
+SPIAGGIA --> |vai| FORESTA
+SPIAGGIA --> |vai| VILLAGGIO
+
+TUNDRA --> |vai| PIANURA
+TUNDRA --> |vai| PALUDE
+TUNDRA -.-> |parla| ANDROIDE
+ANDROIDE -.-> |forza| MEDICINA
+TUNDRA  -.-> |olio| CHIAVE_ITALIANA
+
+PIANURA  -.-> |parla| ELFO
+ELFO  -.-> |da forza| MEDICINA
+MEDICINA -.-> PELLICCIA
+FORESTA  --> |vai| DUNGEON
+PIANURA  -.-> |parla| ROBOT_QUBY
+ROBOT_QUBY --> |da| CHIAVE_ITALIANA
 
 GROTTA -.-> SCIENZIATO
+GROTTA --> FLUFFI
+FLUFFI  -.-> |olio| CHIAVE_ITALIANA
+SCIENZIATO -.-> |invenzione| PONTE_AGGIUSTATO
 
 VILLAGGIO --> |parla| INDIGENO
-VILLAGGIO --> |vai| PONTE[PONTE ROTTO]
+VILLAGGIO --> |vai| PONTE_ROTTO
+PELLICCIA -.-> |pelliccia| GROTTA
+INDIGENO --> |da| PELLICCIA
 
+DUNGEON  -.-> |parla| MORTE
+MORTE  -.-> |diario| CODICE
+DUNGEON  -.-> |olio| CHIAVE_ITALIANA
 
+PALUDE  -.-> |parla| MAGO
+MAGO --> |da| CODICE
 
-PONTE --> |usa Chiave| PORTALE
+PONTE_ROTTO --> |vai| GROTTA
+PONTE_ROTTO --> PONTE_AGGIUSTATO
+
+PONTE_AGGIUSTATO --> |vai| PORTALE
+
+CHIAVE_ITALIANA -.-> END
+CODICE -.-> END
+PORTALE -.-> END
 ```
