@@ -2,15 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryManager : MonoBehaviour {
+public class InventoryManager : MonoBehaviour
+{
+    public GameObject InventoryPanel;
+    public GameObject Pelliccia;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    public void OpenInventory()
+    {
+        InventoryPanel.SetActive(true);
+    }
+
+    public void CloseInventory()
+    {
+        InventoryPanel.SetActive(false);
+    }
 }
