@@ -2,7 +2,7 @@
 a game by Kids Game Jam
 Internet Festival Pisa - 8 October 2016
 
-## Docs
+## Docs
 - [Design Document](7F_DesignDocument.md)
 - [Flow](7F_Flow.md) the flow of the adventure
 
