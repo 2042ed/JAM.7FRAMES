@@ -16,10 +16,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011397659314}
-  - 114: {fileID: 114000013181285642}
+  - component: {fileID: 4000011397659314}
+  - component: {fileID: 114000013181285642}
   m_Layer: 0
   m_Name: Elfo Linzi
   m_TagString: Untagged
@@ -32,12 +32,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010876264998}
-  - 114: {fileID: 114000013341689798}
+  - component: {fileID: 4000010876264998}
+  - component: {fileID: 114000013341689798}
   m_Layer: 0
-  m_Name: Vecchio Barni
+  m_Name: Scienziato Barni
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,9 +48,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010609297506}
+  - component: {fileID: 4000010609297506}
   m_Layer: 0
   m_Name: Characters
   m_TagString: Untagged
@@ -63,10 +63,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010069502594}
-  - 114: {fileID: 114000013384557766}
+  - component: {fileID: 4000010069502594}
+  - component: {fileID: 114000013384557766}
   m_Layer: 0
   m_Name: Androide Zot
   m_TagString: Untagged
@@ -79,12 +79,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011325328098}
-  - 114: {fileID: 114000012845539518}
+  - component: {fileID: 4000011325328098}
+  - component: {fileID: 114000012845539518}
   m_Layer: 0
-  m_Name: la Morte
+  m_Name: La Morte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,10 +95,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011583028354}
-  - 114: {fileID: 114000012462274286}
+  - component: {fileID: 4000011583028354}
+  - component: {fileID: 114000012462274286}
   m_Layer: 0
   m_Name: Emma Fee
   m_TagString: Untagged
@@ -111,12 +111,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011667116204}
-  - 114: {fileID: 114000010252354844}
+  - component: {fileID: 4000011667116204}
+  - component: {fileID: 114000010252354844}
   m_Layer: 0
-  m_Name: Robot Qubi
+  m_Name: Robot Quby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,10 +127,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010208262304}
-  - 114: {fileID: 114000012598659296}
+  - component: {fileID: 4000010208262304}
+  - component: {fileID: 114000012598659296}
   m_Layer: 0
   m_Name: Mago Gregor
   m_TagString: Untagged
@@ -143,10 +143,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000012592915160}
-  - 114: {fileID: 114000014120911494}
+  - component: {fileID: 4000012592915160}
+  - component: {fileID: 114000014120911494}
   m_Layer: 0
   m_Name: Indigeno Malik
   m_TagString: Untagged
@@ -163,10 +163,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
-  m_RootOrder: 2
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000010208262304
 Transform:
   m_ObjectHideFlags: 1
@@ -176,10 +176,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
-  m_RootOrder: 1
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000010609297506
 Transform:
   m_ObjectHideFlags: 1
@@ -189,18 +189,18 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011583028354}
-  - {fileID: 4000010208262304}
   - {fileID: 4000010069502594}
   - {fileID: 4000011397659314}
-  - {fileID: 4000010876264998}
+  - {fileID: 4000012592915160}
+  - {fileID: 4000010208262304}
   - {fileID: 4000011325328098}
   - {fileID: 4000011667116204}
-  - {fileID: 4000012592915160}
+  - {fileID: 4000010876264998}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000010876264998
 Transform:
   m_ObjectHideFlags: 1
@@ -210,10 +210,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
-  m_RootOrder: 4
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011325328098
 Transform:
   m_ObjectHideFlags: 1
@@ -223,10 +223,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011397659314
 Transform:
   m_ObjectHideFlags: 1
@@ -236,10 +236,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
-  m_RootOrder: 3
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011583028354
 Transform:
   m_ObjectHideFlags: 1
@@ -249,10 +249,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011667116204
 Transform:
   m_ObjectHideFlags: 1
@@ -262,10 +262,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000012592915160
 Transform:
   m_ObjectHideFlags: 1
@@ -275,10 +275,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010609297506}
-  m_RootOrder: 7
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114000010252354844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -293,8 +293,9 @@ MonoBehaviour:
   nameText: Robot Qubi
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: 3dbdd3f2d32404e7a83d7ccce59dbf15, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000012462274286
@@ -311,8 +312,9 @@ MonoBehaviour:
   nameText: Emma Fee
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portraitsFace: 2
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000012598659296
@@ -329,8 +331,9 @@ MonoBehaviour:
   nameText: Mago Gregor
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000012845539518
@@ -347,8 +350,9 @@ MonoBehaviour:
   nameText: la Morte
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000013181285642
@@ -365,8 +369,9 @@ MonoBehaviour:
   nameText: Elfo Linzi
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: a95def6ddfa694d0a99deaf575241ea5, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000013341689798
@@ -383,8 +388,9 @@ MonoBehaviour:
   nameText: Vecchio Barni
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000013384557766
@@ -401,8 +407,9 @@ MonoBehaviour:
   nameText: Androide Zot
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: 96acd183a819a4cf581d0a0f0b9b6abb, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
 --- !u!114 &114000014120911494
@@ -419,7 +426,8 @@ MonoBehaviour:
   nameText: Indigeno Malik
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
-  portraitsFace: 1
+  portraits:
+  - {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
