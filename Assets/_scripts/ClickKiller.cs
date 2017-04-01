@@ -11,7 +11,6 @@ public class ClickKiller : MonoBehaviour {
     {
         if (curtainsList.Contains(curtains))
         {
-            Debug.Log("Extra curtains needed for " + gameObject.name);
             GameObject oldCurtains = curtains;
             curtains = Instantiate(oldCurtains, oldCurtains.transform.parent);         
             curtains.name = oldCurtains.name + " #" + (curtainsList.Count + 1);
@@ -27,8 +26,7 @@ public class ClickKiller : MonoBehaviour {
 	}
 
     void OnEnable()
-    {
-        Debug.Log(gameObject.name + " ClickKiller.OnEnable()");
+    {        
         if (curtains != null)
         {
             curtains.SetActive(true);
@@ -37,7 +35,6 @@ public class ClickKiller : MonoBehaviour {
 
     void OnDisable()
     {
-        Debug.Log(gameObject.name + " ClickKiller.OnDisable()");
         if (curtains != null)
         {
             curtains.SetActive(false);
