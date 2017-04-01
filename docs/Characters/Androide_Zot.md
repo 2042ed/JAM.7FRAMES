@@ -8,9 +8,9 @@ DA': viene con noi (forza che spegne il vulcano)
 
 ## dialoghi
 
--   [androide] bzz...ciao! sono Zot l'androide e mi sento molto solo. posso diventare tuo amico?
--   [player] si
-    -   [androide] bzz...grazie! in cambio posso essere a disposizione per missioni pericolose. (**viene con noi**)
--   [player] no
-    -   [androide] bzz...ti prego!
--   [player] ok
+-   [androide] Bzz… ciao! Sono Zot l'androide e mi sento molto solo. Posso diventare tuo amico?
+-   [player] Sì.
+    -   [androide] Bzz… grazie! In cambio posso essere a disposizione per missioni pericolose. (**viene con noi**)
+-   [player] No.
+    -   [androide] Bzz… ti prego!
+-   [player] OK.
