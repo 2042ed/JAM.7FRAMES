@@ -773,6 +773,10 @@ GameObject:
   - component: {fileID: 143895677}
   - component: {fileID: 143895676}
   - component: {fileID: 143895581}
+  - component: {fileID: 143895585}
+  - component: {fileID: 143895583}
+  - component: {fileID: 143895584}
+  - component: {fileID: 143895582}
   m_Layer: 0
   m_Name: location - Home
   m_TagString: Untagged
@@ -841,7 +845,7 @@ MonoBehaviour:
   version: 1
   scrollPos: {x: -65.86191, y: 99.67914}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 400
   zoom: 0.9094953
   scrollViewRect:
@@ -850,16 +854,18 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks:
-  - {fileID: 143895672}
-  selectedCommands:
-  - {fileID: 143895581}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 143895641}
   - {fileID: 143895640}
   - {fileID: 143895639}
   - {fileID: 143895638}
   - {fileID: 143895637}
+  - {fileID: 143895585}
+  - {fileID: 143895584}
+  - {fileID: 143895583}
+  - {fileID: 143895582}
   - {fileID: 143895636}
   - {fileID: 143895635}
   description: Start game
@@ -935,6 +941,62 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &143895582
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: HasChiaveItaliana
+  value: 0
+--- !u!114 &143895583
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: HasCodice
+  value: 0
+--- !u!114 &143895584
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: HasMedicina
+  value: 0
+--- !u!114 &143895585
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: HasInvenzione
+  value: 0
 --- !u!114 &143895635
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9636,8 +9698,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2121626161}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
