@@ -6,15 +6,15 @@ VUOLE: TRE CARICHI DOLIO per aggiustare l'astronave.
 
 ## dialoghi
 
--   [quby] ciao! sono Quby, un robot simpatico!
--   [player] ciao! cosa sono questi resti?
--   [quby] sono i resti della mia astronave che è precipitata in questo punto. purtroppo l'olio energetico è andato disperso quindi io non mi posso muovere. per sbloccarmi, mi servirebbero 3 fiaschettine d'olio.
+-   [quby] Ciao! Sono Quby, un robot simpatico!
+-   [player] Ciao! Cosa sono questi resti?
+-   [quby] Sono i resti della mia astronave che è precipitata in questo punto. Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere. Per sbloccarmi, mi servirebbero 3 fiaschettine d'olio.
 
-    -   [player] sono disposto ad aiutarti!
-        -   [quby] grazie
-    -   [player] sono disposto ad aiutarti in cambio di qualcosa
-        -   [quby] ti ricompenserò dopo che mi avrai dato l'olio.
+    -   [player] Sono disposto ad aiutarti!
+        -   [quby] Grazie.
+    -   [player] Sono disposto ad aiutarti in cambio di qualcosa.
+        -   [quby] Ti ricompenserò dopo che mi avrai dato l'olio.
 
     **ci dà olio**
 
--   [quby] grazie, grazie davvero! tieni questo strumento: è una "chiave italiana"
+-   [quby] Grazie, grazie davvero! Tieni questo strumento: è una "chiave italiana".
