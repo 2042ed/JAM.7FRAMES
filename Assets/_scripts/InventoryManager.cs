@@ -11,7 +11,6 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemDiario;
     public GameObject ItemPelliccia;
     public GameObject ItemChiaveItaliana;
-    public GameObject ItemInvenzione;
     public GameObject ItemCodice;
     public GameObject ItemMedicina;
     public GameObject ItemAndroide;
@@ -23,7 +22,6 @@ public class InventoryManager : MonoBehaviour
     bool hasDiario;
     bool hasPelliccia;
     bool hasChiaveItaliana;
-    bool hasInvenzione;
     bool hasCodice;
     bool hasMedicina;
     bool hasAndroide;
@@ -77,12 +75,6 @@ public class InventoryManager : MonoBehaviour
     public void GetChiaveItaliana()
     {
         hasChiaveItaliana = true;
-        resetInventory();
-    }
-
-    public void GetInvenzione()
-    {
-        hasInvenzione = true;
         resetInventory();
     }
 
@@ -142,7 +134,6 @@ public class InventoryManager : MonoBehaviour
         ItemDiario.SetActive(hasDiario);
         ItemPelliccia.SetActive(hasPelliccia);
         ItemChiaveItaliana.SetActive(hasChiaveItaliana);
-        ItemInvenzione.SetActive(hasInvenzione);
         ItemCodice.SetActive(hasCodice);
         ItemMedicina.SetActive(hasMedicina);
         ItemAndroide.SetActive(hasAndroide);

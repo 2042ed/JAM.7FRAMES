@@ -291,6 +291,72 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 928797469}
   m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
+--- !u!1001 &45560558
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1550777994}
+    m_Modifications:
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011208863684, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_Name
+      value: Passa Ponte
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010730977200, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+        type: 2}
+      propertyPath: m_FlipY
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &45560559 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+    type: 2}
+  m_PrefabInternal: {fileID: 45560558}
+--- !u!114 &45560560 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000014125660576, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+    type: 2}
+  m_PrefabInternal: {fileID: 45560558}
+  m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
 --- !u!1001 &52905636
 Prefab:
   m_ObjectHideFlags: 0
@@ -3184,11 +3250,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.81
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.93
+      value: -1.11
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3221,6 +3287,16 @@ Prefab:
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010730977200, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+        type: 2}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010730977200, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+        type: 2}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
@@ -5578,7 +5654,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891732818}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5746,7 +5822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1550777994}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &398190300
 SpriteRenderer:
@@ -7531,7 +7607,6 @@ MonoBehaviour:
   ItemDiario: {fileID: 645178928}
   ItemPelliccia: {fileID: 240166475}
   ItemChiaveItaliana: {fileID: 1678424502}
-  ItemInvenzione: {fileID: 2032711604}
   ItemCodice: {fileID: 2033760238}
   ItemMedicina: {fileID: 344913385}
   ItemAndroide: {fileID: 1077844725}
@@ -8673,11 +8748,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.3
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8705,11 +8780,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011208863684, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_Name
-      value: Passa Ponte
+      value: Passa Ponte Rotto
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010730977200, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+        type: 2}
+      propertyPath: m_FlipY
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
@@ -9395,11 +9475,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.93
+      value: -3.82
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.27
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9429,6 +9509,12 @@ Prefab:
       propertyPath: m_Name
       value: Back to Villaggio from Ponte
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010730977200, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 94f9f487cac4d0e49957dc7bcadc0532,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
   m_IsPrefabParent: 0
@@ -9538,7 +9624,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891732818}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9729,14 +9815,6 @@ GameObject:
   - component: {fileID: 1151351017}
   - component: {fileID: 1151351018}
   - component: {fileID: 1151351028}
-  - component: {fileID: 1151351027}
-  - component: {fileID: 1151351026}
-  - component: {fileID: 1151351025}
-  - component: {fileID: 1151351024}
-  - component: {fileID: 1151351023}
-  - component: {fileID: 1151351022}
-  - component: {fileID: 1151351021}
-  - component: {fileID: 1151351020}
   - component: {fileID: 1151351019}
   - component: {fileID: 1151351031}
   - component: {fileID: 1151351030}
@@ -9744,6 +9822,16 @@ GameObject:
   - component: {fileID: 1151351032}
   - component: {fileID: 1151351033}
   - component: {fileID: 1151351034}
+  - component: {fileID: 1151351020}
+  - component: {fileID: 1151351027}
+  - component: {fileID: 1151351025}
+  - component: {fileID: 1151351026}
+  - component: {fileID: 1151351024}
+  - component: {fileID: 1151351023}
+  - component: {fileID: 1151351036}
+  - component: {fileID: 1151351021}
+  - component: {fileID: 1151351035}
+  - component: {fileID: 1151351022}
   m_Layer: 0
   m_Name: location - Ponte
   m_TagString: Untagged
@@ -9778,11 +9866,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: -101.17214, y: 2.608138}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -9790,9 +9878,10 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1151351032}
+  - {fileID: 1151351021}
   selectedCommands: []
-  variables: []
+  variables:
+  - {fileID: 1151351020}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -9827,7 +9916,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1151351027}
+  - {fileID: 1151351026}
+  - {fileID: 1151351025}
+  - {fileID: 1151351024}
   - {fileID: 1151351018}
+  - {fileID: 1151351023}
 --- !u!114 &1151351018
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9840,7 +9934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 1
-  indentLevel: 0
+  indentLevel: 1
   duration: 1
   fadeOut: 1
   targetView: {fileID: 548420162}
@@ -9870,19 +9964,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 1151351014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 10
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1548482}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  targetGameObjectOLD: {fileID: 0}
+  scope: 1
+  key: fixedBridge
+  value: 0
 --- !u!114 &1151351021
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151351014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 509.70856
+    y: 63.2455
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 45
+  blockName: Passa Ponte
+  description: 
+  eventHandler: {fileID: 1151351035}
+  commandList:
+  - {fileID: 1151351022}
+--- !u!114 &1151351022
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151351014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  targetFlowchart: {fileID: 153411813}
+  targetBlock: {fileID: 153411814}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1151351023
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -9893,34 +10026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 9
+  itemId: 43
   indentLevel: 0
---- !u!114 &1151351022
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151351014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  indentLevel: 1
-  storyText: "Il ponte \xE8 rotto, non si pu\xF2 passare..."
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  setSayDialog: {fileID: 0}
---- !u!114 &1151351023
+--- !u!114 &1151351024
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
@@ -9931,28 +10039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 7
+  itemId: 41
   indentLevel: 0
---- !u!114 &1151351024
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151351014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 1
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 1875696634}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &1151351025
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9964,7 +10052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 5
+  itemId: 39
   indentLevel: 1
   storyText: Perfetto, il vecchio Barni ha aggiustato il ponte come promesso! Possiamo
     attraversarlo.
@@ -9987,13 +10075,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1151351014}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 1
+  duration: 1
+  fadeOut: 1
+  targetView: {fileID: 425016063}
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  targetCamera: {fileID: 0}
+--- !u!114 &1151351027
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151351014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 4
+  itemId: 38
   indentLevel: 0
   compareOperator: 0
-  variable: {fileID: 0}
+  variable: {fileID: 1151351020}
   booleanData:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -10006,26 +10114,6 @@ MonoBehaviour:
   stringData:
     stringRef: {fileID: 0}
     stringVal: 
---- !u!114 &1151351027
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1151351014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 3
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1548482}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1151351028
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10039,25 +10127,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 379
-    y: 64
-    width: 120
+    x: 325.34143
+    y: 62.780487
+    width: 153
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 29
-  blockName: Passa Ponte
+  blockName: Passa Ponte Rotto
   description: 
   eventHandler: {fileID: 1151351019}
   commandList:
-  - {fileID: 1151351027}
-  - {fileID: 1151351026}
-  - {fileID: 1151351025}
-  - {fileID: 1151351024}
-  - {fileID: 1151351023}
-  - {fileID: 1151351022}
-  - {fileID: 1151351021}
-  - {fileID: 1151351020}
+  - {fileID: 1151351036}
 --- !u!114 &1151351029
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10107,7 +10188,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 381
     y: 157
-    width: 120
+    width: 137
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10132,12 +10213,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 132
     y: 159
-    width: 137
+    width: 212
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 37
-  blockName: Back to VIlaggio
+  blockName: Back to Villaggio
   description: 
   eventHandler: {fileID: 1151351034}
   commandList:
@@ -10176,6 +10257,45 @@ MonoBehaviour:
   parentBlock: {fileID: 1151351032}
   clickableObject: {fileID: 781893985}
   waitFrames: 1
+--- !u!114 &1151351035
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151351014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1151351021}
+  clickableObject: {fileID: 45560560}
+  waitFrames: 1
+--- !u!114 &1151351036
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151351014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 44
+  indentLevel: 0
+  storyText: "Il ponte \xE8 rotto! Non si pu\xF2 passare\u2026"
+  description: 
+  character: {fileID: 695742693}
+  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &1192161427
 GameObject:
   m_ObjectHideFlags: 0
@@ -12552,7 +12672,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891732818}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12726,6 +12846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425016062}
+  - {fileID: 45560559}
   - {fileID: 398190299}
   m_Father: {fileID: 1151351015}
   m_RootOrder: 1
@@ -13062,7 +13183,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1664612929}
+  - {fileID: 1664612914}
   selectedCommands: []
   variables:
   - {fileID: 1664612920}
@@ -15242,7 +15363,6 @@ RectTransform:
   - {fileID: 645178929}
   - {fileID: 240166476}
   - {fileID: 1678424503}
-  - {fileID: 2032711605}
   - {fileID: 2033760239}
   - {fileID: 344913386}
   - {fileID: 1077844726}
@@ -16514,93 +16634,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2029688633}
---- !u!1 &2032711604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2032711605}
-  - component: {fileID: 2032711608}
-  - component: {fileID: 2032711607}
-  - component: {fileID: 2032711606}
-  m_Layer: 5
-  m_Name: Invenzione
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2032711605
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2032711604}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1891732818}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2032711606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2032711604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: 80
-  m_MinHeight: -1
-  m_PreferredWidth: 80
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
---- !u!114 &2032711607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2032711604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7881e1dbd2fbd40f99a15ed5530ee500, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &2032711608
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2032711604}
 --- !u!1 &2033760238
 GameObject:
   m_ObjectHideFlags: 0
@@ -16630,7 +16663,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1891732818}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17267,7 +17300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1664612911}
+  selectedFlowchart: {fileID: 1151351016}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
