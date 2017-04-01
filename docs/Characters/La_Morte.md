@@ -7,16 +7,15 @@ DA': Diario di Gregor
 
 ## dialoghi
 
--   [player] aaaah! un mostro!
--   [morte] tranquillo, sono la morte, non voglio ucciderti. ho bisogno del tuo aiuto. il re demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
+-   [player] Aah! Un mostro!
+-   [morte] Tranquillo, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto. Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
 
     (fa apparire una boccia d'olio)
 
--   [player] ma se ti porto fuori di qui ucciderai tutti!
--   [morte] no, io non uccido. raccolgo le anime di chi è già morto.
-    -   [player] ti porterò fuori da qui.
-    -   [player] ti porterò fuori da qui in cambio di una ricompensa
-        answer2: morte: ti ricompenserò in futuro
-        ...dopo essere usciti...
--   [morte] posso venire con te al portale?
--   [player] si
+-   [player] Ma se ti porto fuori di qui ucciderai tutti!
+-   [morte] No, io non uccido. raccolgo le anime di chi è già morto.
+    -   [player] Ti porterò fuori da qui.
+    -   [player] Ti porterò fuori da qui in cambio di una ricompensa
+        answer2: morte: Ti ricompenserò in futuro… dopo essere usciti…
+-   [morte] Posso venire con te al portale?
+-   [player] Sì.
