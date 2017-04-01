@@ -102,6 +102,12 @@ public class InventoryManager : MonoBehaviour
         resetInventory();
     }
 
+    public void LoseAndroide()
+    {
+        hasAndroide = false;
+        resetInventory();
+    }
+
     void resetInventory()
     {
         ItemOlio1.SetActive(hasOlio1);
