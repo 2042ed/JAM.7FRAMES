@@ -10,9 +10,9 @@ VUOLE: TRE CARICHI DOLIO per aggiustare l'astronave.
 -   [player] Ciao! Cosa sono questi resti?
 -   [quby] Sono i resti della mia astronave che è precipitata in questo punto. Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere. Per sbloccarmi, mi servirebbero 3 fiaschettine d'olio.
 
-    -   [player] Sono disposto ad aiutarti!
+    -   [player] Sono disposta ad aiutarti!
         -   [quby] Grazie.
-    -   [player] Sono disposto ad aiutarti in cambio di qualcosa.
+    -   [player] Sono disposta ad aiutarti in cambio di qualcosa.
         -   [quby] Ti ricompenserò dopo che mi avrai dato l'olio.
 
     **ci dà olio**
