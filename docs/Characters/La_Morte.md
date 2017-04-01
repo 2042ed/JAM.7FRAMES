@@ -8,7 +8,7 @@ DA': Diario di Gregor
 ## dialoghi
 
 -   [player] Aah! Un mostro!
--   [morte] Tranquillo, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto. Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
+-   [morte] Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto. Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti. Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti aiuterò.
 
     (fa apparire una boccia d'olio)
 
