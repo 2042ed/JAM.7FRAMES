@@ -102,6 +102,12 @@ public class InventoryManager : MonoBehaviour
         resetInventory();
     }
 
+    public void LoseAllOil()
+    {
+        hasOlio1 = hasOlio2 = hasOlio3 = false;
+        resetInventory();
+    }
+
     public void LoseAndroide()
     {
         hasAndroide = false;
