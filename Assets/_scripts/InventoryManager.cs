@@ -15,6 +15,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemCodice;
     public GameObject ItemMedicina;
     public GameObject ItemAndroide;
+    public GameObject ItemMorte;
 
     bool hasOlio1;
     bool hasOlio2;
@@ -26,6 +27,7 @@ public class InventoryManager : MonoBehaviour
     bool hasCodice;
     bool hasMedicina;
     bool hasAndroide;
+    bool hasMorte;
 
     void Start()
     {
@@ -102,6 +104,12 @@ public class InventoryManager : MonoBehaviour
         resetInventory();
     }
 
+    public void GetMorte()
+    {
+        hasMorte = true;
+        resetInventory();
+    }
+
     public void LoseAllOil()
     {
         hasOlio1 = hasOlio2 = hasOlio3 = false;
@@ -126,5 +134,6 @@ public class InventoryManager : MonoBehaviour
         ItemCodice.SetActive(hasCodice);
         ItemMedicina.SetActive(hasMedicina);
         ItemAndroide.SetActive(hasAndroide);
+        ItemMorte.SetActive(hasMorte);
     }
 }
