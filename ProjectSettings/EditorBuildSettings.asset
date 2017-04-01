@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_scenes/home.unity
+    path: Assets/_scenes/_home.unity
+  - enabled: 1
+    path: Assets/_scenes/dungeon.unity
+  - enabled: 1
+    path: Assets/_scenes/grotta.unity
+  - enabled: 1
+    path: Assets/_scenes/foresta.unity
+  - enabled: 1
+    path: Assets/_scenes/ponte_portale.unity
+  - enabled: 1
+    path: Assets/_scenes/palude.unity
+  - enabled: 1
+    path: Assets/_scenes/tundra.unity
   - enabled: 1
     path: Assets/_scenes/villaggio.unity
