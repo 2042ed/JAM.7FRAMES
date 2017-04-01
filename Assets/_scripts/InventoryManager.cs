@@ -40,9 +40,57 @@ public class InventoryManager : MonoBehaviour
         InventoryPanel.SetActive(false);
     }
 
+    public void GetOlio1()
+    {
+        hasOlio1 = true;
+        resetInventory();
+    }
+
+    public void GetOlio2()
+    {
+        hasOlio2 = true;
+        resetInventory();
+    }
+
+    public void GetOlio3()
+    {
+        hasOlio3 = true;
+        resetInventory();
+    }
+
+    public void GetDiario()
+    {
+        hasDiario = true;
+        resetInventory();
+    }
+
     public void GetPelliccia()
     {
         hasPelliccia = true;
+        resetInventory();
+    }
+
+    public void GetChiaveItaliana()
+    {
+        hasChiaveItaliana = true;
+        resetInventory();
+    }
+
+    public void GetInvenzione()
+    {
+        hasInvenzione = true;
+        resetInventory();
+    }
+
+    public void GetCodice()
+    {
+        hasCodice = true;
+        resetInventory();
+    }
+
+    public void GetMedicina()
+    {
+        hasMedicina = true;
         resetInventory();
     }
 

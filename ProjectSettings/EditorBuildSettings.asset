@@ -7,3 +7,5 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_scenes/home.unity
+  - enabled: 1
+    path: Assets/_scenes/villaggio.unity
