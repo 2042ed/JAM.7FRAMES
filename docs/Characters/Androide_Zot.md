@@ -4,7 +4,7 @@ androide molto forte e coraggioso mette a disposizione la sua vita può essere u
 
 LOCATION: Tundra
 VUOLE: AMICIZIA
-DA': viene con noi (forza)
+DA': viene con noi (forza che spegne il vulcano)
 
 ## dialoghi
 
