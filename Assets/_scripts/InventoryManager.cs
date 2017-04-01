@@ -122,6 +122,12 @@ public class InventoryManager : MonoBehaviour
         resetInventory();
     }
 
+    public void LoseDiario()
+    {
+        hasDiario = false;
+        resetInventory();
+    }
+
     void resetInventory()
     {
         ItemOlio1.SetActive(hasOlio1);
