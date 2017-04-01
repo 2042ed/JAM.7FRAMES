@@ -13,17 +13,17 @@ DA': medicina
 
 _audio: (sigh..sigh..)_
 
--   [player] cosa è successo qua? perché è tutto pieno di lava?
--   [elfo] sigh.. sigh.. sono l'elfo Linzi. il vulcano è esploso e la mia casa ha preso fuoco!
--   [player] e coem possiam ofare?
--   [elfo] l'unica cosa che può spengere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela... sigh.. sigh..
-    -   [player] ti posso aiutare io!
-        -   [elfo] grazie! poi ti ricompenserò.
-    -   [player] problemi tuoi
-        -   [elfo] che tu possa bruciare all'inferno! ti conviene aiutarmi o ti ucciderò.
-        -   [player] mi conviene aiutarti.
+-   [player] Cosa è successo qua? Perché è tutto pieno di lava?
+-   [elfo] Sigh… sigh… sono l'elfo Linzi. Il vulcano è esploso e la mia casa ha preso fuoco!
+-   [player] E come possiamo fare?
+-   [elfo] L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…
+    -   [player] Ti posso aiutare io!
+        -   [elfo] Grazie! Poi ti ricompenserò.
+    -   [player] Problemi tuoi.
+        -   [elfo] Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
+        -   [player] Mi conviene aiutarti.
 
-_una volta deviato il fiume (con la forza di Zot_
+_una volta deviato il fiume (con la forza di Zot)_
 
--   [elfo] ho cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. prendila.
--   [player] grazie.
+-   [elfo] Ho cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila.
+-   [player] Grazie.
