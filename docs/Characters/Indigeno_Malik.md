@@ -17,10 +17,9 @@ DA': Pelliccia
 _dopo avergli dato la medicina_
 
 -   [indigeno] grazie! ecco i consigli di vita: bevi molto quando hai sete, mangia molto quando hai fame e respira profondamente quando ha bisogno di respirare
--   [player] ah...grazie.
-    ok io vado allora..
+-   [player] ah...grazie. ok io vado allora..
 
-_se siamo stati alal caverna di ghiaccio_
+_se siamo stati alla caverna di ghiaccio_
 
 -   [player] non è che potresti prestarmi la tua pelliccia?
 -   [indigeno] ma certo! ora non mi serve
