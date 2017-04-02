@@ -2,10 +2,10 @@
 
 androide molto forte e coraggioso mette a disposizione la sua vita può essere un PET piccolo e utile cosa
 
-LOCATION: Tundra
-VUOLE: AMICIZIA
-DA': viene con noi (forza che spegne il vulcano)
-ESPRESSIONI: triste, allegro. 
+LOCATION: Tundra  
+VUOLE: AMICIZIA  
+DA': viene con noi (forza che spegne il vulcano)  
+ESPRESSIONI: triste, allegro.   
 
 ## dialoghi
 
