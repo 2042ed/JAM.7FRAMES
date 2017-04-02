@@ -8,19 +8,20 @@ LOCATION: Pianura vulcanica
 VUOLE: spegnere incendio
 SERVE: la forza di Zot
 DA': medicina
+ESPRESSIONI : player basito, elfo triste felice arrabbiato
 
 ## dialoghi
 
 _audio: (sigh..sigh..)_
 
--   [player] Cosa è successo qua? Perché è tutto pieno di lava?
--   [elfo] Sigh… sigh… sono l'elfo Linzi. Il vulcano è esploso e la mia casa ha preso fuoco!
+-   [player basito] Cosa è successo qua? Perché è tutto pieno di lava?
+-   [elfo triste] Sigh… sigh… sono l'elfo Linzi. Il vulcano è esploso e la mia casa ha preso fuoco!
 -   [player] Come posso aiutarti?
--   [elfo] L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…
+-   [elfo triste] L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…
     -   [player] Ti posso aiutare io!
-        -   [elfo] Grazie! Poi ti ricompenserò.
+        -   [elfo felice] Grazie! Poi ti ricompenserò.
     -   [player] Problemi tuoi.
-        -   [elfo] Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
+        -   [elfo arrabbiato] Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
         -   [player] Già, credo proprio che mi conviene aiutarti.
 
 _una volta deviato il fiume (con la forza di Zot)_
