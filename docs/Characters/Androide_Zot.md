@@ -5,12 +5,15 @@ androide molto forte e coraggioso mette a disposizione la sua vita può essere u
 LOCATION: Tundra
 VUOLE: AMICIZIA
 DA': viene con noi (forza che spegne il vulcano)
+ESPRESSIONI: triste, allegro. 
 
 ## dialoghi
 
--   [androide] Bzz… ciao! Sono Zot l'androide e mi sento molto solo. Posso diventare tuo amico?
--   [player] Sì.
-    -   [androide] Bzz… grazie! In cambio posso essere a disposizione per missioni pericolose. (**viene con noi**)
--   [player] No.
-    -   [androide] Bzz… ti prego!
+-   [androide triste] Bzz… ciao! Sono Zot l'androide e mi sento molto solo. Posso diventare tuo amico?
+-   answer 1 [player] Sì.
+    -   [androide allegro] Bzz… grazie! In cambio posso essere a disposizione per missioni pericolose. (**viene con noi**)
+-  answer 2 [player] No.
+    -   [androide triste] Bzz… ti prego!
 -   [player] OK.
+
+-   [androide allegro] Bzz… grazie! In cambio posso essere a disposizione per missioni pericolose. (**viene con noi**)
