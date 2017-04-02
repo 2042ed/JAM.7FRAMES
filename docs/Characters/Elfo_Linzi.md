@@ -4,11 +4,11 @@ elfo con i capelli lunghi gialli, cappuccio verde
 stava in una casa di paglia distrutta da un vulcano. aveva anche cose di pietra.
 gli serve l’acqua di un fiume per spegnere la lava. é agile e un druido cosa
 
-LOCATION: Pianura vulcanica
-VUOLE: spegnere incendio
-SERVE: la forza di Zot
-DA': medicina
-ESPRESSIONI : player basito, elfo triste felice arrabbiato
+LOCATION: Pianura vulcanica  
+VUOLE: spegnere incendio  
+SERVE: la forza di Zot  
+DA': medicina  
+ESPRESSIONI : player basito, elfo triste felice arrabbiato  
 
 ## dialoghi
 
