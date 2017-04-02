@@ -10263,6 +10263,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1983860799}
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+--- !u!114 &853595395 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000014125660576, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+    type: 2}
+  m_PrefabInternal: {fileID: 860971705}
+  m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
 --- !u!1001 &860971705
 Prefab:
   m_ObjectHideFlags: 0
@@ -10332,6 +10338,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
     type: 2}
   m_PrefabInternal: {fileID: 860971705}
+--- !u!114 &904125332 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000014125660576, guid: 6b2d886c177217c49a0a6bdb1aed2f24,
+    type: 2}
+  m_PrefabInternal: {fileID: 1607692488}
+  m_Script: {fileID: 11500000, guid: cc03961113fa349c09cb06ef2911013d, type: 3}
 --- !u!1 &911222216
 GameObject:
   m_ObjectHideFlags: 0
@@ -15100,8 +15112,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 1664612918}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 1664612920}
@@ -15176,7 +15187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 157.9375
     y: 175.875
-    width: 120
+    width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15198,7 +15209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1664612914}
-  clickableObject: {fileID: 0}
+  clickableObject: {fileID: 904125332}
   waitFrames: 1
 --- !u!114 &1664612916
 MonoBehaviour:
@@ -15212,7 +15223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 1664612918}
-  clickableObject: {fileID: 798101708}
+  clickableObject: {fileID: 853595395}
   waitFrames: 1
 --- !u!114 &1664612917
 MonoBehaviour:
@@ -15249,7 +15260,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 155.9375
     y: 248.875
-    width: 152
+    width: 254
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -18603,9 +18614,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2121626156}
-  selectedCommands:
-  - {fileID: 2121626170}
+  - {fileID: 2121626167}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -18841,7 +18851,7 @@ MonoBehaviour:
   - {fileID: 2121626168}
 --- !u!114 &2121626170
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121626155}
@@ -18994,7 +19004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2121626158}
+  selectedFlowchart: {fileID: 1664612911}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
