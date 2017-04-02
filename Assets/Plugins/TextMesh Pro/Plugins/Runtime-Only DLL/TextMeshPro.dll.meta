@@ -14,7 +14,7 @@ PluginImporter:
       settings:
         CPU: ARMv7
     Any:
-      enabled: 1
+      enabled: 0
       settings:
         Exclude Android: 0
         Exclude Editor: 1
