@@ -15,13 +15,13 @@ _audio: (sigh..sigh..)_
 
 -   [player] Cosa è successo qua? Perché è tutto pieno di lava?
 -   [elfo] Sigh… sigh… sono l'elfo Linzi. Il vulcano è esploso e la mia casa ha preso fuoco!
--   [player] E come possiamo fare?
+-   [player] Come posso aiutarti?
 -   [elfo] L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…
     -   [player] Ti posso aiutare io!
         -   [elfo] Grazie! Poi ti ricompenserò.
     -   [player] Problemi tuoi.
         -   [elfo] Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
-        -   [player] Mi conviene aiutarti.
+        -   [player] Già, credo proprio che mi conviene aiutarti.
 
 _una volta deviato il fiume (con la forza di Zot)_
 
