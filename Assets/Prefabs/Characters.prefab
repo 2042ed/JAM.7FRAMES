@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 4000011325328098}
   - component: {fileID: 114000012845539518}
   m_Layer: 0
-  m_Name: La Morte
+  m_Name: Morte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,6 +295,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 3dbdd3f2d32404e7a83d7ccce59dbf15, type: 3}
+  - {fileID: 21300000, guid: 4f8f19286665f4ee18d6a4de7e79501a, type: 3}
+  - {fileID: 21300000, guid: 7520919f94ef64183bea2b2285a6fc50, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -337,6 +339,8 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
+  - {fileID: 21300000, guid: 98043bd9df5e64bc0bea5074fea1d5b0, type: 3}
+  - {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -356,6 +360,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
+  - {fileID: 21300000, guid: 67f3f8c94a852479b85a613195318b6f, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -396,6 +401,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
+  - {fileID: 21300000, guid: ba426bfb3280540ee910ce5754dc09e7, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -435,6 +441,9 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  - {fileID: 21300000, guid: f832190416a864e1596962a3b70aadf5, type: 3}
+  - {fileID: 21300000, guid: d8be45f0ca2a5473fbec50268cc43297, type: 3}
+  - {fileID: 21300000, guid: 5414e0f913e284e1b86bee967ceba3a1, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

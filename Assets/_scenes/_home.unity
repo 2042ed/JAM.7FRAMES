@@ -4446,11 +4446,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -73.465546, y: 75.86862}
+  scrollPos: {x: 182.36145, y: 398.86295}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.97
+  blockViewHeight: 463
+  zoom: 0.5684739
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -4458,7 +4458,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 298259646}
+  - {fileID: 298259678}
   selectedCommands: []
   variables:
   - {fileID: 298259648}
@@ -4488,9 +4488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 93.42858
-    y: 10.714306
-    width: 205
+    x: 74.6511
+    y: -46.95939
+    width: 195
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4556,9 +4556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 74.57145
-    y: 181.7143
-    width: 225
+    x: -15.292218
+    y: 259.50677
+    width: 209
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4747,9 +4747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 254.57162
-    y: 123.85711
-    width: 145
+    x: 58.74936
+    y: 113.12713
+    width: 137
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4791,9 +4791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 309
-    y: 185.28566
-    width: 137
+    x: 59.527744
+    y: 182.60315
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4952,7 +4952,7 @@ MonoBehaviour:
   storyText: Che freddo!
   description: 
   character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  portrait: {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -5258,9 +5258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 344.52734
-    y: 31.78748
-    width: 130
+    x: 325.74988
+    y: -25.886223
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5329,9 +5329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 537.3846
-    y: 36.073166
-    width: 135
+    x: 557.5033
+    y: -49.766758
+    width: 131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5488,8 +5488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 603.3625
-    y: 98.35819
+    x: 497.40372
+    y: 184.1981
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6083,10 +6083,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 1
-  storyText: Invece mi ascolterai, altrimenti non ti faccio uscire.
+  storyText: Invece mi ascolterai, altrimenti non ti faccio uscire!
   description: 
   character: {fileID: 146153425}
-  portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
+  portrait: {fileID: 21300000, guid: ba426bfb3280540ee910ce5754dc09e7, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6239,9 +6239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 419.85733
+    x: 498.99094
     y: 111.76023
-    width: 166
+    width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6356,19 +6356,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 147.43703, y: 177.4327}
+  scrollPos: {x: 245.64497, y: 75.176025}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.71110654
+  blockViewHeight: 505
+  zoom: 0.64862293
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 303467879}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 303467886}
@@ -6424,7 +6423,7 @@ MonoBehaviour:
     attimo\u2026 io\u2026 sono Gregor!{wc}\nPoi\u2026 forse\u2026 s\xEC! sono un mago!"
   description: 
   character: {fileID: 632411951}
-  portrait: {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
+  portrait: {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6446,8 +6445,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 348
-    y: 68.40626
+    x: 415.836
+    y: 42.196884
     width: 133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6577,7 +6576,7 @@ MonoBehaviour:
   storyText: "Ora il mago Gregor \xE8 felice."
   description: 
   character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -6760,8 +6759,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 384
-    y: 263
+    x: 404.04236
+    y: 337.0026
     width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -6937,7 +6936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 304
+    x: 305.54172
     y: 209
     width: 124
     height: 40
@@ -7212,7 +7211,7 @@ MonoBehaviour:
     desidero \xE8 il mio diario, \xE8 la mia unica speranza di recuperare la memoria."
   description: 
   character: {fileID: 632411951}
-  portrait: {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
+  portrait: {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7280,7 +7279,7 @@ MonoBehaviour:
     me.
   description: 
   character: {fileID: 632411951}
-  portrait: {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
+  portrait: {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12115,7 +12114,6 @@ GameObject:
   - component: {fileID: 1192161434}
   - component: {fileID: 1192161437}
   - component: {fileID: 1192161457}
-  - component: {fileID: 1192161456}
   - component: {fileID: 1192161455}
   - component: {fileID: 1192161454}
   - component: {fileID: 1192161453}
@@ -12140,6 +12138,9 @@ GameObject:
   - component: {fileID: 1192161459}
   - component: {fileID: 1192161458}
   - component: {fileID: 1192161460}
+  - component: {fileID: 1192161465}
+  - component: {fileID: 1192161464}
+  - component: {fileID: 1192161456}
   m_Layer: 0
   m_Name: location - Dungeon
   m_TagString: Untagged
@@ -12177,7 +12178,7 @@ MonoBehaviour:
   scrollPos: {x: -124.98645, y: 81.3686}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
+  blockViewHeight: 453
   zoom: 0.8627447
   scrollViewRect:
     serializedVersion: 2
@@ -12185,8 +12186,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1192161447}
+  selectedCommands:
+  - {fileID: 1192161442}
   variables: []
   description: 
   stepPause: 0
@@ -12236,9 +12239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 595.0916
-    y: 61.329113
-    width: 140
+    x: 546.40967
+    y: 21.91999
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12249,6 +12252,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 1192161430}
   - {fileID: 1192161455}
+  - {fileID: 1192161464}
+  - {fileID: 1192161465}
   - {fileID: 1192161454}
   - {fileID: 1192161453}
   - {fileID: 1192161452}
@@ -12285,7 +12290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50
     y: 50
-    width: 131
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12344,7 +12349,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50.365295
     y: 138.30627
-    width: 250
+    width: 234
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12484,7 +12489,7 @@ MonoBehaviour:
   storyText: "S\xEC."
   description: 
   character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 05ccd53483a554ca9b31f685fa76154a, type: 3}
+  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12509,7 +12514,7 @@ MonoBehaviour:
   storyText: Posso venire con te al portale?
   description: 
   character: {fileID: 2110283232}
-  portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
+  portrait: {fileID: 21300000, guid: 67f3f8c94a852479b85a613195318b6f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12596,9 +12601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 595.5207
-    y: 202.9696
-    width: 132
+    x: 553.7931
+    y: 207.60596
+    width: 123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12626,9 +12631,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 720.1185
-    y: 109.08144
-    width: 186
+    x: 677.232
+    y: 110.24054
+    width: 178
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12652,9 +12657,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 431.618
-    y: 117.00262
-    width: 165
+    x: 378.29987
+    y: 118.161705
+    width: 157
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12803,8 +12808,7 @@ MonoBehaviour:
   storyText: "Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo
     aiuto.{wc}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a
     guardia da degli spiriti.{wc}\nGli spiriti temono gli esseri umani; accompagnami
-    fuori da qui e ti aiuter\xF2.{wc}\nTieni questa boccia d'olio come segno della
-    mia benevolenza."
+    fuori da qui e ti ricompenser\xF2."
   description: 
   character: {fileID: 2110283232}
   portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
@@ -12818,7 +12822,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1192161456
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192161427}
@@ -12827,12 +12831,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 42
+  itemId: 94
   indentLevel: 0
-  storyText: Ma se ti porto fuori di qui ucciderai tutti!
+  storyText: "Non ti aiuter\xF2 per una misera fiaschettina d'olio.{wc}E poi, se ti
+    portassi fuori da qui, uccideresti tutti!"
   description: 
   character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  portrait: {fileID: 21300000, guid: e62429c91e72045edab4aefa20d7defb, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -12854,7 +12859,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 41
   indentLevel: 0
-  storyText: "No, io non uccido. Raccolgo le anime di chi \xE8 gi\xE0 morto."
+  storyText: "No, io non uccido. Raccolgo le anime di chi \xE8 gi\xE0 morto. Ti prego,
+    aiutami!"
   description: 
   character: {fileID: 2110283232}
   portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
@@ -12901,7 +12907,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 54.433456
     y: 260.01086
-    width: 152
+    width: 145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12974,7 +12980,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 49.50164
     y: 209.01085
-    width: 160
+    width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12984,6 +12990,46 @@ MonoBehaviour:
   eventHandler: {fileID: 1192161462}
   commandList:
   - {fileID: 1192161461}
+--- !u!114 &1192161464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 93
+  indentLevel: 0
+  commenterName: XXXX fare appariore boccia olio
+  commentText: 
+--- !u!114 &1192161465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 92
+  indentLevel: 0
+  storyText: Tieni questa boccia d'olio come segno della mia benevolenza.
+  description: 
+  character: {fileID: 2110283232}
+  portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &1224517353
 GameObject:
   m_ObjectHideFlags: 0
@@ -15440,7 +15486,7 @@ MonoBehaviour:
   scrollPos: {x: 7.3058395, y: 124.60908}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
-  blockViewHeight: 314
+  blockViewHeight: 498
   zoom: 0.5800003
   scrollViewRect:
     serializedVersion: 2
@@ -15449,9 +15495,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1664612929}
+  - {fileID: 1664612953}
   selectedCommands:
-  - {fileID: 1664612956}
+  - {fileID: 1664612939}
   variables:
   - {fileID: 1664612920}
   - {fileID: 1664612957}
@@ -15682,8 +15728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 637.30597
-    y: 84.280914
+    x: 645.92664
+    y: 25.660263
     width: 174
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15813,7 +15859,7 @@ MonoBehaviour:
   storyText: Aah! Che dolore!
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: d8be45f0ca2a5473fbec50268cc43297, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -15835,8 +15881,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 399.625
-    y: 72.18749
+    x: 422.0388
+    y: 35.980614
     width: 151
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -15867,10 +15913,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 1
-  storyText: Ma certo! Ora che sono sano non mi serve.
+  storyText: Ma certo! Ora che sono guarito non mi serve.
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: f832190416a864e1596962a3b70aadf5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16031,10 +16077,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 1
-  storyText: "Ah\u2026 grazie. OK, io vado allora\u2026"
+  storyText: "Ah\u2026 grazie. Ok, io vado allora\u2026"
   description: 
   character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  portrait: {fileID: 21300000, guid: 7f3bc3e9471e741109b2bbe42270d7ad, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16082,11 +16128,11 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 1
   storyText: "Ecco i consigli di vita: bevi molto quando hai sete\u2026{wc}\n\u2026mangia
-    molto quando hai fame\u2026{wc}\n\u2026e respira profondamente quando ha bisogno
+    molto quando hai fame\u2026{wc}\n\u2026e respira profondamente quando hai bisogno
     di respirare."
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: 5414e0f913e284e1b86bee967ceba3a1, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16151,7 +16197,7 @@ MonoBehaviour:
   storyText: Vuoi ancora ascoltare i miei saggi consigli?
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: f832190416a864e1596962a3b70aadf5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16362,7 +16408,7 @@ MonoBehaviour:
   storyText: "Mi serve una medicina.\r"
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: d8be45f0ca2a5473fbec50268cc43297, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -16384,8 +16430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 390.26938
-    y: 149.74426
+    x: 421.30383
+    y: 142.84772
     width: 167
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -16453,7 +16499,7 @@ MonoBehaviour:
     di vita importantissimi!"
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: a3a2929545ae34dcc8b6d3d17e64d9cc, type: 3}
+  portrait: {fileID: 21300000, guid: d8be45f0ca2a5473fbec50268cc43297, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -18101,7 +18147,7 @@ MonoBehaviour:
   - {fileID: 1978847771}
 --- !u!114 &1978847773
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
@@ -18126,7 +18172,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1978847774
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
@@ -18152,7 +18198,7 @@ MonoBehaviour:
   - {fileID: 1978847773}
 --- !u!114 &1978847775
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
@@ -18178,7 +18224,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1978847776
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
@@ -18198,7 +18244,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1978847777
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
@@ -19729,7 +19775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1978847758}
+  selectedFlowchart: {fileID: 298259642}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1

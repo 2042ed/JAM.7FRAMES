@@ -16,6 +16,6 @@ DA': Diario di Trevor
 -   [morte] No, io non uccido. raccolgo le anime di chi è già morto. Ti prego, aiutami!
     -   [player] Va bene, ti porterò fuori da qui. Sono diretta al portale.
     -   [player] Ti porterò fuori da qui, ma solo in cambio di una ricompensa maggiore di una fiaschettina d'olio. Comunque, io sono diretta al po mrtale.
-        answer2: [morte] Ti ricompenserò in futuro
+        answer2: [morte] Ti ricompenserò in futuro... dopo essere usciti…
 -   [morte] Posso venire con te al portale?
 -   [player] Sì.

@@ -16,7 +16,7 @@ ESPRESSIONI:  indigeno sofferente, fiero. player basito.
 
 _dopo avergli dato la medicina_
 
--   [indigeno fiero] Grazie! Ecco i consigli di vita: bevi molto quando hai sete… …mangia molto quando hai fame… …e respira profondamente quando ha bisogno di respirare.
+-   [indigeno fiero] Grazie! Ecco i consigli di vita: bevi molto quando hai sete… …mangia molto quando hai fame… …e respira profondamente quando hai bisogno di respirare.
 -   [player basito] Ah… grazie. OK, io vado allora…
 
 _se siamo stati alla caverna di ghiaccio_

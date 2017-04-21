@@ -10,13 +10,15 @@ ESPRESSIONI:
 
 ## dialoghi
 
-- [scienziato normalw] Chi sei? Che bello vedere una persona dopo tanto tempo. Finalmente qualcuno a cui raccontare la mia storia.
+- [scienziato normale] Chi sei? Che bello vedere una persona dopo tanto tempo. Finalmente qualcuno a cui raccontare la mia storia.
 - [player] Sono disposta ad ascoltarti.
-- [scienziato normale] Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra. Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amici Fluffi. Aspetta un attimo… puoi trovare la mia paletta? È in questa stanza.
+- [scienziato normale] Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra. Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amici Fluffi. Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
 - [player] Non mi interessa.
-- [scienziato arrabbiato] Invece mi ascolterai, altrimenti non ti faccio uscire.
+- [scienziato arrabbiato] Invece mi ascolterai, altrimenti non ti faccio uscire!
 
-...trovata la paletta dietro una torcia...
+...trovata la pala dietro una torcia...
 
+//**
 - [scienziato normale] Grazie! ti devo chiedere un altro favore, posso venire con te? Ti prego! ti aiuterò.
 - [player] Sì, certamente.
+**//
