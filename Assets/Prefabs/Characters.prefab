@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 4000011583028354}
   - component: {fileID: 114000012462274286}
   m_Layer: 0
-  m_Name: Emma Fee
+  m_Name: Emma Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,11 +309,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Emma Fee
+  nameText: Emma Frame
   nameColor: {r: 0.82745105, g: 0.5137255, b: 0.21960786, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  - {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
+  - {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
+  - {fileID: 21300000, guid: e62429c91e72045edab4aefa20d7defb, type: 3}
+  - {fileID: 21300000, guid: 7f3bc3e9471e741109b2bbe42270d7ad, type: 3}
   portraitsFace: 2
   setSayDialog: {fileID: 0}
   description: 
@@ -370,7 +374,9 @@ MonoBehaviour:
   nameColor: {r: 0.2205882, g: 0.7419877, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: a95def6ddfa694d0a99deaf575241ea5, type: 3}
+  - {fileID: 21300000, guid: 7eab3936afc96436c8ad1cf5e2e79f98, type: 3}
+  - {fileID: 21300000, guid: 469bc6415991844efae092b98392a76b, type: 3}
+  - {fileID: 21300000, guid: 99a46b968a2bb4f01930df24704cffc1, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -409,6 +415,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 96acd183a819a4cf581d0a0f0b9b6abb, type: 3}
+  - {fileID: 21300000, guid: 6a72378b2945d4e438937294275468bc, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

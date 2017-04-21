@@ -8,7 +8,7 @@ LOCATION: Pianura vulcanica
 VUOLE: spegnere incendio  
 SERVE: la forza di Zot  
 DA': medicina  
-ESPRESSIONI : player basito, elfo triste felice arrabbiato  
+ESPRESSIONI : triste, felice, arrabbiato
 
 ## dialoghi
 
@@ -22,7 +22,7 @@ _audio: (sigh..sigh..)_
         -   [elfo felice] Grazie! Poi ti ricompenserò.
     -   [player] Problemi tuoi.
         -   [elfo arrabbiato] Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
-        -   [player] Già, credo proprio che mi conviene aiutarti.
+        -   [player] Già, credo proprio che mi convenga aiutarti.
 
 _una volta deviato il fiume (con la forza di Zot)_
 
