@@ -1,12 +1,12 @@
-## Mago Gregor [by Maia]
+## Mago Trevor [by Maia]
 
 mago in trance dentro ad una palude. si risveglia appena il personaggio arriva nella palude. ha perduto la memoria; vuole ritrovare un diario dove ha scritto la sua storia.  
 LOCATION: Palude  
 VUOLE: DIARIO  
-ESPRESSIONI: mago basito,mago felice 
+ESPRESSIONI: mago basito,mago felice
 ### dialoghi
 
--   [mago basito] Dove sono? Chi sono? Perché sono appena uscito da un lago? Un attimo… io… sono Gregor! Poi… forse… sì! sono un mago!
+-   [mago basito] Dove sono? Chi sono? Perché sono appena uscito da un lago? Un attimo… io… sono Trevor! Poi… forse… sì! sono un mago!
 -   [player] Ehm…
 -   [mago basito] E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me.
     (ti avvicini al mago)

@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4000010208262304}
   - component: {fileID: 114000012598659296}
   m_Layer: 0
-  m_Name: Mago Gregor
+  m_Name: Mago Trevor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Mago Gregor
+  nameText: Mago Trevor
   nameColor: {r: 0.375, g: 1, b: 0.3793103, a: 1}
   soundEffect: {fileID: 0}
   portraits:
