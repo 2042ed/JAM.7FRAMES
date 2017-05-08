@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 4000011583028354}
   - component: {fileID: 114000012462274286}
   m_Layer: 0
-  m_Name: Emma Frame
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,6 +422,7 @@ MonoBehaviour:
   portraits:
   - {fileID: 21300000, guid: 96acd183a819a4cf581d0a0f0b9b6abb, type: 3}
   - {fileID: 21300000, guid: 6a72378b2945d4e438937294275468bc, type: 3}
+  - {fileID: 21300000, guid: 661f4b44e4259448e9e4ea70f64f8691, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
