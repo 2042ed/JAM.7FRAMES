@@ -38,15 +38,15 @@ SAY.location - Grotta Ghiaccio.86.Emma Frame,,Non mi interessa.
 SAY.location - Grotta Ghiaccio.83.Vecchio Barni,,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
 SAY.location - Grotta Ghiaccio.91.Vecchio Barni,,"Trova la mia pala, uffa!{wc}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
 SAY.location - Grotta Ghiaccio.97.Vecchio Barni,,Grazie! Mi metterò subito al lavoro per riparare il ponte.{wc}\nSe chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
-SAY.location - Palude.61.Emma Frame,,Senza il suo diario il mago Gregor non riuscirà a ricordare nulla.
-SAY.location - Palude.39.Mago Trevor,,Dove sono? Chi sono?{wc}\nPerché sono appena uscito da un lago?{wc}\nUn attimo… io… sono Gregor!{wc}\nPoi… forse… sì! sono un mago!
+SAY.location - Palude.61.Emma Frame,,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
+SAY.location - Palude.39.Mago Trevor,,Dove sono? Chi sono?{wc}\nPerché sono appena uscito da un lago?{wc}\nUn attimo… io… sono Trevor!{wc}\nPoi… forse… sì! sono un mago!
 SAY.location - Palude.51.Emma Frame,,Ehm…
 SAY.location - Palude.52.Mago Trevor,,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
 SAY.location - Palude.53.Emma Frame,,"Dimmi, di cosa hai bisogno?"
 SAY.location - Palude.55.Mago Trevor,,"Ho la sensazione di aver perso la memoria…{wc}\nL'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
 SAY.location - Palude.56.Emma Frame,,"OK, ti aiuterò!"
-SAY.location - Palude.96.Emma Frame,,Ora il mago Gregor è felice.
-SAY.location - Palude.68.la Morte,,Ho io il diario di Gregor!{wc}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
+SAY.location - Palude.96.Emma Frame,,Ora il mago Trevor è felice.
+SAY.location - Palude.68.la Morte,,Ho io il diario di Trevor!{wc}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
 SAY.location - Palude.72.Mago Trevor,,"Ah! ora ricordo!{wc}\nGrazie, adesso ti posso aiutare: chiedimi una cosa e te la darò."
 MENU.location - Palude.73,,Dammi il codice del portale.
 MENU.location - Palude.74,,Dammi un cetriolo.
