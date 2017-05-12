@@ -1,0 +1,115 @@
+Key,Description,Standard
+SAY.location - Foresta.61.Emma Frame,,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.
+SAY.location - Foresta.45.Robot Qubi,,"Ciao! Sono Quby, un robot simpatico!"
+SAY.location - Foresta.49.Emma Frame,,Ciao! Cosa sono questi resti?
+SAY.location - Foresta.48.Robot Qubi,,"Sono i resti della mia astronave che è precipitata in questo punto.{wc}\nPurtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{wc}\nPer sbloccarmi, mi servirebbero 3 fiaschettine d'olio."
+MENU.location - Foresta.51,,Sono disposta ad aiutarti!
+MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.
+SAY.location - Foresta.94.Robot Qubi,,Sto aggiustando la mia astronave. Grazie ancora!
+SAY.location - Foresta.54.Robot Qubi,,Grazie!
+SAY.location - Foresta.55.Robot Qubi,,Ti ricompenserò dopo che mi avrai dato l'olio.
+SAY.location - Foresta.67.Androide Zot,,Io posso dare un po' del mio olio. Ecco qua!
+SAY.location - Foresta.77.Emma Frame,,Però non ho neanche una fiaschetta d'olio!\n
+SAY.location - Foresta.78.Emma Frame,,Una fiaschetta ce l'ho.\n
+SAY.location - Foresta.95.Robot Qubi,,È un buon inizio. Trovane altre due per favore.
+SAY.location - Foresta.79.Emma Frame,,Ho due fiaschette. Me ne manca solo una…\n
+SAY.location - Foresta.81.Emma Frame,,Abbiamo tre fiaschette!
+SAY.location - Foresta.82.Robot Qubi,,"Grazie, grazie davvero!"
+SAY.location - Foresta.83.Robot Qubi,,"Tieni questo strumento: è una ""chiave italiana""."
+SAY.location - Portale.40.Emma Frame,,"Possiamo aggiustare il portale con la ""chiave italiana"".\n"
+SAY.location - Portale.45.Emma Frame,,Il portale sembra rotto! Mi servirebbe uno strumento…{wc}\nUna chiave inglese? o anche di un'altra nazionalità!
+SAY.location - Portale.48.Emma Frame,,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione.\n"
+SAY.location - Portale.50.Emma Frame,,Leggiamolo assieme!{wc}\nSette…\n
+SAY.location - Portale.51.Androide Zot,,…per…\n
+SAY.location - Portale.52.la Morte,,…una…\n
+SAY.location - Portale.53.Emma Frame,,…una per sette!\n
+SAY.location - Grotta Ghiaccio.53.Emma Frame,,Che freddo!
+SAY.location - Grotta Ghiaccio.54.Emma Frame,,Sarà meglio indossare la pelliccia.
+SAY.location - Grotta Ghiaccio.56.Emma Frame,,Sarà meglio tornare indietro.\n
+SAY.location - Grotta Ghiaccio.42.Emma Frame,,"Quella grotta di ghiaccio sembra freddissima, ma con la pelliccia di Malik ce la posso fare."
+SAY.location - Grotta Ghiaccio.45.Emma Frame,,Non posso entrare in quella grotta di ghiaccio: c'è troppo freddo!
+SAY.location - Grotta Ghiaccio.77.Vecchio Barni,,Dove scappi?! Non hai trovato la mia pala!
+SAY.location - Grotta Ghiaccio.71.Vecchio Barni,,Lascia stare il mio Fluffi!
+SAY.location - Grotta Ghiaccio.104.Emma Frame,,Ho raccolto l'olio di Fluffi in una fiaschetta!
+SAY.location - Grotta Ghiaccio.81.Vecchio Barni,,Chi sei? Che bello vedere una persona dopo tanto tempo.{wc}\nFinalmente qualcuno a cui raccontare la mia storia.
+SAY.location - Grotta Ghiaccio.82.Emma Frame,,Sono disposta ad ascoltarti.
+SAY.location - Grotta Ghiaccio.85.Vecchio Barni,,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{wc}\nPerò si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{wc}\nAspetta un attimo… puoi trovare la mia pala? È in questa stanza.
+SAY.location - Grotta Ghiaccio.86.Emma Frame,,Non mi interessa.
+SAY.location - Grotta Ghiaccio.83.Vecchio Barni,,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
+SAY.location - Grotta Ghiaccio.91.Vecchio Barni,,"Trova la mia pala, uffa!{wc}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
+SAY.location - Grotta Ghiaccio.97.Vecchio Barni,,Grazie! Mi metterò subito al lavoro per riparare il ponte.{wc}\nSe chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
+SAY.location - Palude.61.Emma Frame,,Senza il suo diario il mago Gregor non riuscirà a ricordare nulla.
+SAY.location - Palude.39.Mago Trevor,,Dove sono? Chi sono?{wc}\nPerché sono appena uscito da un lago?{wc}\nUn attimo… io… sono Gregor!{wc}\nPoi… forse… sì! sono un mago!
+SAY.location - Palude.51.Emma Frame,,Ehm…
+SAY.location - Palude.52.Mago Trevor,,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
+SAY.location - Palude.53.Emma Frame,,"Dimmi, di cosa hai bisogno?"
+SAY.location - Palude.55.Mago Trevor,,"Ho la sensazione di aver perso la memoria…{wc}\nL'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
+SAY.location - Palude.56.Emma Frame,,"OK, ti aiuterò!"
+SAY.location - Palude.96.Emma Frame,,Ora il mago Gregor è felice.
+SAY.location - Palude.68.la Morte,,Ho io il diario di Gregor!{wc}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
+SAY.location - Palude.72.Mago Trevor,,"Ah! ora ricordo!{wc}\nGrazie, adesso ti posso aiutare: chiedimi una cosa e te la darò."
+MENU.location - Palude.73,,Dammi il codice del portale.
+MENU.location - Palude.74,,Dammi un cetriolo.
+SAY.location - Palude.79.Mago Trevor,,"Ehm, li ho finiti! Chiedimi un'altra cosa, grazie."
+SAY.location - Palude.80.Emma Frame,,"Peccato, allora dammi il codice del portale!"
+SAY.location - Palude.81.Mago Trevor,,Eccolo qua.
+SAY.location - Pianura Vulcanica.66.Emma Frame,,Linzi è ancora disperato. Bisognerebbe spegnere la lava.
+SAY.location - Pianura Vulcanica.39.Emma Frame,,Cosa è successo qua? Perché è tutto pieno di lava?
+SAY.location - Pianura Vulcanica.50.Elfo Linzi,,Sigh… sigh… sono l'elfo Linzi.{wc}\nIl vulcano è esploso e la mia casa ha preso fuoco!
+SAY.location - Pianura Vulcanica.55.Emma Frame,,E come possiamo fare?
+SAY.location - Pianura Vulcanica.56.Elfo Linzi,,"L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…"
+MENU.location - Pianura Vulcanica.57,,Ti posso aiutare io!
+MENU.location - Pianura Vulcanica.59,,Problemi tuoi.
+SAY.location - Pianura Vulcanica.60.Elfo Linzi,,Grazie! Poi ti ricompenserò.
+SAY.location - Pianura Vulcanica.69.Elfo Linzi,,Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
+SAY.location - Pianura Vulcanica.70.Emma Frame,,"Già, credo proprio che mi convenga aiutarti."
+SAY.location - Pianura Vulcanica.73.Emma Frame,,Io non ho la forza per deviare il fiume e spegnere la lava…
+SAY.location - Pianura Vulcanica.78.Androide Zot,,Ci posso pensare io!
+SAY.location - Pianura Vulcanica.87.Androide Zot,,…
+SAY.location - Pianura Vulcanica.81.Androide Zot,,Ecco fatto! Ho deviato il fiume e la lava si sta spegnendo.
+SAY.location - Pianura Vulcanica.99.Elfo Linzi,,"Evviva!{wc}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila."
+SAY.location - Pianura Vulcanica.100.Emma Frame,,Grazie.\n
+SAY.location - Pianura Vulcanica.77.Emma Frame,,Devo trovare un forzuto che mi aiuti!
+SAY.location - Ponte.39.Emma Frame,,"Perfetto, il vecchio Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
+SAY.location - Ponte.44.Emma Frame,,Il ponte è rotto! Non si può passare…
+SAY.location - Dungeon.1.Emma Frame,,Aah! Un mostro!
+SAY.location - Dungeon.43.la Morte,,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{wc}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{wc}\nGli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
+SAY.location - Dungeon.92.la Morte,,Tieni questa boccia d'olio come segno della mia benevolenza.
+SAY.location - Dungeon.94.Emma Frame,,"Non ti aiuterò per una misera fiaschettina d'olio.{wc}E poi, se ti portassi fuori da qui, uccideresti tutti!"
+SAY.location - Dungeon.41.la Morte,,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
+MENU.location - Dungeon.73,,Ti porterò fuori da qui.
+MENU.location - Dungeon.74,,Ti porterò fuori da qui in cambio di una ricompensa.
+SAY.location - Dungeon.79.la Morte,,Ti ricompenserò in futuro… dopo essere usciti…
+SAY.location - Dungeon.81.la Morte,,Posso venire con te al portale?
+SAY.location - Dungeon.82.Emma Frame,,Sì.
+SAY.location - Villaggio.41.Indigeno Malik,,Aah! Che dolore!
+SAY.location - Villaggio.54.Emma Frame,,Qual è il motivo della tua sofferenza?
+SAY.location - Villaggio.53.Indigeno Malik,,"Durante la caccia mi sono ferito, aiutami e ti darò tre consigli di vita importantissimi!"
+SAY.location - Villaggio.52.Emma Frame,,"Mi hai incuriosito, cosa ti serve?"
+SAY.location - Villaggio.56.Indigeno Malik,,Mi serve una medicina.
+SAY.location - Villaggio.58.Emma Frame,,Ho una medicina elfica. Tieni.
+SAY.location - Villaggio.69.Indigeno Malik,,Grazie!
+SAY.location - Villaggio.65.Indigeno Malik,,Vuoi ancora ascoltare i miei saggi consigli?
+SAY.location - Villaggio.68.Indigeno Malik,,Ecco i consigli di vita: bevi molto quando hai sete…{wc}\n…mangia molto quando hai fame…{wc}\n…e respira profondamente quando hai bisogno di respirare.
+SAY.location - Villaggio.70.Emma Frame,,"Ah… grazie. Ok, io vado allora…"
+SAY.location - Villaggio.76.Emma Frame,,Non è che potresti prestarmi la tua pelliccia?
+SAY.location - Villaggio.75.Indigeno Malik,,"Per favore, sono malato!{wc}\nLasciami almeno la pelliccia per proteggermi dalla febbre."
+SAY.location - Villaggio.78.Indigeno Malik,,Ma certo! Ora che sono guarito non mi serve.
+SAY.location - Tundra Tecnologica.44.Androide Zot,,Bzz… ciao!{wc}\nSono Zot l'androide e mi sento molto solo.{wc}\nPosso diventare tuo amico?
+MENU.location - Tundra Tecnologica.62,,Si
+MENU.location - Tundra Tecnologica.63,,No
+SAY.location - Tundra Tecnologica.68.Emma Frame,,No.
+SAY.location - Tundra Tecnologica.69.Androide Zot,,Bzz… ti prego!
+SAY.location - Tundra Tecnologica.70.Emma Frame,,OK.
+SAY.location - Tundra Tecnologica.66.Emma Frame,,Sì.
+SAY.location - Tundra Tecnologica.74.Androide Zot,,Bzz… grazie!{wc}\nIn cambio posso essere a disposizione per missioni pericolose.
+SAY.location - Tundra Tecnologica.75.Emma Frame,,MMM Allora vieni con me? Che bello...
+SAY.location - Spiaggia.32.,,Inizio della nostra storia…{wc} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{wc}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
+CHARACTER.Vecchio Barni,,Vecchio Barni
+CHARACTER.Elfo Linzi,,Elfo Linzi
+CHARACTER.Mago Trevor,,Mago Trevor
+CHARACTER.Emma Frame,,Emma Frame
+CHARACTER.Indigeno Malik,,Indigeno Malik
+CHARACTER.Robot Qubi,,Robot Qubi
+CHARACTER.Androide Zot,,Androide Zot
+CHARACTER.la Morte,,la Morte
