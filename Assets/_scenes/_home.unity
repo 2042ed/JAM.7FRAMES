@@ -6004,8 +6004,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 298259675}
-  selectedCommands: []
+  - {fileID: 298259720}
+  selectedCommands:
+  - {fileID: 298259712}
   variables:
   - {fileID: 298259648}
   - {fileID: 298259684}
@@ -7149,7 +7150,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 86c86628403f94de884eaf075734fb9f, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7471,7 +7472,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 697561270db924ef0ad6913b1ef94d31, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7608,7 +7609,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: a0964c35c20be46dca3fc4ab897d665b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7633,7 +7634,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: ba426bfb3280540ee910ce5754dc09e7, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: fc347e1c7222b4e78a1de9daa03d80a4, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -7685,7 +7686,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 65e90e6f3775d4a00b9e8fb03b36698d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20183,7 +20184,7 @@ MonoBehaviour:
   m_text: HAI VINTO!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 54f2f29043cd54d7e9e9ccb7d77ec672, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20292,7 +20293,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
+  - {fileID: 2100000, guid: 54f2f29043cd54d7e9e9ccb7d77ec672, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28081,7 +28082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 153411813}
+  selectedFlowchart: {fileID: 298259642}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
