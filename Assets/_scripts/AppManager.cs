@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AppManager : MonoBehaviour
 {
-    public GameObject MapJam; 
+    public GameObject MapJam;
     void Start()
     {
         MapJam.SetActive(false);
@@ -18,7 +18,7 @@ public class AppManager : MonoBehaviour
         {
             MapJam.SetActive(false);
         }
-   
+
     }
 
     public void ToggleMap()

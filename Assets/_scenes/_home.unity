@@ -832,9 +832,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 71376366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: b54b8a01e9439b346814764e4186fe88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curtains: {fileID: 1548482}
 --- !u!82 &71376370
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3088,8 +3089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 220.4021
-    y: -15.0818405
+    x: 268.79013
+    y: -35.33729
     width: 120
     height: 40
   tint: {r: 1, g: 0, b: 0, a: 1}
@@ -3617,8 +3618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 464.10138
-    y: -12.623676
+    x: 470.8532
+    y: -37.38034
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -23330,8 +23331,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1760483089}
-  selectedCommands:
-  - {fileID: 1760483086}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -23450,8 +23450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 66
-    y: 69
+    x: 125
+    y: 89
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -23461,10 +23461,10 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1760483088}
   commandList:
+  - {fileID: 1760483084}
   - {fileID: 1760483087}
   - {fileID: 1760483085}
   - {fileID: 1760483086}
-  - {fileID: 1760483084}
 --- !u!4 &1760483090
 Transform:
   m_ObjectHideFlags: 0
