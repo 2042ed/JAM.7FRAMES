@@ -1,28 +1,33 @@
 Key,Description,Standard
 SAY.location - Foresta.61.Assunta Frame,Assunta Frame portrait_player_normal ,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.
-SAY.location - Foresta.45.Robot Qubi,Robot Qubi portrait_robot_normal ,"Ciao! Sono Quby, un robot simpatico!"
+SAY.location - Foresta.45.Robot Quby,Robot Quby portrait_robot_normal ,"Ciao! Sono Quby, un robot simpatico!"
 SAY.location - Foresta.49.Assunta Frame,Assunta Frame portrait_player_normal ,Ciao! Cosa sono questi resti?
-SAY.location - Foresta.48.Robot Qubi,Robot Qubi portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{wc}\nPurtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{wc}\nPer sbloccarmi, mi servirebbero 3 fiaschettine d'olio."
+SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{wc}\nPurtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{wc}\nPer sbloccarmi, mi servirebbero 3 fiaschettine d'olio."
 MENU.location - Foresta.51,,Sono disposta ad aiutarti!
 MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.
-SAY.location - Foresta.94.Robot Qubi,Robot Qubi portrait_robot_normal ,Sto aggiustando la mia astronave. Grazie ancora!
-SAY.location - Foresta.54.Robot Qubi,Robot Qubi portrait_robot_normal ,Grazie!
-SAY.location - Foresta.55.Robot Qubi,Robot Qubi portrait_robot_normal ,Ti ricompenserò dopo che mi avrai dato l'olio.
+SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal ,Sto aggiustando la mia astronave. Grazie ancora!
+SAY.location - Foresta.54.Robot Quby,Robot Quby portrait_robot_normal ,Grazie!
+SAY.location - Foresta.55.Robot Quby,Robot Quby portrait_robot_normal ,Ti ricompenserò dopo che mi avrai dato l'olio.
 SAY.location - Foresta.67.Androide Zot,Androide Zot portrait_androide_normal ,Io posso dare un po' del mio olio. Ecco qua!
 SAY.location - Foresta.77.Assunta Frame,Assunta Frame portrait_player_normal ,Però non ho neanche una fiaschetta d'olio!\n
 SAY.location - Foresta.78.Assunta Frame,Assunta Frame portrait_player_normal ,Una fiaschetta ce l'ho.\n
-SAY.location - Foresta.95.Robot Qubi,Robot Qubi portrait_robot_normal ,È un buon inizio. Trovane altre due per favore.
+SAY.location - Foresta.95.Robot Quby,Robot Quby portrait_robot_normal ,È un buon inizio. Trovane altre due per favore.
 SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho due fiaschette. Me ne manca solo una…\n
 SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!
-SAY.location - Foresta.82.Robot Qubi,Robot Qubi portrait_robot_normal ,"Grazie, grazie davvero!"
-SAY.location - Foresta.83.Robot Qubi,Robot Qubi portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
+SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!"
+SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
 SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana"".\n"
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{wc}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione.\n"
-SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme!{wc}\nSette…\n
-SAY.location - Portale.65.Androide Zot,Androide Zot portrait_androide_normal ,…per…\n
+SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:\n\n
+SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,Sette…\n
+SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,…per…\n
 SAY.location - Portale.66.la Morte,la Morte portrait_androide_normal ,…una…\n
-SAY.location - Portale.67.Assunta Frame,Assunta Frame portrait_player_normal ,…una per sette!\n
+SAY.location - Portale.74.Vecchio Barni,Vecchio Barni portrait_androide_normal ,... ed ...\n
+SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,…una\n
+SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,per\n
+SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,sette!\n
+SAY.location - Portale.75.,tutti i personaggi insimee in coro,HAI VINTO!
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
 SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.\n
@@ -110,6 +115,6 @@ CHARACTER.Elfo Linzi,,Elfo Linzi
 CHARACTER.Mago Trevor,,Mago Trevor
 CHARACTER.Assunta Frame,,Assunta Frame
 CHARACTER.Indigeno Malik,,Indigeno Malik
-CHARACTER.Robot Qubi,,Robot Qubi
+CHARACTER.Robot Quby,,Robot Quby
 CHARACTER.Androide Zot,,Androide Zot
 CHARACTER.la Morte,,la Morte
