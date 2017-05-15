@@ -1,16 +1,2 @@
-frecce: creare 4 nuovi sprites per Desktop cursors.
-+ script freccia semitrasparente x mobile
-
-- mandare a Laura tutti gl iscreenshots da ripulire e trasarentire
-
-- fix frecce invisibili sotto 5.6
-
-- scrivere 3 temi musicali 2 mani x piano:
- - main (avenntura romantica)
- - misterius (dark)
- - movimento (allegro dinamico)
-
-
-PERSONAGGI:
-Mago: fare espressioni
-Quby: ma era stato rifatto in pixel? (non abbimo nulla) @michele
+ELfo: "Grazie! Poi ti ricompenserò."
+Assunta: Leggiamolo assieme:
