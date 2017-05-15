@@ -3794,7 +3794,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 64, y: 64}
+  m_SizeDelta: {x: 137, y: 65}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &146507764
 MonoBehaviour:
@@ -3858,7 +3858,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7a6bfd289ccf04c0da39ae6864ea81ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10307,7 +10307,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 516733121}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 516733151}
   variables:
   - {fileID: 516733123}
   - {fileID: 516733130}
@@ -10446,7 +10447,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 7f3bc3e9471e741109b2bbe42270d7ad, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: b7fda5f120f264865b3d78c66895c38a, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10870,7 +10871,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 0baa6741e9719433ab9b87efe8e4f1c2, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -28260,7 +28261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1664612911}
+  selectedFlowchart: {fileID: 516733114}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
