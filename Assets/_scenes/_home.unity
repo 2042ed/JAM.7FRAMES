@@ -3978,7 +3978,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 153411846}
   selectedCommands:
-  - {fileID: 153411844}
+  - {fileID: 153411850}
   variables:
   - {fileID: 153411819}
   description: 
@@ -4815,7 +4815,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 96acd183a819a4cf581d0a0f0b9b6abb, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: d9e43b89114e8480eb1893fa79adb737, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -24172,7 +24172,7 @@ MonoBehaviour:
   menuDialog: {fileID: 1125960557}
 --- !u!114 &1760483093
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1760483082}
@@ -24183,7 +24183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  volume: 0.288
+  volume: 0.23
   fadeDuration: 0
   waitUntilFinished: 0
 --- !u!1 &1768223112
@@ -26424,7 +26424,7 @@ MonoBehaviour:
   - {fileID: 1978847796}
 --- !u!114 &1978847796
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1978847756}
