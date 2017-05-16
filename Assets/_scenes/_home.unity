@@ -3066,8 +3066,6 @@ GameObject:
   - component: {fileID: 143895591}
   - component: {fileID: 143895592}
   - component: {fileID: 143895593}
-  - component: {fileID: 143895576}
-  - component: {fileID: 143895594}
   m_Layer: 0
   m_Name: location - Home
   m_TagString: Untagged
@@ -3075,19 +3073,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &143895576
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 79
-  indentLevel: 0
 --- !u!114 &143895577
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3102,8 +3087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 290.17093
-    y: -36.462593
+    x: 304.7999
+    y: -9.455322
     width: 120
     height: 40
   tint: {r: 1, g: 0, b: 0, a: 1}
@@ -3145,7 +3130,7 @@ MonoBehaviour:
     width: 2161.538
     height: 1206.395
   selectedBlocks:
-  - {fileID: 143895672}
+  - {fileID: 143895577}
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -3415,23 +3400,6 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: en
   languageCodeOLD: 
---- !u!114 &143895594
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 80
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: 346d32a8b41d04516b0c4c2f8d43a0f8, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 1
 --- !u!114 &143895635
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3659,8 +3627,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 143895674}
   commandList:
-  - {fileID: 143895576}
-  - {fileID: 143895594}
   - {fileID: 143895671}
   - {fileID: 143895581}
   - {fileID: 143895591}
@@ -3749,7 +3715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Vecchio Barni
+  nameText: Scienziato Barni
   nameColor: {r: 0.15686275, g: 0.74509805, b: 0.8588236, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -13196,7 +13162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Assunta Frame
-  nameColor: {r: 0.82745105, g: 0.5137255, b: 0.21960786, a: 1}
+  nameColor: {r: 0.9686275, g: 0.8862746, b: 0.41960788, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -16975,6 +16941,7 @@ GameObject:
   - component: {fileID: 1192161465}
   - component: {fileID: 1192161464}
   - component: {fileID: 1192161456}
+  - component: {fileID: 1192161466}
   m_Layer: 0
   m_Name: location - Dungeon
   m_TagString: Untagged
@@ -17021,8 +16988,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1192161459}
-  selectedCommands: []
+  - {fileID: 1192161433}
+  selectedCommands:
+  - {fileID: 1192161466}
   variables: []
   description: 
   stepPause: 0
@@ -17133,6 +17101,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1192161437}
+  - {fileID: 1192161466}
 --- !u!114 &1192161434
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17863,6 +17832,23 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &1192161466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 88b900cefd550483db737af024573549, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &1224517353
 GameObject:
   m_ObjectHideFlags: 0
@@ -23964,6 +23950,7 @@ GameObject:
   - component: {fileID: 1760483084}
   - component: {fileID: 1760483092}
   - component: {fileID: 1760483091}
+  - component: {fileID: 1760483093}
   m_Layer: 0
   m_Name: location - Intro
   m_TagString: Untagged
@@ -23998,7 +23985,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1760483089}
   selectedCommands:
-  - {fileID: 1760483091}
+  - {fileID: 1760483093}
   variables: []
   description: 
   stepPause: 0
@@ -24130,6 +24117,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1760483092}
   - {fileID: 1760483091}
+  - {fileID: 1760483093}
   - {fileID: 1760483084}
   - {fileID: 1760483087}
   - {fileID: 1760483085}
@@ -24156,7 +24144,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1760483091
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1760483082}
@@ -24170,7 +24158,7 @@ MonoBehaviour:
   sayDialog: {fileID: 71376373}
 --- !u!114 &1760483092
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1760483082}
@@ -24182,6 +24170,22 @@ MonoBehaviour:
   itemId: 5
   indentLevel: 0
   menuDialog: {fileID: 1125960557}
+--- !u!114 &1760483093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760483082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  volume: 0.288
+  fadeDuration: 0
+  waitUntilFinished: 0
 --- !u!1 &1768223112
 GameObject:
   m_ObjectHideFlags: 0
@@ -25538,6 +25542,7 @@ GameObject:
   - component: {fileID: 1978847780}
   - component: {fileID: 1978847779}
   - component: {fileID: 1978847778}
+  - component: {fileID: 1978847796}
   m_Layer: 0
   m_Name: location - Tundra Tecnologica
   m_TagString: Untagged
@@ -25584,9 +25589,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1978847769}
+  - {fileID: 1978847795}
   selectedCommands:
-  - {fileID: 1978847789}
+  - {fileID: 1978847796}
   variables: []
   description: 
   stepPause: 0
@@ -26416,6 +26421,24 @@ MonoBehaviour:
   eventHandler: {fileID: 1978847793}
   commandList:
   - {fileID: 1978847794}
+  - {fileID: 1978847796}
+--- !u!114 &1978847796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1978847756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 97
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 88b900cefd550483db737af024573549, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &1982590709
 GameObject:
   m_ObjectHideFlags: 0
@@ -27588,7 +27611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: la Morte
+  nameText: La Morte
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
@@ -27711,6 +27734,7 @@ GameObject:
   - component: {fileID: 2121626176}
   - component: {fileID: 2121626180}
   - component: {fileID: 2121626179}
+  - component: {fileID: 2121626182}
   m_Layer: 0
   m_Name: location - Spiaggia
   m_TagString: Untagged
@@ -27782,7 +27806,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 2121626172}
+  - {fileID: 2121626156}
   selectedCommands: []
   variables: []
   description: 
@@ -28067,8 +28091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 136.02693
-    y: 66.10526
+    x: 135.02693
+    y: 63.105263
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -28078,6 +28102,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 2121626182}
   - {fileID: 2121626175}
   - {fileID: 2121626174}
   - {fileID: 2121626173}
@@ -28281,6 +28306,23 @@ MonoBehaviour:
   parentBlock: {fileID: 2121626177}
   clickableObject: {fileID: 580883994}
   waitFrames: 1
+--- !u!114 &2121626182
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2121626155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 887fe9edb289c42898f00f55d668762c, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &2133867705
 GameObject:
   m_ObjectHideFlags: 1
@@ -28308,7 +28350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1978847758}
+  selectedFlowchart: {fileID: 1760483083}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
