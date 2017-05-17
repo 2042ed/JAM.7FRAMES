@@ -20,29 +20,29 @@ SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"P
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione.\n"
 SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:\n\n
-SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,Sette…\n
-SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,…per…\n
-SAY.location - Portale.66.la Morte,la Morte portrait_androide_normal ,…una…\n
-SAY.location - Portale.74.Vecchio Barni,Vecchio Barni portrait_androide_normal ,... ed ...\n
-SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,…una\n
-SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,per\n
-SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,sette!\n
-SAY.location - Portale.75.,tutti i personaggi insimee in coro,HAI VINTO!
+SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...
+SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...
+SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA...
+SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_androide_normal ,ED...
+SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA...
+SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER...
+SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!{w}
+SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
 SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.\n
 SAY.location - Grotta Ghiaccio.42.Assunta Frame,Assunta Frame portrait_player_normal ,"Quella grotta di ghiaccio sembra freddissima, ma con la pelliccia di Malik ce la posso fare."
 SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_normal ,Non posso entrare in quella grotta di ghiaccio: c'è troppo freddo!
-SAY.location - Grotta Ghiaccio.77.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!
-SAY.location - Grotta Ghiaccio.71.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,Lascia stare il mio Fluffi!
+SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!
+SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Lascia stare il mio Fluffi!
 SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal ,Ho raccolto l'olio di Fluffi in una fiaschetta!
-SAY.location - Grotta Ghiaccio.81.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}\nFinalmente qualcuno a cui raccontare la mia storia.
+SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}\nFinalmente qualcuno a cui raccontare la mia storia.
 SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal ,Sono disposta ad ascoltarti.
-SAY.location - Grotta Ghiaccio.85.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w}\nPerò si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w}\nAspetta un attimo… puoi trovare la mia pala? È in questa stanza.
+SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w}\nPerò si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w}\nAspetta un attimo… puoi trovare la mia pala? È in questa stanza.
 SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.
-SAY.location - Grotta Ghiaccio.83.Vecchio Barni,Vecchio Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
-SAY.location - Grotta Ghiaccio.91.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
-SAY.location - Grotta Ghiaccio.97.Vecchio Barni,Vecchio Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w}\nSe chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
+SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
+SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
+SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w}\nSe chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
 SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal ,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
 SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w}\nPerché sono appena uscito da un lago?{w}\nUn attimo… io… sono Trevor!{w}\nPoi… forse… sì! sono un mago!
 SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…
@@ -51,7 +51,7 @@ SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal ,"Di
 SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w}\nL'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
 SAY.location - Palude.56.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ti aiuterò!"
 SAY.location - Palude.96.Assunta Frame,Assunta Frame portrait_player_happy ,Ora il mago Trevor è felice.
-SAY.location - Palude.68.la Morte,la Morte portrait_morte_normal ,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
+SAY.location - Palude.68.La Morte,La Morte portrait_morte_normal ,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
 SAY.location - Palude.72.Mago Trevor,Mago Trevor portrait_mago_normal ,"Ah! ora ricordo!{w}\nGrazie, adesso ti posso aiutare: chiedimi una cosa e te la darò."
 MENU.location - Palude.73,,Dammi il codice del portale.
 MENU.location - Palude.74,,Dammi un cetriolo.
@@ -75,17 +75,17 @@ SAY.location - Pianura Vulcanica.81.Androide Zot,Androide Zot portrait_androide_
 SAY.location - Pianura Vulcanica.99.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,"Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila."
 SAY.location - Pianura Vulcanica.100.Assunta Frame,Assunta Frame portrait_player_happy ,Grazie.\n
 SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_normal ,Devo trovare un forzuto che mi aiuti!
-SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, il vecchio Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
+SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, il Scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
 SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal ,Il ponte è rotto! Non si può passare…
 SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal ,Aah! Un mostro!
-SAY.location - Dungeon.43.la Morte,la Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w}\nGli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
-SAY.location - Dungeon.92.la Morte,la Morte portrait_morte_normal ,Tieni questa boccia d'olio come segno della mia benevolenza.
+SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w}\nGli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
+SAY.location - Dungeon.92.La Morte,La Morte portrait_morte_normal ,Tieni questa boccia d'olio come segno della mia benevolenza.
 SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry ,"Non ti aiuterò per una misera fiaschettina d'olio.{w}E poi, se ti portassi fuori da qui, uccideresti tutti!"
-SAY.location - Dungeon.41.la Morte,la Morte portrait_morte_normal ,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
+SAY.location - Dungeon.41.La Morte,La Morte portrait_morte_normal ,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
 MENU.location - Dungeon.73,,Ti porterò fuori da qui.
 MENU.location - Dungeon.74,,Ti porterò fuori da qui in cambio di una ricompensa.
-SAY.location - Dungeon.79.la Morte,la Morte portrait_morte_normal ,Ti ricompenserò in futuro… dopo essere usciti…
-SAY.location - Dungeon.81.la Morte,la Morte portrait_morte_muted ,Posso venire con te al portale?
+SAY.location - Dungeon.79.La Morte,La Morte portrait_morte_normal ,Ti ricompenserò in futuro… dopo essere usciti…
+SAY.location - Dungeon.81.La Morte,La Morte portrait_morte_muted ,Posso venire con te al portale?
 SAY.location - Dungeon.82.Assunta Frame,Assunta Frame portrait_player_happy ,Sì.
 SAY.location - Villaggio.41.Indigeno Malik,Indigeno Malik portrait_indigeno_sad ,Aah! Che dolore!
 SAY.location - Villaggio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Qual è il motivo della tua sofferenza?
@@ -110,11 +110,11 @@ SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player
 SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal ,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.
 SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,MMM Allora vieni con me? Che bello...
 SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
-CHARACTER.Vecchio Barni,,Vecchio Barni
+CHARACTER.Scienziato Barni,,Scienziato Barni
 CHARACTER.Elfo Linzi,,Elfo Linzi
 CHARACTER.Mago Trevor,,Mago Trevor
 CHARACTER.Assunta Frame,,Assunta Frame
 CHARACTER.Indigeno Malik,,Indigeno Malik
 CHARACTER.Robot Quby,,Robot Quby
 CHARACTER.Androide Zot,,Androide Zot
-CHARACTER.la Morte,,la Morte
+CHARACTER.La Morte,,La Morte
