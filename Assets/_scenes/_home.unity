@@ -3222,7 +3222,8 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 143895672}
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -3989,8 +3990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 713.9188
-    y: 44.766716
+    x: 735.2996
+    y: 43.64141
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -22800,6 +22801,7 @@ GameObject:
   - component: {fileID: 1770396345}
   - component: {fileID: 1770396347}
   - component: {fileID: 1770396346}
+  - component: {fileID: 1770396348}
   m_Layer: 5
   m_Name: PanelMap
   m_TagString: Untagged
@@ -22862,6 +22864,18 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1770396344}
+--- !u!114 &1770396348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770396344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54b8a01e9439b346814764e4186fe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtains: {fileID: 1548482}
 --- !u!1 &1772373024
 GameObject:
   m_ObjectHideFlags: 0
