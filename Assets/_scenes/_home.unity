@@ -13576,8 +13576,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 774186347}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06000042, y: 0.29000092, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 0.09, y: 1.34, z: 0}
+  m_LocalScale: {x: 7.833841, y: 7.1647363, z: 1}
   m_Children: []
   m_Father: {fileID: 33217594}
   m_RootOrder: 2
@@ -18591,11 +18591,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.39
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.3300018
+      value: -2.36
       objectReference: {fileID: 0}
     - target: {fileID: 4000011945195234, guid: 6b2d886c177217c49a0a6bdb1aed2f24, type: 2}
       propertyPath: m_LocalPosition.z
@@ -19069,7 +19069,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: deb836837f1c942c28e6e4c517838134, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f3fe4dccc494444d8eb6d68350e91bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28064,7 +28064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2121626158}
+  selectedFlowchart: {fileID: 153411813}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
