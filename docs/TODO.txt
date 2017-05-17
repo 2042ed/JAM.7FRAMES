@@ -1,2 +1,5 @@
-ELfo: "Grazie! Poi ti ricompenserò."
-Assunta: Leggiamolo assieme:
+- fix all audio bugs
+- fix typewriter for long sentences
+- game over scene + credits
+- chill music
+- npg (butterflies and ants)
