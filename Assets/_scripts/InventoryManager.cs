@@ -136,9 +136,24 @@ public class InventoryManager : MonoBehaviour
 
     void resetInventory()
     {
-        ItemOlio1.SetActive(hasOlio1);
-        ItemOlio2.SetActive(hasOlio2);
-        ItemOlio3.SetActive(hasOlio3);
+        if (hasOlio1) {
+            ItemOlio1.SetActive(true);
+            ItemOlio2.SetActive(false);
+            ItemOlio3.SetActive(false);
+        } else if (hasOlio3) {
+            ItemOlio1.SetActive(false);
+            ItemOlio2.SetActive(true);
+            ItemOlio3.SetActive(false);
+        } else if (hasOlio3) {
+            ItemOlio1.SetActive(false);
+            ItemOlio2.SetActive(false);
+            ItemOlio3.SetActive(true);
+        } else {
+            ItemOlio1.SetActive(false);
+            ItemOlio2.SetActive(false);
+            ItemOlio3.SetActive(false);
+        }
+
         ItemDiario.SetActive(hasDiario);
         ItemPelliccia.SetActive(hasPelliccia);
         ItemChiaveItaliana.SetActive(hasChiaveItaliana);
