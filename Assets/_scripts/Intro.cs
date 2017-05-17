@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using Fungus;
+
 public class Intro : MonoBehaviour
 {
-
     public Flowchart HomeFlowchart;
 
-    public void OnAnimationFInished()
+    public void OnAnimationFinished()
     {
-        //HomeFlowchart.BroadcastMessage("AnimationFinished");
-        //HomeFlowchart.SendMessage(, SendMessageOptions.DontRequireReceiver);
-        HomeFlowchart.ExecuteBlock("Intro  finished");
+        HomeFlowchart.SendFungusMessage("AnimationFinished");
     }
 }

@@ -3129,9 +3129,9 @@ GameObject:
   - component: {fileID: 143895601}
   - component: {fileID: 143895597}
   - component: {fileID: 143895611}
-  - component: {fileID: 143895599}
   - component: {fileID: 143895598}
   - component: {fileID: 143895612}
+  - component: {fileID: 143895599}
   m_Layer: 0
   m_Name: location - Home Menu
   m_TagString: Untagged
@@ -3606,11 +3606,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 143895575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 143895611}
-  message: AnimationFinished
+  itemId: 114
+  indentLevel: 0
+  logType: 0
+  logMessage:
+    stringRef: {fileID: 0}
+    stringVal: AnimationFinished event
 --- !u!114 &143895600
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3828,18 +3832,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 344.8586
+    x: 308.84885
     y: 46.54088
     width: 150
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 108
-  blockName: Intro  finished
+  blockName: Intro finished
   description: 
-  eventHandler: {fileID: 143895599}
+  eventHandler: {fileID: 143895612}
   commandList:
-  - {fileID: 143895612}
+  - {fileID: 143895599}
   - {fileID: 143895598}
 --- !u!114 &143895612
 MonoBehaviour:
@@ -3849,15 +3853,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 143895575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 110
-  indentLevel: 0
-  logType: 0
-  logMessage:
-    stringRef: {fileID: 0}
-    stringVal: AnimationFinishedAnimationFinished!
+  parentBlock: {fileID: 143895611}
+  message: AnimationFinished
 --- !u!114 &143895635
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17222,7 +17222,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1192161466
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192161427}
@@ -18732,7 +18732,6 @@ GameObject:
   - component: {fileID: 1385407895}
   - component: {fileID: 1385407894}
   - component: {fileID: 1385407893}
-  - component: {fileID: 1385407892}
   m_Layer: 5
   m_Name: OptionButton0
   m_TagString: Untagged
@@ -18760,18 +18759,6 @@ RectTransform:
   m_AnchoredPosition: {x: 650, y: -50}
   m_SizeDelta: {x: 1300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1385407892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114568247853571892, guid: 08c4fecf4731f4c87bbb660ea8a364e6,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1385407890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1385407893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26921,7 +26908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 516733114}
+  selectedFlowchart: {fileID: 143895578}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
