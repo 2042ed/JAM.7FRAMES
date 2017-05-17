@@ -140,7 +140,7 @@ public class InventoryManager : MonoBehaviour
             ItemOlio1.SetActive(true);
             ItemOlio2.SetActive(false);
             ItemOlio3.SetActive(false);
-        } else if (hasOlio3) {
+        } else if (hasOlio2) {
             ItemOlio1.SetActive(false);
             ItemOlio2.SetActive(true);
             ItemOlio3.SetActive(false);
