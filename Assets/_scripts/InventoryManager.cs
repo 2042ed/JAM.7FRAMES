@@ -17,6 +17,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemMorte;
     public GameObject ItemMap;
 
+    int OilCounter;
     bool hasOlio1;
     bool hasOlio2;
     bool hasOlio3;
@@ -136,23 +137,19 @@ public class InventoryManager : MonoBehaviour
 
     void resetInventory()
     {
+        OilCounter = 0;
         if (hasOlio1) {
-            ItemOlio1.SetActive(true);
-            ItemOlio2.SetActive(false);
-            ItemOlio3.SetActive(false);
-        } else if (hasOlio2) {
-            ItemOlio1.SetActive(false);
-            ItemOlio2.SetActive(true);
-            ItemOlio3.SetActive(false);
-        } else if (hasOlio3) {
-            ItemOlio1.SetActive(false);
-            ItemOlio2.SetActive(false);
-            ItemOlio3.SetActive(true);
-        } else {
-            ItemOlio1.SetActive(false);
-            ItemOlio2.SetActive(false);
-            ItemOlio3.SetActive(false);
+            OilCounter++;
         }
+        if (hasOlio2) {
+            OilCounter++;
+        }
+        if (hasOlio3) {
+            OilCounter++;
+        }
+        ItemOlio1.SetActive(OilCounter == 1);
+        ItemOlio2.SetActive(OilCounter == 2);
+        ItemOlio3.SetActive(OilCounter == 3);
 
         ItemDiario.SetActive(hasDiario);
         ItemPelliccia.SetActive(hasPelliccia);
