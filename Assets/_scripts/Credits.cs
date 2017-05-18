@@ -30,19 +30,23 @@ public class Credits : MonoBehaviour
 
     void Awake()
     {
+    }
+
+    void OnEnable()
+    {
         HasAwoken = true;
         defCreditsContainerPos = CreditsContainer.anchoredPosition;
         rectT = this.GetComponent<RectTransform>();
 
         showTween = this.GetComponent<CanvasGroup>().DOFade(0, 0.4f).From().SetEase(Ease.Linear).SetUpdate(true).SetAutoKill(false).Pause()
-            .OnRewind(() => this.gameObject.SetActive(false));
-
-        this.gameObject.SetActive(false);
+                    .OnRewind(() => this.gameObject.SetActive(false));
 
         // Listeners
         BtBack.onClick.AddListener(OnClick);
 
         TfCredits.text = CreditsTxt.text;
+
+        Show(true);
     }
 
     void Update()
@@ -76,7 +80,8 @@ public class Credits : MonoBehaviour
             showTween.PlayForward();
             StartScrollLoop();
         } else {
-            showTween.PlayBackwards();
+            this.gameObject.SetActive(false);
+            //showTween.PlayBackwards();
         }
     }
 
