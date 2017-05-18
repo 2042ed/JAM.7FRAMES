@@ -563,6 +563,7 @@ PlayerSettings:
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
     1: TMP_PRESENT
+    4: TMP_PRESENT
   platformArchitecture:
     iOS: 2
   scriptingBackend:
