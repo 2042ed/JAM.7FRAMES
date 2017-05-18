@@ -2,7 +2,7 @@ Key,Description,Standard
 SAY.location - Foresta.61.Assunta Frame,Assunta Frame portrait_player_normal ,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.
 SAY.location - Foresta.45.Robot Quby,Robot Quby portrait_robot_normal ,"Ciao! Sono Quby, un robot simpatico!"
 SAY.location - Foresta.49.Assunta Frame,Assunta Frame portrait_player_normal ,Ciao! Cosa sono questi resti?
-SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{w}\nPurtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w}\nPer sbloccarmi, mi servirebbero 3 fiaschettine d'olio."
+SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{w}{c}Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w}{c}Per sbloccarmi, mi servirebbero 3 fiaschette d'olio."
 MENU.location - Foresta.51,,Sono disposta ad aiutarti!
 MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.
 SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal ,Sto aggiustando la mia astronave. Grazie ancora!
@@ -18,7 +18,7 @@ SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, 
 SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
 SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana"".\n"
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w}\nUna chiave inglese? o anche di un'altra nazionalità!
-SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione.\n"
+SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
 SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:\n\n
 SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...
 SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...
@@ -38,7 +38,7 @@ SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_sci
 SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal ,Ho raccolto l'olio di Fluffi in una fiaschetta!
 SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}\nFinalmente qualcuno a cui raccontare la mia storia.
 SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal ,Sono disposta ad ascoltarti.
-SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w}\nPerò si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w}\nAspetta un attimo… puoi trovare la mia pala? È in questa stanza.
+SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
 SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.
 SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
 SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
@@ -48,7 +48,7 @@ SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove son
 SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…
 SAY.location - Palude.52.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
 SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal ,"Dimmi, di cosa hai bisogno?"
-SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w}\nL'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
+SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w}{c}L'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
 SAY.location - Palude.56.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ti aiuterò!"
 SAY.location - Palude.96.Assunta Frame,Assunta Frame portrait_player_happy ,Ora il mago Trevor è felice.
 SAY.location - Palude.68.La Morte,La Morte portrait_morte_normal ,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
@@ -78,7 +78,7 @@ SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_
 SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, il Scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
 SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal ,Il ponte è rotto! Non si può passare…
 SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal ,Aah! Un mostro!
-SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w}\nGli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
+SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
 SAY.location - Dungeon.92.La Morte,La Morte portrait_morte_normal ,Tieni questa boccia d'olio come segno della mia benevolenza.
 SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry ,"Non ti aiuterò per una misera fiaschettina d'olio.{w}E poi, se ti portassi fuori da qui, uccideresti tutti!"
 SAY.location - Dungeon.41.La Morte,La Morte portrait_morte_normal ,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
@@ -95,7 +95,7 @@ SAY.location - Villaggio.56.Indigeno Malik,Indigeno Malik portrait_indigeno_sad 
 SAY.location - Villaggio.58.Assunta Frame,Assunta Frame portrait_player_normal ,Ho una medicina elfica. Tieni.
 SAY.location - Villaggio.69.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,Grazie!
 SAY.location - Villaggio.65.Indigeno Malik,Indigeno Malik portrait_indigeno_normal2 ,Vuoi ancora ascoltare i miei saggi consigli?
-SAY.location - Villaggio.68.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ecco i consigli di vita: bevi molto quando hai sete…{w}\n…mangia molto quando hai fame…{w}\n…e respira profondamente quando hai bisogno di respirare.
+SAY.location - Villaggio.68.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ecco i consigli di vita: bevi molto quando hai sete…{w}\n…mangia molto quando hai fame…{w}{c}…e respira profondamente quando hai bisogno di respirare.
 SAY.location - Villaggio.70.Assunta Frame,Assunta Frame portrait_player_dazzled ,"Ah… grazie. Ok, io vado allora…"
 SAY.location - Villaggio.76.Assunta Frame,Assunta Frame portrait_player_normal ,Non è che potresti prestarmi la tua pelliccia?
 SAY.location - Villaggio.75.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,"Per favore, sono malato!{w}\nLasciami almeno la pelliccia per proteggermi dalla febbre."

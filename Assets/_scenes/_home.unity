@@ -1294,9 +1294,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 123128230}
+  - {fileID: 123128222}
   selectedCommands:
-  - {fileID: 123128234}
+  - {fileID: 123128262}
   variables:
   - {fileID: 123128220}
   description: 
@@ -4455,7 +4455,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 153411846}
   selectedCommands: []
   variables:
   - {fileID: 153411819}
@@ -6584,8 +6585,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 298259643}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 298259648}
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 6a13b3941f2e542f099edb2c23b2def1, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6813,7 +6813,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: af1e8b8493fb042fab4acf3c15aeef9b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21791,6 +21791,8 @@ GameObject:
   - component: {fileID: 1664612961}
   - component: {fileID: 1664612962}
   - component: {fileID: 1664612963}
+  - component: {fileID: 1664612968}
+  - component: {fileID: 1664612967}
   m_Layer: 0
   m_Name: location - Villaggio
   m_TagString: Untagged
@@ -21837,9 +21839,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1664612929}
+  - {fileID: 1664612961}
   selectedCommands:
-  - {fileID: 1664612954}
+  - {fileID: 1664612967}
   variables:
   - {fileID: 1664612920}
   - {fileID: 1664612957}
@@ -22980,6 +22982,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1664612963}
   commandList:
+  - {fileID: 1664612967}
   - {fileID: 1664612962}
 --- !u!114 &1664612962
 MonoBehaviour:
@@ -23073,7 +23076,42 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1664612964}
   commandList:
+  - {fileID: 1664612968}
   - {fileID: 1664612965}
+--- !u!114 &1664612967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664612909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 94
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 346d32a8b41d04516b0c4c2f8d43a0f8, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1664612968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664612909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 93
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: fc066fd706bfd4b4aa4c1fd671c32bca, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &1667086253
 GameObject:
   m_ObjectHideFlags: 0
@@ -28140,7 +28178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 516733114}
+  selectedFlowchart: {fileID: 123128211}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
