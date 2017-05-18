@@ -2,6 +2,7 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(CanvasGroup))]
 public class Credits : MonoBehaviour
@@ -18,7 +19,7 @@ public class Credits : MonoBehaviour
     public TextAsset CreditsTxt;
     public RectTransform CreditsContainer;
     public Button BtBack;
-    public TMPro.TextMeshProUGUI TfCredits;
+    public TextMeshProUGUI TfCredits;
 
     public bool HasAwoken { get; private set; }
     RectTransform rectT;
