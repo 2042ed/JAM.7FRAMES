@@ -26,7 +26,7 @@ SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA...
 SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_androide_normal ,ED...
 SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA...
 SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER...
-SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!{w}
+SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!\n{w}
 SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
@@ -36,7 +36,7 @@ SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_no
 SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!
 SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Lascia stare il mio Fluffi!
 SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal ,Ho raccolto l'olio di Fluffi in una fiaschetta!
-SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}\nFinalmente qualcuno a cui raccontare la mia storia.
+SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}{c}Finalmente qualcuno a cui raccontare la mia storia.
 SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal ,Sono disposta ad ascoltarti.
 SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w=3}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w=3}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
 SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.
@@ -108,7 +108,7 @@ SAY.location - Tundra Tecnologica.69.Androide Zot,Androide Zot portrait_androide
 SAY.location - Tundra Tecnologica.70.Assunta Frame,Assunta Frame portrait_player_normal ,OK.
 SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player_normal ,Sì.
 SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal ,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.
-SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,MMM Allora vieni con me? Che bello...
+SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,Hmm. Allora vieni con me? Che bello...
 SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
 CHARACTER.Scienziato Barni,,Scienziato Barni
 CHARACTER.Elfo Linzi,,Elfo Linzi
