@@ -1,3 +1,31 @@
-here all the game credits!
+Questo gioco
+sperando ti sia piaciuto
+è stato ideato e sviluppato durante una Game Jam
+presso l'Internet Festival Pisa 2016
 
-ciao!
+
+Angelo Boni
+Enea Polsinelli
+Elia Gotuzzo
+Elio
+Fabio Cecere
+Maia Polsinelli
+Marco Tarasconi
+
+Annabella Coiro
+Gianluca Tarasconi
+Mauro Vanetti
+Michele Gotuzzo
+Pietro Polsinelli
+Stefano Cecere
+
+ringraziamenti speciali
+Internet Festival
+
+MIXART Pisa
+
+Santeria Milano
+
+tecnologie
+Unity
+Fungus open source game framework
