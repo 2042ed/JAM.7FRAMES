@@ -10473,6 +10473,7 @@ GameObject:
   - component: {fileID: 516733157}
   - component: {fileID: 516733156}
   - component: {fileID: 516733155}
+  - component: {fileID: 516733160}
   m_Layer: 0
   m_Name: location - Pianura Vulcanica
   m_TagString: Untagged
@@ -10519,9 +10520,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 516733121}
+  - {fileID: 516733125}
   selectedCommands:
-  - {fileID: 516733149}
+  - {fileID: 516733127}
   variables:
   - {fileID: 516733123}
   - {fileID: 516733130}
@@ -10560,6 +10561,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 516733168}
+  - {fileID: 516733160}
   - {fileID: 516733116}
   - {fileID: 516733167}
   - {fileID: 516733166}
@@ -10820,7 +10822,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 949f70d9519fd4362bca454ff26c4ea6, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: c189fd28638d4469ba66e1052d6786cc, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -11562,6 +11564,23 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &516733160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 516733112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 1
+  musicClip: {fileID: 8300000, guid: 095063a4f16744cf99b12d577c91a79b, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!114 &516733164
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17029,6 +17048,9 @@ GameObject:
   - component: {fileID: 1192161464}
   - component: {fileID: 1192161456}
   - component: {fileID: 1192161466}
+  - component: {fileID: 1192161468}
+  - component: {fileID: 1192161469}
+  - component: {fileID: 1192161467}
   m_Layer: 0
   m_Name: location - Dungeon
   m_TagString: Untagged
@@ -17075,9 +17097,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1192161433}
+  - {fileID: 1192161431}
   selectedCommands:
-  - {fileID: 1192161466}
+  - {fileID: 1192161467}
   variables: []
   description: 
   stepPause: 0
@@ -17138,6 +17160,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1192161432}
   commandList:
+  - {fileID: 1192161467}
   - {fileID: 1192161430}
   - {fileID: 1192161455}
   - {fileID: 1192161464}
@@ -17501,6 +17524,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1192161468}
   - {fileID: 1192161443}
   - {fileID: 1192161442}
   - {fileID: 1192161441}
@@ -17805,6 +17829,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1192161460}
   commandList:
+  - {fileID: 1192161469}
   - {fileID: 1192161458}
 --- !u!114 &1192161460
 MonoBehaviour:
@@ -17933,6 +17958,57 @@ MonoBehaviour:
   itemId: 95
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: 88b900cefd550483db737af024573549, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1192161467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 98
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: 095063a4f16744cf99b12d577c91a79b, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
+--- !u!114 &1192161468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 96
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: e6712c84702c74ac9b80538e7562c3e2, type: 3}
+  atTime: 0
+  loop: 0
+  fadeDuration: 1
+--- !u!114 &1192161469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192161427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 97
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: fc066fd706bfd4b4aa4c1fd671c32bca, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
@@ -19266,7 +19342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -59.00006, y: -53.09967}
+  m_AnchoredPosition: {x: -59, y: -53.09967}
   m_SizeDelta: {x: 89, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1372051735
@@ -28064,7 +28140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 298259642}
+  selectedFlowchart: {fileID: 516733114}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
