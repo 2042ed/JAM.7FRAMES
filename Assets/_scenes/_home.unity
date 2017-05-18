@@ -6731,19 +6731,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 325.58676, y: 233.7215}
+  scrollPos: {x: 563.8413, y: 322.9646}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 463
-  zoom: 0.6777225
+  zoom: 0.5305315
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 298259678}
+  selectedCommands:
+  - {fileID: 298259680}
   variables:
   - {fileID: 298259648}
   - {fileID: 298259684}
@@ -10681,9 +10683,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 516733125}
-  selectedCommands:
-  - {fileID: 516733159}
+  - {fileID: 516733121}
+  selectedCommands: []
   variables:
   - {fileID: 516733123}
   - {fileID: 516733130}
@@ -10845,7 +10846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 554.20557
+    x: 555.31036
     y: 64.82193
     width: 124
     height: 40
@@ -10929,7 +10930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 563.4459
+    x: 564.5507
     y: 210.23888
     width: 120
     height: 40
@@ -22200,9 +22201,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1664612961}
+  - {fileID: 1664612953}
   selectedCommands:
-  - {fileID: 1664612967}
+  - {fileID: 1664612938}
   variables:
   - {fileID: 1664612920}
   - {fileID: 1664612957}
@@ -22621,7 +22622,7 @@ MonoBehaviour:
   storyText: Ma certo! Ora che sono guarito non mi serve.
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: f832190416a864e1596962a3b70aadf5, type: 3}
+  portrait: {fileID: 21300000, guid: 5414e0f913e284e1b86bee967ceba3a1, type: 3}
   voiceOverClip: {fileID: 8300000, guid: f4ee2b99bdf3047b18d381392bb5cb89, type: 3}
   showAlways: 1
   showCount: 1
@@ -22786,7 +22787,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 7f3bc3e9471e741109b2bbe42270d7ad, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: e8959c2521bef42f8aeb03439c89f76b, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: ce1e1c0897d9847faa1028853984bd56, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -22902,7 +22903,7 @@ MonoBehaviour:
   storyText: Vuoi ancora ascoltare i miei saggi consigli?
   description: 
   character: {fileID: 850311577}
-  portrait: {fileID: 21300000, guid: f832190416a864e1596962a3b70aadf5, type: 3}
+  portrait: {fileID: 21300000, guid: 5414e0f913e284e1b86bee967ceba3a1, type: 3}
   voiceOverClip: {fileID: 8300000, guid: 9b68c12a834c54a919ec426333d0632f, type: 3}
   showAlways: 1
   showCount: 1
@@ -23441,7 +23442,7 @@ MonoBehaviour:
   - {fileID: 1664612965}
 --- !u!114 &1664612967
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664612909}
@@ -23458,7 +23459,7 @@ MonoBehaviour:
   fadeDuration: 1
 --- !u!114 &1664612968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664612909}
@@ -25827,8 +25828,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1978847787}
+  selectedCommands:
+  - {fileID: 1978847782}
   variables: []
   description: 
   stepPause: 0
@@ -28539,7 +28542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 516733114}
+  selectedFlowchart: {fileID: 1978847758}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1

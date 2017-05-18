@@ -9,17 +9,17 @@ SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal ,Sto aggiu
 SAY.location - Foresta.54.Robot Quby,Robot Quby portrait_robot_normal ,Grazie!
 SAY.location - Foresta.55.Robot Quby,Robot Quby portrait_robot_normal ,Ti ricompenserò dopo che mi avrai dato l'olio.
 SAY.location - Foresta.67.Androide Zot,Androide Zot portrait_androide_normal ,Io posso dare un po' del mio olio. Ecco qua!
-SAY.location - Foresta.77.Assunta Frame,Assunta Frame portrait_player_normal ,Però non ho neanche una fiaschetta d'olio!\n
-SAY.location - Foresta.78.Assunta Frame,Assunta Frame portrait_player_normal ,Una fiaschetta ce l'ho.\n
+SAY.location - Foresta.77.Assunta Frame,Assunta Frame portrait_player_normal ,Però non ho neanche una fiaschetta d'olio!
+SAY.location - Foresta.78.Assunta Frame,Assunta Frame portrait_player_normal ,Una fiaschetta ce l'ho.
 SAY.location - Foresta.95.Robot Quby,Robot Quby portrait_robot_normal ,È un buon inizio. Trovane altre due per favore.
-SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho due fiaschette. Me ne manca solo una…\n
+SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho due fiaschette. Me ne manca solo una…
 SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!
 SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!"
 SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
-SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana"".\n"
+SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana""."
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
-SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:\n\n
+SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:
 SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...
 SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...
 SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA...
@@ -30,7 +30,7 @@ SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!
 SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
-SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.\n
+SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.
 SAY.location - Grotta Ghiaccio.42.Assunta Frame,Assunta Frame portrait_player_normal ,"Quella grotta di ghiaccio sembra freddissima, ma con la pelliccia di Malik ce la posso fare."
 SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_normal ,Non posso entrare in quella grotta di ghiaccio: c'è troppo freddo!
 SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!
@@ -42,9 +42,9 @@ SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_sci
 SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.
 SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
 SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
-SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w}\nSe chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
+SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
 SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal ,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
-SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w}\nPerché sono appena uscito da un lago?{w}\nUn attimo… io… sono Trevor!{w}\nPoi… forse… sì! sono un mago!
+SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w}\nPerché sono appena uscito da un lago?{w}{c}Un attimo… io… sono Trevor!{w}\nPoi… forse… sì! sono un mago!
 SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…
 SAY.location - Palude.52.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
 SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal ,"Dimmi, di cosa hai bisogno?"
@@ -62,7 +62,7 @@ SAY.location - Pianura Vulcanica.66.Assunta Frame,Assunta Frame ,Linzi è ancora
 SAY.location - Pianura Vulcanica.39.Assunta Frame,Assunta Frame portrait_player_dazzled ,Cosa è successo qua? Perché è tutto pieno di lava?
 SAY.location - Pianura Vulcanica.50.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,Sigh… sigh… sono l'elfo Linzi.{w}\nIl vulcano è esploso e la mia casa ha preso fuoco!
 SAY.location - Pianura Vulcanica.55.Assunta Frame,Assunta Frame portrait_player_normal ,E come possiamo fare?
-SAY.location - Pianura Vulcanica.56.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,"L'unica cosa che può spegnere la lava è l'acqua, ma io sono troppo sconvolto per procurarmela… sigh… sigh…"
+SAY.location - Pianura Vulcanica.56.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,"L'unica cosa che può spegnere la lava è l'acqua,{w=2} ma io sono troppo sconvolto per procurarmela… sigh… sigh…"
 MENU.location - Pianura Vulcanica.57,,Ti posso aiutare io!
 MENU.location - Pianura Vulcanica.59,,Problemi tuoi.
 SAY.location - Pianura Vulcanica.60.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,Grazie! Poi ti ricompenserò.
@@ -100,7 +100,7 @@ SAY.location - Villaggio.70.Assunta Frame,Assunta Frame portrait_player_dazzled 
 SAY.location - Villaggio.76.Assunta Frame,Assunta Frame portrait_player_normal ,Non è che potresti prestarmi la tua pelliccia?
 SAY.location - Villaggio.75.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,"Per favore, sono malato!{w}\nLasciami almeno la pelliccia per proteggermi dalla febbre."
 SAY.location - Villaggio.78.Indigeno Malik,Indigeno Malik portrait_indigeno_normal2 ,Ma certo! Ora che sono guarito non mi serve.
-SAY.location - Tundra Tecnologica.44.Androide Zot,Androide Zot portrait_androide_sad ,Bzz… ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w}\nPosso diventare tuo amico?
+SAY.location - Tundra Tecnologica.44.Androide Zot,Androide Zot portrait_androide_sad ,Bzz… ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w=3}\nPosso diventare tuo amico?
 MENU.location - Tundra Tecnologica.62,,Si
 MENU.location - Tundra Tecnologica.63,,No
 SAY.location - Tundra Tecnologica.68.Assunta Frame,Assunta Frame portrait_player_normal ,No.
