@@ -3635,8 +3635,7 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks:
-  - {fileID: 143895656}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -4132,7 +4131,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 10c4641b32e654b24b900ffa6ff4c3ed, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4560,7 +4559,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: f628cdf082758423b8e8f9cecb3c0ce0, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4585,7 +4584,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 124aeffa981464aa9893897d1fd7300d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4635,7 +4634,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 87ed76ef1baac4e398a8b5e089f995c7, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4885,7 +4884,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 6a846b3f6054247c6a6b58f84d6a6fe5, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -4935,7 +4934,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 2c695e43fcff64d398e1eeea70e37f68, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -5171,7 +5170,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 2c373be78c5834a158490aabf7a2d0e4, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6596,7 +6595,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: f4795a605939d4180834e48acd1355ac, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -6668,7 +6667,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 80b20fa227c994efd9c40249973e7eba, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -29456,6 +29455,7 @@ GameObject:
   - component: {fileID: 1978847779}
   - component: {fileID: 1978847778}
   - component: {fileID: 1978847796}
+  - component: {fileID: 1978847797}
   m_Layer: 0
   m_Name: location - Tundra Tecnologica
   m_TagString: Untagged
@@ -29502,9 +29502,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1978847787}
+  - {fileID: 1978847774}
   selectedCommands:
-  - {fileID: 1978847782}
+  - {fileID: 1978847797}
   variables: []
   description: 
   stepPause: 0
@@ -29855,6 +29855,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1978847775}
+  - {fileID: 1978847797}
   - {fileID: 1978847773}
   - {fileID: 1978847781}
   - {fileID: 1978847780}
@@ -30351,6 +30352,23 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: 88b900cefd550483db737af024573549, type: 3}
   atTime: 0
   loop: 1
+  fadeDuration: 1
+--- !u!114 &1978847797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1978847756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 98
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: fc066fd706bfd4b4aa4c1fd671c32bca, type: 3}
+  atTime: 0
+  loop: 0
   fadeDuration: 1
 --- !u!1 &1982590709
 GameObject:
@@ -32775,7 +32793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1192161429}
+  selectedFlowchart: {fileID: 153411813}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
