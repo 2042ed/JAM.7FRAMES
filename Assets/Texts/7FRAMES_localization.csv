@@ -2,7 +2,7 @@ Key,Description,Standard
 SAY.location - Foresta.61.Assunta Frame,Assunta Frame portrait_player_normal ,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.
 SAY.location - Foresta.45.Robot Quby,Robot Quby portrait_robot_normal ,"Ciao! Sono Quby, un robot simpatico!"
 SAY.location - Foresta.49.Assunta Frame,Assunta Frame portrait_player_normal ,Ciao! Cosa sono questi resti?
-SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{w}{c}Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w}{c}Per sbloccarmi, mi servirebbero 3 fiaschette d'olio."
+SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{w=3}{c}Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w=3}{c}Per sbloccarmi, mi servirebbero 3 fiaschette d'olio."
 MENU.location - Foresta.51,,Sono disposta ad aiutarti!
 MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.
 SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal ,Sto aggiustando la mia astronave. Grazie ancora!
@@ -16,9 +16,23 @@ SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho
 SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!
 SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!"
 SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
+SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,"ho trovato una mappa dell'isola!\nposso aprirla e chiuderla cliccandone l'icona"
+SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy ,"non è un toast (peccato), ma la pelliccia di Malik"
+SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy ,con questo olio è meglio che non ci condisca l'insalata
+SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy ,la medicina selfica.. elfica ops
+SAY.location - Home Menu.134.Androide Zot,Androide Zot portrait_androide_happy ,zot sempre con te bzzz
+SAY.location - Home Menu.136.La Morte,La Morte portrait_morte_normal ,ricordati che devi morire!\nma non in questo gioco!
+SAY.location - Home Menu.138.Assunta Frame,Assunta Frame portrait_player_normal ,un diario... per me è illeggibile perchè non è mio
+SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal ,una chiave... italiana
+SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal ,è foglio con scritto EPTA
+SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal ,ho trovato un draghetto! che bellino
 SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana""."
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
+SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal ,Devo inserire il codice giusto...
+MENU.location - Portale.83,,1234567
+MENU.location - Portale.87,,7x1=1x7
+MENU.location - Portale.88,,7*7 = 77
 SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:
 SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...
 SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...
@@ -28,6 +42,7 @@ SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA...
 SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER...
 SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!\n{w}
 SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
+SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad ,mi sa che non è il codice giusto...
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
 SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.
@@ -36,13 +51,13 @@ SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_no
 SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!
 SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Lascia stare il mio Fluffi!
 SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal ,Ho raccolto l'olio di Fluffi in una fiaschetta!
-SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w}{c}Finalmente qualcuno a cui raccontare la mia storia.
+SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w=2}{c}Finalmente qualcuno a cui raccontare la mia storia.
 SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal ,Sono disposta ad ascoltarti.
-SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w=3}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w=3}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
+SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w=6}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w=5}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
 SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.
 SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
 SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
-SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
+SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w=3}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
 SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal ,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
 SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w}\nPerché sono appena uscito da un lago?{w}{c}Un attimo… io… sono Trevor!{w}\nPoi… forse… sì! sono un mago!
 SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…

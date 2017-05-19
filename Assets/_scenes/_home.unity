@@ -1384,6 +1384,7 @@ GameObject:
   - component: {fileID: 123128274}
   - component: {fileID: 123128273}
   - component: {fileID: 123128271}
+  - component: {fileID: 123128279}
   m_Layer: 0
   m_Name: location - Foresta
   m_TagString: Untagged
@@ -1430,9 +1431,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 123128222}
+  - {fileID: 123128275}
   selectedCommands:
-  - {fileID: 123128262}
+  - {fileID: 123128279}
   variables:
   - {fileID: 123128220}
   description: 
@@ -2960,6 +2961,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 123128273}
   commandList:
+  - {fileID: 123128279}
   - {fileID: 123128274}
   - {fileID: 123128271}
 --- !u!114 &123128276
@@ -3021,6 +3023,23 @@ MonoBehaviour:
   eventHandler: {fileID: 123128276}
   commandList:
   - {fileID: 123128277}
+--- !u!114 &123128279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123128209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 0
+  musicClip: {fileID: 8300000, guid: fc066fd706bfd4b4aa4c1fd671c32bca, type: 3}
+  atTime: 0
+  loop: 1
+  fadeDuration: 1
 --- !u!1 &126710597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,11 +3427,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3523,6 +3542,8 @@ GameObject:
   - component: {fileID: 143895649}
   - component: {fileID: 143895648}
   - component: {fileID: 143895647}
+  - component: {fileID: 143895656}
+  - component: {fileID: 143895655}
   m_Layer: 0
   m_Name: location - Home Menu
   m_TagString: Untagged
@@ -3603,18 +3624,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -195.38615, y: 99.8341}
+  scrollPos: {x: 242.32315, y: 222.76262}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 400
-  zoom: 0.90357244
+  zoom: 0.6282767
   scrollViewRect:
     serializedVersion: 2
     x: -369
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 143895656}
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -4106,7 +4128,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'ho trovato una mappa dell''isola!
 
-    posso guardarla cliccandone l''icona'
+    posso aprirla e chiuderla cliccandone l''icona'
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -4559,7 +4581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 142
   indentLevel: 0
-  storyText: "\xE8 foglio con scritto 2*2*2*2*2*2*2"
+  storyText: "\xE8 foglio con scritto EPTA"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -5132,6 +5154,56 @@ MonoBehaviour:
   commandList:
   - {fileID: 143895651}
   - {fileID: 143895652}
+--- !u!114 &143895655
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 158
+  indentLevel: 0
+  storyText: ho trovato un draghetto! che bellino
+  description: 
+  character: {fileID: 695742693}
+  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &143895656
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143895575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1022.59973
+    y: 397.35706
+    width: 132
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 159
+  blockName: item-draghetto
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 143895655}
 --- !u!114 &143895671
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5409,6 +5481,13 @@ GameObject:
   - component: {fileID: 153411855}
   - component: {fileID: 153411856}
   - component: {fileID: 153411857}
+  - component: {fileID: 153411864}
+  - component: {fileID: 153411863}
+  - component: {fileID: 153411862}
+  - component: {fileID: 153411861}
+  - component: {fileID: 153411860}
+  - component: {fileID: 153411859}
+  - component: {fileID: 153411858}
   m_Layer: 0
   m_Name: location - Portale
   m_TagString: Untagged
@@ -5443,21 +5522,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 798.31793, y: 256.9688}
+  scrollPos: {x: 130.48491, y: 90.49644}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 459
-  zoom: 0.25
+  blockViewHeight: 542
+  zoom: 0.92802227
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 153411846}
-  selectedCommands:
-  - {fileID: 153411857}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 153411819}
   description: 
@@ -5546,7 +5623,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 136
     y: 115
-    width: 229
+    width: 212
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5616,8 +5693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 507
-    y: 11
+    x: 511.31024
+    y: 0.22439718
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5638,6 +5715,10 @@ MonoBehaviour:
   - {fileID: 153411832}
   - {fileID: 153411831}
   - {fileID: 153411830}
+  - {fileID: 153411864}
+  - {fileID: 153411863}
+  - {fileID: 153411859}
+  - {fileID: 153411858}
   - {fileID: 153411826}
   - {fileID: 153411822}
   - {fileID: 153411820}
@@ -5669,7 +5750,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 145
     y: 225
-    width: 141
+    width: 133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5725,7 +5806,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 153411811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
@@ -6175,9 +6256,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 706
-    y: 87
-    width: 144
+    x: 720.0086
+    y: 110.70633
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6436,6 +6517,165 @@ MonoBehaviour:
   atTime: 0
   loop: 0
   fadeDuration: 1
+--- !u!114 &153411858
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 2
+  text: 7*7 = 77
+  description: 
+  targetBlock: {fileID: 153411862}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &153411859
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 87
+  indentLevel: 2
+  text: 7x1=1x7
+  description: 
+  targetBlock: {fileID: 153411846}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &153411860
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 153411821}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &153411861
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 0
+  storyText: "mi sa che non \xE8 il codice giusto..."
+  description: 
+  character: {fileID: 695742693}
+  portrait: {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &153411862
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 743.4165
+    y: 16.182035
+    width: 121
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 84
+  blockName: codice errato
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 153411861}
+  - {fileID: 153411860}
+--- !u!114 &153411863
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 2
+  text: 1234567
+  description: 
+  targetBlock: {fileID: 153411862}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &153411864
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 82
+  indentLevel: 2
+  storyText: Devo inserire il codice giusto...
+  description: 
+  character: {fileID: 695742693}
+  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1001 &156708827
 Prefab:
   m_ObjectHideFlags: 0
@@ -9888,7 +10128,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 391.836
     y: 23.196884
-    width: 138
+    width: 133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9977,7 +10217,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1.9379883
     y: 194.84415
-    width: 235
+    width: 219
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10087,7 +10327,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 380
     y: 97
-    width: 155
+    width: 149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10155,7 +10395,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.4054
     y: 205
-    width: 135
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10202,7 +10442,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 404.04236
     y: 337.0026
-    width: 130
+    width: 126
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10379,7 +10619,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 305.54172
     y: 209
-    width: 129
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10942,7 +11182,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0.9436493
     y: 122.83475
-    width: 139
+    width: 131
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -11001,7 +11241,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1.6699753
     y: 71.834755
-    width: 147
+    width: 138
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20354,9 +20594,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1192161431}
-  selectedCommands:
-  - {fileID: 1192161467}
+  - {fileID: 1192161463}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -20408,7 +20647,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 546.40967
     y: 21.91999
-    width: 140
+    width: 135
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20417,7 +20656,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1192161432}
   commandList:
-  - {fileID: 1192161467}
   - {fileID: 1192161430}
   - {fileID: 1192161455}
   - {fileID: 1192161464}
@@ -20458,7 +20696,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50
     y: 50
-    width: 131
+    width: 127
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20518,7 +20756,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 50.365295
     y: 138.30627
-    width: 250
+    width: 234
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20772,7 +21010,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 553.7931
     y: 207.60596
-    width: 132
+    width: 123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20803,7 +21041,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 677.232
     y: 110.24054
-    width: 186
+    width: 178
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20829,7 +21067,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 378.29987
     y: 118.161705
-    width: 165
+    width: 157
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21077,7 +21315,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 54.433456
     y: 260.01086
-    width: 152
+    width: 145
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21151,7 +21389,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 55.50164
     y: 205.01085
-    width: 160
+    width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21160,6 +21398,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1192161462}
   commandList:
+  - {fileID: 1192161467}
   - {fileID: 1192161461}
 --- !u!114 &1192161464
 MonoBehaviour:
@@ -21220,7 +21459,7 @@ MonoBehaviour:
   fadeDuration: 1
 --- !u!114 &1192161467
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1192161427}
@@ -21229,7 +21468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 98
+  itemId: 99
   indentLevel: 0
   musicClip: {fileID: 8300000, guid: 095063a4f16744cf99b12d577c91a79b, type: 3}
   atTime: 0
@@ -29000,11 +29239,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -30822,11 +31061,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -32536,7 +32775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1069022993}
+  selectedFlowchart: {fileID: 1192161429}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
