@@ -33,8 +33,8 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 - Internet Festival <LINK="IF">www.internetfestival.it</LINK>
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
-
-e BRUNO!
+- Luca (voce del narratore)
+- e BRUNO!
 
 <h1>STRUMENTI / TOOLS</h1>
 - Fungus (engine open source) www.fungusgames.com-
