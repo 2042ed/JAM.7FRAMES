@@ -44,7 +44,7 @@ public class Credits : MonoBehaviour
         // Listeners
         BtBack.onClick.AddListener(OnClick);
 
-        TfCredits.text = CreditsTxt.text;
+        TfCredits.text = FormatCredits(CreditsTxt.text);
 
         Show(true);
     }
@@ -89,6 +89,21 @@ public class Credits : MonoBehaviour
 
     #region Methods
 
+    string FormatCredits(string _txt)
+    {
+        // Format
+        string lv0 = "<size=" + Level0FontPerc + "%><color=#" + ColorToHex(Level0Color) + ">";
+        string lv1 = "<size=" + Level1FontPerc + "%><color=#" + ColorToHex(Level1Color) + ">";
+        _txt = _txt.Replace("<h1>", lv0);
+        _txt = _txt.Replace("</h1>", "</color></size>");
+        _txt = _txt.Replace("[1]", lv1);
+        _txt = _txt.Replace("[1E]", "</color></size>");
+        // Fix missing characters
+        _txt = _txt.Replace("ö", "o");
+
+        return _txt;
+    }
+
     void StartScrollLoop()
     {
         this.StartCoroutine(CO_StartScrollLoop());
@@ -120,4 +135,9 @@ public class Credits : MonoBehaviour
 
     #endregion
 
+    public string ColorToHex(Color32 _color, bool _addHashPrefix = false)
+    {
+        string hex = _color.r.ToString("X2") + _color.g.ToString("X2") + _color.b.ToString("X2");
+        return _addHashPrefix ? "#" + hex : hex;
+    }
 }

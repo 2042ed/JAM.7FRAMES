@@ -51,18 +51,11 @@ public class InventoryManager : MonoBehaviour
     public void ClickItem(string quale)
     {
         switch (quale) {
-            case "androide":
-            case "chiave-italiana":
-            case "codice":
-            case "diario":
-            case "medicina":
-            case "morte":
-            case "olio":
-            case "pelliccia":
-                HomeFlowchart.ExecuteBlock("item-" + quale);
-                break;
             case "mappa":
                 AppManager.I.ToggleMap();
+                break;
+            default:
+                HomeFlowchart.ExecuteBlock("item-" + quale);
                 break;
         }
     }

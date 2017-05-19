@@ -3,29 +3,35 @@ sperando ti sia piaciuto
 è stato ideato e sviluppato durante una Game Jam
 presso l'Internet Festival Pisa 2016
 
+<h1>THE 7 KIDS</h1>
+- Angelo Boni
+- Elia Gotuzzo
+- Elio Bretzel
+- Enea Polsinelli
+- Fabio Cecere
+- Maia Polsinelli
+- Marco Tarasconi
 
-Angelo Boni
-Enea Polsinelli
-Elia Gotuzzo
-Elio
-Fabio Cecere
-Maia Polsinelli
-Marco Tarasconi
+<h1>DADS / MUMS / TUTORS</h1>
+- Annabella Coiro
+- Gianluca Tarasconi
+- Mauro Vanetti
+- Michele Gotuzzo
+- Pietro Polsinelli
+- Stefano Cecere
 
-Annabella Coiro
-Gianluca Tarasconi
-Mauro Vanetti
-Michele Gotuzzo
-Pietro Polsinelli
-Stefano Cecere
+<h1>GRAZIE SPECIALE A</h1>
+- Internet Festival Pisa www.internetfestival.it
+<sprite name=Logo_Mixart>
 
-ringraziamenti speciali
-Internet Festival
 
-MIXART Pisa
 
-Santeria Milano
 
-tecnologie
-Unity
-Fungus open source game framework
+
+- Mixart Pisa www.mix-art.org
+- Santeria Milano www.santeriamilano.it
+- Fungus Games www.fungusgames.com
+
+<h1>OPEN SOURCE</h1>
+Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
+Vieni a vedere su https://github.com/JAMURR/JAM.7Frames/
