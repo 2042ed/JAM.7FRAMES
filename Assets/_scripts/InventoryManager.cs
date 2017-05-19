@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+
+    public Fungus.Flowchart HomeFlowchart;
+
     public GameObject InventoryPanel;
     public GameObject ItemOlio1;
     public GameObject ItemOlio2;
@@ -43,6 +46,25 @@ public class InventoryManager : MonoBehaviour
     public void CloseInventory()
     {
         InventoryPanel.SetActive(false);
+    }
+
+    public void ClickItem(string quale)
+    {
+        switch (quale) {
+            case "androide":
+            case "chiave-italiana":
+            case "codice":
+            case "diario":
+            case "medicina":
+            case "morte":
+            case "olio":
+            case "pelliccia":
+                HomeFlowchart.ExecuteBlock("item-" + quale);
+                break;
+            case "mappa":
+                AppManager.I.ToggleMap();
+                break;
+        }
     }
 
     public void GetOlio1()
@@ -90,7 +112,7 @@ public class InventoryManager : MonoBehaviour
     {
         hasMap = true;
         resetInventory();
-
+        HomeFlowchart.ExecuteBlock("item-mappa");
     }
 
     public void GetMedicina()
