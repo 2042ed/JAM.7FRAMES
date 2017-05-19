@@ -27,7 +27,7 @@ SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal 
 SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal ,è foglio con scritto EPTA
 SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal ,ho trovato un draghetto! che bellino
 SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana""."
-SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w}\nUna chiave inglese? o anche di un'altra nazionalità!
+SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w=3}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
 SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal ,Devo inserire il codice giusto...
 MENU.location - Portale.83,,1234567
@@ -59,11 +59,11 @@ SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_sci
 SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
 SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w=3}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
 SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal ,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
-SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w}\nPerché sono appena uscito da un lago?{w}{c}Un attimo… io… sono Trevor!{w}\nPoi… forse… sì! sono un mago!
+SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w=3}\nPerché sono appena uscito da un lago?{w=3}{c}Un attimo… io… sono Trevor!{w=3}\nPoi… forse… sì! sono un mago!
 SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…
 SAY.location - Palude.52.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
 SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal ,"Dimmi, di cosa hai bisogno?"
-SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w}{c}L'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
+SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w=3}{c}L'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
 SAY.location - Palude.56.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ti aiuterò!"
 SAY.location - Palude.96.Assunta Frame,Assunta Frame portrait_player_happy ,Ora il mago Trevor è felice.
 SAY.location - Palude.68.La Morte,La Morte portrait_morte_normal ,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
@@ -93,9 +93,9 @@ SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_
 SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, il Scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
 SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal ,Il ponte è rotto! Non si può passare…
 SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal ,Aah! Un mostro!
-SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
+SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
 SAY.location - Dungeon.92.La Morte,La Morte portrait_morte_normal ,Tieni questa boccia d'olio come segno della mia benevolenza.
-SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry ,"Non ti aiuterò per una misera fiaschettina d'olio.{w}E poi, se ti portassi fuori da qui, uccideresti tutti!"
+SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry ,"Non ti aiuterò per una misera fiaschettina d'olio.{w=2}E poi, se ti portassi fuori da qui, uccideresti tutti!"
 SAY.location - Dungeon.41.La Morte,La Morte portrait_morte_normal ,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
 MENU.location - Dungeon.73,,Ti porterò fuori da qui.
 MENU.location - Dungeon.74,,Ti porterò fuori da qui in cambio di una ricompensa.
