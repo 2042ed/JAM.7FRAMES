@@ -1,9 +1,11 @@
 Questo gioco
-sperando ti sia piaciuto
-è stato ideato e sviluppato durante una Game Jam
-presso l'Internet Festival Pisa 2016
+(sperando ti sia piaciuto)
+è stato ideato e sviluppato in una giornata Kids Game Jam
+durante l'Internet Festival 2016, al MixArt di Pisa
+completato con un'altra giornata di Jam a Milano presso la Santeria
+e revisionato e ultimato via internet in qualche pomeriggio di pioggia
 
-<h1>THE 7 KIDS</h1>
+<h1>IDEA, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG</h1>
 - Angelo Boni
 - Elia Gotuzzo
 - Elio Bretzel
@@ -12,7 +14,7 @@ presso l'Internet Festival Pisa 2016
 - Maia Polsinelli
 - Marco Tarasconi
 
-<h1>DADS / MUMS / TUTORS</h1>
+<h1>PARENTS and TUTORS</h1>
 - Annabella Coiro
 - Gianluca Tarasconi
 - Mauro Vanetti
@@ -22,16 +24,15 @@ presso l'Internet Festival Pisa 2016
 
 <h1>GRAZIE SPECIALE A</h1>
 - Internet Festival Pisa www.internetfestival.it
-<sprite name=Logo_Mixart>
-
-
-
-
-
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
 - Fungus Games www.fungusgames.com
+- Minecraft
+- GitHub
 
 <h1>OPEN SOURCE</h1>
 Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
 Vieni a vedere su https://github.com/JAMURR/JAM.7Frames/
+
+<h1>PARTECIPA</h1>
+se sei un bambino curioso o un papà (o mamma) in cerca di nuove forme di ricreatività, prendi contatto con JAMURR.org
