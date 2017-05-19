@@ -23,12 +23,12 @@ e revisionato e ultimato via internet in qualche pomeriggio di pioggia
 - Stefano Cecere
 
 <h1>GRAZIE SPECIALE A</h1>
-- Internet Festival Pisa www.internetfestival.it
+- Internet Festival <LINK="IF">www.internetfestival.it</LINK>
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
-- Fungus Games www.fungusgames.com
-- Minecraft
-- GitHub
+
+<h1>STRUMENTI</h1>
+- Fungus (engine open source) www.fungusgames.com, Unity, Minecraft, GitHub, GIMP, vari pixel editors
 
 <h1>OPEN SOURCE</h1>
 Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
