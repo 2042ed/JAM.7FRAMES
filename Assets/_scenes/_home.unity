@@ -13540,6 +13540,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f29e031c8ef384799bd17924e6c3d299, type: 3}
   - {fileID: 21300000, guid: 1afe1322eaae24140b2ae43cc2e3d704, type: 3}
   - {fileID: 21300000, guid: 7fca9fc7fa6aa473eb0227f329e8a29e, type: 3}
+  - {fileID: 21300000, guid: 97fe71017c8504767942e63016c1ccf9, type: 3}
   - {fileID: 21300000, guid: 193be105b3e3a43ba9b5e12ee85574e9, type: 3}
 --- !u!1 &548420160
 GameObject:
@@ -17284,7 +17285,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 2.5, y: 0}
-  m_SizeDelta: {x: -5, y: 0}
+  m_SizeDelta: {x: -5, y: 326.87}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &960651538
 MonoBehaviour:
@@ -24806,7 +24807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1618618778
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29131,7 +29132,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957193366}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1908110080, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
   m_Name: 
