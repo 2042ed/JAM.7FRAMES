@@ -1,5 +1,3 @@
-- fix all audio bugs
-- fix typewriter for long sentences
-- game over scene + credits
-- chill music
-- npg (butterflies and ants)
+- check game over scene + link 2 credits
+- npgs (moving butterflies and ants)
+- hidden small dragons to be found (by Fabio)
