@@ -1,11 +1,11 @@
-Questo gioco (sperando ti sia piaciuto) è stato sviluppato in una Kids Game Jam.
+Questo gioco è stato sviluppato in una Kids Game Jam.
 Ovvero 7 bambini (dai 7 ai 12 anni) si trovati durante l'Internet Festival 2016, al MixArt di Pisa, ed è stato dato loroun TEMA, che era: "SE NON CI FOSSERO GLI ALTRI..."
-In poche ore i ragazzi in concertazione (JAM) tra loro e con la supervisione dei papà, dovevano ideare e creare il prototipo di un gioco.
+In poche ore i ragazzi in concertazione (JAM) tra loro e con la supervisione dei genitori, dovevano ideare e creare il prototipo di un gioco.
 Ognuno con le proprie capacità e preferenze ha dato del suo meglio.
 
-E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria
+E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria.
 
-Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia.
+Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da Stefano Cecere e Mauro Vanetti.
 
 <h1>IDEA, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG</h1>
 - Angelo Boni
@@ -15,6 +15,9 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia.
 - Fabio Cecere
 - Maia Polsinelli
 - Marco Tarasconi
+
+<h1>JAM CONCEPT & LEAD</h1>
+- Stefano Cecere
 
 <h1>PARENTS and TUTORS</h1>
 - Annabella Coiro
