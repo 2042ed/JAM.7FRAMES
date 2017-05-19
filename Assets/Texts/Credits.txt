@@ -5,7 +5,7 @@ Ognuno con le proprie capacità e preferenze ha dato del suo meglio.
 
 E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria.
 
-Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da Stefano Cecere e Mauro Vanetti.
+Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da Stefano e Mauro.
 
 <h1>IDEE, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG</h1>
 - Angelo Boni
@@ -30,11 +30,11 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 
 <h1>GRAZIE SPECIALI</h1>
 - Michele Lanzo
-- Internet Festival <LINK="IF">www.internetfestival.it</LINK>
+- Internet Festival www.internetfestival.it
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
 - Luca (voce del narratore)
-- e BRUNO!
+- e il PICCOLO BRUNO!
 
 <h1>STRUMENTI / TOOLS</h1>
 - Fungus (engine open source) www.fungusgames.com-
@@ -47,5 +47,6 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
 Scarica i sorgenti da github.com/JAMURR/ e inizia a modificare tutto!
 
-<h1>PARTECIPA</h1>
+<h1>INFORMAZIONI E PARTECIPAZIONE</h1>
 Se sei un bambino curioso o un papà (o mamma) in cerca di nuove forme di ricreatività, prendi contatto con JAMURR.org
+Lì troverai maggiori informazioni su questo progetto e il contesto.
