@@ -1,9 +1,12 @@
-Questo gioco
-(sperando ti sia piaciuto)
-è stato ideato e sviluppato in una giornata Kids Game Jam
-durante l'Internet Festival 2016, al MixArt di Pisa
-completato con un'altra giornata di Jam a Milano presso la Santeria
-e revisionato e ultimato via internet in qualche pomeriggio di pioggia
+Questo gioco (sperando ti sia piaciuto) è stato sviluppato in una Kids Game Jam.
+Ovvero ci siamo trovati durante l'Internet Festival 2016, al MixArt di Pisa ed è stato dato un TEMA, che era: "SE NON CI FOSSERO GLI ALTRI..."
+In poche ore i ragazzi in concertazione tra loro e con la supervisione dei papà, dovevano ideare e creare il prototipo di un gioco.
+
+Ognuno con le proprie capacità e preferenze ha deta del suo meglio.
+
+E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria
+
+Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia.
 
 <h1>IDEA, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG</h1>
 - Angelo Boni
@@ -17,22 +20,30 @@ e revisionato e ultimato via internet in qualche pomeriggio di pioggia
 <h1>PARENTS and TUTORS</h1>
 - Annabella Coiro
 - Gianluca Tarasconi
+- Laura Mirri
 - Mauro Vanetti
 - Michele Gotuzzo
 - Pietro Polsinelli
 - Stefano Cecere
 
 <h1>GRAZIE SPECIALE A</h1>
+- Michele Lanzo
 - Internet Festival <LINK="IF">www.internetfestival.it</LINK>
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
 
-<h1>STRUMENTI</h1>
-- Fungus (engine open source) www.fungusgames.com, Unity, Minecraft, GitHub, GIMP, vari pixel editors
+e BRUNO!
+
+<h1>STRUMENTI / TOOLS</h1>
+- Fungus (engine open source) www.fungusgames.com-
+- Unity
+- Minecraft
+- GitHub
+- GIMP e vari pixel editors
 
 <h1>OPEN SOURCE</h1>
 Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
-Vieni a vedere su https://github.com/JAMURR/JAM.7Frames/
+Vieni a vedere su github.com/JAMURR/
 
 <h1>PARTECIPA</h1>
 se sei un bambino curioso o un papà (o mamma) in cerca di nuove forme di ricreatività, prendi contatto con JAMURR.org

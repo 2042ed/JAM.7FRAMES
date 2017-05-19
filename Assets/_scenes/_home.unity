@@ -7746,7 +7746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScrollAnimationSpeed: 40
-  ScrollAnimationDelay: 5
+  ScrollAnimationDelay: 10
   Level0Color: {r: 1, g: 0.2205882, b: 0.2205882, a: 1}
   Level0FontPerc: 120
   Level1Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -13537,6 +13537,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7dba50f8f7c7c4a0ca1d26800cd3179e, type: 3}
   - {fileID: 21300000, guid: bc18875d1559d4f8f85c92dd8d8fbd42, type: 3}
   - {fileID: 21300000, guid: 88c688560df384912ac43714a3e53092, type: 3}
+  - {fileID: 21300000, guid: 68ffe1e41a9db403fa328fad22746a1b, type: 3}
   - {fileID: 21300000, guid: f29e031c8ef384799bd17924e6c3d299, type: 3}
   - {fileID: 21300000, guid: 1afe1322eaae24140b2ae43cc2e3d704, type: 3}
   - {fileID: 21300000, guid: 7fca9fc7fa6aa473eb0227f329e8a29e, type: 3}
@@ -17386,11 +17387,11 @@ MonoBehaviour:
     lineCount: 31
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -27123,11 +27124,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
