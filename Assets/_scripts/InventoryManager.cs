@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager I;
 
     public Fungus.Flowchart HomeFlowchart;
 
@@ -32,6 +33,11 @@ public class InventoryManager : MonoBehaviour
     bool hasAndroide;
     bool hasMorte;
     bool hasMap;
+
+    void Awake()
+    {
+        I = this;
+    }
 
     void Start()
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dragon : MonoBehaviour {
+public class Slide : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
