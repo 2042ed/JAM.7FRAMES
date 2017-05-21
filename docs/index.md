@@ -10,38 +10,58 @@ at Internet Festival Pisa - 8 October 2016
 
 ## Requirements
 
-this project requires Unity 5.5.2f1
+this project requires Unity 5.6
 
-## Credits
+## informazioni
+Questo gioco è stato sviluppato in una Kids Game Jam.
+Ovvero 7 bambini (dai 7 ai 12 anni) si trovati durante l'Internet Festival 2016, al MixArt di Pisa, ed è stato dato loro un TEMA, che era: "SE NON CI FOSSERO GLI ALTRI..."
+In poche ore i ragazzi in concertazione (JAM) tra loro e con la supervisione dei genitori, dovevano ideare e creare il prototipo del gioco.
+Ognuno con le proprie capacità e preferenze ha dato del suo meglio.
 
-### the 7 kids
+E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria.
 
--   Angelo Boni
--   Enea Polsinelli
--   Elio Bretzel
--   Maia Polsinelli
--   Marco Tarasconi
--   Elia Gotuzzo
--   Fabio Cecere
+Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da Stefano e Mauro.
 
-### the supporting adults
+# IDEE, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG
+- Angelo Boni
+- Elia Gotuzzo
+- Elio Bretzel
+- Enea Polsinelli
+- Fabio Cecere
+- Maia Polsinelli
+- Marco Tarasconi
 
--   Annabella Coiro
--   Gianluca Tarasconi
--   Mauro vanetti
--   Michele Gotuzzo
--   Michele Lanzo
--   Pietro Polsinelli
--   Stefano Cecere
+# JAM CONCEPT e COORDINAZIONE
+- Stefano Cecere
 
-## Special thanks and support
+# GENITORI e TUTORS
+- Annabella Coiro
+- Gianluca Tarasconi
+- Laura Mirri
+- Mauro Vanetti
+- Michele Gotuzzo
+- Pietro Polsinelli
+- Stefano Cecere
 
--   Internet Festival Pisa - [www.internetfestival.it](http://www.internetfestival.it)
--   Mixart - [www.mix-art.org](www.mix-art.org)
--   Santeria Milano -[ www.santeriamilano.it](www.santeriamilano.it)
--   Fungus Games - [www.fungusgames.com](www.fungusgames.com)
+# GRAZIE SPECIALI
+- Michele Lanzo
+- Internet Festival Pisa - [www.internetfestival.it](http://www.internetfestival.it)
+- Mixart - [www.mix-art.org](www.mix-art.org)
+- Santeria Milano -[ www.santeriamilano.it](www.santeriamilano.it)
+- Luca (voce del narratore)
+- e il PICCOLO BRUNO!
 
-## Licensing
+# STRUMENTI / TOOLS
+- Fungus game framework - [www.fungusgames.com](www.fungusgames.com)
+- Unity
+- Minecraft
+- GitHub
+- GIMP e vari pixel editors
 
-This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-To view a copy of this license, visit <http://creativecommons.org/licenses/by-nc-sa/4.0/>
+# PROGETTO OPEN SOURCE
+Questo progetto è doverosamente gratuito sotto licenza Creative Commons <http://creativecommons.org/licenses/by-nc-sa/4.0/ ed Open Source!
+Scarica i sorgenti da <https://github.com/JAMURR/JAM.7FRAMES> e inizia a modificare tutto!
+
+# INFORMAZIONI E PARTECIPAZIONE
+Se sei un bambino curioso o un papà (o mamma) in cerca di nuove forme di ricreatività, prendi contatto con https://jamurr.org
+Lì troverai maggiori informazioni su questo progetto e il contesto.
