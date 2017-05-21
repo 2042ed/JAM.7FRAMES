@@ -1,18 +1,18 @@
-# 7 Frames
+# 7 FRAMES
 
 a game by a Kids Game Jam
 at Internet Festival Pisa - 8 October 2016
 
 ## Docs
 
--   [Design Document](7F_DesignDocument.md)
--   [Flow](7F_Flow.md) the flow of the adventure
+- [Design Document](7F_DesignDocument.md)
+- [Flow](7F_Flow.md) the flow of the adventure
 
 ## Requirements
 
 this project requires Unity 5.6
 
-## informazioni
+## Informazioni
 Questo gioco è stato sviluppato in una Kids Game Jam.
 Ovvero 7 bambini (dai 7 ai 12 anni) si trovati durante l'Internet Festival 2016, al MixArt di Pisa, ed è stato dato loro un TEMA, che era: "SE NON CI FOSSERO GLI ALTRI..."
 In poche ore i ragazzi in concertazione (JAM) tra loro e con la supervisione dei genitori, dovevano ideare e creare il prototipo del gioco.
@@ -48,7 +48,7 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 - Internet Festival Pisa - [www.internetfestival.it](http://www.internetfestival.it)
 - Mixart - [www.mix-art.org](www.mix-art.org)
 - Santeria Milano -[ www.santeriamilano.it](www.santeriamilano.it)
-- Luca (voce del narratore)
+- Luca Mela (voce del narratore)
 - e il PICCOLO BRUNO!
 
 # STRUMENTI / TOOLS

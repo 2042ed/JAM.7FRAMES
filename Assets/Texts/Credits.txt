@@ -5,7 +5,7 @@ Ognuno con le proprie capacità e preferenze ha dato del suo meglio.
 
 E' stato poi completato con un'altra giornata di Jam a Milano presso la Santeria.
 
-Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da Stefano e Mauro.
+Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia.
 
 <h1>IDEE, DIALOGHI, PERSONAGGI, AMBIENTAZIONI, MUSICA, VOCI, DISEGNI, DEBUG</h1>
 - Angelo Boni
@@ -33,7 +33,7 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 - Internet Festival www.internetfestival.it
 - Mixart Pisa www.mix-art.org
 - Santeria Milano www.santeriamilano.it
-- Luca (voce del narratore)
+- Luca Mela (voce del narratore)
 - e il PICCOLO BRUNO!
 
 <h1>STRUMENTI / TOOLS</h1>
@@ -44,7 +44,7 @@ Infine revisionato e ultimato via internet in qualche pomeriggio di pioggia da S
 - GIMP e vari pixel editors
 
 <h1>PROGETTO OPEN SOURCE</h1>
-Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source!
+Questo progetto è doverosamente gratuito sotto licenza Creative Commons ed Open Source.
 Scarica i sorgenti da github.com/JAMURR/ e inizia a modificare tutto!
 
 <h1>INFORMAZIONI E PARTECIPAZIONE</h1>

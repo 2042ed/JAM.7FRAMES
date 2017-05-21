@@ -1,3 +1,0 @@
-- check game over scene + link 2 credits
-- npgs (moving butterflies and ants)
-- hidden small dragons to be found (by Fabio)
