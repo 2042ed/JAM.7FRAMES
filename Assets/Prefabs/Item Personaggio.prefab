@@ -81,10 +81,12 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Scienziato
+  m_text: 'Assunta Frame
+
+    unica femmina guarda caso. intraprendente e non si arrende'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 245b7577ca5b84c7392c356943847450, type: 2}
-  m_sharedMaterial: {fileID: 21237353099996632, guid: 245b7577ca5b84c7392c356943847450,
+  m_fontAsset: {fileID: 11400000, guid: 4d0187944c59442f49994bd2cc0922b2, type: 2}
+  m_sharedMaterial: {fileID: 21907291249987576, guid: 4d0187944c59442f49994bd2cc0922b2,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -149,12 +151,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114745221918069776}
-    characterCount: 10
+    characterCount: 72
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 10
+    wordCount: 11
     linkCount: 0
-    lineCount: 1
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
@@ -194,7 +196,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

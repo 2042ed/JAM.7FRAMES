@@ -25,6 +25,20 @@ public class SlidesManager : MonoBehaviour
         ShowCurrentPage();
     }
 
+    void Update()
+    {
+        // if PRESS SPACE -> next page
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            SkipRight();
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            SkipRight();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            SkipLeft();
+        }
+    }
+
     public void ChangePage(int newPage)
     {
         Slides[currentPage - 1].SetActive(false);

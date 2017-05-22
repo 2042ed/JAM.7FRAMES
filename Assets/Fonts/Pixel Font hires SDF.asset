@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -667331979, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
-  m_Name: Pixel Font
+  m_Name: Pixel Font hires SDF
   m_EditorClassIdentifier: 
   hashCode: -1149571237
   material: {fileID: 21237353099996632}
