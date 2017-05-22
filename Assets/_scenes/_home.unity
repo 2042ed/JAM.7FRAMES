@@ -26111,8 +26111,7 @@ MonoBehaviour:
   m_text: HAI VINTO!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0187944c59442f49994bd2cc0922b2, type: 2}
-  m_sharedMaterial: {fileID: 21907291249987576, guid: 4d0187944c59442f49994bd2cc0922b2,
-    type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 3f152ad3ecb1b4c5d882179c7aa084fd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26221,7 +26220,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 21907291249987576, guid: 4d0187944c59442f49994bd2cc0922b2, type: 2}
+  - {fileID: 2100000, guid: 3f152ad3ecb1b4c5d882179c7aa084fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
