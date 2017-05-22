@@ -16,33 +16,33 @@ SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho
 SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!
 SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!"
 SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
-SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,"ho trovato una mappa dell'isola!\nposso aprirla e chiuderla cliccandone l'icona"
-SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy ,"non è un toast (peccato), ma la pelliccia di Malik"
-SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy ,con questo olio è meglio che non ci condisca l'insalata
-SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy ,la medicina selfica.. elfica ops
-SAY.location - Home Menu.134.Androide Zot,Androide Zot portrait_androide_happy ,zot sempre con te bzzz
-SAY.location - Home Menu.136.La Morte,La Morte portrait_morte_normal ,ricordati che devi morire!\nma non in questo gioco!
-SAY.location - Home Menu.138.Assunta Frame,Assunta Frame portrait_player_normal ,un diario... per me è illeggibile perchè non è mio
-SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal ,una chiave... italiana
-SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal ,è foglio con scritto EPTA
-SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal ,ho trovato un draghetto! che bellino
+SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,"Ho trovato una mappa dell'isola!\nPosso aprirla e chiuderla cliccandone l'icona."
+SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy ,"Non è un toast (peccato), ma la pelliccia di Malik."
+SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy ,Con questo olio è meglio che non ci condisca l'insalata.
+SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy ,La medicina selfica… elfica, ops.
+SAY.location - Home Menu.134.Androide Zot,Androide Zot portrait_androide_happy ,Zot sempre con te, bzzz.
+SAY.location - Home Menu.136.La Morte,La Morte portrait_morte_normal ,Ricordati che devi morire!\nMa non in questo gioco.
+SAY.location - Home Menu.138.Assunta Frame,Assunta Frame portrait_player_normal ,Un diario… per me è illeggibile perché non è mio.
+SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal ,Una chiave… italiana.
+SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal ,"Su questo foglio c'è scritto ""EPTA""."
+SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal ,Ho trovato un draghetto! Che bellino.
 SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana""."
 SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w=3}\nUna chiave inglese? o anche di un'altra nazionalità!
 SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
-SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal ,Devo inserire il codice giusto...
+SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal ,Devo inserire il codice giusto…
 MENU.location - Portale.83,,1234567
 MENU.location - Portale.87,,7x1=1x7
-MENU.location - Portale.88,,7*7 = 77
+MENU.location - Portale.88,,7x7 = 77
 SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:
-SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...
-SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...
-SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA...
-SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_androide_normal ,ED...
-SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA...
-SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER...
+SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE…
+SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER…
+SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA…
+SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_androide_normal ,E…
+SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA…
+SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER…
 SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!\n{w}
 SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
-SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad ,mi sa che non è il codice giusto...
+SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad ,Mi sa che non è il codice giusto…
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
 SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.
@@ -90,7 +90,7 @@ SAY.location - Pianura Vulcanica.81.Androide Zot,Androide Zot portrait_androide_
 SAY.location - Pianura Vulcanica.99.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,"Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila."
 SAY.location - Pianura Vulcanica.100.Assunta Frame,Assunta Frame portrait_player_happy ,Grazie.\n
 SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_normal ,Devo trovare un forzuto che mi aiuti!
-SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, il Scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
+SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, lo scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
 SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal ,Il ponte è rotto! Non si può passare…
 SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal ,Aah! Un mostro!
 SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
@@ -123,7 +123,7 @@ SAY.location - Tundra Tecnologica.69.Androide Zot,Androide Zot portrait_androide
 SAY.location - Tundra Tecnologica.70.Assunta Frame,Assunta Frame portrait_player_normal ,OK.
 SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player_normal ,Sì.
 SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal ,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.
-SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,Hmm. Allora vieni con me? Che bello...
+SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,Hmm. Allora vieni con me? Che bello…
 SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
 CHARACTER.Scienziato Barni,,Scienziato Barni
 CHARACTER.Elfo Linzi,,Elfo Linzi
