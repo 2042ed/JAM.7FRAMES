@@ -24,11 +24,11 @@ namespace Fungus
         [SerializeField] protected Canvas dialogCanvas;
 
         [Tooltip("The name text UI object")]
-        [SerializeField] protected Text nameText;
+        [SerializeField] protected TMPro.TextMeshProUGUI nameText;
 
         [Tooltip("The story text UI object")]
-        [SerializeField] protected Text storyText;
-        public virtual Text StoryText { get { return storyText; } }
+        [SerializeField] protected TMPro.TextMeshProUGUI storyText;
+        public virtual TMPro.TextMeshProUGUI StoryText { get { return storyText; } }
 
         [Tooltip("The character UI object")]
         [SerializeField] protected Image characterImage;

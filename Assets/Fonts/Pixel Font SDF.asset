@@ -18,12 +18,12 @@ MonoBehaviour:
   m_fontInfo:
     Name: Fixedsys Excelsior 3.01
     PointSize: 45
-    Scale: 0
+    Scale: 1
     CharacterCount: 271
     LineHeight: 45
     Baseline: 0
     Ascender: 36.5625
-    CapHeight: 0
+    CapHeight: 25.3125
     Descender: -8.4375
     CenterLine: 0
     SuperscriptOffset: 36.5625
@@ -33,7 +33,7 @@ MonoBehaviour:
     UnderlineThickness: 2.8125
     strikethrough: 10.227273
     strikethroughThickness: 2.8125
-    TabWidth: 0
+    TabWidth: 225
     Padding: 5
     AtlasWidth: 512
     AtlasHeight: 512
@@ -42,10 +42,10 @@ MonoBehaviour:
   - id: 32
     x: 6
     y: 517
-    width: 0
-    height: 0
+    width: 22.5
+    height: 45
     xOffset: 0
-    yOffset: 0
+    yOffset: 36.5625
     xAdvance: 22.5
     scale: 1
   - id: 33
@@ -2532,7 +2532,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Pixel Font SDF Material
-  m_Shader: {fileID: 4800000, guid: dca26082f9cb439469295791d9f76fe5, type: 3}
+  m_Shader: {fileID: 4800000, guid: cafd18099dfc0114896e0a8b277b81b6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
