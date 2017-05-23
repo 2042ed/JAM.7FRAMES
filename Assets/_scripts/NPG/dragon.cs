@@ -12,7 +12,7 @@ public class dragon : MonoBehaviour
     public void OnMouseDown()
     {
         // Debug.Log("OnPointerClick", gameObject);
-        InventoryManager.I.ClickItem("draghetto");
+        InventoryManager.I.GetDraghetto();
         gameObject.SetActive(false);
     }
 }

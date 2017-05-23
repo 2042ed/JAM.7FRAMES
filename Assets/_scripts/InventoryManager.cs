@@ -20,6 +20,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemAndroide;
     public GameObject ItemMorte;
     public GameObject ItemMap;
+    public GameObject ItemDraghetto;
+    public TMPro.TextMeshProUGUI ItemDraghettoLabel;
 
     int OilCounter;
     bool hasOlio1;
@@ -33,6 +35,7 @@ public class InventoryManager : MonoBehaviour
     bool hasAndroide;
     bool hasMorte;
     bool hasMap;
+    int counterDraghetti;
 
     void Awake()
     {
@@ -41,6 +44,7 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
+        counterDraghetti = 0;
         resetInventory();
     }
 
@@ -64,6 +68,13 @@ public class InventoryManager : MonoBehaviour
                 HomeFlowchart.ExecuteBlock("item-" + quale);
                 break;
         }
+    }
+
+    public void GetDraghetto()
+    {
+        counterDraghetti++;
+        resetInventory();
+        ClickItem("draghetto");
     }
 
     public void GetOlio1()
@@ -180,5 +191,8 @@ public class InventoryManager : MonoBehaviour
         ItemAndroide.SetActive(hasAndroide);
         ItemMorte.SetActive(hasMorte);
         ItemMap.SetActive(hasMap);
+
+        ItemDraghetto.SetActive(counterDraghetti > 0);
+        ItemDraghettoLabel.text = counterDraghetti + "/12";
     }
 }
