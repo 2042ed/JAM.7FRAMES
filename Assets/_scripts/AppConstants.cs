@@ -36,7 +36,7 @@ namespace JAMURR
         // public URLs
         public const string UrlWebsite = "http://jamurr.org/project/7-frames/";
         public const string UrlPrivacy = "http://www.jamurr.org/privacy/";
-        public const string UrlStoreiOSApple = "";
+        public const string UrlStoreiOSApple = "https://itunes.apple.com/us/app/7-frames/id1239225688?ls=1&mt=8";
         public const string UrlStoreAndroidGoogle = "https://play.google.com/store/apps/details?id=org.jamurr.sevenframes";
         public const string UrlCommunityTelegram = "https://t.me/jamurr";
         public const string UrlCommunityFacebook = "https://www.facebook.com/JAMURR.org";
