@@ -227,7 +227,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -316,49 +316,49 @@ Prefab:
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: Sponsors
+      value: Grazie Sponsors
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 8
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: per questo gioco ringraziamo vivamente l'Internet Festival, la MixArt
-        di Pisa e la Santeria di Milano hce ci hanno supportato donandoci lo spazio
-        di lavoro.
+      value: per questo gioco ringraziamo vivamente l'Internet Festival che ha promosso
+        la prima Kids Game Jam. e poi la MixArt di Pisa e la Santeria di Milano che
+        ci hanno ospitato nei loro gli spazi di lavoro.
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 156
+      value: 198
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 24
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 25
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -693,12 +693,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "ogni bambino inventer\xE0 un suo \"personaggio\" del gioco e lo disegner\xE0
+      value: "Ogni bambino inventer\xE0 un suo \"personaggio\" del gioco e lo disegner\xE0
         in pixel art o come preferisce. decidono che il giocatore dovr\xE0 parlare
         che tutti questi personaggi per risolvere il gioco."
       objectReference: {fileID: 0}
@@ -1009,7 +1009,7 @@ RectTransform:
   - {fileID: 215920026}
   - {fileID: 2034234741}
   m_Father: {fileID: 1539661841}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1194,7 +1194,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1398,7 +1398,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1453,22 +1453,22 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_Name
@@ -1487,7 +1487,7 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "ecco una foto alla fine dei lavori: la collaborazione con i genitori
+      value: "Ecco una foto alla fine dei lavori: la collaborazione con i genitori
         \xE8 stata un'esperienza importante per tutti. Il barbuto sulal destra non
         \xE8 un pap\xE0, ma si \xE8 prestato al progetto come se lo fosse! (ps: due
         mamme non sono nella foto)\n"
@@ -1653,11 +1653,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2001,24 +2001,24 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "e cos\xEC a ottobre 2016 Stefano organizza a Pisa, insieme a Michele
-        presso l'Internet Festival, una Kids Game Jam, invitando bambini dai 7 ai
-        12 anni. parteciperanno in 7, con i loro genitori e un amico."
+      value: "E cos\xEC a ottobre 2016 pap\xE0 Stefano organizza a Pisa, insieme a
+        Michele presso l'Internet Festival, una Kids Game Jam, invitando bambini dai
+        7 ai 12 anni. Parteciperanno in 7, con i loro genitori e un amico."
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 201
+      value: 206
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -2081,202 +2081,6 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 666436596}
 --- !u!1001 &731247997
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 460897079}
-    m_Modifications:
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
-      propertyPath: m_Name
-      value: Slide music
-      objectReference: {fileID: 0}
-    - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114168777180030234, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 68ffe1e41a9db403fa328fad22746a1b,
-        type: 3}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_text
-      value: MUSIC
-      objectReference: {fileID: 0}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.characterCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.wordCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_text
-      value: "una parte fondamentale sono le musiche: Elio riusc\xEC a comporre il
-        tema base della melodia, e poi Maia (che studia pianoforte) lo ha rielaborato
-        e suonato sia con suoni di piano che sintetizzatori. ti piacciono le musiche?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.characterCount
-      value: 221
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.spaceCount
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.wordCount
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.lineCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-        type: 2}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: -1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
-  m_IsPrefabParent: 0
---- !u!224 &731247998 stripped
-RectTransform:
-  m_PrefabParentObject: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
-    type: 2}
-  m_PrefabInternal: {fileID: 731247997}
---- !u!1001 &778646351
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2395,7 +2199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_Name
-      value: Slide GitHub
+      value: Slide music
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_IsActive
@@ -2405,12 +2209,12 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 94ee269f56c7e4ff48bb4b2e1cc3f261,
+      objectReference: {fileID: 21300000, guid: 68ffe1e41a9db403fa328fad22746a1b,
         type: 3}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: GitHub
+      value: MUSICA
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -2430,28 +2234,225 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: i bambini imparano ad usare GitHub, un sito web che permette a tutti
-        di collaborare sullo stesso progetto. tu stesso puoi vederlo su https://github.com/JAMURR/JAM.7Frames/
+      value: "Una parte fondamentale sono le musiche: Elio riusc\xEC a comporre il
+        tema base della melodia, e poi Maia (che studia pianoforte) lo ha rielaborato
+        e suonato sia con suoni di piano che sintetizzatori. ti piacciono le musiche?"
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 171
+      value: 221
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 23
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 29
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.lineCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &731247998 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 731247997}
+--- !u!1001 &778646351
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 460897079}
+    m_Modifications:
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
+      propertyPath: m_Name
+      value: Slide GitHub
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114168777180030234, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 94ee269f56c7e4ff48bb4b2e1cc3f261,
+        type: 3}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_text
+      value: Collaboriamo su GitHub
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_text
+      value: Si impara ad usare GitHub, un sito web che permette a tutti di collaborare
+        sullo stesso progetto. tu stesso puoi vederlo su https://github.com/JAMURR/JAM.7Frames/
+        e contribuire segnalando migliorie o bugs. fallo subito!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 219
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -2812,7 +2813,7 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: 'viene dato un tema: "SE NON CI FOSSERO GLI ALTRI..." e i ragazzi iniziano
+      value: 'Viene dato un tema: "SE NON CI FOSSERO GLI ALTRI..." e i ragazzi iniziano
         a lavorare sull''idea di un gioco che piaccia a tutti e che sia facile da
         realizzare in una giornata'
       objectReference: {fileID: 0}
@@ -3723,7 +3724,7 @@ MonoBehaviour:
   m_material: {fileID: 0}
   m_sharedMaterial: {fileID: 0}
   m_isDefaultMaterial: 0
-  m_padding: 0.5
+  m_padding: 0
   m_canvasRenderer: {fileID: 1245576974}
   m_TextComponent: {fileID: 1672331428}
   m_materialReferenceIndex: 1
@@ -3778,7 +3779,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4072,7 +4073,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1539661841}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -4151,6 +4152,78 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1455333077}
+--- !u!1 &1493305423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1193687563917178, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1493305424}
+  - component: {fileID: 1493305426}
+  - component: {fileID: 1493305425}
+  m_Layer: 5
+  m_Name: Image 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1493305424
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224062434700120248, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1493305423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2046713901}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000022888184, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.2, y: 0.5}
+--- !u!114 &1493305425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114168777180030234, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1493305423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 5f212664dee3a498b9120663f539dde1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1493305426
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222500573651056418, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1493305423}
 --- !u!1001 &1516509964
 Prefab:
   m_ObjectHideFlags: 0
@@ -4196,7 +4269,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4275,24 +4348,24 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: stiamo dando linfa a questa associazione noprofit per promuovere iniziative
-        ricreative, educative e collaborative, relazionando bambini e genitori, giochi
-        e tecnologia. guarda www.jamurr.org se ti interessa!
+      value: Stiamo dando linfa a questa associazione noprofit per promuovere progetti
+        ricreativi, educativi e collaborativi, JAMS di bambini e genitori, giochi
+        e tecnologia. storie ed empatia. Sbircia www.jamurr.org
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 207
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4436,7 +4509,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "Ogni personaggio ha una sua storia e problemi che necessitano aiuto, ma
     anche delle capacit\xE0 per aiutare a loro volta. la protagonista \xE8 una ragazza
-    di nome ASSUNTA"
+    di nome ASSUNTA FRAME."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0187944c59442f49994bd2cc0922b2, type: 2}
   m_sharedMaterial: {fileID: 21907291249987576, guid: 4d0187944c59442f49994bd2cc0922b2,
@@ -4504,19 +4577,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1531038251}
-    characterCount: 164
+    characterCount: 171
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 28
+    spaceCount: 28
+    wordCount: 29
     linkCount: 0
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -4571,8 +4644,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 460897079}
   - {fileID: 1324188327}
+  - {fileID: 460897079}
   - {fileID: 388489353}
   - {fileID: 476461754}
   - {fileID: 2039025801}
@@ -4647,7 +4720,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: home
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: b9ebd249c2c6d4c64a4ffc250167bc6a, type: 3}
   sceneNameOLD: 
 --- !u!114 &1539661846
 MonoBehaviour:
@@ -4811,7 +4884,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4944,31 +5017,33 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "Una storia gioco non \xE8 un libro che leggi dall'inizio alla fine.\n\n\xE8
-        ben pi\xF9 articolata! e quindi si crea il DIAGRAMMA DI FLUSSO dell'avventura:\n\novvero
-        tutte le dipendenze tra i personaggi e gli oggetti da trovare per sbloccare
-        le varie situazioni.\n\nsembra facile ma ci vuole un po' di attenzione!\n\nin
-        questo l'aiuto e collaborazione con i genitori \xE8 fondamentale"
+      value: "Una storia interattiva non \xE8 un libro che leggi dall'inizio alla
+        fine.\n\nE' ben pi\xF9 articolata! e quindi si crea il DIAGRAMMA DI FLUSSO
+        dell'avventura:\novvero tutte le dipendenze tra i personaggi e gli oggetti
+        da trovare per sbloccare le varie situazioni.\n\nSembra facile ma ci vuole
+        un po' di attenzione!\n\nIn questo l'aiuto e collaborazione con i genitori
+        \xE8 fondamentale.\n\nNOTA: troverai online tutti i documenti preparatori
+        del progetto, se ti interessano."
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 363
+      value: 456
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 64
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 61
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 20
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 224929759573205010, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -5311,11 +5386,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5381,7 +5456,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -5490,8 +5565,8 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "ma anche tutti i personaggi parlano. e quindi ogni bambino ha dato voce
-        interpretando i dialoghi del proprio personaggio. forse questa \xE8 stata
+      value: "Ma anche tutti i personaggi parlano. E quindi ogni bambino ha dato voce
+        al proprio personaggio interpretando i dialoghi . Forse questa \xE8 stata
         l'esperienza pi\xF9 divertente!"
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
@@ -5502,7 +5577,7 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -5971,8 +6046,8 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "Come \xE8 nato questo gioco? \nchi l'ha fatto?\ndavvero sono stati dei
-        bambini?\ne come?"
+      value: "Come \xE8 nato questo gioco? \nChi l'ha fatto?\nDavvero sono stati dei
+        bambini?\nE come?"
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6116,7 +6191,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6307,7 +6382,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6385,7 +6460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114168777180030234, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6779,9 +6854,54 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224062434700120248, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062434700120248, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062434700120248, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224062434700120248, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_text
+      value: ANTECEDENTI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
   m_IsPrefabParent: 0
+--- !u!224 &2046713901 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224330430076703422, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046713900}
 --- !u!1 &2047437304
 GameObject:
   m_ObjectHideFlags: 0
@@ -6914,7 +7034,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -7003,44 +7123,44 @@ Prefab:
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: Unity + Fungus
+      value: Open Source e strumenti
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 14
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "tutto il gioco viene sviluppato con strumenti gratuiti (tipo Unity)
-        ed Open Source (Fungus). il progetto stesso \xE8 rilasciato pubblico open
+      value: "Tutto il gioco viene sviluppato con strumenti gratuiti (tipo Unity)
+        ed Open Source (Fungus). i codici sorgenti del progetto sono pubblici e open
         source cos\xEC che tutti possano vedere come \xE8 stato fatto e magari migliorarlo!"
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 216
+      value: 222
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 33
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 34
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -7050,6 +7170,16 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.pageCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_textInfo.lineCount
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

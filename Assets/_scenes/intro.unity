@@ -145,7 +145,6 @@ GameObject:
   - component: {fileID: 122760604}
   - component: {fileID: 122760603}
   - component: {fileID: 122760602}
-  - component: {fileID: 122760601}
   - component: {fileID: 122760599}
   - component: {fileID: 122760598}
   - component: {fileID: 122760597}
@@ -154,7 +153,6 @@ GameObject:
   - component: {fileID: 122760594}
   - component: {fileID: 122760593}
   - component: {fileID: 122760592}
-  - component: {fileID: 122760600}
   m_Layer: 5
   m_Name: PanelIntro
   m_TagString: Untagged
@@ -237,7 +235,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: home
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: b9ebd249c2c6d4c64a4ffc250167bc6a, type: 3}
   sceneNameOLD: 
 --- !u!114 &122760593
 MonoBehaviour:
@@ -369,60 +367,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &122760600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122760587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5316d953c7abe498799575550c973535, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 124
-  indentLevel: 0
-  animator:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 122760589}
-  stateName:
-    stringRef: {fileID: 0}
-    stringVal: 
-  layer:
-    integerRef: {fileID: 0}
-    integerVal: -1
-  time:
-    floatRef: {fileID: 0}
-    floatVal: 0
---- !u!114 &122760601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122760587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 110
-  indentLevel: 0
-  targetObjects:
-  - {fileID: 122760587}
-  tweenType: 2
-  waitUntilFinished:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  fadeMode: 0
-  targetColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
-  targetAlpha:
-    floatRef: {fileID: 0}
-    floatVal: 0
 --- !u!114 &122760602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 439.01892
+    x: 440.01892
     y: 59.67787
     width: 120
     height: 40
@@ -447,8 +391,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 122760598}
   commandList:
-  - {fileID: 122760600}
-  - {fileID: 122760601}
   - {fileID: 122760599}
 --- !u!114 &122760603
 MonoBehaviour:

@@ -542,34 +542,8 @@ GameObject:
   - component: {fileID: 143895610}
   - component: {fileID: 143895609}
   - component: {fileID: 143895608}
-  - component: {fileID: 143895594}
   - component: {fileID: 143895607}
-  - component: {fileID: 143895595}
-  - component: {fileID: 143895596}
-  - component: {fileID: 143895606}
-  - component: {fileID: 143895613}
-  - component: {fileID: 143895615}
   - component: {fileID: 143895619}
-  - component: {fileID: 143895620}
-  - component: {fileID: 143895621}
-  - component: {fileID: 143895622}
-  - component: {fileID: 143895604}
-  - component: {fileID: 143895624}
-  - component: {fileID: 143895623}
-  - component: {fileID: 143895645}
-  - component: {fileID: 143895644}
-  - component: {fileID: 143895643}
-  - component: {fileID: 143895642}
-  - component: {fileID: 143895634}
-  - component: {fileID: 143895633}
-  - component: {fileID: 143895632}
-  - component: {fileID: 143895631}
-  - component: {fileID: 143895630}
-  - component: {fileID: 143895629}
-  - component: {fileID: 143895625}
-  - component: {fileID: 143895626}
-  - component: {fileID: 143895628}
-  - component: {fileID: 143895627}
   - component: {fileID: 143895654}
   - component: {fileID: 143895653}
   - component: {fileID: 143895652}
@@ -579,8 +553,6 @@ GameObject:
   - component: {fileID: 143895649}
   - component: {fileID: 143895648}
   - component: {fileID: 143895647}
-  - component: {fileID: 143895656}
-  - component: {fileID: 143895655}
   - component: {fileID: 143895658}
   - component: {fileID: 143895659}
   - component: {fileID: 143895657}
@@ -638,8 +610,6 @@ MonoBehaviour:
   - {fileID: 143895609}
   - {fileID: 143895608}
   - {fileID: 143895677}
-  - {fileID: 143895606}
-  - {fileID: 143895621}
 --- !u!114 &143895578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,10 +634,8 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks:
-  - {fileID: 143895658}
-  selectedCommands:
-  - {fileID: 143895657}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 143895641}
   - {fileID: 143895640}
@@ -730,7 +698,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: game
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: b9ebd249c2c6d4c64a4ffc250167bc6a, type: 3}
   sceneNameOLD: 
 --- !u!114 &143895582
 MonoBehaviour:
@@ -891,119 +859,6 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: en
   languageCodeOLD: 
---- !u!114 &143895594
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 422.11087
-    y: -40.41743
-    width: 143
-    height: 40
-  tint: {r: 1, g: 0, b: 0, a: 1}
-  useCustomTint: 0
-  itemId: 106
-  blockName: open Home Menu
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895595}
-  - {fileID: 143895596}
---- !u!114 &143895595
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 99
-  indentLevel: 0
-  duration: 1
-  fadeOut: 1
-  targetView: {fileID: 1601156946}
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
---- !u!114 &143895596
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 100
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 570970890}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 1
-  targetGameObjectOLD: {fileID: 0}
---- !u!114 &143895604
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 125
-  indentLevel: 0
-  storyText: 'ho trovato una mappa dell''isola!
-
-    posso aprirla e chiuderla cliccandone l''icona'
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 10c4641b32e654b24b900ffa6ff4c3ed, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895606
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 101
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &143895607
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1061,44 +916,6 @@ MonoBehaviour:
   itemId: 87
   indentLevel: 0
   menuDialog: {fileID: 1125960557}
---- !u!114 &143895613
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 158.36224
-    y: 89.46935
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 115
-  blockName: Exit game
-  description: 
-  eventHandler: {fileID: 143895615}
-  commandList:
-  - {fileID: 143895620}
---- !u!114 &143895615
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10eaeba5e91be479e95d4fa48679f549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 143895613}
-  targetButton: {fileID: 258589401}
 --- !u!114 &143895619
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1113,374 +930,9 @@ MonoBehaviour:
   itemId: 120
   indentLevel: 0
   duration: 0
-  targetView: {fileID: 805052930}
+  targetView: {fileID: 1601156946}
   waitUntilFinished: 0
   targetCamera: {fileID: 0}
---- !u!114 &143895620
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 121
-  indentLevel: 0
-  _sceneName:
-    stringRef: {fileID: 0}
-    stringVal: home
-  loadingImage: {fileID: 0}
-  sceneNameOLD: 
---- !u!114 &143895621
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 122
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 143895594}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &143895622
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1020.2733
-    y: -94.39111
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 123
-  blockName: item-mappa
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895604}
---- !u!114 &143895623
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 127
-  indentLevel: 0
-  storyText: "non \xE8 un toast (peccato), ma la pelliccia di Malik"
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895624
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1021.70166
-    y: -38.67676
-    width: 122
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 128
-  blockName: item-pelliccia
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895623}
---- !u!114 &143895625
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1023.12866
-    y: 282.75195
-    width: 157
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 148
-  blockName: item-chiave-italiana
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895626}
---- !u!114 &143895626
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 140
-  indentLevel: 0
-  storyText: una chiave... italiana
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: f628cdf082758423b8e8f9cecb3c0ce0, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895627
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 142
-  indentLevel: 0
-  storyText: "\xE8 foglio con scritto EPTA"
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 124aeffa981464aa9893897d1fd7300d, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895628
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1021.6998
-    y: 338.46603
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 149
-  blockName: item-codice
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895627}
---- !u!114 &143895629
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 138
-  indentLevel: 0
-  storyText: "un diario... per me \xE8 illeggibile perch\xE8 non \xE8 mio"
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 87ed76ef1baac4e398a8b5e089f995c7, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895630
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1021.7003
-    y: 227.0377
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 147
-  blockName: item-diario
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895629}
---- !u!114 &143895631
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 136
-  indentLevel: 0
-  storyText: 'ricordati che devi morire!
-
-    ma non in questo gioco!'
-  description: 
-  character: {fileID: 2110283232}
-  portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895632
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1023.12915
-    y: 172.75194
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 146
-  blockName: item-morte
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895631}
---- !u!114 &143895633
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 134
-  indentLevel: 0
-  storyText: zot sempre con te bzzz
-  description: 
-  character: {fileID: 1985071258}
-  portrait: {fileID: 21300000, guid: 661f4b44e4259448e9e4ea70f64f8691, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895634
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1024.558
-    y: 121.32331
-    width: 127
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 145
-  blockName: item-androide
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895633}
 --- !u!114 &143895635
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1579,106 +1031,6 @@ MonoBehaviour:
   scope: 1
   key: HasDiario
   value: 0
---- !u!114 &143895642
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 132
-  indentLevel: 0
-  storyText: la medicina selfica.. elfica ops
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 6a846b3f6054247c6a6b58f84d6a6fe5, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895643
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1021.70105
-    y: 64.18041
-    width: 127
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 144
-  blockName: item-medicina
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895642}
---- !u!114 &143895644
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 130
-  indentLevel: 0
-  storyText: "con questo olio \xE8 meglio che non ci condisca l'insalata"
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 2c695e43fcff64d398e1eeea70e37f68, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895645
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1024.5586
-    y: 9.894676
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 143
-  blockName: item-olio
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895644}
 --- !u!114 &143895646
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1766,8 +1118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 685.7416
-    y: -42.284763
+    x: 376.30692
+    y: -46.128674
     width: 157
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1852,8 +1204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 830.642
-    y: 18.58474
+    x: 538.5048
+    y: 12.818879
     width: 158
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1865,56 +1217,6 @@ MonoBehaviour:
   commandList:
   - {fileID: 143895651}
   - {fileID: 143895652}
---- !u!114 &143895655
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 158
-  indentLevel: 0
-  storyText: ho trovato un draghetto! che bellino
-  description: 
-  character: {fileID: 695742693}
-  portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: 2c373be78c5834a158490aabf7a2d0e4, type: 3}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &143895656
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 1022.59973
-    y: 397.35706
-    width: 132
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 159
-  blockName: item-draghetto
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 143895655}
 --- !u!114 &143895657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,7 +1233,7 @@ MonoBehaviour:
   _sceneName:
     stringRef: {fileID: 0}
     stringVal: presentation
-  loadingImage: {fileID: 0}
+  loadingImage: {fileID: 2800000, guid: b9ebd249c2c6d4c64a4ffc250167bc6a, type: 3}
   sceneNameOLD: 
 --- !u!114 &143895658
 MonoBehaviour:
@@ -1946,8 +1248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1194.9413
-    y: -92.246826
+    x: 764.4236
+    y: -32.666245
     width: 191
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1984,8 +1286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 729.7656
-    y: 103.40418
+    x: 399.1894
+    y: 120.70176
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -2630,12 +1932,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224471440275915748, guid: 889818bb39094433395d7a57602d4d7d,
     type: 2}
   m_PrefabInternal: {fileID: 258589399}
---- !u!114 &258589401 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114660372216395872, guid: 889818bb39094433395d7a57602d4d7d,
-    type: 2}
-  m_PrefabInternal: {fileID: 258589399}
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &261768718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,7 +2872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 311547db7ccdd43b2a76d958198d8569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MapJam: {fileID: 0}
 --- !u!1 &567840587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4212,12 +3507,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4922e65434e54450dbf12c67f3eeaa37, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &695742693 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114281642029910062, guid: 4922e65434e54450dbf12c67f3eeaa37,
-    type: 2}
-  m_PrefabInternal: {fileID: 677468939}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &705316930
 GameObject:
   m_ObjectHideFlags: 0
@@ -7708,12 +6997,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957193366}
---- !u!114 &1985071258 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114319662411781944, guid: 4922e65434e54450dbf12c67f3eeaa37,
-    type: 2}
-  m_PrefabInternal: {fileID: 677468939}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &2002822093
 GameObject:
   m_ObjectHideFlags: 0
@@ -8312,12 +7595,6 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224471440275915748, guid: 889818bb39094433395d7a57602d4d7d,
     type: 2}
   m_PrefabInternal: {fileID: 2097395169}
---- !u!114 &2110283232 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114804370820635632, guid: 4922e65434e54450dbf12c67f3eeaa37,
-    type: 2}
-  m_PrefabInternal: {fileID: 677468939}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &2133867705
 GameObject:
   m_ObjectHideFlags: 1
