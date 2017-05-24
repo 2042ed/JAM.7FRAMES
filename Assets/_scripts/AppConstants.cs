@@ -24,7 +24,7 @@ namespace JAMURR
         /// Tracks common events using Unity Analytics.
         /// Set to TRUE for production.
         /// </summary>
-        public static bool UseUnityAnalytics = false;
+        public static bool UseUnityAnalytics = true;
 
         /// <summary>
         /// Switches on all Debug.Log calls for performance.
@@ -40,7 +40,7 @@ namespace JAMURR
         public const string UrlStoreAndroidGoogle = "https://play.google.com/store/apps/details?id=org.jamurr.sevenframes";
         public const string UrlCommunityTelegram = "https://t.me/jamurr";
         public const string UrlCommunityFacebook = "https://www.facebook.com/JAMURR.org";
-        public const string UrlSupportForm = "";
+        public const string UrlSupportForm = "https://docs.google.com/forms/d/1nDByCkT7GSWvRkrCkesIbMiHog8s_3eoAfYgI3rYlcE";
         public const string UrlGithubRepository = "https://github.com/JAMURR/JAM.7FRAMES";
     }
 }
