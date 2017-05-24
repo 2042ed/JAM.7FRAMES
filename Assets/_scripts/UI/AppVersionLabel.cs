@@ -10,7 +10,7 @@ namespace JAMURR
     {
         void Start()
         {
-            gameObject.GetComponent<TextMeshProUGUI>().text = "v " + AppConstants.AppVersion;
+            gameObject.GetComponent<TextMeshProUGUI>().text = "v" + AppConstants.AppVersion;
         }
     }
 }
