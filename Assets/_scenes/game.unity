@@ -10881,7 +10881,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 1005
   m_Sprite: {fileID: 21300000, guid: 8cf7e77bcd0b44073b26cfad5ce1ca93, type: 3}
   m_Color: {r: 0.434, g: 0.3773913, b: 0.22643478, a: 1}
   m_FlipX: 0
@@ -11093,7 +11093,7 @@ Prefab:
     - target: {fileID: 212329626740848226, guid: 799b56b0af1524cfaae8e155673dce10,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 799b56b0af1524cfaae8e155673dce10, type: 2}
@@ -21473,6 +21473,7 @@ GameObject:
   - component: {fileID: 1664612968}
   - component: {fileID: 1664612967}
   - component: {fileID: 1664612969}
+  - component: {fileID: 1664612970}
   m_Layer: 0
   m_Name: location - Villaggio
   m_TagString: Untagged
@@ -21518,8 +21519,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1664612922}
+  selectedCommands:
+  - {fileID: 1664612970}
   variables:
   - {fileID: 1664612920}
   - {fileID: 1664612957}
@@ -21771,6 +21774,7 @@ MonoBehaviour:
   - {fileID: 1664612925}
   - {fileID: 1664612924}
   - {fileID: 1664612921}
+  - {fileID: 1664612970}
   - {fileID: 1664612923}
 --- !u!114 &1664612923
 MonoBehaviour:
@@ -22807,6 +22811,26 @@ MonoBehaviour:
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 2121626155}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &1664612970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1664612909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 96
+  indentLevel: 1
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 491574467}
   activeState:
     booleanRef: {fileID: 0}
     booleanVal: 0
@@ -28253,7 +28277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 153411813}
+  selectedFlowchart: {fileID: 1664612911}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
