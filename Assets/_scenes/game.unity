@@ -2785,7 +2785,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 143895672}
   selectedCommands:
-  - {fileID: 143895676}
+  - {fileID: 143895590}
   variables:
   - {fileID: 143895641}
   - {fileID: 143895640}
@@ -3856,7 +3856,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
   m_Name: 
@@ -4137,7 +4137,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 153411846}
+  - {fileID: 153411814}
   selectedCommands: []
   variables:
   - {fileID: 153411819}
@@ -28227,7 +28227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 153411813}
+  selectedFlowchart: {fileID: 143895578}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
