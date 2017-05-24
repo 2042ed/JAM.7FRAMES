@@ -503,15 +503,13 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Indigeno Malik
-
-        molto abbronzato, cacciatore, ha l''arco ed e ferito. ti regala una pelliccia.
-        vuole- PIANTA MEDICINALE.'
+      value: "INDIGENO MALIK\nmolto abbronzato, cacciatore, ha l'arco ed \xE8 ferito.
+        ti regala una pelliccia. vuole una MEDICINA."
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 118
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -695,7 +693,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1196,7 +1194,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1400,7 +1398,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1794,11 +1792,11 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Scienziato Barni: rimasto bloccato in una grotta di ghiaccio perche''
-        la macchina del tempo che aveva costruito si e'' rotta. insieme a lui ci sono
-        delle palle di pelo viola che saltano e fanno versi. puo'' combinare piu''
-        oggetti per crearne di nuovi perche e'' un inventore. forse ha costruito lui
-        il portale. vuole tornare a casa'
+      value: "SCIENZIATO BARNI: rimasto bloccato in una grotta di ghiaccio perch\xE8
+        la macchina del tempo che aveva costruito si \xE8 rotta. insieme a lui ci
+        sono delle palle di pelo viola che saltano e fanno versi. pu\xF2 combinare
+        piu' oggetti per crearne di nuovi perche \xE8 un inventore. forse ha costruito
+        lui il portale. vuole tornare a casa"
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -1808,7 +1806,7 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 327
+      value: 323
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -2127,7 +2125,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -2323,7 +2321,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -2588,26 +2586,24 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Robot QUBY
-
-        crea tutto tranne olio e armi. attterrato dal suo pianeta con un atterrraggio
-        brusco quindi lolio e andato disperso quindi chiede olio- cosa vuole- TRE
-        CARICHI DOLIO per aggiustare lastronave.'
+      value: "ROBOT QUBY\npu\xF2 creare tutto tranne olio e armi. atterrato dal suo
+        pianeta con un atterraggio brusco quindi l'olio \xE8 andato disperso. vuole:
+        TRE CARICHI D'OLIO per aggiustare l'astronave."
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 203
+      value: 186
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 31
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 32
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -2617,12 +2613,12 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_fontSize
-      value: 20
+      value: 19.4
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -2973,25 +2969,23 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Androide ZOT
-
-        molto forte e coraggioso mette a disposizione la sua vita puo essere un PET
-        piccoolo e utile cosa vuole: AMICIZIA'
+      value: "ANDROIDE ZOT\nmolto forte e coraggioso mette a disposizione la sua vita
+        pu\xF2 essere AIUTANTE FORZUTO E UTILE. cosa vuole: AMICIZIA"
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 126
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3166,24 +3160,24 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Elfo Linzi: elfo con i capelli lunghi gialli capuccio verde stava in
-        una casa di paglia distrutta da un vulcano.  aveva anche cose di pietra. gli
-        serve lacqua di un fiume . e agile e un druido cosa vuole: ACQUA'
+      value: "ELFO LINZI: con i capelli lunghi gialli capuccio verde stava in una
+        casa di paglia distrutta da un vulcano. aveva anche cose di pietra. gli serve
+        l'acqua di un fiume. \xE8 agile e un druido. vuole: ACQUA e d\xE0 MEDICINA"
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 210
+      value: 214
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 39
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3198,7 +3192,7 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_fontSize
-      value: 20
+      value: 18.85
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3358,11 +3352,10 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'Mago Trevor
-
-        mago in trance dentro ad una palude. si risveglia appena il personaggio arriva
-        nella palude. ha perduto la memoria; vuole ritorvare un diario dove ha scritto
-        la sua storia. cosa vuole-DIARIO '
+      value: "MAGO TREVOR\nmago in trance dentro ad una palude. si risveglia appena
+        il personaggio arriva nella palude. ha perduto la memoria; vuole ritorvare
+        un diario dove ha scritto la sua storia. cosa vuole: DIARIO. d\xE0 CODICE
+        PORTALE"
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3372,17 +3365,17 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 203
+      value: 222
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 33
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 33
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3392,7 +3385,7 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_fontSize
-      value: 20
+      value: 18.85
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -3636,6 +3629,28 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: -8
       objectReference: {fileID: 0}
+    - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
+        type: 2}
+      propertyPath: m_text
+      value: 'ASSUNTA FRAME
+
+        unica femmina guarda caso. intraprendente e non si arrende'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86fbc389c38664b1ea00deddbeb9cec0, type: 2}
   m_IsPrefabParent: 0
@@ -3763,7 +3778,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4260,24 +4275,24 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: Stefano sta dando linfa a questa associazione noprofit che promuova iniziative
+      value: stiamo dando linfa a questa associazione noprofit per promuovere iniziative
         ricreative, educative e collaborative, relazionando bambini e genitori, giochi
         e tecnologia. guarda www.jamurr.org se ti interessa!
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 210
+      value: 207
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -4419,9 +4434,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "ogni personaggio ha una sua storia, dei suoi problemi per cui cheidere
-    aiuto, ma anche delle capacit\xE0 per aiutare a sua volta. la protagonista \xE8
-    una ragazza di noma ASSUNTA"
+  m_text: "Ogni personaggio ha una sua storia e problemi che necessitano aiuto, ma
+    anche delle capacit\xE0 per aiutare a loro volta. la protagonista \xE8 una ragazza
+    di nome ASSUNTA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d0187944c59442f49994bd2cc0922b2, type: 2}
   m_sharedMaterial: {fileID: 21907291249987576, guid: 4d0187944c59442f49994bd2cc0922b2,
@@ -4489,19 +4504,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1531038251}
-    characterCount: 172
+    characterCount: 164
     spriteCount: 0
-    spaceCount: 29
-    wordCount: 30
+    spaceCount: 27
+    wordCount: 28
     linkCount: 0
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -4631,7 +4646,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: _home
+    stringVal: home
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1539661846
@@ -4697,7 +4712,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 1539661847}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1539661845}
   variables: []
   description: 
   stepPause: 0
@@ -4795,7 +4811,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -5295,11 +5311,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -5365,7 +5381,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -5743,29 +5759,30 @@ Prefab:
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_text
-      value: 'La Morte
+      value: 'LA MORTE
 
-        vuole tornare negli inferi. raccoglie le anime morte. vuole: VENIRE CON TE'
+        vuole tornare negli inferi. raccoglie le anime morte. vuole: VENIRE CON TE.
+        ha olio e il diario di Trevor'
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 83
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 13
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 14
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114745221918069776, guid: 86fbc389c38664b1ea00deddbeb9cec0,
         type: 2}
@@ -5954,23 +5971,23 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: "Come e' nato questo gioco? \nchi l'ha fatto?\ndavvero dei bambini?\ne
-        come?"
+      value: "Come \xE8 nato questo gioco? \nchi l'ha fatto?\ndavvero sono stati dei
+        bambini?\ne come?"
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 72
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6029,6 +6046,11 @@ Prefab:
     - target: {fileID: 1403380176044282, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114168777180030234, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2, type: 2}
@@ -6094,7 +6116,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6285,7 +6307,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6393,31 +6415,37 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_text
-      value: 'grazie per l''attenzione e speriamo di rivederci un giorno o l''altro!
+      value: 'grazie per l''attenzione e speriamo che questo gioco ti sia piaciuto.
 
 
         se sei un bambino/a curioso o un genitore interessato, o uno sviluppatore
-        empatico, contattaci!'
+        empatico, contattaci!
+
+
+        PS: fai sapere ai tuoi amici e magari lascia 5 stelline sull''app store
+
+
+        JAMURR.ORG'
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 165
+      value: 249
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 25
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 26
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_textInfo.lineCount
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -6886,7 +6914,7 @@ Prefab:
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224731344864979576, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}

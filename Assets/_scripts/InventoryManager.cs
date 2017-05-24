@@ -20,6 +20,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject ItemAndroide;
     public GameObject ItemMorte;
     public GameObject ItemMap;
+    public GameObject Map;
     public GameObject ItemDraghetto;
     public TMPro.TextMeshProUGUI ItemDraghettoLabel;
 
@@ -45,6 +46,7 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         counterDraghetti = 0;
+        Map.SetActive(false);
         resetInventory();
     }
 
@@ -62,13 +64,44 @@ public class InventoryManager : MonoBehaviour
     {
         switch (quale) {
             case "mappa":
-                AppManager.I.ToggleMap();
+                ToggleMap();
                 break;
             default:
                 HomeFlowchart.ExecuteBlock("item-" + quale);
                 break;
         }
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("m")) {
+            Map.SetActive(true);
+        }
+        if (Input.GetKeyUp("m")) {
+            Map.SetActive(false);
+        }
+
+    }
+
+    public void ToggleMap()
+    {
+        if (Map.activeSelf) {
+            HideMap();
+        } else {
+            ShowMap();
+        }
+    }
+
+    public void ShowMap()
+    {
+        Map.SetActive(true);
+    }
+
+    public void HideMap()
+    {
+        Map.SetActive(false);
+    }
+
 
     public void GetDraghetto()
     {

@@ -236,7 +236,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: _home
+    stringVal: home
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &122760593
@@ -550,9 +550,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 122760602}
+  - {fileID: 122760597}
   selectedCommands:
-  - {fileID: 122760600}
+  - {fileID: 122760592}
   variables: []
   description: 
   stepPause: 0
