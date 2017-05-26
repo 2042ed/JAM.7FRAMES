@@ -10,7 +10,7 @@ namespace JAMURR
         /// <summary>
         /// Version of the application.
         /// </summary>
-        public const string AppVersion = "1.0.2";
+        public const string AppVersion = "1.0.3";
 
         #region Debug Options
 
