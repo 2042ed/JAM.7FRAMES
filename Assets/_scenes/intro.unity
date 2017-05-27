@@ -273,7 +273,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 122760587}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4015e84616cc45cfb498561373899d2, type: 3}
   m_Name: 
@@ -298,12 +298,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 39
     y: 60
-    width: 129
+    width: 120
     height: 40
   tint: {r: 1, g: 0, b: 0, a: 1}
   useCustomTint: 1
   itemId: 0
-  blockName: app init (Copy)
+  blockName: app init
   description: 
   eventHandler: {fileID: 122760593}
   commandList:
@@ -491,10 +491,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 122760597}
-  selectedCommands:
-  - {fileID: 122760592}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
