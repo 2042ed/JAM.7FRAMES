@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slide : MonoBehaviour {
+namespace JAMURR
+{
+    public class Slide : MonoBehaviour
+    {
+        void Start()
+        {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        }
+
+    }
 }

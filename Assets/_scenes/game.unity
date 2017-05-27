@@ -824,8 +824,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 123128222}
-  selectedCommands: []
+  - {fileID: 123128230}
+  selectedCommands:
+  - {fileID: 123128251}
   variables:
   - {fileID: 123128220}
   description: 
@@ -1316,7 +1317,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -1476,7 +1477,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -1764,7 +1765,7 @@ MonoBehaviour:
   indentLevel: 2
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -2794,8 +2795,7 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks:
-  - {fileID: 143895672}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -6947,21 +6947,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 154.51605, y: 446.38376}
+  scrollPos: {x: 164.67326, y: 448.5438}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 463
-  zoom: 0.5501473
+  zoom: 0.54552263
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 298259643}
-  selectedCommands:
-  - {fileID: 298259697}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 298259648}
   - {fileID: 298259684}
@@ -8252,7 +8250,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -8858,19 +8856,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 82.404785, y: 52.07791}
+  scrollPos: {x: 323.08167, y: 112.9492}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 536
-  zoom: 1
+  zoom: 0.7551096
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 303467891}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 303467886}
@@ -9291,7 +9288,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -9486,7 +9483,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -9566,7 +9563,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -11212,10 +11209,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 516733125}
-  selectedCommands:
-  - {fileID: 516733164}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 516733123}
   - {fileID: 516733130}
@@ -12196,7 +12191,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -17085,8 +17080,7 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 1192161447}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -17293,7 +17287,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -17626,7 +17620,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -21519,10 +21513,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 1664612922}
-  selectedCommands:
-  - {fileID: 1664612970}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1664612920}
   - {fileID: 1664612957}
@@ -21729,7 +21721,7 @@ MonoBehaviour:
   indentLevel: 1
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -22328,7 +22320,7 @@ MonoBehaviour:
   indentLevel: 2
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -22457,7 +22449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 421.30383
+    x: 418.30383
     y: 142.84772
     width: 167
     height: 40
@@ -25609,10 +25601,8 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 1978847774}
-  selectedCommands:
-  - {fileID: 1978847797}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -26100,7 +26090,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -27711,8 +27701,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 2121626177}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -28137,7 +28126,7 @@ MonoBehaviour:
   indentLevel: 0
   description: 
   targetObject: {fileID: 552291736}
-  targetComponentAssemblyName: InventoryManager, Assembly-CSharp, Version=0.0.0.0,
+  targetComponentAssemblyName: JAMURR.InventoryManager, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: InventoryManager
@@ -28277,7 +28266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1664612911}
+  selectedFlowchart: {fileID: 2121626158}
 --- !u!4 &2133867707
 Transform:
   m_ObjectHideFlags: 1
