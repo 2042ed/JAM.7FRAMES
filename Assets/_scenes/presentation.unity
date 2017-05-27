@@ -338,7 +338,7 @@ Prefab:
       propertyPath: m_text
       value: per questo gioco ringraziamo vivamente l'Internet Festival che ha promosso
         la prima Kids Game Jam. e poi la MixArt di Pisa e la Santeria di Milano che
-        ci hanno ospitato nei loro gli spazi di lavoro.
+        ci hanno ospitato nei loro spazi di lavoro.
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1453,12 +1453,12 @@ Prefab:
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114644223263049386, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114877135086630398, guid: 32e0cfb514f0f4f58b9ee313c8a23eb2,
         type: 2}
@@ -1488,7 +1488,7 @@ Prefab:
         type: 2}
       propertyPath: m_text
       value: "Ecco una foto alla fine dei lavori: la collaborazione con i genitori
-        \xE8 stata un'esperienza importante per tutti. Il barbuto sulal destra non
+        \xE8 stata un'esperienza importante per tutti. Il barbuto sulla destra non
         \xE8 un pap\xE0, ma si \xE8 prestato al progetto come se lo fosse! (ps: due
         mamme non sono nella foto)\n"
       objectReference: {fileID: 0}
