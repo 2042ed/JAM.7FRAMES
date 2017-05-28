@@ -102,8 +102,6 @@ public class Credits : MonoBehaviour
         _txt = _txt.Replace("</h1>", "</color></size>");
         _txt = _txt.Replace("[1]", lv1);
         _txt = _txt.Replace("[1E]", "</color></size>");
-        // Fix missing characters
-        _txt = _txt.Replace("ö", "o");
 
         return _txt;
     }

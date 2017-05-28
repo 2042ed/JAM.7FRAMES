@@ -16,6 +16,14 @@ namespace JAMURR
         {
         }
 
+        /// <summary>
+        /// exits from the game (usually allowed on Dektop only players)
+        /// </summary>
+        public void ButtonQuit()
+        {
+            Application.Quit();
+        }
+
         public void ButtonContactForm()
         {
             Application.OpenURL(AppConstants.UrlSupportForm);
