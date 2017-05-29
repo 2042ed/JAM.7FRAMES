@@ -23,7 +23,7 @@ namespace JAMURR
 
         void setupOperation()
         {
-            int numberA = Random.Range(1, 9);
+            int numberA = Random.Range(3, 9);
             int numberB = Random.Range(0, 9);
             correctAnswer = numberA * numberB;
             TxtOperation.text = numberA.ToString() + " x " + numberB.ToString() + " =";
