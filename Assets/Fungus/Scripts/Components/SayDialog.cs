@@ -24,11 +24,11 @@ namespace Fungus
         [SerializeField] protected Canvas dialogCanvas;
 
         [Tooltip("The name text UI object")]
-        [SerializeField] protected TMPro.TextMeshProUGUI nameText;
+        [SerializeField] protected Text nameText;
 
         [Tooltip("The story text UI object")]
-        [SerializeField] protected TMPro.TextMeshProUGUI storyText;
-        public virtual TMPro.TextMeshProUGUI StoryText { get { return storyText; } }
+        [SerializeField] protected Text storyText;
+        public virtual Text StoryText { get { return storyText; } }
 
         [Tooltip("The character UI object")]
         [SerializeField] protected Image characterImage;
@@ -61,7 +61,7 @@ namespace Fungus
 		// Cache active Say Dialogs to avoid expensive scene search
 		protected static List<SayDialog> activeSayDialogs = new List<SayDialog>();
 
-		protected void Awake()
+		protected virtual void Awake()
 		{
 			if (!activeSayDialogs.Contains(this))
 			{
@@ -69,12 +69,12 @@ namespace Fungus
 			}
 		}
 
-		protected void OnDestroy()
+		protected virtual void OnDestroy()
 		{
 			activeSayDialogs.Remove(this);
 		}
 			
-		protected Writer GetWriter()
+		protected virtual Writer GetWriter()
         {
             if (writer != null)
             {
@@ -90,7 +90,7 @@ namespace Fungus
             return writer;
         }
 
-        protected CanvasGroup GetCanvasGroup()
+        protected virtual CanvasGroup GetCanvasGroup()
         {
             if (canvasGroup != null)
             {
@@ -106,7 +106,7 @@ namespace Fungus
             return canvasGroup;
         }
 
-        protected WriterAudio GetWriterAudio()
+        protected virtual WriterAudio GetWriterAudio()
         {
             if (writerAudio != null)
             {
@@ -122,7 +122,7 @@ namespace Fungus
             return writerAudio;
         }
 
-        protected void Start()
+        protected virtual void Start()
         {
             // Dialog always starts invisible, will be faded in when writing starts
             GetCanvasGroup().alpha = 0f;
@@ -148,14 +148,6 @@ namespace Fungus
                 SetCharacterImage(null);
             }
         }
-
-        protected void OnEnable()
-        {
-            // We need to update the cached list every time the Say Dialog is enabled
-            // due to an initialization order issue after loading scenes.
-            stringSubstituter.CacheSubstitutionHandlers();
-        }
-
 
         protected virtual void LateUpdate()
         {
@@ -495,7 +487,7 @@ namespace Fungus
         /// <summary>
         /// Tell the Say Dialog to fade out once writing and player input have finished.
         /// </summary>
-        public virtual bool FadeWhenDone { set { fadeWhenDone = value; } }
+        public virtual bool FadeWhenDone { get {return fadeWhenDone; } set { fadeWhenDone = value; } }
 
         /// <summary>
         /// Stop the Say Dialog while its writing text.

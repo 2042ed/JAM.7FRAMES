@@ -133,6 +133,7 @@ namespace Fungus.EditorUtils
         protected Flowchart flowchart;
         protected Block[] blocks;
         protected Block dragBlock;
+        protected static FungusState fungusState;
 
         [MenuItem("Tools/Fungus/Flowchart Window")]
         static void Init()
@@ -167,15 +168,8 @@ namespace Fungus.EditorUtils
                 return;
             }
 
-            bool isActive = flowchart.IsActive();
-            if (PrefabUtility.GetPrefabType(flowchart.gameObject) == PrefabType.Prefab)
-            {
-                isActive = true;
-            }
-
             if (Selection.activeGameObject == null &&
-                flowchart.SelectedBlock != null &&
-                isActive)
+                flowchart.SelectedBlock != null )
             {
                 if (blockInspector == null)
                 {
@@ -212,12 +206,15 @@ namespace Fungus.EditorUtils
         {
             // Using a temp hidden object to track the active Flowchart across 
             // serialization / deserialization when playing the game in the editor.
-            FungusState fungusState = GameObject.FindObjectOfType<FungusState>();
             if (fungusState == null)
             {
-                GameObject go = new GameObject("_FungusState");
-                go.hideFlags = HideFlags.HideInHierarchy;
-                fungusState = go.AddComponent<FungusState>();
+                fungusState = GameObject.FindObjectOfType<FungusState>();
+                if (fungusState == null)
+                {
+                    GameObject go = new GameObject("_FungusState");
+                    go.hideFlags = HideFlags.HideInHierarchy;
+                    fungusState = go.AddComponent<FungusState>();
+                }
             }
 
             if (Selection.activeGameObject != null)
@@ -617,6 +614,16 @@ namespace Fungus.EditorUtils
         {
             var hitBlock = GetBlockAtPoint(e.mousePosition);
 
+            // Convert Ctrl+Left click to a right click on mac
+            if (Application.platform == RuntimePlatform.OSXEditor)
+            {
+                if (e.button == MouseButton.Left &&
+                    e.control)
+                {
+                    e.button = MouseButton.Right;
+                }
+            }
+
             switch(e.button)
             {
             case MouseButton.Left:
@@ -766,6 +773,16 @@ namespace Fungus.EditorUtils
         protected override void OnRawMouseUp(Event e)
         {
             var hitBlock = GetBlockAtPoint(e.mousePosition);
+
+            // Convert Ctrl+Left click to a right click on mac
+            if (Application.platform == RuntimePlatform.OSXEditor)
+            {
+                if (e.button == MouseButton.Left &&
+                    e.control)
+                {
+                    e.button = MouseButton.Right;
+                }
+            }
 
             switch (e.button)
             {

@@ -147,6 +147,15 @@ namespace Fungus
             CheckItemIds();
             CleanupComponents();
             UpdateVersion();
+
+            StringSubstituter.RegisterHandler(this);   
+        }
+
+        protected virtual void OnDisable()
+        {
+            cachedFlowcharts.Remove(this);
+
+            StringSubstituter.UnregisterHandler(this);   
         }
 
         protected virtual void UpdateVersion()
@@ -170,11 +179,6 @@ namespace Fungus
             }
 
             version = FungusConstants.CurrentVersion;
-        }
-
-        protected virtual void OnDisable()
-        {
-            cachedFlowcharts.Remove(this);
         }
 
         protected virtual void CheckItemIds()
@@ -489,6 +493,25 @@ namespace Fungus
             if (!ExecuteBlock(block))
             {
                 Debug.LogWarning("Block " + blockName  + "failed to execute");
+            }
+        }
+            
+        /// <summary>
+        /// Stops an executing Block in the Flowchart.
+        /// </summary>
+        public virtual void StopBlock(string blockName)
+        {
+            var block = FindBlock(blockName);
+
+            if (block == null)
+            {
+                Debug.LogError("Block " + blockName  + "does not exist");
+                return;
+            }
+
+            if (block.IsExecuting())
+            {
+                block.Stop();
             }
         }
 
@@ -1162,7 +1185,6 @@ namespace Fungus
             if (stringSubstituer == null)
             {
                 stringSubstituer = new StringSubstituter();
-                stringSubstituer.CacheSubstitutionHandlers();
             }
 
             // Use the string builder from StringSubstituter for efficiency.

@@ -230,7 +230,7 @@ namespace Fungus
                     {
                         EventSystem.current.SetSelectedGameObject(button.gameObject);
                     }
-                    TMPro.TextMeshProUGUI textComponent = button.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                    Text textComponent = button.GetComponentInChildren<Text>();
                     if (textComponent != null)
                     {
                         textComponent.text = text;
@@ -284,7 +284,7 @@ namespace Fungus
                 {
                     button.gameObject.SetActive(true);
                     button.interactable = interactable;
-                    var textComponent = button.GetComponentInChildren<TMPro.TextMeshProUGUI>();
+                    var textComponent = button.GetComponentInChildren<Text>();
                     if (textComponent != null)
                     {
                         textComponent.text = text;
