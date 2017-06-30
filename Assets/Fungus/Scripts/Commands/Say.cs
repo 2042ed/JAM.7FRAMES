@@ -179,6 +179,20 @@ namespace Fungus
             return description;
         }
         
+        public virtual string GetCharacter()
+        {
+            var output = "";
+            if (character != null) {
+                output += character.NameText + " ";
+            }
+
+            if (portrait != null) {
+                output += portrait.name + " ";
+            }
+
+            return output;
+        }
+        
         public virtual string GetStringId()
         {
             // String id for Say commands is SAY.<Localization Id>.<Command id>.[Character Name]

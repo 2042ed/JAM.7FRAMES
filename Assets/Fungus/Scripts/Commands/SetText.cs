@@ -99,6 +99,11 @@ namespace Fungus
             return description;
         }
         
+        public virtual string GetCharacter()
+        {
+            return "";
+        }
+        
         public virtual string GetStringId()
         {
             // String id for Set Text commands is SETTEXT.<Localization Id>.<Command id>

@@ -16,7 +16,7 @@ SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho
 SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!
 SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!"
 SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana""."
-SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,"Ho trovato una mappa dell'isola!\nPosso aprirla e chiuderla cliccandone l'icona."
+SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,Ho trovato una mappa dell'isola!\nPosso aprirla e chiuderla cliccandone l'icona.
 SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy ,"Non è un toast (peccato), ma la pelliccia di Malik."
 SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy ,Con questo olio è meglio che non ci condisca l'insalata.
 SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy ,"La medicina selfica… elfica, ops."
@@ -34,15 +34,17 @@ MENU.location - Portale.83,,1234567
 MENU.location - Portale.87,,7x1=1x7
 MENU.location - Portale.88,,7x7 = 77
 SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:
-SAY.location - Portale.71.Androide Zot,Androide Zot portrait_player_normal ,SETTE...{w=0.2}
-SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_androide_normal ,PER...{w=0.2}
-SAY.location - Portale.66.La Morte,La Morte portrait_androide_normal ,UNA...{w=0.2}
-SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_androide_normal ,ED...{w=0.2}
-SAY.location - Portale.67.Robot Quby,Robot Quby portrait_player_normal ,UNA...{w=0.2}
-SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_player_normal ,PER...{w=0.2}
-SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_player_normal ,SETTE!\n{w=0.2}
-SAY.location - Portale.75.,tutti i personaggi insieme in coro,HAI VINTO!{w}
+SAY.location - Portale.71.Androide Zot,Androide Zot portrait_androide_happy ,SETTE...{w=0.2}
+SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,PER...{w=0.2}
+SAY.location - Portale.66.La Morte,La Morte portrait_morte_normal ,UNA...{w=0.2}
+SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,ED...{w=0.2}
+SAY.location - Portale.67.Robot Quby,Robot Quby portrait_robot_happy ,UNA...{w=0.2}
+SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,PER...{w=0.2}
+SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_mago_happy ,SETTE!\n{w=0.2}
 SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad ,Mi sa che non è il codice giusto…
+SAY.location - Portale.101.Assunta Frame,Assunta Frame portrait_player_sad ,AGGIUNGO UAN FRASE
+MENU.location - Portale.95,,Vuoi vedere come abbiamo creato questo gioco?
+MENU.location - Portale.98,,Torna al menu iniziale
 SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!
 SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.
 SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.
@@ -73,7 +75,7 @@ MENU.location - Palude.74,,Dammi un cetriolo.
 SAY.location - Palude.79.Mago Trevor,Mago Trevor portrait_mago_normal ,"Ehm, li ho finiti! Chiedimi un'altra cosa, grazie."
 SAY.location - Palude.80.Assunta Frame,Assunta Frame portrait_player_normal ,"Peccato, allora dammi il codice del portale!"
 SAY.location - Palude.81.Mago Trevor,Mago Trevor portrait_mago_normal ,Eccolo qua.
-SAY.location - Pianura Vulcanica.66.Assunta Frame,Assunta Frame ,Linzi è ancora disperato. Bisognerebbe spegnere la lava.
+SAY.location - Pianura Vulcanica.66.Assunta Frame,Assunta Frame portrait_player_sad ,Linzi è ancora disperato. Bisognerebbe spegnere la lava.
 SAY.location - Pianura Vulcanica.39.Assunta Frame,Assunta Frame portrait_player_dazzled ,Cosa è successo qua? Perché è tutto pieno di lava?
 SAY.location - Pianura Vulcanica.50.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,Sigh… sigh… sono l'elfo Linzi.{w}\nIl vulcano è esploso e la mia casa ha preso fuoco!
 SAY.location - Pianura Vulcanica.55.Assunta Frame,Assunta Frame portrait_player_normal ,E come possiamo fare?
@@ -85,7 +87,7 @@ SAY.location - Pianura Vulcanica.69.Elfo Linzi,Elfo Linzi portrait_elfo_angry ,C
 SAY.location - Pianura Vulcanica.70.Assunta Frame,Assunta Frame portrait_player_normal ,"Già, credo proprio che mi convenga aiutarti."
 SAY.location - Pianura Vulcanica.73.Assunta Frame,Assunta Frame portrait_player_sad ,Io non ho la forza per deviare il fiume e spegnere la lava…
 SAY.location - Pianura Vulcanica.78.Androide Zot,Androide Zot portrait_androide_normal ,Ci posso pensare io!
-SAY.location - Pianura Vulcanica.87.Androide Zot,Androide Zot portrait_androide_normal ,…
+SAY.location - Pianura Vulcanica.87.Androide Zot,Androide Zot portrait_androide_happy ,…
 SAY.location - Pianura Vulcanica.81.Androide Zot,Androide Zot portrait_androide_normal ,Ecco fatto! Ho deviato il fiume e la lava si sta spegnendo.
 SAY.location - Pianura Vulcanica.99.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,"Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila."
 SAY.location - Pianura Vulcanica.100.Assunta Frame,Assunta Frame portrait_player_happy ,Grazie.\n
@@ -109,12 +111,12 @@ SAY.location - Villaggio.52.Assunta Frame,Assunta Frame portrait_player_normal ,
 SAY.location - Villaggio.56.Indigeno Malik,Indigeno Malik portrait_indigeno_sad ,Mi serve una medicina.
 SAY.location - Villaggio.58.Assunta Frame,Assunta Frame portrait_player_normal ,Ho una medicina elfica. Tieni.
 SAY.location - Villaggio.69.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,Grazie!
-SAY.location - Villaggio.65.Indigeno Malik,Indigeno Malik portrait_indigeno_normal2 ,Vuoi ancora ascoltare i miei saggi consigli?
+SAY.location - Villaggio.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Vuoi ancora ascoltare i miei saggi consigli?
 SAY.location - Villaggio.68.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ecco i consigli di vita: bevi molto quando hai sete…{w}\n…mangia molto quando hai fame…{w}{c}…e respira profondamente quando hai bisogno di respirare.
 SAY.location - Villaggio.70.Assunta Frame,Assunta Frame portrait_player_dazzled ,"Ah… grazie. Ok, io vado allora…"
 SAY.location - Villaggio.76.Assunta Frame,Assunta Frame portrait_player_normal ,Non è che potresti prestarmi la tua pelliccia?
 SAY.location - Villaggio.75.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,"Per favore, sono malato!{w}\nLasciami almeno la pelliccia per proteggermi dalla febbre."
-SAY.location - Villaggio.78.Indigeno Malik,Indigeno Malik portrait_indigeno_normal2 ,Ma certo! Ora che sono guarito non mi serve.
+SAY.location - Villaggio.78.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ma certo! Ora che sono guarito non mi serve.
 SAY.location - Tundra Tecnologica.44.Androide Zot,Androide Zot portrait_androide_sad ,Bzz… ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w=3}\nPosso diventare tuo amico?
 MENU.location - Tundra Tecnologica.62,,Si
 MENU.location - Tundra Tecnologica.63,,No
@@ -125,11 +127,12 @@ SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player
 SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal ,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.
 SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,Hmm. Allora vieni con me? Che bello…
 SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
-CHARACTER.Scienziato Barni,,Scienziato Barni
-CHARACTER.Elfo Linzi,,Elfo Linzi
-CHARACTER.Mago Trevor,,Mago Trevor
-CHARACTER.Assunta Frame,,Assunta Frame
-CHARACTER.Indigeno Malik,,Indigeno Malik
-CHARACTER.Robot Quby,,Robot Quby
-CHARACTER.Androide Zot,,Androide Zot
-CHARACTER.La Morte,,La Morte
+SAY._CommandCopyBuffer.85.Assunta Frame,Assunta Frame portrait_player_sad ,Mi sa che non è il codice giusto…
+CHARACTER.Scienziato Barni,Scienziato Barni,Scienziato Barni
+CHARACTER.Elfo Linzi,Elfo Linzi,Elfo Linzi
+CHARACTER.Mago Trevor,Mago Trevor,Mago Trevor
+CHARACTER.Assunta Frame,Assunta Frame,Assunta Frame
+CHARACTER.Indigeno Malik,Indigeno Malik,Indigeno Malik
+CHARACTER.Robot Quby,Robot Quby,Robot Quby
+CHARACTER.Androide Zot,Androide Zot,Androide Zot
+CHARACTER.La Morte,La Morte,La Morte

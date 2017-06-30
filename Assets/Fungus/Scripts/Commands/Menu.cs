@@ -113,6 +113,11 @@ namespace Fungus
             return description;
         }
         
+        public virtual string GetCharacter()
+        {
+            return "";
+        }
+        
         public virtual string GetStringId()
         {
             // String id for Menu commands is MENU.<Localization Id>.<Command id>

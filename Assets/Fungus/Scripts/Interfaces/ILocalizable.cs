@@ -28,6 +28,12 @@ namespace Fungus
         string GetDescription();
 
         /// <summary>
+        /// Gets the description used to help localizers.
+        /// </summary>
+        /// <returns>The description.</returns>
+        string GetCharacter();
+
+        /// <summary>
         /// Gets the unique string identifier.
         /// </summary>
         string GetStringId();

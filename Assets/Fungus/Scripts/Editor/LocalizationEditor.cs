@@ -12,11 +12,13 @@ namespace Fungus.EditorUtils
     {
         protected SerializedProperty activeLanguageProp;
         protected SerializedProperty localizationFileProp;
+        protected SerializedProperty includeCharacterNameProp;
 
         protected virtual void OnEnable()
         {
             activeLanguageProp = serializedObject.FindProperty("activeLanguage");
             localizationFileProp = serializedObject.FindProperty("localizationFile");
+            includeCharacterNameProp = serializedObject.FindProperty("includeCharacterName");
         }
 
         public override void OnInspectorGUI()
@@ -27,6 +29,7 @@ namespace Fungus.EditorUtils
 
             EditorGUILayout.PropertyField(activeLanguageProp);
             EditorGUILayout.PropertyField(localizationFileProp);
+            EditorGUILayout.PropertyField(includeCharacterNameProp);
 
             GUILayout.Space(10);
 
@@ -36,7 +39,11 @@ namespace Fungus.EditorUtils
             {
                 ExportLocalizationFile(localization);
             }
-
+            if (GUILayout.Button(new GUIContent("Import Localization File")))
+            {
+                ImportLocalizationFile(localization);
+            }
+            
             GUILayout.Space(10);
 
             EditorGUILayout.HelpBox("Exports all standard text in the scene to a text file for easy editing in a text editor. Use the Import option to read the standard text back into the scene.", MessageType.Info);
@@ -74,6 +81,22 @@ namespace Fungus.EditorUtils
             {
                 localization.LocalizationFile = textAsset;
             }
+
+            ShowNotification(localization);
+        }
+        
+        public virtual void ImportLocalizationFile(Localization localization)
+        {
+            string path = EditorUtility.OpenFilePanel("Import Localization File", "Assets/", "csv");
+            if (path.Length == 0) 
+            {
+                return;
+            }
+
+            localization.ClearLocalizeableCache();
+
+            string textData = File.ReadAllText(path);
+            localization.SetLocalizationText(textData);
 
             ShowNotification(localization);
         }

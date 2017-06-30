@@ -1579,7 +1579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 1
-  storyText: "Ho due fiaschette. Me ne manca solo una\u2026\n"
+  storyText: "Ho due fiaschette. Me ne manca solo una\u2026"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -1631,9 +1631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 1
-  storyText: 'Una fiaschetta ce l''ho.
-
-'
+  storyText: Una fiaschetta ce l'ho.
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -1685,7 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 1
-  storyText: "Per\xF2 non ho neanche una fiaschetta d'olio!\n"
+  storyText: "Per\xF2 non ho neanche una fiaschetta d'olio!"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -2040,9 +2038,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 2
-  storyText: "Sono i resti della mia astronave che \xE8 precipitata in questo punto.{wc}\nPurtroppo
-    l'olio energetico \xE8 andato disperso, quindi io non mi posso muovere.{wc}\nPer
-    sbloccarmi, mi servirebbero 3 fiaschettine d'olio."
+  storyText: "Sono i resti della mia astronave che \xE8 precipitata in questo punto.{w=3}{c}Purtroppo
+    l'olio energetico \xE8 andato disperso, quindi io non mi posso muovere.{w=3}{c}Per
+    sbloccarmi, mi servirebbero 3 fiaschette d'olio."
   description: 
   character: {fileID: 1900000800}
   portrait: {fileID: 21300000, guid: 3dbdd3f2d32404e7a83d7ccce59dbf15, type: 3}
@@ -2795,7 +2793,8 @@ MonoBehaviour:
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 143895622}
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -3058,9 +3057,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 125
   indentLevel: 0
-  storyText: 'ho trovato una mappa dell''isola!
+  storyText: 'Ho trovato una mappa dell''isola!
 
-    posso aprirla e chiuderla cliccandone l''icona'
+    Posso aprirla e chiuderla cliccandone l''icona.'
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -3260,7 +3259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 127
   indentLevel: 0
-  storyText: "non \xE8 un toast (peccato), ma la pelliccia di Malik"
+  storyText: "Non \xE8 un toast (peccato), ma la pelliccia di Malik."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -3335,7 +3334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 140
   indentLevel: 0
-  storyText: una chiave... italiana
+  storyText: "Una chiave\u2026 italiana."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -3360,7 +3359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 142
   indentLevel: 0
-  storyText: "\xE8 foglio con scritto EPTA"
+  storyText: "Su questo foglio c'\xE8 scritto \"EPTA\"."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -3410,7 +3409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 138
   indentLevel: 0
-  storyText: "un diario... per me \xE8 illeggibile perch\xE8 non \xE8 mio"
+  storyText: "Un diario\u2026 per me \xE8 illeggibile perch\xE9 non \xE8 mio."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -3460,9 +3459,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 136
   indentLevel: 0
-  storyText: 'ricordati che devi morire!
+  storyText: 'Ricordati che devi morire!
 
-    ma non in questo gioco!'
+    Ma non in questo gioco.'
   description: 
   character: {fileID: 2110283232}
   portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
@@ -3512,7 +3511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 134
   indentLevel: 0
-  storyText: zot sempre con te bzzz
+  storyText: Zot sempre con te, bzzz.
   description: 
   character: {fileID: 1985071258}
   portrait: {fileID: 21300000, guid: 661f4b44e4259448e9e4ea70f64f8691, type: 3}
@@ -3660,7 +3659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 132
   indentLevel: 0
-  storyText: la medicina selfica.. elfica ops
+  storyText: "La medicina selfica\u2026 elfica, ops."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -3710,7 +3709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 130
   indentLevel: 0
-  storyText: "con questo olio \xE8 meglio che non ci condisca l'insalata"
+  storyText: "Con questo olio \xE8 meglio che non ci condisca l'insalata."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -3774,7 +3773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 158
   indentLevel: 0
-  storyText: ho trovato un draghetto! che bellino
+  storyText: Ho trovato un draghetto! Che bellino.
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -4102,6 +4101,7 @@ GameObject:
   - component: {fileID: 153411870}
   - component: {fileID: 153411869}
   - component: {fileID: 153411847}
+  - component: {fileID: 153411877}
   m_Layer: 0
   m_Name: location - Portale
   m_TagString: Untagged
@@ -4148,8 +4148,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 153411872}
-  selectedCommands: []
+  - {fileID: 153411862}
+  selectedCommands:
+  - {fileID: 153411877}
   variables:
   - {fileID: 153411819}
   description: 
@@ -4448,7 +4449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 67
   indentLevel: 0
-  storyText: "\u2026una\n"
+  storyText: UNA...{w=0.2}
   description: 
   character: {fileID: 1900000800}
   portrait: {fileID: 21300000, guid: 4f8f19286665f4ee18d6a4de7e79501a, type: 3}
@@ -4473,7 +4474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
-  storyText: "\u2026una\u2026\n"
+  storyText: UNA...{w=0.2}
   description: 
   character: {fileID: 2110283232}
   portrait: {fileID: 21300000, guid: 8f21f6df46d5a4166829154dde49e8fb, type: 3}
@@ -4498,7 +4499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 65
   indentLevel: 0
-  storyText: "\u2026per\u2026\n"
+  storyText: PER...{w=0.2}
   description: 
   character: {fileID: 850311577}
   portrait: {fileID: 21300000, guid: 5414e0f913e284e1b86bee967ceba3a1, type: 3}
@@ -4550,7 +4551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 1
-  storyText: "OK, ora il portale \xE8 aggiustato, serve soltanto il codice di attivazione.\n"
+  storyText: "OK, ora il portale \xE8 aggiustato, serve soltanto il codice di attivazione."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -4628,7 +4629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 45
   indentLevel: 2
-  storyText: "Il portale sembra rotto! Mi servirebbe uno strumento\u2026{wc}\nUna
+  storyText: "Il portale sembra rotto! Mi servirebbe uno strumento\u2026{w=3}\nUna
     chiave inglese? o anche di un'altra nazionalit\xE0!"
   description: 
   character: {fileID: 695742693}
@@ -4694,9 +4695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 40
   indentLevel: 2
-  storyText: 'Possiamo aggiustare il portale con la "chiave italiana".
-
-'
+  storyText: Possiamo aggiustare il portale con la "chiave italiana".
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -4823,10 +4822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 64
   indentLevel: 0
-  storyText: 'Leggiamolo assieme:
-
-
-'
+  storyText: 'Leggiamolo assieme:'
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -4930,9 +4926,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 0
-  storyText: 'sette!
+  storyText: 'SETTE!
 
-'
+    {w=0.2}'
   description: 
   character: {fileID: 632411951}
   portrait: {fileID: 21300000, guid: 98043bd9df5e64bc0bea5074fea1d5b0, type: 3}
@@ -4957,9 +4953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: 'per
-
-'
+  storyText: PER...{w=0.2}
   description: 
   character: {fileID: 561532997}
   portrait: {fileID: 21300000, guid: 7eab3936afc96436c8ad1cf5e2e79f98, type: 3}
@@ -4984,9 +4978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 0
-  storyText: '... ed
-
-'
+  storyText: ED...{w=0.2}
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
@@ -5011,7 +5003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 71
   indentLevel: 0
-  storyText: "Sette\u2026\n"
+  storyText: SETTE...{w=0.2}
   description: 
   character: {fileID: 1985071258}
   portrait: {fileID: 21300000, guid: 661f4b44e4259448e9e4ea70f64f8691, type: 3}
@@ -5139,7 +5131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 2
-  text: 7*7 = 77
+  text: 7x7 = 77
   description: 
   targetBlock: {fileID: 153411862}
   hideIfVisited: 0
@@ -5201,7 +5193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  storyText: "mi sa che non \xE8 il codice giusto..."
+  storyText: "Mi sa che non \xE8 il codice giusto\u2026"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
@@ -5238,6 +5230,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 153411861}
+  - {fileID: 153411877}
   - {fileID: 153411860}
 --- !u!114 &153411863
 MonoBehaviour:
@@ -5273,7 +5266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 82
   indentLevel: 2
-  storyText: Devo inserire il codice giusto...
+  storyText: "Devo inserire il codice giusto\u2026"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -5524,6 +5517,31 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &153411877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 153411811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 101
+  indentLevel: 0
+  storyText: AGGIUNGO UAN FRASE
+  description: 
+  character: {fileID: 695742693}
+  portrait: {fileID: 21300000, guid: 9424997b827c5470f9dd03ca3435d4d7, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: f4795a605939d4180834e48acd1355ac, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!1001 &156708827
 Prefab:
   m_ObjectHideFlags: 0
@@ -7360,7 +7378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 1
-  storyText: "Sar\xE0 meglio tornare indietro.\n"
+  storyText: "Sar\xE0 meglio tornare indietro."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -8099,7 +8117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 97
   indentLevel: 0
-  storyText: "Grazie! Mi metter\xF2 subito al lavoro per riparare il ponte.{wc}\nSe
+  storyText: "Grazie! Mi metter\xF2 subito al lavoro per riparare il ponte.{w=3}{c}Se
     chiedi a Fluffi ti regaler\xE0 un po' di olio: lo secerne dalle sue fluffe fluffose."
   description: 
   character: {fileID: 146153425}
@@ -8421,7 +8439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 1
-  storyText: "Trova la mia pala, uffa!{wc}\nCon questo buio \xE8 impossibile vederla,
+  storyText: "Trova la mia pala, uffa!{w}\nCon questo buio \xE8 impossibile vederla,
     ma c'\xE8\u2026 Cerca bene."
   description: 
   character: {fileID: 146153425}
@@ -8557,9 +8575,10 @@ MonoBehaviour:
   itemId: 85
   indentLevel: 1
   storyText: "Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina
-    che pu\xF2 portare da una dimensione a un'altra.{wc}\nPer\xF2 si \xE8 rotta quindi
-    sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{wc}\nAspetta
-    un attimo\u2026 puoi trovare la mia pala? \xC8 in questa stanza."
+    che pu\xF2 portare da una dimensione a un'altra.{w=6}{c}Per\xF2 si \xE8 rotta
+    quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico
+    Fluffi.{w=5}{c}Aspetta un attimo\u2026 puoi trovare la mia pala? \xC8 in questa
+    stanza."
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
@@ -8634,9 +8653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 1
-  storyText: 'Chi sei? Che bello vedere una persona dopo tanto tempo.{wc}
-
-    Finalmente qualcuno a cui raccontare la mia storia.'
+  storyText: Chi sei? Che bello vedere una persona dopo tanto tempo.{w=2}{c}Finalmente
+    qualcuno a cui raccontare la mia storia.
   description: 
   character: {fileID: 146153425}
   portrait: {fileID: 21300000, guid: 1bdf3879675224fdd93e184ea26dce7d, type: 3}
@@ -8920,8 +8938,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 2
-  storyText: "Dove sono? Chi sono?{wc}\nPerch\xE9 sono appena uscito da un lago?{wc}\nUn
-    attimo\u2026 io\u2026 sono Gregor!{wc}\nPoi\u2026 forse\u2026 s\xEC! sono un mago!"
+  storyText: "Dove sono? Chi sono?{w=3}\nPerch\xE9 sono appena uscito da un lago?{w=3}{c}Un
+    attimo\u2026 io\u2026 sono Trevor!{w=3}\nPoi\u2026 forse\u2026 s\xEC! sono un
+    mago!"
   description: 
   character: {fileID: 632411951}
   portrait: {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
@@ -9074,7 +9093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 96
   indentLevel: 1
-  storyText: "Ora il mago Gregor \xE8 felice."
+  storyText: "Ora il mago Trevor \xE8 felice."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -9536,8 +9555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 1
-  storyText: "Ah! ora ricordo!{wc}\nGrazie, adesso ti posso aiutare: chiedimi una
-    cosa e te la dar\xF2."
+  storyText: "Ah! ora ricordo!{w}\nGrazie, adesso ti posso aiutare: chiedimi una cosa
+    e te la dar\xF2."
   description: 
   character: {fileID: 632411951}
   portrait: {fileID: 21300000, guid: b8d32eb8d31374e33b906dd6d9c574f7, type: 3}
@@ -9616,7 +9635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 1
-  storyText: 'Ho io il diario di Gregor!{wc}
+  storyText: 'Ho io il diario di Trevor!{w}
 
     Ha perso il diario e la memoria combattendo contro i demoni nel sottosuolo.'
   description: 
@@ -9708,8 +9727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 55
   indentLevel: 2
-  storyText: "Ho la sensazione di aver perso la memoria\u2026{wc}\nL'unica cosa che
-    desidero \xE8 il mio diario, \xE8 la mia unica speranza di recuperare la memoria."
+  storyText: "Ho la sensazione di aver perso la memoria\u2026{w=3}{c}L'unica cosa
+    che desidero \xE8 il mio diario, \xE8 la mia unica speranza di recuperare la memoria."
   description: 
   character: {fileID: 632411951}
   portrait: {fileID: 21300000, guid: bd1a67c61219d40ebbc111c014d411c3, type: 3}
@@ -9867,7 +9886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 61
   indentLevel: 2
-  storyText: "Senza il suo diario il mago Gregor non riuscir\xE0 a ricordare nulla."
+  storyText: "Senza il suo diario il mago Trevor non riuscir\xE0 a ricordare nulla."
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: f0cb4712cf0a64a6f8f5f7fec180ab71, type: 3}
@@ -11999,8 +12018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 1
-  storyText: "L'unica cosa che pu\xF2 spegnere la lava \xE8 l'acqua, ma io sono troppo
-    sconvolto per procurarmela\u2026 sigh\u2026 sigh\u2026"
+  storyText: "L'unica cosa che pu\xF2 spegnere la lava \xE8 l'acqua,{w=2} ma io sono
+    troppo sconvolto per procurarmela\u2026 sigh\u2026 sigh\u2026"
   description: 
   character: {fileID: 561532997}
   portrait: {fileID: 21300000, guid: 469bc6415991844efae092b98392a76b, type: 3}
@@ -12050,7 +12069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 1
-  storyText: "Sigh\u2026 sigh\u2026 sono l'elfo Linzi.{wc}\nIl vulcano \xE8 esploso
+  storyText: "Sigh\u2026 sigh\u2026 sono l'elfo Linzi.{w}\nIl vulcano \xE8 esploso
     e la mia casa ha preso fuoco!"
   description: 
   character: {fileID: 561532997}
@@ -12244,7 +12263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 99
   indentLevel: 1
-  storyText: "Evviva!{wc}\nHo cercato ovunque, ma l'unica buona cosa che mi \xE8 rimasta
+  storyText: "Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi \xE8 rimasta
     da darti \xE8 questa medicina. Prendila."
   description: 
   character: {fileID: 561532997}
@@ -13879,6 +13898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeLanguage: en
   localizationFile: {fileID: 4900000, guid: 8e5ece4223c094371b08080773c49f76, type: 3}
+  includeCharacterName: 0
 --- !u!1 &774186347
 GameObject:
   m_ObjectHideFlags: 0
@@ -16491,7 +16511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 2
-  storyText: Perfetto, il vecchio Barni ha aggiustato il ponte come promesso! Possiamo
+  storyText: Perfetto, lo scienziato Barni ha aggiustato il ponte come promesso! Possiamo
     attraversarlo.
   description: 
   character: {fileID: 695742693}
@@ -17701,8 +17721,8 @@ MonoBehaviour:
   itemId: 43
   indentLevel: 0
   storyText: "Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo
-    aiuto.{wc}\nIl Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a
-    guardia da degli spiriti.{wc}\nGli spiriti temono gli esseri umani; accompagnami
+    aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta
+    a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami
     fuori da qui e ti ricompenser\xF2."
   description: 
   character: {fileID: 2110283232}
@@ -17728,8 +17748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 94
   indentLevel: 0
-  storyText: "Non ti aiuter\xF2 per una misera fiaschettina d'olio.{wc}E poi, se ti
-    portassi fuori da qui, uccideresti tutti!"
+  storyText: "Non ti aiuter\xF2 per una misera fiaschettina d'olio.{w=2}E poi, se
+    ti portassi fuori da qui, uccideresti tutti!"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: e62429c91e72045edab4aefa20d7defb, type: 3}
@@ -21971,7 +21991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 1
-  storyText: 'Per favore, sono malato!{wc}
+  storyText: 'Per favore, sono malato!{w}
 
     Lasciami almeno la pelliccia per proteggermi dalla febbre.'
   description: 
@@ -22147,8 +22167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 1
-  storyText: "Ecco i consigli di vita: bevi molto quando hai sete\u2026{wc}\n\u2026mangia
-    molto quando hai fame\u2026{wc}\n\u2026e respira profondamente quando hai bisogno
+  storyText: "Ecco i consigli di vita: bevi molto quando hai sete\u2026{w}\n\u2026mangia
+    molto quando hai fame\u2026{w}{c}\u2026e respira profondamente quando hai bisogno
     di respirare."
   description: 
   character: {fileID: 850311577}
@@ -22425,7 +22445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 1
-  storyText: "Mi serve una medicina.\r"
+  storyText: Mi serve una medicina.
   description: 
   character: {fileID: 850311577}
   portrait: {fileID: 21300000, guid: d8be45f0ca2a5473fbec50268cc43297, type: 3}
@@ -25805,7 +25825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: "Bzz\u2026 ciao!{wc}\nSono Zot l'androide e mi sento molto solo.{wc}\nPosso
+  storyText: "Bzz\u2026 ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w=3}\nPosso
     diventare tuo amico?"
   description: 
   character: {fileID: 1985071258}
@@ -25917,7 +25937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  storyText: MMM Allora vieni con me? Che bello...
+  storyText: "Hmm. Allora vieni con me? Che bello\u2026"
   description: 
   character: {fileID: 695742693}
   portrait: {fileID: 21300000, guid: 2442c12bf7272400e807873303b62bbc, type: 3}
@@ -25973,7 +25993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 74
   indentLevel: 0
-  storyText: "Bzz\u2026 grazie!{wc}\nIn cambio posso essere a disposizione per missioni
+  storyText: "Bzz\u2026 grazie!{w}\nIn cambio posso essere a disposizione per missioni
     pericolose."
   description: 
   character: {fileID: 1985071258}
@@ -28017,8 +28037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: "Inizio della nostra storia\u2026{wc} \nCome siamo finiti su questa spiaggia?{w}
-    Siamo soli?{wc}\nMa soprattutto\u2026{w} {color=red}come ne usciremo?{/color}"
+  storyText: "Inizio della nostra storia\u2026{w} \nCome siamo finiti su questa spiaggia?{w}
+    Siamo soli?{w}\nMa soprattutto\u2026{w} {color=red}come ne usciremo?{/color}"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
