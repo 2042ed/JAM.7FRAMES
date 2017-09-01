@@ -26,7 +26,7 @@ PluginImporter:
           Exclude WebGL: 0
           Exclude Win: 0
           Exclude Win64: 0
-          Exclude iOS: 0
+          Exclude WindowsStoreApps: 0
     data:
       first:
         '': Editor
@@ -46,7 +46,7 @@ PluginImporter:
       first:
         Any: 
       second:
-        enabled: 0
+        enabled: 1
         settings:
           Exclude Android: 0
           Exclude Editor: 1
@@ -160,14 +160,6 @@ PluginImporter:
           PlaceholderPath: 
           SDK: AnySDK
           ScriptingBackend: AnyScriptingBackend
-    data:
-      first:
-        iPhone: iOS
-      second:
-        enabled: 1
-        settings:
-          CompileFlags: 
-          FrameworkDependencies: 
   userData: 
   assetBundleName: 
   assetBundleVariant: 

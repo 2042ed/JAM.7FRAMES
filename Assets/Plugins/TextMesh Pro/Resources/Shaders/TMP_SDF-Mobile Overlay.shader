@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 // Simplified SDF shader:
 // - No Shading Option (bevel / bump / env map)
 // - No Glow Option
