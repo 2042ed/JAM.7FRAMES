@@ -53,5 +53,15 @@ namespace JAMURR
         {
             Application.OpenURL(AppConstants.UrlCommunityFacebook);
         }
+
+        public void ButtonLanguageItaliano()
+        {
+
+        }
+
+        public void ButtonLanguageEnglish()
+        {
+
+        }
     }
 }
