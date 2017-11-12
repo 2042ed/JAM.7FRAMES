@@ -1,138 +1,138 @@
 Key,Description,Standard,EN
-SAY.location - Foresta.61.Assunta Frame,Assunta Frame portrait_player_normal,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.
-SAY.location - Foresta.45.Robot Quby,Robot Quby portrait_robot_normal,"Ciao! Sono Quby, un robot simpatico!"
-SAY.location - Foresta.49.Assunta Frame,Assunta Frame portrait_player_normal,Ciao! Cosa sono questi resti?
-SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal,"Sono i resti della mia astronave che è precipitata in questo punto.{w=3}{c}Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w=3}{c}Per sbloccarmi, mi servirebbero 3 fiaschette d'olio."
-MENU.location - Foresta.51,,Sono disposta ad aiutarti!,I can help you!
-MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.
-SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal,Sto aggiustando la mia astronave. Grazie ancora!
-SAY.location - Foresta.54.Robot Quby,Robot Quby portrait_robot_normal,Grazie!,Thanks!
-SAY.location - Foresta.55.Robot Quby,Robot Quby portrait_robot_normal,Ti ricompenserò dopo che mi avrai dato l'olio.
-SAY.location - Foresta.67.Androide Zot,Androide Zot portrait_androide_normal,Io posso dare un po' del mio olio. Ecco qua!
-SAY.location - Foresta.77.Assunta Frame,Assunta Frame portrait_player_normal,Però non ho neanche una fiaschetta d'olio!
-SAY.location - Foresta.78.Assunta Frame,Assunta Frame portrait_player_normal,Una fiaschetta ce l'ho.
-SAY.location - Foresta.95.Robot Quby,Robot Quby portrait_robot_normal,È un buon inizio. Trovane altre due per favore.
-SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal,Ho due fiaschette. Me ne manca solo una…
-SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal,Abbiamo tre fiaschette!
-SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal,"Grazie, grazie davvero!"
-SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal,"Tieni questo strumento: è una ""chiave italiana""."
-SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy,Ho trovato una mappa dell'isola!\nPosso aprirla e chiuderla cliccandone l'icona.
-SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy,"Non è un toast (peccato), ma la pelliccia di Malik."
-SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy,Con questo olio è meglio che non ci condisca l'insalata.
-SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy,"La medicina selfica… elfica, ops."
-SAY.location - Home Menu.134.Androide Zot,Androide Zot portrait_androide_happy,"Zot sempre con te, bzzz."
-SAY.location - Home Menu.136.La Morte,La Morte portrait_morte_normal,Ricordati che devi morire!\nMa non in questo gioco.
-SAY.location - Home Menu.138.Assunta Frame,Assunta Frame portrait_player_normal,Un diario… per me è illeggibile perché non è mio.
-SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal,Una chiave… italiana.
-SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal,"Su questo foglio c'è scritto ""EPTA""."
-SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal,Ho trovato un draghetto! Che bellino.
-SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal,"Possiamo aggiustare il portale con la ""chiave italiana""."
-SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal,Il portale sembra rotto! Mi servirebbe uno strumento…{w=3}\nUna chiave inglese? o anche di un'altra nazionalità!
-SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione."
-SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal,Devo inserire il codice giusto…
-MENU.location - Portale.83,,1234567
-MENU.location - Portale.87,,7x1=1x7
-MENU.location - Portale.88,,7x7 = 77
-SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal,Leggiamolo assieme:
-SAY.location - Portale.71.Androide Zot,Androide Zot portrait_androide_happy,SETTE...{w=0.2}
-SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud,PER...{w=0.2}
-SAY.location - Portale.66.La Morte,La Morte portrait_morte_normal,UNA...{w=0.2}
-SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,ED...{w=0.2}
-SAY.location - Portale.67.Robot Quby,Robot Quby portrait_robot_happy,UNA...{w=0.2}
-SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_elfo_happy,PER...{w=0.2}
-SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_mago_happy,SETTE!\n{w=0.2}
-SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad,Mi sa che non è il codice giusto…
-SAY.location - Portale.101.Assunta Frame,Assunta Frame portrait_player_sad,AGGIUNGO UAN FRASE
-MENU.location - Portale.95,,Vuoi vedere come abbiamo creato questo gioco?
-MENU.location - Portale.98,,Torna al menu iniziale, Back to home menu
-SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad,Che freddo!
-SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal,Sarà meglio indossare la pelliccia.
-SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal,Sarà meglio tornare indietro.
-SAY.location - Grotta Ghiaccio.42.Assunta Frame,Assunta Frame portrait_player_normal,"Quella grotta di ghiaccio sembra freddissima, ma con la pelliccia di Malik ce la posso fare."
-SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_normal,Non posso entrare in quella grotta di ghiaccio: c'è troppo freddo!
-SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,Dove scappi?! Non hai trovato la mia pala!
-SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,Lascia stare il mio Fluffi!
-SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal,Ho raccolto l'olio di Fluffi in una fiaschetta!
-SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,Chi sei? Che bello vedere una persona dopo tanto tempo.{w=2}{c}Finalmente qualcuno a cui raccontare la mia storia.
-SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal,Sono disposta ad ascoltarti.
-SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w=6}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w=5}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.
-SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal,Non mi interessa.
-SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry,"Invece mi ascolterai, altrimenti non ti faccio uscire!"
-SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene."
-SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w=3}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.
-SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.
-SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled,Dove sono? Chi sono?{w=3}\nPerché sono appena uscito da un lago?{w=3}{c}Un attimo… io… sono Trevor!{w=3}\nPoi… forse… sì! sono un mago!
-SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal,Ehm…
-SAY.location - Palude.52.Mago Trevor,Mago Trevor portrait_mago_dazzled,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me."
-SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal,"Dimmi, di cosa hai bisogno?"
-SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled,"Ho la sensazione di aver perso la memoria…{w=3}{c}L'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria."
-SAY.location - Palude.56.Assunta Frame,Assunta Frame portrait_player_normal,"OK, ti aiuterò!"
-SAY.location - Palude.96.Assunta Frame,Assunta Frame portrait_player_happy,Ora il mago Trevor è felice.
-SAY.location - Palude.68.La Morte,La Morte portrait_morte_normal,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.
-SAY.location - Palude.72.Mago Trevor,Mago Trevor portrait_mago_normal,"Ah! ora ricordo!{w}\nGrazie, adesso ti posso aiutare: chiedimi una cosa e te la darò."
-MENU.location - Palude.73,,Dammi il codice del portale.
-MENU.location - Palude.74,,Dammi un cetriolo.
-SAY.location - Palude.79.Mago Trevor,Mago Trevor portrait_mago_normal,"Ehm, li ho finiti! Chiedimi un'altra cosa, grazie."
-SAY.location - Palude.80.Assunta Frame,Assunta Frame portrait_player_normal,"Peccato, allora dammi il codice del portale!"
-SAY.location - Palude.81.Mago Trevor,Mago Trevor portrait_mago_normal,Eccolo qua.
-SAY.location - Pianura Vulcanica.66.Assunta Frame,Assunta Frame portrait_player_sad,Linzi è ancora disperato. Bisognerebbe spegnere la lava.
-SAY.location - Pianura Vulcanica.39.Assunta Frame,Assunta Frame portrait_player_dazzled,Cosa è successo qua? Perché è tutto pieno di lava?
-SAY.location - Pianura Vulcanica.50.Elfo Linzi,Elfo Linzi portrait_elfo_sad,Sigh… sigh… sono l'elfo Linzi.{w}\nIl vulcano è esploso e la mia casa ha preso fuoco!
-SAY.location - Pianura Vulcanica.55.Assunta Frame,Assunta Frame portrait_player_normal,E come possiamo fare?
-SAY.location - Pianura Vulcanica.56.Elfo Linzi,Elfo Linzi portrait_elfo_sad,"L'unica cosa che può spegnere la lava è l'acqua,{w=2} ma io sono troppo sconvolto per procurarmela… sigh… sigh…"
-MENU.location - Pianura Vulcanica.57,,Ti posso aiutare io!
-MENU.location - Pianura Vulcanica.59,,Problemi tuoi.
-SAY.location - Pianura Vulcanica.60.Elfo Linzi,Elfo Linzi portrait_elfo_happy,Grazie! Poi ti ricompenserò.
-SAY.location - Pianura Vulcanica.69.Elfo Linzi,Elfo Linzi portrait_elfo_angry,Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.
-SAY.location - Pianura Vulcanica.70.Assunta Frame,Assunta Frame portrait_player_normal,"Già, credo proprio che mi convenga aiutarti."
-SAY.location - Pianura Vulcanica.73.Assunta Frame,Assunta Frame portrait_player_sad,Io non ho la forza per deviare il fiume e spegnere la lava…
-SAY.location - Pianura Vulcanica.78.Androide Zot,Androide Zot portrait_androide_normal,Ci posso pensare io!
-SAY.location - Pianura Vulcanica.87.Androide Zot,Androide Zot portrait_androide_happy,…
-SAY.location - Pianura Vulcanica.81.Androide Zot,Androide Zot portrait_androide_normal,Ecco fatto! Ho deviato il fiume e la lava si sta spegnendo.
-SAY.location - Pianura Vulcanica.99.Elfo Linzi,Elfo Linzi portrait_elfo_happy,"Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila."
-SAY.location - Pianura Vulcanica.100.Assunta Frame,Assunta Frame portrait_player_happy,Grazie.\n
-SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_normal,Devo trovare un forzuto che mi aiuti!
-SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal,"Perfetto, lo scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo."
-SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal,Il ponte è rotto! Non si può passare…
-SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal,Aah! Un mostro!
-SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
-SAY.location - Dungeon.92.La Morte,La Morte portrait_morte_normal,Tieni questa boccia d'olio come segno della mia benevolenza.
-SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry,"Non ti aiuterò per una misera fiaschettina d'olio.{w=2}E poi, se ti portassi fuori da qui, uccideresti tutti!"
-SAY.location - Dungeon.41.La Morte,La Morte portrait_morte_normal,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!"
-MENU.location - Dungeon.73,,Ti porterò fuori da qui.
-MENU.location - Dungeon.74,,Ti porterò fuori da qui in cambio di una ricompensa.
-SAY.location - Dungeon.79.La Morte,La Morte portrait_morte_normal,Ti ricompenserò in futuro… dopo essere usciti…
-SAY.location - Dungeon.81.La Morte,La Morte portrait_morte_muted,Posso venire con te al portale?
-SAY.location - Dungeon.82.Assunta Frame,Assunta Frame portrait_player_happy,Sì.
-SAY.location - Villaggio.41.Indigeno Malik,Indigeno Malik portrait_indigeno_sad,Aah! Che dolore!
-SAY.location - Villaggio.54.Assunta Frame,Assunta Frame portrait_player_normal,Qual è il motivo della tua sofferenza?
-SAY.location - Villaggio.53.Indigeno Malik,Indigeno Malik portrait_indigeno_sad,"Durante la caccia mi sono ferito, aiutami e ti darò tre consigli di vita importantissimi!"
-SAY.location - Villaggio.52.Assunta Frame,Assunta Frame portrait_player_normal,"Mi hai incuriosito, cosa ti serve?"
-SAY.location - Villaggio.56.Indigeno Malik,Indigeno Malik portrait_indigeno_sad,Mi serve una medicina.
-SAY.location - Villaggio.58.Assunta Frame,Assunta Frame portrait_player_normal,Ho una medicina elfica. Tieni.
-SAY.location - Villaggio.69.Indigeno Malik,Indigeno Malik portrait_indigeno_normal,Grazie!
-SAY.location - Villaggio.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud,Vuoi ancora ascoltare i miei saggi consigli?
-SAY.location - Villaggio.68.Indigeno Malik,Indigeno Malik portrait_indigeno_proud,Ecco i consigli di vita: bevi molto quando hai sete…{w}\n…mangia molto quando hai fame…{w}{c}…e respira profondamente quando hai bisogno di respirare.
-SAY.location - Villaggio.70.Assunta Frame,Assunta Frame portrait_player_dazzled,"Ah… grazie. Ok, io vado allora…"
-SAY.location - Villaggio.76.Assunta Frame,Assunta Frame portrait_player_normal,Non è che potresti prestarmi la tua pelliccia?
-SAY.location - Villaggio.75.Indigeno Malik,Indigeno Malik portrait_indigeno_normal,"Per favore, sono malato!{w}\nLasciami almeno la pelliccia per proteggermi dalla febbre."
-SAY.location - Villaggio.78.Indigeno Malik,Indigeno Malik portrait_indigeno_proud,Ma certo! Ora che sono guarito non mi serve.
-SAY.location - Tundra Tecnologica.44.Androide Zot,Androide Zot portrait_androide_sad,Bzz… ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w=3}\nPosso diventare tuo amico?
-MENU.location - Tundra Tecnologica.62,,Si
-MENU.location - Tundra Tecnologica.63,,No
-SAY.location - Tundra Tecnologica.68.Assunta Frame,Assunta Frame portrait_player_normal,No.
-SAY.location - Tundra Tecnologica.69.Androide Zot,Androide Zot portrait_androide_sad,Bzz… ti prego!
-SAY.location - Tundra Tecnologica.70.Assunta Frame,Assunta Frame portrait_player_normal,OK.
-SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player_normal,Sì.
-SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.
-SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy,Hmm. Allora vieni con me? Che bello…
-SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color}
-SAY._CommandCopyBuffer.85.Assunta Frame,Assunta Frame portrait_player_sad,Mi sa che non è il codice giusto…
-CHARACTER.Scienziato Barni,Scienziato Barni,Scienziato Barni
-CHARACTER.Elfo Linzi,Elfo Linzi,Elfo Linzi
-CHARACTER.Mago Trevor,Mago Trevor,Mago Trevor
-CHARACTER.Assunta Frame,Assunta Frame,Assunta Frame
-CHARACTER.Indigeno Malik,Indigeno Malik,Indigeno Malik
-CHARACTER.Robot Quby,Robot Quby,Robot Quby
-CHARACTER.Androide Zot,Androide Zot,Androide Zot
-CHARACTER.La Morte,La Morte,La Morte
+SAY.location - Foresta.61.Assunta Frame,Assunta Frame portrait_player_normal ,Mi servono 3 fiaschette d'olio per aiutare il robot Quby ad aggiustare la sua astronave.,I need three oil flasks for  helping Quby Robot in fixing his spaceship.
+SAY.location - Foresta.45.Robot Quby,Robot Quby portrait_robot_normal ,"Ciao! Sono Quby, un robot simpatico!","Hi! I'm Quby, a charming robot!"
+SAY.location - Foresta.49.Assunta Frame,Assunta Frame portrait_player_normal ,Ciao! Cosa sono questi resti?,"Hi, what is this debris?"
+SAY.location - Foresta.48.Robot Quby,Robot Quby portrait_robot_normal ,"Sono i resti della mia astronave che è precipitata in questo punto.{w=3}{c}Purtroppo l'olio energetico è andato disperso, quindi io non mi posso muovere.{w=3}{c}Per sbloccarmi, mi servirebbero 3 fiaschette d'olio.","It's what remains of my spaceship that crashed here.{w=3}{c}{w=3}Unfortunately the power oil got dispersed, so I'm blocked here.{c}To progress I need three oil flasks."
+MENU.location - Foresta.51,,Sono disposta ad aiutarti!,I'm ready to help!
+MENU.location - Foresta.50,,Sono disposta ad aiutarti in cambio di qualcosa.,I'm ready to help in exchange for something.
+SAY.location - Foresta.94.Robot Quby,Robot Quby portrait_robot_normal ,Sto aggiustando la mia astronave. Grazie ancora!,I'm fixing my spaceship. Thanks again.
+SAY.location - Foresta.54.Robot Quby,Robot Quby portrait_robot_normal ,Grazie!,Thanks!
+SAY.location - Foresta.55.Robot Quby,Robot Quby portrait_robot_normal ,Ti ricompenserò dopo che mi avrai dato l'olio.,I'll reward you after you will have given me oil.
+SAY.location - Foresta.67.Androide Zot,Androide Zot portrait_androide_normal ,Io posso dare un po' del mio olio. Ecco qua!,I can give you some of my oil. Here it is.
+SAY.location - Foresta.77.Assunta Frame,Assunta Frame portrait_player_normal ,Però non ho neanche una fiaschetta d'olio!,Unfortunately I don't have any oil!
+SAY.location - Foresta.78.Assunta Frame,Assunta Frame portrait_player_normal ,Una fiaschetta ce l'ho.,I have one flask.
+SAY.location - Foresta.95.Robot Quby,Robot Quby portrait_robot_normal ,È un buon inizio. Trovane altre due per favore.,It's a good start. Find more please.
+SAY.location - Foresta.79.Assunta Frame,Assunta Frame portrait_player_normal ,Ho due fiaschette. Me ne manca solo una…,I have two flasks. Only one missing!
+SAY.location - Foresta.81.Assunta Frame,Assunta Frame portrait_player_normal ,Abbiamo tre fiaschette!,We have three flasks!
+SAY.location - Foresta.82.Robot Quby,Robot Quby portrait_robot_normal ,"Grazie, grazie davvero!","Thank, thanks a lot!"
+SAY.location - Foresta.83.Robot Quby,Robot Quby portrait_robot_normal ,"Tieni questo strumento: è una ""chiave italiana"".","Take this tool: it's an ""Italian adjustable spanner"""
+SAY.location - Home Menu.125.Assunta Frame,Assunta Frame portrait_player_happy ,Ho trovato una mappa dell'isola!\nPosso aprirla e chiuderla cliccandone l'icona.,I found a map of the island!\nI can open it and close it by clicking it's icon
+SAY.location - Home Menu.127.Assunta Frame,Assunta Frame portrait_player_happy ,"Non è un toast (peccato), ma la pelliccia di Malik.",it's not a toast - unfortunately - it's Malik's fur.
+SAY.location - Home Menu.130.Assunta Frame,Assunta Frame portrait_player_happy ,Con questo olio è meglio che non ci condisca l'insalata.,It's better not to season salad with this oil.
+SAY.location - Home Menu.132.Assunta Frame,Assunta Frame portrait_player_happy ,"La medicina selfica… elfica, ops.",The selfish - ops elfish medicine.
+SAY.location - Home Menu.134.Androide Zot,Androide Zot portrait_androide_happy ,"Zot sempre con te, bzzz.",Zot always with you bzzz.
+SAY.location - Home Menu.136.La Morte,La Morte portrait_morte_normal ,Ricordati che devi morire!\nMa non in questo gioco.,Remember that you'll die one day!\nbut not in this game.
+SAY.location - Home Menu.138.Assunta Frame,Assunta Frame portrait_player_normal ,Un diario… per me è illeggibile perché non è mio.,A diary... I can't read it though as it's not my diary.
+SAY.location - Home Menu.140.Assunta Frame,Assunta Frame portrait_player_normal ,Una chiave… italiana.,A spanner... an Italian one.
+SAY.location - Home Menu.142.Assunta Frame,Assunta Frame portrait_player_normal ,"Su questo foglio c'è scritto ""EPTA"".",A paper clip with EPTA inscribed
+SAY.location - Home Menu.158.Assunta Frame,Assunta Frame portrait_player_normal ,Ho trovato un draghetto! Che bellino.,I found a pet dragon! So nice.
+SAY.location - Portale.40.Assunta Frame,Assunta Frame portrait_player_normal ,"Possiamo aggiustare il portale con la ""chiave italiana"".",We can fix the portal with the Italian spanner.
+SAY.location - Portale.45.Assunta Frame,Assunta Frame portrait_player_normal ,Il portale sembra rotto! Mi servirebbe uno strumento…{w=3}\nUna chiave inglese? o anche di un'altra nazionalità!,The portal seems broken! I need some tools!{w=3}\nA British spanner? Or even from some other country!
+SAY.location - Portale.48.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ora il portale è aggiustato, serve soltanto il codice di attivazione.","Ok so now the portal is fixed, what is now missing is just the activation code."
+SAY.location - Portale.82.Assunta Frame,Assunta Frame portrait_player_normal ,Devo inserire il codice giusto…,I must insert the right code...
+MENU.location - Portale.83,,1234567,1234567
+MENU.location - Portale.87,,7x1=1x7,7x1=1x7
+MENU.location - Portale.88,,7x7 = 77,7x7 = 77
+SAY.location - Portale.64.Assunta Frame,Assunta Frame portrait_player_normal ,Leggiamolo assieme:,Let's read it together:
+SAY.location - Portale.71.Androide Zot,Androide Zot portrait_androide_happy ,SETTE...{w=0.2},Seven
+SAY.location - Portale.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,PER...{w=0.2},for
+SAY.location - Portale.66.La Morte,La Morte portrait_morte_normal ,UNA...{w=0.2},one
+SAY.location - Portale.74.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,ED...{w=0.2},and
+SAY.location - Portale.67.Robot Quby,Robot Quby portrait_robot_happy ,UNA...{w=0.2},one
+SAY.location - Portale.73.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,PER...{w=0.2},for
+SAY.location - Portale.72.Mago Trevor,Mago Trevor portrait_mago_happy ,SETTE!\n{w=0.2},seven\n{w}
+SAY.location - Portale.85.Assunta Frame,Assunta Frame portrait_player_sad ,Mi sa che non è il codice giusto…,YOU WON!{w}
+SAY.location - Portale.101.Assunta Frame,Assunta Frame portrait_player_sad ,AGGIUNGO UAN FRASE,I suspect that it's not the right code...
+MENU.location - Portale.95,,Vuoi vedere come abbiamo creato questo gioco?,Like to to see how this game was created?
+MENU.location - Portale.98,,Torna al menu iniziale,Back to the main menu
+SAY.location - Grotta Ghiaccio.53.Assunta Frame,Assunta Frame portrait_player_sad ,Che freddo!,So cold!
+SAY.location - Grotta Ghiaccio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio indossare la pelliccia.,I should wear the fur.
+SAY.location - Grotta Ghiaccio.56.Assunta Frame,Assunta Frame portrait_player_normal ,Sarà meglio tornare indietro.,I should go back.
+SAY.location - Grotta Ghiaccio.42.Assunta Frame,Assunta Frame portrait_player_normal ,"Quella grotta di ghiaccio sembra freddissima, ma con la pelliccia di Malik ce la posso fare.","This ice cave seems so sold, but wth Malik's fur coat I can make it."
+SAY.location - Grotta Ghiaccio.45.Assunta Frame,Assunta Frame portrait_player_normal ,Non posso entrare in quella grotta di ghiaccio: c'è troppo freddo!,I can't enter that ice cave: it's too cold!
+SAY.location - Grotta Ghiaccio.77.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Dove scappi?! Non hai trovato la mia pala!,Where are you running? You didn't find my shovel!
+SAY.location - Grotta Ghiaccio.71.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Lascia stare il mio Fluffi!,Leave my Fluffi alone!
+SAY.location - Grotta Ghiaccio.104.Assunta Frame,Assunta Frame portrait_player_normal ,Ho raccolto l'olio di Fluffi in una fiaschetta!,I collected Fluffi's oil in a flask!
+SAY.location - Grotta Ghiaccio.81.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Chi sei? Che bello vedere una persona dopo tanto tempo.{w=2}{c}Finalmente qualcuno a cui raccontare la mia storia.,Who are you? it's so nice to meet a person after such a long time.{w=2}{c}Finally I can tell my story to someone.
+SAY.location - Grotta Ghiaccio.82.Assunta Frame,Assunta Frame portrait_player_normal ,Sono disposta ad ascoltarti.,I'm here to listen.
+SAY.location - Grotta Ghiaccio.85.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Bene! Io sono uno scienziato di nome Barni e ho inventato una macchina che può portare da una dimensione a un'altra.{w=6}{c}Però si è rotta quindi sono rimasto bloccato qua dentro e desidero tornare a casa con il mio amico Fluffi.{w=5}{c}Aspetta un attimo… puoi trovare la mia pala? È in questa stanza.,"Great! I'm a scientist called barni and I've invented a machine that can take you from one dimension to another.{w=6}{c}But it broke so I was blocked here, but I'd like to get back home with my friend Fluffi.{w=5}{c}Wait a second, can you find my shovel, it's in this room."
+SAY.location - Grotta Ghiaccio.86.Assunta Frame,Assunta Frame portrait_player_normal ,Non mi interessa.,I'm not interested.
+SAY.location - Grotta Ghiaccio.83.Scienziato Barni,Scienziato Barni portrait_scienziato_angry ,"Invece mi ascolterai, altrimenti non ti faccio uscire!","Well you'll have to listen, otherwise I won't let you out!"
+SAY.location - Grotta Ghiaccio.91.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,"Trova la mia pala, uffa!{w}\nCon questo buio è impossibile vederla, ma c'è… Cerca bene.","Come on, find my shovel! it's impossible to see it in the dark, but it's here! Look carefully."
+SAY.location - Grotta Ghiaccio.97.Scienziato Barni,Scienziato Barni portrait_scienziato_normal ,Grazie! Mi metterò subito al lavoro per riparare il ponte.{w=3}{c}Se chiedi a Fluffi ti regalerà un po' di olio: lo secerne dalle sue fluffe fluffose.,Thank you! I will start immediately repairing the bridge.{w=3}{c}If you'll ask Fluffi it will give you some oil:  it secretes it from it's fluffish flufficols.
+SAY.location - Palude.61.Assunta Frame,Assunta Frame portrait_player_normal ,Senza il suo diario il mago Trevor non riuscirà a ricordare nulla.,Without his diary Trevor the magician won't remember a thing.
+SAY.location - Palude.39.Mago Trevor,Mago Trevor portrait_mago_dazzled ,Dove sono? Chi sono?{w=3}\nPerché sono appena uscito da un lago?{w=3}{c}Un attimo… io… sono Trevor!{w=3}\nPoi… forse… sì! sono un mago!,Where am I? Who am I?{w=3}\nWhy did I just get out of a lake?{w=3}{c}Wait a moment... I'm Trevor!!{w=3}\nAnd.. Actually... Yes! I'm a magician!
+SAY.location - Palude.51.Assunta Frame,Assunta Frame portrait_player_normal ,Ehm…,Ehm…
+SAY.location - Palude.52.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"E tu, chi sei? Cosa ci fai qui? Ho bisogno del tuo aiuto, vieni qua da me.","Who are you? I need your help, come here by me."
+SAY.location - Palude.53.Assunta Frame,Assunta Frame portrait_player_normal ,"Dimmi, di cosa hai bisogno?","Tell me, what do you need?"
+SAY.location - Palude.55.Mago Trevor,Mago Trevor portrait_mago_dazzled ,"Ho la sensazione di aver perso la memoria…{w=3}{c}L'unica cosa che desidero è il mio diario, è la mia unica speranza di recuperare la memoria.","I feel like I lost my memory…{w=3}{c}The only thing I wish for is to find my diary, my only hope of getting my memory back."
+SAY.location - Palude.56.Assunta Frame,Assunta Frame portrait_player_normal ,"OK, ti aiuterò!","OK, I will help you!"
+SAY.location - Palude.96.Assunta Frame,Assunta Frame portrait_player_happy ,Ora il mago Trevor è felice.,Now Trevor the magician is happy.
+SAY.location - Palude.68.La Morte,La Morte portrait_morte_normal ,Ho io il diario di Trevor!{w}\nHa perso il diario e la memoria combattendo contro i demoni nel sottosuolo.,I have Trevor's diary!{w}\nHe lost diary and memory fighting demons in the underground.
+SAY.location - Palude.72.Mago Trevor,Mago Trevor portrait_mago_normal ,"Ah! ora ricordo!{w}\nGrazie, adesso ti posso aiutare: chiedimi una cosa e te la darò.","Ah! Now I remember!{w}\nThank you, now I can help you: ask me for something and I will get it for you."
+MENU.location - Palude.73,,Dammi il codice del portale.,Give me the portal's code.
+MENU.location - Palude.74,,Dammi un cetriolo.,Give me cucumber.
+SAY.location - Palude.79.Mago Trevor,Mago Trevor portrait_mago_normal ,"Ehm, li ho finiti! Chiedimi un'altra cosa, grazie.","Ehm… I don't have any more of those! Ask me something else, please."
+SAY.location - Palude.80.Assunta Frame,Assunta Frame portrait_player_normal ,"Peccato, allora dammi il codice del portale!","That's a pity, then give me the portal's code!"
+SAY.location - Palude.81.Mago Trevor,Mago Trevor portrait_mago_normal ,Eccolo qua.,There you go.
+SAY.location - Pianura Vulcanica.66.Assunta Frame,Assunta Frame portrait_player_sad ,Linzi è ancora disperato. Bisognerebbe spegnere la lava.,Linzi is still desperate. We should extinguish the lava.
+SAY.location - Pianura Vulcanica.39.Assunta Frame,Assunta Frame portrait_player_dazzled ,Cosa è successo qua? Perché è tutto pieno di lava?,What happened here? Why is there lava everywhere?
+SAY.location - Pianura Vulcanica.50.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,Sigh… sigh… sono l'elfo Linzi.{w}\nIl vulcano è esploso e la mia casa ha preso fuoco!,Sigh… sigh… I'm Linzi the elf.{w}\nThe volcano exploded and my house is on fire!
+SAY.location - Pianura Vulcanica.55.Assunta Frame,Assunta Frame portrait_player_normal ,E come possiamo fare?,And what can we do?
+SAY.location - Pianura Vulcanica.56.Elfo Linzi,Elfo Linzi portrait_elfo_sad ,"L'unica cosa che può spegnere la lava è l'acqua,{w=2} ma io sono troppo sconvolto per procurarmela… sigh… sigh…","The only thing that can extinguish lava is water,{w=2}but I'm too upset to go look for it... sigh… sigh…"
+MENU.location - Pianura Vulcanica.57,,Ti posso aiutare io!,I can help you!
+MENU.location - Pianura Vulcanica.59,,Problemi tuoi.,That's your problem.
+SAY.location - Pianura Vulcanica.60.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,Grazie! Poi ti ricompenserò.,Thank you! I will reward you later.
+SAY.location - Pianura Vulcanica.69.Elfo Linzi,Elfo Linzi portrait_elfo_angry ,Che tu possa bruciare all'inferno! Ti conviene aiutarmi o ti ucciderò.,I hope you will burn in hell! You either help me or I will kill you.
+SAY.location - Pianura Vulcanica.70.Assunta Frame,Assunta Frame portrait_player_normal ,"Già, credo proprio che mi convenga aiutarti.","Well, I believe I really should help you."
+SAY.location - Pianura Vulcanica.73.Assunta Frame,Assunta Frame portrait_player_sad ,Io non ho la forza per deviare il fiume e spegnere la lava…,I don't have the strength to divert the river and extinguish the lava...
+SAY.location - Pianura Vulcanica.78.Androide Zot,Androide Zot portrait_androide_normal ,Ci posso pensare io!,I can take care of that!
+SAY.location - Pianura Vulcanica.87.Androide Zot,Androide Zot portrait_androide_happy ,…,...
+SAY.location - Pianura Vulcanica.81.Androide Zot,Androide Zot portrait_androide_normal ,Ecco fatto! Ho deviato il fiume e la lava si sta spegnendo.,Done! I diverted the river and the lava is almost exhausted.
+SAY.location - Pianura Vulcanica.99.Elfo Linzi,Elfo Linzi portrait_elfo_happy ,"Evviva!{w}\nHo cercato ovunque, ma l'unica buona cosa che mi è rimasta da darti è questa medicina. Prendila.","Hurray!{w}\nI looked everywhere, but the only good thing remaining is this medicine. Take it."
+SAY.location - Pianura Vulcanica.100.Assunta Frame,Assunta Frame portrait_player_happy ,Grazie.\n,Thank you.\n
+SAY.location - Pianura Vulcanica.77.Assunta Frame,Assunta Frame portrait_player_normal ,Devo trovare un forzuto che mi aiuti!,I must find a strongman to help me!
+SAY.location - Ponte.39.Assunta Frame,Assunta Frame portrait_player_normal ,"Perfetto, lo scienziato Barni ha aggiustato il ponte come promesso! Possiamo attraversarlo.","Well done, Barni the scientist has fixed the bridge as he promised! We can cross it."
+SAY.location - Ponte.44.Assunta Frame,Assunta Frame portrait_player_normal ,Il ponte è rotto! Non si può passare…,The bridge is broken. No way to cross it...
+SAY.location - Dungeon.1.Assunta Frame,Assunta Frame portrait_player_normal ,Aah! Un mostro!,Aah! A monster!
+SAY.location - Dungeon.43.La Morte,La Morte portrait_morte_normal ,"Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò.","Tranquilla, sono la Morte, non voglio ucciderti. Ho bisogno del tuo aiuto.{w=3}{c}Il Re Demone mi ha rinchiuso in questo sotterraneo e sono tenuta a guardia da degli spiriti.{w=4}{c}Gli spiriti temono gli esseri umani; accompagnami fuori da qui e ti ricompenserò."
+SAY.location - Dungeon.92.La Morte,La Morte portrait_morte_normal ,Tieni questa boccia d'olio come segno della mia benevolenza.,Take this oil flask as a symbol of my benevolence.
+SAY.location - Dungeon.94.Assunta Frame,Assunta Frame portrait_player_angry ,"Non ti aiuterò per una misera fiaschettina d'olio.{w=2}E poi, se ti portassi fuori da qui, uccideresti tutti!","I won't help you for just an oil flask.{w=2}Also if I'd bring you out of here, you would kill everyone!"
+SAY.location - Dungeon.41.La Morte,La Morte portrait_morte_normal ,"No, io non uccido. Raccolgo le anime di chi è già morto. Ti prego, aiutami!","No, I don't kill. I collect the souls of those who are already dead. Please, help me!"
+MENU.location - Dungeon.73,,Ti porterò fuori da qui.,I'll take you out of here.
+MENU.location - Dungeon.74,,Ti porterò fuori da qui in cambio di una ricompensa.,I'll get you out of here in exchange of something.
+SAY.location - Dungeon.79.La Morte,La Morte portrait_morte_normal ,Ti ricompenserò in futuro… dopo essere usciti…,I will give you a prize in the future... After we got out...
+SAY.location - Dungeon.81.La Morte,La Morte portrait_morte_muted ,Posso venire con te al portale?,Can I come with you at the portal?
+SAY.location - Dungeon.82.Assunta Frame,Assunta Frame portrait_player_happy ,Sì.,Yes.
+SAY.location - Villaggio.41.Indigeno Malik,Indigeno Malik portrait_indigeno_sad ,Aah! Che dolore!,Aah! Such a pain!
+SAY.location - Villaggio.54.Assunta Frame,Assunta Frame portrait_player_normal ,Qual è il motivo della tua sofferenza?,Why are you suffering?
+SAY.location - Villaggio.53.Indigeno Malik,Indigeno Malik portrait_indigeno_sad ,"Durante la caccia mi sono ferito, aiutami e ti darò tre consigli di vita importantissimi!","I was wounded while hunting, help me and I will give you three important life advices!"
+SAY.location - Villaggio.52.Assunta Frame,Assunta Frame portrait_player_normal ,"Mi hai incuriosito, cosa ti serve?","You intrigued me, what do you need?"
+SAY.location - Villaggio.56.Indigeno Malik,Indigeno Malik portrait_indigeno_sad ,Mi serve una medicina.,I need a medicine.
+SAY.location - Villaggio.58.Assunta Frame,Assunta Frame portrait_player_normal ,Ho una medicina elfica. Tieni.,I have an elvish medicine. Take it.
+SAY.location - Villaggio.69.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,Grazie!,Thanks!
+SAY.location - Villaggio.65.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Vuoi ancora ascoltare i miei saggi consigli?,You still want t listen to my wise advice?
+SAY.location - Villaggio.68.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ecco i consigli di vita: bevi molto quando hai sete…{w}\n…mangia molto quando hai fame…{w}{c}…e respira profondamente quando hai bisogno di respirare.,Here are my life advices: drink a lot when you are thirsty...{w}\n…eat a lot when you are hungry…{w}{c}… and breath deeply when you need to breathe.
+SAY.location - Villaggio.70.Assunta Frame,Assunta Frame portrait_player_dazzled ,"Ah… grazie. Ok, io vado allora…","Ah... Thank you. Ok, I go now..."
+SAY.location - Villaggio.76.Assunta Frame,Assunta Frame portrait_player_normal ,Non è che potresti prestarmi la tua pelliccia?,Could you lend me your fur?
+SAY.location - Villaggio.75.Indigeno Malik,Indigeno Malik portrait_indigeno_normal ,"Per favore, sono malato!{w}\nLasciami almeno la pelliccia per proteggermi dalla febbre.","have pity on me, I'm ill!{w}\nAt least leave me the fur to protect myself from fever."
+SAY.location - Villaggio.78.Indigeno Malik,Indigeno Malik portrait_indigeno_proud ,Ma certo! Ora che sono guarito non mi serve.,Sure! Now that I recovered I don't need it anymore.
+SAY.location - Tundra Tecnologica.44.Androide Zot,Androide Zot portrait_androide_sad ,Bzz… ciao!{w}\nSono Zot l'androide e mi sento molto solo.{w=3}\nPosso diventare tuo amico?,Bzz… hi!{w}\nI'm Zot the android and I feel so lonely..{w=3}\nCan I become your friend?
+MENU.location - Tundra Tecnologica.62,,Si,Yes
+MENU.location - Tundra Tecnologica.63,,No,No
+SAY.location - Tundra Tecnologica.68.Assunta Frame,Assunta Frame portrait_player_normal ,No.,No.
+SAY.location - Tundra Tecnologica.69.Androide Zot,Androide Zot portrait_androide_sad ,Bzz… ti prego!,Bzz... please!
+SAY.location - Tundra Tecnologica.70.Assunta Frame,Assunta Frame portrait_player_normal ,OK.,OK.
+SAY.location - Tundra Tecnologica.66.Assunta Frame,Assunta Frame portrait_player_normal ,Sì.,Yes.
+SAY.location - Tundra Tecnologica.74.Androide Zot,Androide Zot portrait_androide_normal ,Bzz… grazie!{w}\nIn cambio posso essere a disposizione per missioni pericolose.,Bzz… thanks!{w}\nIn exchange I am available for dangerous missions.
+SAY.location - Tundra Tecnologica.75.Assunta Frame,Assunta Frame portrait_player_happy ,Hmm. Allora vieni con me? Che bello…,Hmm. Then you are coming with me? Cool...
+SAY.location - Spiaggia.32.,,Inizio della nostra storia…{w} \nCome siamo finiti su questa spiaggia?{w} Siamo soli?{w}\nMa soprattutto…{w} {color=red}come ne usciremo?{/color},This is the beginning of our story…{w} \nHow did we end on this beach?{w} Are we alone?{w}\nMost of al…{w} {color=red}how will we get out of here?{/color}
+SAY._CommandCopyBuffer.85.Assunta Frame,Assunta Frame portrait_player_sad ,Mi sa che non è il codice giusto…,I beieve this is not the right code...
+CHARACTER.Scienziato Barni,Scienziato Barni,Scienziato Barni,Barni The Scientist
+CHARACTER.Elfo Linzi,Elfo Linzi,Elfo Linzi,Linzi The Elf
+CHARACTER.Mago Trevor,Mago Trevor,Mago Trevor,Trevor The Magician
+CHARACTER.Assunta Frame,Assunta Frame,Assunta Frame,Assunta Frame
+CHARACTER.Indigeno Malik,Indigeno Malik,Indigeno Malik,Malik The Native
+CHARACTER.Robot Quby,Robot Quby,Robot Quby,Quby The Robot
+CHARACTER.Androide Zot,Androide Zot,Androide Zot,Zot The Android
+CHARACTER.La Morte,La Morte,La Morte,Death
