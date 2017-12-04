@@ -160,7 +160,7 @@ namespace Fungus.EditorUtils
 
                 // EventType.contextClick doesn't register since we moved the Block Editor to be inside
                 // a GUI Area, no idea why. As a workaround we just check for right click instead.
-                if (Event.current.type == EventType.mouseUp &&
+                if (Event.current.type == EventType.MouseUp &&
                     Event.current.button == 1)
                 {
                     ShowContextMenu();
@@ -281,14 +281,14 @@ namespace Fungus.EditorUtils
             GUILayout.BeginHorizontal();
             
             // Previous Command
-            if ((Event.current.type == EventType.keyDown) && (Event.current.keyCode == KeyCode.PageUp))
+            if ((Event.current.type == EventType.KeyDown) && (Event.current.keyCode == KeyCode.PageUp))
             {
                 SelectPrevious();
                 GUI.FocusControl("dummycontrol");
                 Event.current.Use();
             }
             // Next Command
-            if ((Event.current.type == EventType.keyDown) && (Event.current.keyCode == KeyCode.PageDown))
+            if ((Event.current.type == EventType.KeyDown) && (Event.current.keyCode == KeyCode.PageDown))
             {
                 SelectNext();
                 GUI.FocusControl("dummycontrol");

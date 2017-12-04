@@ -974,19 +974,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 87.0236, y: 66.91161}
+  scrollPos: {x: 37.285942, y: 72.37882}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 0
   blockViewHeight: 400
-  zoom: 0.87200207
+  zoom: 0.8934767
   scrollViewRect:
     serializedVersion: 2
     x: -369
     y: -397.79095
     width: 2161.538
     height: 1206.395
-  selectedBlocks:
-  - {fileID: 143895595}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 143895641}
@@ -1036,7 +1035,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &143895580
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1054,7 +1053,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &143895581
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1067,7 +1066,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 767.8544
     y: 26.982658
-    width: 258.14172
+    width: 267.12933
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1191,7 +1190,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &143895590
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1256,7 +1255,7 @@ MonoBehaviour:
   languageCodeOLD: 
 --- !u!114 &143895594
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1269,7 +1268,7 @@ MonoBehaviour:
   targetButton: {fileID: 609013089}
 --- !u!114 &143895595
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1294,7 +1293,7 @@ MonoBehaviour:
   - {fileID: 143895596}
 --- !u!114 &143895596
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1311,7 +1310,7 @@ MonoBehaviour:
   languageCodeOLD: 
 --- !u!114 &143895597
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1583,7 +1582,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 376.30692
     y: -46.128674
-    width: 152.63737
+    width: 158.56467
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1669,7 +1668,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 538.5048
     y: 12.818879
-    width: 154.35754
+    width: 161.92233
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1682,7 +1681,7 @@ MonoBehaviour:
   - {fileID: 143895652}
 --- !u!114 &143895657
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1700,7 +1699,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &143895658
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -1713,7 +1712,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 767.7374
     y: -31.00933
-    width: 184.74739
+    width: 187.66447
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1725,7 +1724,7 @@ MonoBehaviour:
   - {fileID: 143895657}
 --- !u!114 &143895659
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143895575}
@@ -6359,7 +6358,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
