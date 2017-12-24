@@ -1,7 +1,7 @@
 // This code is part of the Fungus library (http://fungusgames.com) maintained by Chris Gregan (http://twitter.com/gofungus).
 // It is released for free under the MIT open source license (https://github.com/snozbot/fungus/blob/master/LICENSE)
 
- using UnityEngine;
+﻿using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -24,7 +24,6 @@ namespace Fungus
         {
             public string description = "";
             public string standardText = "";
-            public string character = "";
             public Dictionary<string, string> localizedStrings = new Dictionary<string, string>();
         }
 
@@ -33,9 +32,6 @@ namespace Fungus
 
         [Tooltip("CSV file containing localization data which can be easily edited in a spreadsheet tool")]
         [SerializeField] protected TextAsset localizationFile;
-
-        [Tooltip("include the Character name in the CSV description field")]
-        [SerializeField] protected bool includeCharacterName;
 
         protected Dictionary<string, ILocalizable> localizeableObjects = new Dictionary<string, ILocalizable>();
 
@@ -46,12 +42,6 @@ namespace Fungus
         protected static Dictionary<string, string> localizedStrings = new Dictionary<string, string>();
 
         #if UNITY_5_4_OR_NEWER
-        protected virtual void Awake()
-        {
-            UnityEngine.SceneManagement.SceneManager.activeSceneChanged += (A, B) => {
-                LevelWasLoaded();
-            };
-        }
         #else
         public virtual void OnLevelWasLoaded(int level) 
         {
@@ -69,14 +59,25 @@ namespace Fungus
             }
         }
 
+        private void SceneManager_activeSceneChanged(UnityEngine.SceneManagement.Scene arg0, UnityEngine.SceneManagement.Scene arg1)
+        {
+            LevelWasLoaded();
+        }
+
         protected virtual void OnEnable()
         {
             StringSubstituter.RegisterHandler(this);
+            #if UNITY_5_4_OR_NEWER
+            UnityEngine.SceneManagement.SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+            #endif
         }
 
         protected virtual void OnDisable()
         {
             StringSubstituter.UnregisterHandler(this);
+            #if UNITY_5_4_OR_NEWER
+            UnityEngine.SceneManagement.SceneManager.activeSceneChanged -= SceneManager_activeSceneChanged;
+            #endif
         }
 
         protected virtual void Start()
@@ -149,7 +150,6 @@ namespace Fungus
                             TextItem textItem = new TextItem();
                             textItem.standardText = localizable.GetStandardText();
                             textItem.description = localizable.GetDescription();
-                            textItem.character = localizable.GetCharacter();
                             textItems[localizable.GetStringId()] = textItem;
                         }
                     }
@@ -173,7 +173,6 @@ namespace Fungus
                     TextItem textItem = new TextItem();
                     textItem.standardText = localizable.GetStandardText();
                     textItem.description = localizable.GetDescription();
-                    textItem.character = localizable.GetCharacter();
                     textItems[stringId] = textItem;
                 }
             }
@@ -188,6 +187,7 @@ namespace Fungus
         {
             CsvParser csvParser = new CsvParser();
             string[][] csvTable = csvParser.Parse(csvData);
+
             if (csvTable.Length <= 1)
             {
                 // No data rows in file
@@ -332,11 +332,7 @@ namespace Fungus
                 TextItem textItem = textItems[stringId];
 
                 string row = CSVSupport.Escape(stringId);
-                if (includeCharacterName) {
-                    row += "," + CSVSupport.Escape(textItem.character + (textItem.description != "" ? " " : "") + textItem.description);
-                } else {
-                    row += "," + CSVSupport.Escape(textItem.description);
-                }
+                row += "," + CSVSupport.Escape(textItem.description);
                 row += "," + CSVSupport.Escape(textItem.standardText);
 
                 for (int i = 0; i < languageCodes.Count; i++)
@@ -547,49 +543,6 @@ namespace Fungus
                 if (PopulateTextProperty(stringId, buffer.Trim()))
                 {
                     updatedCount++;
-                }
-            }
-
-            notificationText = "Updated " + updatedCount + " standard text items.";
-        }
-        
-        /// <summary>
-        /// Sets localization text on scene objects by parsing a text CSV file.
-        /// </summary>
-        public virtual void SetLocalizationText(string textData)
-        {
-            CsvParser csvParser = new CsvParser();
-            string[][] csvTable = csvParser.Parse(textData);
-
-            if (csvTable.Length <= 1)
-            {
-                // No data rows in file
-                return;
-            }
-           
-            var updatedCount = 0;
-            var languageIndex = 2;
-            
-            for (int i = 1; i < csvTable.Length; ++i)
-            {
-                string[] fields = csvTable[i];
-
-                if (fields.Length < languageIndex + 1)
-                {
-                    continue;
-                }
-
-                string stringId = fields[0];
-                string languageEntry = CSVSupport.Unescape(fields[languageIndex]);
-
-                if (languageEntry.Length > 0)
-                {
-                    localizedStrings[stringId] = languageEntry;
-                    PopulateTextProperty(stringId, languageEntry);
-                    if (PopulateTextProperty(stringId, languageEntry))
-                    {
-                        updatedCount++;
-                    }
                 }
             }
 

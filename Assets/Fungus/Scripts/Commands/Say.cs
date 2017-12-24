@@ -48,6 +48,11 @@ namespace Fungus
         [Tooltip("Stop playing voiceover when text finishes writing.")]
         [SerializeField] protected bool stopVoiceover = true;
 
+        [Tooltip("Wait for the Voice Over to complete before continuing")]
+        [SerializeField] protected bool waitForVO = false;
+
+        //add wait for vo that overrides stopvo
+
         [Tooltip("Sets the active Say dialog with a reference to a Say Dialog object in the scene. All story text will now display using this Say Dialog.")]
         [SerializeField] protected SayDialog setSayDialog;
 
@@ -120,7 +125,7 @@ namespace Fungus
 
             string subbedText = flowchart.SubstituteVariables(displayText);
 
-            sayDialog.Say(subbedText, !extendPrevious, waitForClick, fadeWhenDone, stopVoiceover, voiceOverClip, delegate {
+            sayDialog.Say(subbedText, !extendPrevious, waitForClick, fadeWhenDone, stopVoiceover, waitForVO, voiceOverClip, delegate {
                 Continue();
             });
         }
@@ -177,20 +182,6 @@ namespace Fungus
         public virtual string GetDescription()
         {
             return description;
-        }
-        
-        public virtual string GetCharacter()
-        {
-            var output = "";
-            if (character != null) {
-                output += character.NameText + " ";
-            }
-
-            if (portrait != null) {
-                output += portrait.name + " ";
-            }
-
-            return output;
         }
         
         public virtual string GetStringId()

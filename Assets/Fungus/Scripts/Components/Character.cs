@@ -161,11 +161,6 @@ namespace Fungus
         {
             return description;
         }
-        
-        public virtual string GetCharacter()
-        {
-            return NameText;
-        }
 
         public virtual string GetStringId()
         {

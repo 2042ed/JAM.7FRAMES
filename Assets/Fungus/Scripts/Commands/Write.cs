@@ -99,12 +99,12 @@ namespace Fungus
 
             if (!waitUntilFinished)
             {
-                StartCoroutine(writer.Write(newText, clearText, false, true, null, null));
+                StartCoroutine(writer.Write(newText, clearText, false, true, false, null, null));
                 Continue();
             }
             else
             {
-                StartCoroutine(writer.Write(newText, clearText, false, true, null,
+                StartCoroutine(writer.Write(newText, clearText, false, true, false, null,
                              () => { Continue (); }
                 ));
             }
@@ -147,11 +147,6 @@ namespace Fungus
         public virtual string GetDescription()
         {
             return description;
-        }
-        
-        public virtual string GetCharacter()
-        {
-            return "";
         }
         
         public virtual string GetStringId()
