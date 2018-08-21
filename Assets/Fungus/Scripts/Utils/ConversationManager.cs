@@ -23,11 +23,25 @@ namespace Fungus
             public bool Hide { get; set; }
             public FacingDirection FacingDirection { get; set; }
             public bool Flip { get; set; }
+            public bool ClearPrev { get; set; }
+            public bool WaitForInput { get; set; }
+            public bool FadeDone { get; set; }
         }
 
         protected Character[] characters;
 
         protected bool exitSayWait;
+        public bool ClearPrev { get; set; }
+        public bool WaitForInput { get; set; }
+        public bool FadeDone { get; set; }
+        public FloatData WaitForSeconds { get; internal set; }
+
+        public ConversationManager()
+        {
+            ClearPrev = true;
+            FadeDone = true;
+            WaitForInput = true;
+        }
 
         /// <summary>
         /// Splits the string passed in by the delimiters passed in.
@@ -92,6 +106,9 @@ namespace Fungus
                 sayDialog = SayDialog.GetSayDialog();
             }
 
+            sayDialog.SetActive(true);
+            SayDialog.ActiveSayDialog = sayDialog;
+
             return sayDialog;
         }
 
@@ -99,7 +116,7 @@ namespace Fungus
         {
             //find SimpleScript say strings with portrait options
             //You can test regex matches here: http://regexstorm.net/tester
-            var sayRegex = new Regex(@"((?<sayParams>[\w ""><.']*):)?(?<text>.*)\r*(\n|$)");
+            var sayRegex = new Regex(@"((?<sayParams>[\w ""><.'-_]*):)?(?<text>.*)\r*(\n|$)");
             MatchCollection sayMatches = sayRegex.Matches(conv);
 
             var items = new List<ConversationItem>(sayMatches.Count);
@@ -147,14 +164,51 @@ namespace Fungus
         protected virtual ConversationItem CreateConversationItem(string[] sayParams, string text, Character currentCharacter)
         {
             var item = new ConversationItem();
+            item.ClearPrev = ClearPrev;
+            item.FadeDone = FadeDone;
+            item.WaitForInput = WaitForInput;
 
             // Populate the story text to be written
             item.Text = text;
+
+            if(WaitForSeconds > 0)
+            {
+                item.Text += "{w=" + WaitForSeconds.ToString() +"}";
+            }
 
             if (sayParams == null || sayParams.Length == 0)
             {
                 // Text only, no params - early out.
                 return item;
+            }
+
+            //TODO this needs a refactor
+            for (int i = 0; i < sayParams.Length; i++)
+            {
+                if (string.Compare(sayParams[i], "clear", true) == 0)
+                {
+                    item.ClearPrev = true;
+                }
+                else if (string.Compare(sayParams[i], "noclear", true) == 0)
+                {
+                    item.ClearPrev = false;
+                }
+                else if (string.Compare(sayParams[i], "fade", true) == 0)
+                {
+                    item.FadeDone = true;
+                }
+                else if (string.Compare(sayParams[i], "nofade", true) == 0)
+                {
+                    item.FadeDone = false;
+                }
+                else if (string.Compare(sayParams[i], "wait", true) == 0)
+                {
+                    item.WaitForInput = true;
+                }
+                else if (string.Compare(sayParams[i], "nowait", true) == 0)
+                {
+                    item.WaitForInput = false;
+                }
             }
 
             // try to find the character param first, since we need to get its portrait
@@ -319,8 +373,6 @@ namespace Fungus
                     yield break;
                 }
 
-                sayDialog.SetActive(true);
-
                 if (currentCharacter != null && 
                     currentCharacter != previousCharacter)
                 {
@@ -380,7 +432,7 @@ namespace Fungus
 
                 if (!string.IsNullOrEmpty(item.Text)) { 
                     exitSayWait = false;
-                    sayDialog.Say(item.Text, true, true, true, true, false, null, () => {
+                    sayDialog.Say(item.Text, item.ClearPrev, item.WaitForInput, item.FadeDone, true, false, null, () => {
                         exitSayWait = true;
                     });
 
