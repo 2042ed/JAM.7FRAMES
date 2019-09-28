@@ -9,7 +9,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Rotorz.ReorderableList;
 using System.IO;
 using System.Reflection;
 
@@ -18,58 +17,46 @@ namespace Fungus.EditorUtils
     [CustomEditor(typeof(Block))]
     public class BlockEditor : Editor
     {
-        protected class SetEventHandlerOperation
-        {
-            public Block block;
-            public Type eventHandlerType;
-        }
-
-        protected class AddCommandOperation
-        {
-            public Type commandType;
-        }
-
-
-        private static readonly char[] SPLIT_INPUT_ON = new char[] { ' ', '/', '\\' };
-        private static readonly int MAX_PREVIEW_GRID = 7;
-        private static readonly string ELIPSIS = "...";
-
         public static List<Action> actionList = new List<Action>();
+
+        public static bool SelectedBlockDataStale { get; set; }
 
         protected Texture2D upIcon;
         protected Texture2D downIcon;
         protected Texture2D addIcon;
         protected Texture2D duplicateIcon;
         protected Texture2D deleteIcon;
+        
 
-        protected string commandTextFieldContents = string.Empty;
-        protected int filteredCommandPreviewSelectedItem = 0;
-        protected Type commandSelectedByTextInput;
+        private CommandListAdaptor commandListAdaptor;
+        private SerializedProperty commandListProperty;
 
-        static List<System.Type> commandTypes;
-        static List<System.Type> eventHandlerTypes;
+        private Rect lastEventPopupPos, lastCMDpopupPos;
 
-        static void CacheEventHandlerTypes()
-        {
-            eventHandlerTypes = EditorExtensions.FindDerivedTypes(typeof(EventHandler)).ToList();
-            commandTypes = EditorExtensions.FindDerivedTypes(typeof(Command)).ToList();
-        }
-
-        [UnityEditor.Callbacks.DidReloadScripts]
-        private static void OnScriptsReloaded()
-        {
-            CacheEventHandlerTypes();
-        }
-
+    
         protected virtual void OnEnable()
         {
+            //this appears to happen when leaving playmode
+            try
+            {
+                if (serializedObject == null)
+                    return;
+            }
+            catch (Exception)
+            {
+                return;
+            }
+
             upIcon = FungusEditorResources.Up;
             downIcon = FungusEditorResources.Down;
             addIcon = FungusEditorResources.Add;
             duplicateIcon = FungusEditorResources.Duplicate;
             deleteIcon = FungusEditorResources.Delete;
 
-            CacheEventHandlerTypes();
+            commandListProperty = serializedObject.FindProperty("commandList");
+
+            commandListAdaptor = new CommandListAdaptor(target as Block, commandListProperty);
+
         }
 
         public virtual void DrawBlockName(Flowchart flowchart)
@@ -77,18 +64,27 @@ namespace Fungus.EditorUtils
             serializedObject.Update();
 
             SerializedProperty blockNameProperty = serializedObject.FindProperty("blockName");
-            Rect blockLabelRect = new Rect(45, 5, 120, 16);
-            EditorGUI.LabelField(blockLabelRect, new GUIContent("Block Name"));
-            Rect blockNameRect = new Rect(45, 21, 180, 16);
-            EditorGUI.PropertyField(blockNameRect, blockNameProperty, new GUIContent(""));
-
-            // Ensure block name is unique for this Flowchart
-            var block = target as Block;
-            string uniqueName = flowchart.GetUniqueBlockKey(blockNameProperty.stringValue, block);
-            if (uniqueName != block.BlockName)
+            //calc position as size of what we want to draw pushed up into the top bar of the inspector
+            //Rect blockLabelRect = new Rect(45, -GUI.skin.window.padding.bottom - EditorGUIUtility.singleLineHeight * 2, 120, 16);
+            //EditorGUI.LabelField(blockLabelRect, new GUIContent("Block Name"));
+            //Rect blockNameRect = new Rect(45, blockLabelRect.y + EditorGUIUtility.singleLineHeight, 180, 16);
+            //EditorGUI.PropertyField(blockNameRect, blockNameProperty, new GUIContent(""));
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.PrefixLabel(new GUIContent("Block Name"), EditorStyles.largeLabel);
+            EditorGUI.BeginChangeCheck();
+            blockNameProperty.stringValue = EditorGUILayout.TextField(blockNameProperty.stringValue);
+            if(EditorGUI.EndChangeCheck())
             {
-                blockNameProperty.stringValue = uniqueName;
+                // Ensure block name is unique for this Flowchart
+                var block = target as Block;
+                string uniqueName = flowchart.GetUniqueBlockKey(blockNameProperty.stringValue, block);
+                if (uniqueName != block.BlockName)
+                {
+                    blockNameProperty.stringValue = uniqueName;
+                }
             }
+            EditorGUILayout.EndHorizontal();
+            EditorGUILayout.Space();
 
             serializedObject.ApplyModifiedProperties();
         }
@@ -96,6 +92,8 @@ namespace Fungus.EditorUtils
         public virtual void DrawBlockGUI(Flowchart flowchart)
         {
             serializedObject.Update();
+
+            var block = target as Block;
 
             // Execute any queued cut, copy, paste, etc. operations from the prevous GUI update
             // We need to defer applying these operations until the following update because
@@ -113,9 +111,8 @@ namespace Fungus.EditorUtils
                 actionList.Clear();
             }
 
-            var block = target as Block;
 
-            SerializedProperty commandListProperty = serializedObject.FindProperty("commandList");
+            EditorGUI.BeginChangeCheck();
 
             if (block == flowchart.SelectedBlock)
             {
@@ -135,7 +132,8 @@ namespace Fungus.EditorUtils
 
                 SerializedProperty descriptionProp = serializedObject.FindProperty("description");
                 EditorGUILayout.PropertyField(descriptionProp);
-
+                EditorGUILayout.Space();
+                
                 DrawEventHandlerGUI(flowchart);
 
                 block.UpdateIndentLevels();
@@ -150,20 +148,7 @@ namespace Fungus.EditorUtils
                     command.ParentBlock = block;
                 }
 
-                ReorderableListGUI.Title("Commands");
-                CommandListAdaptor adaptor = new CommandListAdaptor(commandListProperty, 0);
-                adaptor.nodeRect = block._NodeRect;
-
-                ReorderableListFlags flags = ReorderableListFlags.HideAddButton | ReorderableListFlags.HideRemoveButtons | ReorderableListFlags.DisableContextMenu;
-
-                if (block.CommandList.Count == 0)
-                {
-                    EditorGUILayout.HelpBox("Press the + button below to add a command to the list.", MessageType.Info);
-                }
-                else
-                {
-                    ReorderableListControl.DrawControlFromState(adaptor, null, flags);
-                }
+                commandListAdaptor.DrawCommandList();
 
                 // EventType.contextClick doesn't register since we moved the Block Editor to be inside
                 // a GUI Area, no idea why. As a workaround we just check for right click instead.
@@ -280,6 +265,12 @@ namespace Fungus.EditorUtils
                 }
             }
 
+
+            if (EditorGUI.EndChangeCheck())
+            {
+                SelectedBlockDataStale = true;
+            }
+
             serializedObject.ApplyModifiedProperties();
         }
 
@@ -287,32 +278,6 @@ namespace Fungus.EditorUtils
         {
             GUILayout.BeginHorizontal();
 
-
-
-            //handle movement along our selection grid before something else eats our inputs
-            if (Event.current.type == EventType.KeyDown)
-            {
-                //up down to change selection / esc to clear field
-                if (Event.current.keyCode == KeyCode.UpArrow)
-                {
-                    filteredCommandPreviewSelectedItem--;
-                }
-                else if (Event.current.keyCode == KeyCode.DownArrow)
-                {
-                    filteredCommandPreviewSelectedItem++;
-                }
-
-                if (commandSelectedByTextInput != null &&
-                    Event.current.keyCode == KeyCode.Return || Event.current.keyCode == KeyCode.KeypadEnter)
-                {
-                    AddCommandCallback(commandSelectedByTextInput);
-                    commandSelectedByTextInput = null;
-                    commandTextFieldContents = String.Empty;
-                    //GUI.FocusControl("dummycontrol");
-                    Event.current.Use();
-                    filteredCommandPreviewSelectedItem = 0;
-                }
-            }
 
             // Previous Command
             if ((Event.current.type == EventType.KeyDown) && (Event.current.keyCode == KeyCode.PageUp))
@@ -342,13 +307,21 @@ namespace Fungus.EditorUtils
 
             GUILayout.FlexibleSpace();
 
-            //should track if text actually changes and pass that to the ShowPartialMatches so it can cache
-            commandTextFieldContents = GUILayout.TextField(commandTextFieldContents, GUILayout.MinWidth(20), GUILayout.MaxWidth(200));
 
+            //using false to prevent forcing a longer row than will fit on smallest inspector
+            var pos = EditorGUILayout.GetControlRect(false, 0, EditorStyles.objectField);
+            if (pos.x != 0)
+            {
+                lastCMDpopupPos = pos;
+                lastCMDpopupPos.x += EditorGUIUtility.labelWidth;
+                lastCMDpopupPos.y += EditorGUIUtility.singleLineHeight * 2;
+            }
             // Add Button
             if (GUILayout.Button(addIcon))
             {
-                ShowCommandMenu();
+                CommandSelectorPopupWindowContent.ShowCommandMenu(lastCMDpopupPos, "", target as Block,
+                    (int)(EditorGUIUtility.currentViewWidth),
+                    (int)(EditorWindow.focusedWindow.position.height - lastCMDpopupPos.y));
             }
 
             // Duplicate Button
@@ -366,85 +339,9 @@ namespace Fungus.EditorUtils
 
             GUILayout.EndHorizontal();
 
-            if (!string.IsNullOrEmpty(commandTextFieldContents))
-                ShowPartialMatches();
-
         }
 
-        //Handles showing partial matches against the text input next to the AddCommand button
-        // Splits and matches and can use up down arrows and return/enter/numenter to confirm
-        //  TODO add sorting of results so we get best match at the not just just a match
-        //      e.g. "if" should show Flow/If at the top not Flow/Else If
-        private void ShowPartialMatches()
-        {
-            var block = target as Block;
-
-            var flowchart = (Flowchart)block.GetFlowchart();
-
-            //TODO this could be cached if input hasn't changed to avoid thrashing
-            var filteredAttributes = GetFilteredSupportedCommands(flowchart);
-
-            var upperCommandText = commandTextFieldContents.ToUpper().Trim();
-
-            if (upperCommandText.Length == 0)
-                return;
-
-            var tokens = upperCommandText.Split(SPLIT_INPUT_ON);
-
-            //we want commands that have all the elements you have typed
-            filteredAttributes = filteredAttributes.Where((x) =>
-            {
-                bool catAny = tokens.Any(x.Value.Category.ToUpper().Contains);
-                bool comAny = tokens.Any(x.Value.CommandName.ToUpper().Contains);
-                bool catAll = tokens.All(x.Value.Category.ToUpper().Contains);
-                bool comAll = tokens.All(x.Value.CommandName.ToUpper().Contains);
-
-                //so if both category and command found something, then there are multiple tokens and they line up with category and command
-                if (catAny && comAny)
-                    return true;
-                //or its a single token or a complex token that matches entirely in cat or com
-                else if (catAll || comAll)
-                    return true;
-                //this setup avoids multiple bad suggestions due to a complex category name that gives many false matches on complex partials
-
-                return false;
-
-            }).ToList();
-
-            if (filteredAttributes == null || filteredAttributes.Count == 0)
-                return;
-
-            //show results
-            GUILayout.Space(5);
-
-            GUILayout.BeginHorizontal();
-
-            filteredCommandPreviewSelectedItem = Mathf.Clamp(filteredCommandPreviewSelectedItem, 0, filteredAttributes.Count - 1);
-
-            var toShow = filteredAttributes.Select(x => x.Value.Category + "/" + x.Value.CommandName).ToArray();
-
-            //show the first x max that match our filters
-            if(toShow.Length > MAX_PREVIEW_GRID)
-            {
-                toShow = toShow.Take(MAX_PREVIEW_GRID).ToArray();
-                toShow[MAX_PREVIEW_GRID - 1] = ELIPSIS;
-            }
-
-            filteredCommandPreviewSelectedItem = GUILayout.SelectionGrid(filteredCommandPreviewSelectedItem, toShow, 1);
-
-            if (toShow[filteredCommandPreviewSelectedItem] != ELIPSIS)
-            {
-                commandSelectedByTextInput = filteredAttributes[filteredCommandPreviewSelectedItem].Key;
-            }
-            else
-            {
-                commandSelectedByTextInput = null;
-            }
-
-            GUILayout.EndHorizontal();
-
-            GUILayout.Space(5);
-        }
+        
 
         protected virtual void DrawEventHandlerGUI(Flowchart flowchart)
         {
@@ -467,49 +364,18 @@ namespace Fungus.EditorUtils
                 }
             }
 
+            var pos = EditorGUILayout.GetControlRect(true, 0, EditorStyles.objectField);
+            if (pos.x != 0)
+            {
+                lastEventPopupPos = pos;
+                lastEventPopupPos.x += EditorGUIUtility.labelWidth;
+                lastEventPopupPos.y += EditorGUIUtility.singleLineHeight;
+            }
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PrefixLabel(new GUIContent("Execute On Event"));
-            if (GUILayout.Button(new GUIContent(currentHandlerName), EditorStyles.popup))
+            if (EditorGUILayout.DropdownButton(new GUIContent(currentHandlerName), FocusType.Passive))
             {
-                SetEventHandlerOperation noneOperation = new SetEventHandlerOperation();
-                noneOperation.block = block;
-                noneOperation.eventHandlerType = null;
-
-                GenericMenu eventHandlerMenu = new GenericMenu();
-                eventHandlerMenu.AddItem(new GUIContent("None"), false, OnSelectEventHandler, noneOperation);
-
-                // Add event handlers with no category first
-                foreach (System.Type type in eventHandlerTypes)
-                {
-                    EventHandlerInfoAttribute info = EventHandlerEditor.GetEventHandlerInfo(type);
-                    if (info != null &&
-                        info.Category.Length == 0)
-                    {
-                        SetEventHandlerOperation operation = new SetEventHandlerOperation();
-                        operation.block = block;
-                        operation.eventHandlerType = type;
-
-                        eventHandlerMenu.AddItem(new GUIContent(info.EventHandlerName), false, OnSelectEventHandler, operation);
-                    }
-                }
-
-                // Add event handlers with a category afterwards
-                foreach (System.Type type in eventHandlerTypes)
-                {
-                    EventHandlerInfoAttribute info = EventHandlerEditor.GetEventHandlerInfo(type);
-                    if (info != null &&
-                        info.Category.Length > 0)
-                    {
-                        SetEventHandlerOperation operation = new SetEventHandlerOperation();
-                        operation.block = block;
-                        operation.eventHandlerType = type;
-                        string typeName = info.Category + "/" + info.EventHandlerName;
-                        eventHandlerMenu.AddItem(new GUIContent(typeName), false, OnSelectEventHandler, operation);
-                    }
-                }
-
-
-                eventHandlerMenu.ShowAsContext();
+                EventSelectorPopupWindowContent.DoEventHandlerPopUp(lastEventPopupPos, currentHandlerName, block, (int)(EditorGUIUtility.currentViewWidth - lastEventPopupPos.x), 200);
             }
             EditorGUILayout.EndHorizontal();
 
@@ -518,39 +384,19 @@ namespace Fungus.EditorUtils
                 EventHandlerEditor eventHandlerEditor = Editor.CreateEditor(block._EventHandler) as EventHandlerEditor;
                 if (eventHandlerEditor != null)
                 {
+                    EditorGUI.BeginChangeCheck();
                     eventHandlerEditor.DrawInspectorGUI();
+
+                    if(EditorGUI.EndChangeCheck())
+                    {
+                        SelectedBlockDataStale = true;
+                    }
+
                     DestroyImmediate(eventHandlerEditor);
                 }
             }
         }
 
-        protected void OnSelectEventHandler(object obj)
-        {
-            SetEventHandlerOperation operation = obj as SetEventHandlerOperation;
-            Block block = operation.block;
-            System.Type selectedType = operation.eventHandlerType;
-            if (block == null)
-            {
-                return;
-            }
-
-            Undo.RecordObject(block, "Set Event Handler");
-
-            if (block._EventHandler != null)
-            {
-                Undo.DestroyObjectImmediate(block._EventHandler);
-            }
-
-            if (selectedType != null)
-            {
-                EventHandler newHandler = Undo.AddComponent(block.gameObject, selectedType) as EventHandler;
-                newHandler.ParentBlock = block;
-                block._EventHandler = newHandler;
-            }
-
-            // Because this is an async call, we need to force prefab instances to record changes
-            PrefabUtility.RecordPrefabInstancePropertyModifications(block);
-        }
 
         public static void BlockField(SerializedProperty property, GUIContent label, GUIContent nullLabel, Flowchart flowchart)
         {
@@ -628,17 +474,6 @@ namespace Fungus.EditorUtils
             return result;
         }
 
-        // Compare delegate for sorting the list of command attributes
-        protected static int CompareCommandAttributes(KeyValuePair<System.Type, CommandInfoAttribute> x, KeyValuePair<System.Type, CommandInfoAttribute> y)
-        {
-            int compare = (x.Value.Category.CompareTo(y.Value.Category));
-            if (compare == 0)
-            {
-                compare = (x.Value.CommandName.CompareTo(y.Value.CommandName));
-            }
-            return compare;
-        }
-
         [MenuItem("Tools/Fungus/Utilities/Export Reference Docs")]
         protected static void ExportReferenceDocs()
         {
@@ -648,6 +483,49 @@ namespace Fungus.EditorUtils
             ExportEventHandlerInfo(path);
 
             FlowchartWindow.ShowNotification("Exported Reference Documentation");
+        }
+
+        public static List<KeyValuePair<System.Type, CommandInfoAttribute>> GetFilteredCommandInfoAttribute(List<System.Type> menuTypes)
+        {
+            Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = new Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>>();
+
+            foreach (System.Type type in menuTypes)
+            {
+                object[] attributes = type.GetCustomAttributes(false);
+                foreach (object obj in attributes)
+                {
+                    CommandInfoAttribute infoAttr = obj as CommandInfoAttribute;
+                    if (infoAttr != null)
+                    {
+                        string dictionaryName = string.Format("{0}/{1}", infoAttr.Category, infoAttr.CommandName);
+
+                        int existingItemPriority = -1;
+                        if (filteredAttributes.ContainsKey(dictionaryName))
+                        {
+                            existingItemPriority = filteredAttributes[dictionaryName].Value.Priority;
+                        }
+
+                        if (infoAttr.Priority > existingItemPriority)
+                        {
+                            KeyValuePair<System.Type, CommandInfoAttribute> keyValuePair = new KeyValuePair<System.Type, CommandInfoAttribute>(type, infoAttr);
+                            filteredAttributes[dictionaryName] = keyValuePair;
+                        }
+                    }
+                }
+            }
+            return filteredAttributes.Values.ToList<KeyValuePair<System.Type, CommandInfoAttribute>>();
+        }
+
+
+        // Compare delegate for sorting the list of command attributes
+        public static int CompareCommandAttributes(KeyValuePair<System.Type, CommandInfoAttribute> x, KeyValuePair<System.Type, CommandInfoAttribute> y)
+        {
+            int compare = (x.Value.Category.CompareTo(y.Value.Category));
+            if (compare == 0)
+            {
+                compare = (x.Value.CommandName.CompareTo(y.Value.CommandName));
+            }
+            return compare;
         }
 
         protected static void ExportCommandInfo(string path)
@@ -775,140 +653,7 @@ namespace Fungus.EditorUtils
             return markdown;
         }
 
-        protected virtual void ShowCommandMenu()
-        {
-            var block = target as Block;
 
-            var flowchart = (Flowchart)block.GetFlowchart();
-
-            GenericMenu commandMenu = new GenericMenu();
-
-            // Build menu list
-            var filteredAttributes = GetFilteredSupportedCommands(flowchart);
-
-            foreach (var keyPair in filteredAttributes)
-            {
-                AddCommandOperation commandOperation = new AddCommandOperation();
-                
-                commandOperation.commandType = keyPair.Key;
-
-                GUIContent menuItem;
-                if (keyPair.Value.Category == "")
-                {
-                    menuItem = new GUIContent(keyPair.Value.CommandName);
-                }
-                else
-                {
-                    menuItem = new GUIContent(keyPair.Value.Category + "/" + keyPair.Value.CommandName);
-                }
-
-                commandMenu.AddItem(menuItem, false, AddCommandCallback, commandOperation);
-            }
-
-            commandMenu.ShowAsContext();
-        }
-
-        protected static List<KeyValuePair<System.Type, CommandInfoAttribute>> GetFilteredSupportedCommands(Flowchart flowchart)
-        {
-            List<KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = GetFilteredCommandInfoAttribute(commandTypes);
-
-            filteredAttributes.Sort(CompareCommandAttributes);
-
-            filteredAttributes = filteredAttributes.Where(x => flowchart.IsCommandSupported(x.Value)).ToList();
-
-            return filteredAttributes;
-        }
-
-        protected static List<KeyValuePair<System.Type, CommandInfoAttribute>> GetFilteredCommandInfoAttribute(List<System.Type> menuTypes)
-        {
-            Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>> filteredAttributes = new Dictionary<string, KeyValuePair<System.Type, CommandInfoAttribute>>();
-
-            foreach (System.Type type in menuTypes)
-            {
-                object[] attributes = type.GetCustomAttributes(false);
-                foreach (object obj in attributes)
-                {
-                    CommandInfoAttribute infoAttr = obj as CommandInfoAttribute;
-                    if (infoAttr != null)
-                    {
-                        string dictionaryName = string.Format("{0}/{1}", infoAttr.Category, infoAttr.CommandName);
-
-                        int existingItemPriority = -1;
-                        if (filteredAttributes.ContainsKey(dictionaryName))
-                        {
-                            existingItemPriority = filteredAttributes[dictionaryName].Value.Priority;
-                        }
-
-                        if (infoAttr.Priority > existingItemPriority)
-                        {
-                            KeyValuePair<System.Type, CommandInfoAttribute> keyValuePair = new KeyValuePair<System.Type, CommandInfoAttribute>(type, infoAttr);
-                            filteredAttributes[dictionaryName] = keyValuePair;
-                        }
-                    }
-                }
-            }
-            return filteredAttributes.Values.ToList<KeyValuePair<System.Type, CommandInfoAttribute>>();
-        }
-
-        //Used by GenericMenu Delegate
-        protected void AddCommandCallback(object obj)
-        {
-            AddCommandOperation commandOperation = obj as AddCommandOperation;
-            if (commandOperation != null)
-            {
-                AddCommandCallback(commandOperation.commandType);
-            }
-        }
-
-        protected void AddCommandCallback(Type commandType)
-        {
-            var block = target as Block;
-            if (block == null)
-            {
-                return;
-            }
-
-            var flowchart = (Flowchart)block.GetFlowchart();
-
-            // Use index of last selected command in list, or end of list if nothing selected.
-            int index = -1;
-            foreach (var command in flowchart.SelectedCommands)
-            {
-                if (command.CommandIndex + 1 > index)
-                {
-                    index = command.CommandIndex + 1;
-                }
-            }
-            if (index == -1)
-            {
-                index = block.CommandList.Count;
-            }
-
-            var newCommand = Undo.AddComponent(block.gameObject, commandType) as Command;
-            block.GetFlowchart().AddSelectedCommand(newCommand);
-            newCommand.ParentBlock = block;
-            newCommand.ItemId = flowchart.NextItemId();
-
-            // Let command know it has just been added to the block
-            newCommand.OnCommandAdded(block);
-
-            Undo.RecordObject(block, "Set command type");
-            if (index < block.CommandList.Count - 1)
-            {
-                block.CommandList.Insert(index, newCommand);
-            }
-            else
-            {
-                block.CommandList.Add(newCommand);
-            }
-
-            // Because this is an async call, we need to force prefab instances to record changes
-            PrefabUtility.RecordPrefabInstancePropertyModifications(block);
-
-            flowchart.ClearSelectedCommands();
-
-            commandTextFieldContents = string.Empty;
-        }
 
         public virtual void ShowContextMenu()
         {

@@ -47,6 +47,8 @@ namespace Fungus
 
         protected Command activeCommand;
 
+        protected Action lastOnCompleteAction;
+
         /// <summary>
         // Index of last command executed before the current one.
         // -1 indicates no previous command.
@@ -109,7 +111,12 @@ namespace Fungus
                 command.CommandIndex = index++;
             }
         }
+
 #endif
+        //editor only state for speeding up flowchart window drawing
+        public bool IsSelected { get; set; }    //local cache of selectedness
+        public bool IsFiltered { get; set; }    //local cache of filteredness
+        public bool IsControlSelected { get; set; } //local cache of being part of the control exclusion group
 
         #region Public members
 
@@ -200,8 +207,11 @@ namespace Fungus
         {
             if (executionState != ExecutionState.Idle)
             {
+                Debug.LogWarning(BlockName + " cannot be executed, it is already running.");
                 yield break;
             }
+
+            lastOnCompleteAction = onComplete;
 
             if (!executionInfoSet)
             {
@@ -209,6 +219,7 @@ namespace Fungus
             }
 
             executionCount++;
+            var executionCountAtStart = executionCount;
 
             var flowchart = GetFlowchart();
             executionState = ExecutionState.Executing;
@@ -297,14 +308,25 @@ namespace Fungus
                 command.IsExecuting = false;
             }
 
+            if(State == ExecutionState.Executing &&
+                //ensure we aren't dangling from a previous stopage and stopping a future run
+                executionCountAtStart == executionCount)
+            {
+                ReturnToIdle();
+            }
+        }
+
+        private void ReturnToIdle()
+        {
             executionState = ExecutionState.Idle;
             activeCommand = null;
             BlockSignals.DoBlockEnd(this);
 
-            if (onComplete != null)
+            if (lastOnCompleteAction != null)
             {
-                onComplete();
+                lastOnCompleteAction();
             }
+            lastOnCompleteAction = null;
         }
 
         /// <summary>
@@ -321,6 +343,9 @@ namespace Fungus
 
             // This will cause the execution loop to break on the next iteration
             jumpToCommandIndex = int.MaxValue;
+
+            //force idle here so other commands that rely on block not executing are informed this frame rather than next
+            ReturnToIdle();
         }
 
         /// <summary>

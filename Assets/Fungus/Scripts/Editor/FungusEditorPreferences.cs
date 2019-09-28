@@ -16,37 +16,56 @@ namespace Fungus
         {
             // Have we loaded the prefs yet
             private static bool prefsLoaded = false;
+            const string HIDE_MUSH_KEY = "hideMushroomInHierarchy";
+            const string USE_LEGACY_MENUS = "useLegacyMenus";
 
             public static bool hideMushroomInHierarchy;
+            public static bool useLegacyMenus;
 
             static FungusEditorPreferences()
             {
                 LoadOnScriptLoad();
             }
 
-            // Add preferences section named "My Preferences" to the Preferences Window
-            [PreferenceItem("Fungus")]
-            public static void PreferencesGUI()
+            [SettingsProvider]
+            public static SettingsProvider CreateFungusSettingsProvider()
             {
-                // Load the preferences
-                if (!prefsLoaded)
+                // First parameter is the path in the Settings window.
+                // Second parameter is the scope of this setting: it only appears in the Project Settings window.
+                var provider = new SettingsProvider("Project/Fungus", SettingsScope.Project)
                 {
-                    LoadOnScriptLoad();
-                }
+                    // Create the SettingsProvider and initialize its drawing (IMGUI) function in place:
+                    guiHandler = (searchContext) =>
+                    {
+                        // Load the preferences
+                        if (!prefsLoaded)
+                        {
+                            LoadOnScriptLoad();
+                        }
 
-                // Preferences GUI
-                hideMushroomInHierarchy = EditorGUILayout.Toggle("Hide Mushroom Flowchart Icon", hideMushroomInHierarchy);
+                        // Preferences GUI
+                        hideMushroomInHierarchy = EditorGUILayout.Toggle("Hide Mushroom Flowchart Icon", hideMushroomInHierarchy);
+                        useLegacyMenus = EditorGUILayout.Toggle(new GUIContent("Legacy Menus", "Force Legacy menus for Event, Add Variable and Add Command menus"), useLegacyMenus);
 
-                // Save the preferences
-                if (GUI.changed)
-                {
-                    EditorPrefs.SetBool("hideMushroomInHierarchy", hideMushroomInHierarchy);
-                }
+                        // Save the preferences
+                        if (GUI.changed)
+                        {
+                            EditorPrefs.SetBool(HIDE_MUSH_KEY, hideMushroomInHierarchy);
+                            EditorPrefs.SetBool(USE_LEGACY_MENUS, useLegacyMenus);
+                        }
+                    },
+
+                    // // Populate the search keywords to enable smart search filtering and label highlighting:
+                    // keywords = new HashSet<string>(new[] { "Number", "Some String" })
+                };
+
+                return provider;
             }
 
             public static void LoadOnScriptLoad()
             {
-                hideMushroomInHierarchy = EditorPrefs.GetBool("hideMushroomInHierarchy", false);
+                hideMushroomInHierarchy = EditorPrefs.GetBool(HIDE_MUSH_KEY, false);
+                useLegacyMenus = EditorPrefs.GetBool(USE_LEGACY_MENUS, false);
                 prefsLoaded = true;
             }
         }

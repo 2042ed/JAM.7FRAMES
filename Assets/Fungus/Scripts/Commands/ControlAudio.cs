@@ -134,7 +134,7 @@ namespace Fungus
             }
             else
             {
-                _audioSource.Value.volume = 1;
+                _audioSource.Value.volume = endVolume;
                 _audioSource.Value.loop = true;
                 _audioSource.Value.GetComponent<AudioSource>().Play();
             }
@@ -282,6 +282,11 @@ namespace Fungus
         public override Color GetButtonColor()
         {
             return new Color32(242, 209, 176, 255);
+        }
+
+        public override bool HasReference(Variable variable)
+        {
+            return _audioSource.audioSourceRef == variable || base.HasReference(variable);
         }
 
         #endregion
