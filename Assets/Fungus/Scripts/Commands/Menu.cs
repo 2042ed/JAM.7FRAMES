@@ -14,7 +14,7 @@ namespace Fungus
                  "Menu", 
                  "Displays a button in a multiple choice menu")]
     [AddComponentMenu("")]
-    public class Menu : Command, ILocalizable
+    public class Menu : Command, ILocalizable, IBlockCaller
     {
         [Tooltip("Text to display on the menu button")]
         [TextArea()]
@@ -99,6 +99,11 @@ namespace Fungus
         {
             return interactable.booleanRef == variable || hideThisOption.booleanRef == variable ||
                 base.HasReference(variable);
+        }
+
+        public bool MayCallBlock(Block block)
+        {
+            return block == targetBlock;
         }
 
         #endregion
